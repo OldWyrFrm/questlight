@@ -323,8 +323,8 @@
     "type": "story",
     "giver": "the-fairy-godmother",
     "wiki": "https://dreamlightvalleywiki.com/Miracles_Take_Time",
-    "verified": false,
-    "notes": "Needs Forgotten Lands unlocked."
+    "verified": true,
+    "notes": "Needs Forgotten Lands unlocked. Six pillars must be restored first."
   },
   {
     "id": "forgotten-memories-nurturing",
@@ -533,7 +533,8 @@
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Port_of_Many_Worlds",
-    "verified": false
+    "verified": true,
+    "notes": "Needs at least one of the A Rift in Time, Storybook Vale or Wishblossom Ranch expansions."
   },
   {
     "id": "the-monochrome-mystery",
@@ -1484,8 +1485,8 @@
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Broken_Memory",
-    "verified": false,
-    "notes": "Needs Forest of Valor unlocked."
+    "verified": true,
+    "notes": "Needs Forest of Valor unlocked. WALL-E's Memory has to be found first."
   },
   {
     "id": "my-kingdom-for-a-scroll",
@@ -2003,7 +2004,7 @@
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Peacemakers",
-    "verified": false,
+    "verified": true,
     "notes": "Needs Forest of Valor unlocked."
   },
   {
@@ -2020,7 +2021,8 @@
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/A_Friendly_Exchange",
-    "verified": false
+    "verified": true,
+    "notes": "WALL-E's Memory has to be found first."
   },
   {
     "id": "an-icy-invitation",
@@ -2338,8 +2340,8 @@
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Goodness_Level_Check",
-    "verified": false,
-    "notes": "Needs further quest progress with Donald Duck. Also needs Vandalized Sign and Peaceful Meadow."
+    "verified": true,
+    "notes": "Needs further quest progress with Donald Duck. Also needs Vandalized Sign and Peaceful Meadow. Starts from the Vandalized Sign in Peaceful Meadow."
   },
   {
     "id": "very-sleepy-stitch",
@@ -2356,8 +2358,8 @@
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Very_Sleepy_Stitch",
-    "verified": false,
-    "notes": "Needs further quest progress with WALL-E. Needs Glade of Trust unlocked. Also needs Coffee Cup and WALL-E's Garden."
+    "verified": true,
+    "notes": "Needs further quest progress with WALL-E. Needs Glade of Trust unlocked. Also needs Coffee Cup and WALL-E's Garden. Starts from the Coffee Cup beside WALL-E's Garden."
   },
   {
     "id": "making-music",
@@ -2887,7 +2889,7 @@
     },
     "wiki": "https://dreamlightvalleywiki.com/Extreme_Biome_Makeover",
     "verified": false,
-    "notes": "Needs further quest progress with Remy. Needs Dazzle Beach unlocked."
+    "notes": "Needs further quest progress with Remy. Needs Dazzle Beach unlocked. Has one more hidden requirement that neither the wiki nor other guides have identified yet."
   },
   {
     "id": "press-start",
@@ -3095,7 +3097,8 @@
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/A_Sticky_Situation",
-    "verified": false
+    "verified": true,
+    "notes": "Appears seven days after first logging in on update 1.7 or later."
   },
   {
     "id": "acts-of-care",
@@ -3173,8 +3176,8 @@
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Something_Comes_A'Knocking",
-    "verified": false,
-    "notes": "Also needs Big Matryoshka Doll, Medium-Sized Matryoshka Doll, Small Matryoshka Doll and Tiny Matryoshka Doll."
+    "verified": true,
+    "notes": "Also needs Big Matryoshka Doll, Medium-Sized Matryoshka Doll, Small Matryoshka Doll and Tiny Matryoshka Doll. Starts from picking up any Matryoshka Doll."
   },
   {
     "id": "the-pumpkin-king-returns",
@@ -3501,8 +3504,8 @@
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/You_Have_Mail!",
-    "verified": false,
-    "notes": "Also needs Valley Visit Station."
+    "verified": true,
+    "notes": "Also needs Valley Visit Station. The Valley Visit Station must be placed first."
   },
   {
     "id": "trouble-in-paradise",
@@ -3899,8 +3902,8 @@
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/A_Taste_for_Literature",
-    "verified": false,
-    "notes": "Needs Ingredients unlocked. Starts from Mysterious Cajun Recipe Book. Also needs Pillar of Trust, Glade of Trust, Chez Remy, Rice, Onion and Milk."
+    "verified": true,
+    "notes": "Needs Chez Remy open, the pillar in the Glade of Trust restored, and Rice, Onion and Milk unlocked. Starts from the Mysterious Cajun Recipe Book."
   },
   {
     "id": "back-from-the-bayou",
@@ -3918,7 +3921,7 @@
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Back_from_the_Bayou",
-    "verified": false
+    "verified": true
   },
   {
     "id": "little-louiss-big-break",
@@ -4280,7 +4283,7 @@
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Woven_Bridge",
-    "verified": false
+    "verified": true
   },
   {
     "id": "uncanny-romance",
@@ -4297,7 +4300,8 @@
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Uncanny_Romance",
-    "verified": false
+    "verified": false,
+    "notes": "Has one more hidden requirement that neither the wiki nor other guides have identified yet."
   },
   {
     "id": "decay-to-grow",
@@ -4398,7 +4402,7 @@
     },
     "wiki": "https://dreamlightvalleywiki.com/All_That_Glitters",
     "verified": false,
-    "notes": "Needs further quest progress with Belle."
+    "notes": "Needs further quest progress with Belle. Has one more hidden requirement that neither the wiki nor other guides have identified yet."
   },
   {
     "id": "advanced-marketing",
@@ -4526,8 +4530,8 @@
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/A_Very_Merry_Unbirthday",
-    "verified": false,
-    "notes": "Needs further quest progress with Elsa. Needs Forgotten Lands unlocked."
+    "verified": true,
+    "notes": "Needs further quest progress with Elsa. Needs Forgotten Lands unlocked. Starts with a mail message from Merlin."
   },
   {
     "id": "books-with-no-pictures",
@@ -4640,7 +4644,7 @@
     },
     "wiki": "https://dreamlightvalleywiki.com/Furniture_Fluster",
     "verified": false,
-    "notes": "Needs further quest progress with Mother Gothel."
+    "notes": "Needs further quest progress with Mother Gothel. Has one more hidden requirement that neither the wiki nor other guides have identified yet."
   },
   {
     "id": "its-all-nonsense",
@@ -4697,10 +4701,11 @@
     "id": "dreamlight-parks-fest-critter-snaps",
     "name": "Dreamlight Parks Fest: Critter Snaps",
     "region": "valley",
-    "type": "friendship",
+    "type": "event",
     "giver": "mirabel",
     "wiki": "https://dreamlightvalleywiki.com/Dreamlight_Parks_Fest:_Critter_Snaps",
-    "verified": false
+    "verified": true,
+    "notes": "Only during the Dreamlight Parks Fest event. Opens after the weekly event quest Dreamlight Parks Fest: Decorate More!"
   },
   {
     "id": "dreamlight-parks-fest-dig-it",
@@ -5241,11 +5246,11 @@
     "id": "the-floating-festival",
     "name": "The Floating Festival!",
     "region": "valley",
-    "type": "friendship",
+    "type": "event",
     "giver": "merlin",
     "wiki": "https://dreamlightvalleywiki.com/The_Floating_Festival!",
-    "verified": false,
-    "notes": "Also needs Springtime Floating Festival, Parks Floating Festival, The Haunted Floating Festival and The Winter Floating Festival."
+    "verified": true,
+    "notes": "Also needs Springtime Floating Festival, Parks Floating Festival, The Haunted Floating Festival and The Winter Floating Festival. Only available while a Floating Festival event is running."
   },
   {
     "id": "home-is-where-the-heart-is",
@@ -5355,7 +5360,7 @@
     },
     "wiki": "https://dreamlightvalleywiki.com/Cinderella's_Custom_Creation",
     "verified": false,
-    "notes": "Needs further quest progress with Vanellope. Needs The Boutique and Sunlit Plateau unlocked."
+    "notes": "Needs further quest progress with Vanellope. Needs The Boutique and Sunlit Plateau unlocked. Has one more hidden requirement that neither the wiki nor other guides have identified yet."
   },
   {
     "id": "critter-chaos",
@@ -5654,7 +5659,7 @@
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Three_Sisters_Garden",
-    "verified": false
+    "verified": true
   },
   {
     "id": "working-together",
@@ -6593,8 +6598,8 @@
     "type": "realm",
     "giver": "mulan",
     "wiki": "https://dreamlightvalleywiki.com/Training_Treasures",
-    "verified": false,
-    "notes": "Also needs Circular Weights, Fan and Snorkel."
+    "verified": true,
+    "notes": "Also needs Circular Weights, Fan and Snorkel. Starts once the Circular Weights, Fan and Snorkel have been collected."
   },
   {
     "id": "orienteering",
@@ -6897,7 +6902,8 @@
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Haunting_of_Beast's_Castle",
-    "verified": false
+    "verified": true,
+    "notes": "Starts with a letter from the Beast."
   },
   {
     "id": "a-growing-mystery",
@@ -7108,7 +7114,8 @@
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Blue_Potato_Quest",
-    "verified": false
+    "verified": true,
+    "notes": "Opens once the Golden Potato Quest has been found; that quest does not have to be finished first."
   },
   {
     "id": "purple-potato-quest",
@@ -7131,8 +7138,8 @@
     "region": "valley",
     "type": "hidden",
     "wiki": "https://dreamlightvalleywiki.com/Golden_Potato_Quest",
-    "verified": false,
-    "notes": "Also needs Mysterious Golden Potato."
+    "verified": true,
+    "notes": "Also needs Mysterious Golden Potato. Starts from the Mysterious Golden Potato."
   },
   {
     "id": "green-potato-quest",
@@ -7221,8 +7228,8 @@
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/These_Legs_Were_Made_for_Walking",
-    "verified": false,
-    "notes": "Needs further quest progress with Remy. Also needs Ursula's Transformation Dream Bundle and \"Vanessa\". Listed on the wiki as a dream bundle quest."
+    "verified": true,
+    "notes": "Needs Ursula's Transformation Dream Bundle, with Ursula wearing the Vanessa Dream Style. Needs further quest progress with Remy."
   },
   {
     "id": "a-show-like-no-other",
@@ -7240,8 +7247,8 @@
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/A_Show_Like_No_Other",
-    "verified": false,
-    "notes": "Needs further quest progress with Mother Gothel. Also needs Ursula's Transformation Dream Bundle and \"Vanessa\". Listed on the wiki as a dream bundle quest."
+    "verified": true,
+    "notes": "Needs Ursula's Transformation Dream Bundle, with Ursula wearing the Vanessa Dream Style. Needs further quest progress with Mother Gothel."
   },
   {
     "id": "voice-of-reason",
@@ -7255,8 +7262,8 @@
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Voice_of_Reason",
-    "verified": false,
-    "notes": "Also needs Ursula's Transformation Dream Bundle and \"Vanessa\". Listed on the wiki as a dream bundle quest."
+    "verified": true,
+    "notes": "Needs Ursula's Transformation Dream Bundle, with Ursula wearing the Vanessa Dream Style."
   },
   {
     "id": "deal-of-the-day-off-the-hook",
@@ -7484,61 +7491,61 @@
     "id": "dreamlight-parks-fest-decorate",
     "name": "Dreamlight Parks Fest: Decorate!",
     "region": "valley",
-    "type": "other",
+    "type": "event",
     "giver": "scrooge-mcduck",
     "wiki": "https://dreamlightvalleywiki.com/Dreamlight_Parks_Fest:_Decorate!",
-    "verified": false,
-    "notes": "Listed on the wiki as a repeatable quest."
+    "verified": true,
+    "notes": "Listed on the wiki as a repeatable quest. Only during the Dreamlight Parks Fest event. Opens after Scrooge McDuck's opening event quest, Dreamlight Parks Fest."
   },
   {
     "id": "dreamlight-parks-fest-scrooge-mcduck",
     "name": "Dreamlight Parks Fest: Scrooge McDuck",
     "region": "valley",
-    "type": "other",
+    "type": "event",
     "giver": "scrooge-mcduck",
     "wiki": "https://dreamlightvalleywiki.com/Dreamlight_Parks_Fest:_Scrooge_McDuck",
-    "verified": false,
-    "notes": "Listed on the wiki as a repeatable quest."
+    "verified": true,
+    "notes": "Listed on the wiki as a repeatable quest. Only during the Dreamlight Parks Fest event. Opens the day after the event quest Dreamlight Parks Fest: Decorate Most!"
   },
   {
     "id": "dreamlight-parks-fest-wall-e",
     "name": "Dreamlight Parks Fest: WALL-E",
     "region": "valley",
-    "type": "other",
+    "type": "event",
     "giver": "wall-e",
     "wiki": "https://dreamlightvalleywiki.com/Dreamlight_Parks_Fest:_WALL-E",
-    "verified": false,
-    "notes": "Listed on the wiki as a repeatable quest."
+    "verified": true,
+    "notes": "Listed on the wiki as a repeatable quest. Only during the Dreamlight Parks Fest event. Opens the day after the event quest Dreamlight Parks Fest: Decorate Most!"
   },
   {
     "id": "dreamlight-parks-fest-mickey",
     "name": "Dreamlight Parks Fest: Mickey",
     "region": "valley",
-    "type": "other",
+    "type": "event",
     "giver": "mickey-mouse",
     "wiki": "https://dreamlightvalleywiki.com/Dreamlight_Parks_Fest:_Mickey",
-    "verified": false,
-    "notes": "Listed on the wiki as a repeatable quest."
+    "verified": true,
+    "notes": "Listed on the wiki as a repeatable quest. Only during the Dreamlight Parks Fest event. Opens the day after the event quest Dreamlight Parks Fest: Decorate Most!"
   },
   {
     "id": "dreamlight-parks-fest-moana",
     "name": "Dreamlight Parks Fest: Moana",
     "region": "valley",
-    "type": "other",
+    "type": "event",
     "giver": "moana",
     "wiki": "https://dreamlightvalleywiki.com/Dreamlight_Parks_Fest:_Moana",
-    "verified": false,
-    "notes": "Listed on the wiki as a repeatable quest."
+    "verified": true,
+    "notes": "Listed on the wiki as a repeatable quest. Only during the Dreamlight Parks Fest event. Opens the day after the event quest Dreamlight Parks Fest: Decorate Most!"
   },
   {
     "id": "dreamlight-parks-fest-ursula",
     "name": "Dreamlight Parks Fest: Ursula",
     "region": "valley",
-    "type": "other",
+    "type": "event",
     "giver": "ursula",
     "wiki": "https://dreamlightvalleywiki.com/Dreamlight_Parks_Fest:_Ursula",
-    "verified": false,
-    "notes": "Listed on the wiki as a repeatable quest."
+    "verified": true,
+    "notes": "Listed on the wiki as a repeatable quest. Only during the Dreamlight Parks Fest event. Opens the day after the event quest Dreamlight Parks Fest: Decorate Most!"
   },
   {
     "id": "summer-sizzle-go-fish",

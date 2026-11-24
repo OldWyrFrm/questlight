@@ -407,7 +407,8 @@
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Village_Project:_Timeless_Tools",
-    "verified": false
+    "verified": true,
+    "notes": "The Hourglass must be upgraded first."
   },
   {
     "id": "a-new-directive",
@@ -444,7 +445,8 @@
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Directive:_Plant",
-    "verified": false
+    "verified": true,
+    "notes": "Needs The Plains unlocked."
   },
   {
     "id": "lasers-and-crafts",
@@ -482,7 +484,8 @@
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/When_Things_Go_Boom",
-    "verified": false
+    "verified": true,
+    "notes": "Needs The Lagoon and The Borderlands unlocked."
   },
   {
     "id": "the-ones-that-got-away",
@@ -611,7 +614,8 @@
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Housewarming",
-    "verified": false
+    "verified": true,
+    "notes": "Needs The Promenade unlocked."
   },
   {
     "id": "ive-got-a-dreamlight",
@@ -691,7 +695,8 @@
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Gaston_the..._Hero%3F",
-    "verified": false
+    "verified": true,
+    "notes": "Needs The Oasis and The Grove unlocked."
   },
   {
     "id": "center-of-attention",
@@ -728,8 +733,8 @@
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Glowing_Up",
-    "verified": false,
-    "notes": "Needs further quest progress with Mother Gothel."
+    "verified": true,
+    "notes": "Needs further quest progress with Mother Gothel. Needs The Ruins unlocked."
   },
   {
     "id": "home-is-where-the-art-is",

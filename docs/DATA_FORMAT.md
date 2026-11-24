@@ -107,5 +107,7 @@ be refreshed after a game update without retyping anything:
 
 Keep the export files outside the repo: they contain wiki prose, and only facts belong in
 `data/`. The importer rewrites `characters.json` and every `quests/*.json`, so hand edits to
-those files are lost on the next import. It lists every prerequisite line it could not read
-and marks those quests `"verified": false`; `regions.json` is never touched.
+those files are lost on the next import. Put corrections in `scripts/wiki-overrides.json`
+instead: the importer applies them every time, and each one records why it was made. The
+importer lists every prerequisite line it could not read and marks those quests
+`"verified": false`; `regions.json` is never touched.

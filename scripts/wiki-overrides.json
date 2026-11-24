@@ -1,0 +1,186 @@
+{
+  "//": "Hand-checked corrections applied by scripts/import-wiki.mjs after reading the wiki export. Keys are quest ids. \"requires\" lists are added to what the importer found, \"notes\" is appended and \"setNotes\" replaces the imported note (original wording only), and \"type\", \"region\" and \"verified\" replace the imported value. \"why\" records where the fact came from and is not copied into data/.",
+  "village-project-timeless-tools": {
+    "notes": "The Hourglass must be upgraded first.",
+    "verified": true,
+    "why": "Wiki prerequisites line."
+  },
+  "an-old-fashioned-heist": {
+    "notes": "Also needs main story progress in the Storybook Vale; the wiki does not say how far.",
+    "verified": false,
+    "why": "Wiki says only \"progress in the main story\". One guide (Destructoid) reportedly names The Fallen Fortress but the page could not be read to confirm."
+  },
+  "miracles-take-time": {
+    "notes": "Six pillars must be restored first.",
+    "verified": true,
+    "why": "Wiki prerequisites line."
+  },
+  "the-port-of-many-worlds": {
+    "notes": "Needs at least one of the A Rift in Time, Storybook Vale or Wishblossom Ranch expansions.",
+    "verified": true,
+    "why": "Wiki prerequisites line; \"any one of\" cannot be stored in requires.regions."
+  },
+  "the-broken-memory": {
+    "notes": "WALL-E's Memory has to be found first.",
+    "verified": true,
+    "why": "Wiki prerequisites line."
+  },
+  "a-friendly-exchange": {
+    "notes": "WALL-E's Memory has to be found first.",
+    "verified": true,
+    "why": "Wiki prerequisites line."
+  },
+  "goodness-level-check": {
+    "notes": "Starts from the Vandalized Sign in Peaceful Meadow.",
+    "verified": true,
+    "why": "Wiki hidden requirement line."
+  },
+  "very-sleepy-stitch": {
+    "notes": "Starts from the Coffee Cup beside WALL-E's Garden.",
+    "verified": true,
+    "why": "Wiki hidden requirement line."
+  },
+  "extreme-biome-makeover": {
+    "notes": "Has one more hidden requirement that neither the wiki nor other guides have identified yet.",
+    "verified": false,
+    "why": "Wiki lists \"???\" and flags the page for cleanup. Guides checked Nov 2026 (itemlevel, PC Gamer, Dot Esports search results) do not name it."
+  },
+  "uncanny-romance": {
+    "notes": "Has one more hidden requirement that neither the wiki nor other guides have identified yet.",
+    "verified": false,
+    "why": "Wiki lists \"???\". Guides checked Nov 2026 do not name it."
+  },
+  "all-that-glitters": {
+    "notes": "Has one more hidden requirement that neither the wiki nor other guides have identified yet.",
+    "verified": false,
+    "why": "Wiki lists \"???\". itemlevel.net guide also calls it an unidentified hidden requirement."
+  },
+  "furniture-fluster": {
+    "notes": "Has one more hidden requirement that neither the wiki nor other guides have identified yet.",
+    "verified": false,
+    "why": "Wiki lists \"???\". Guides checked Nov 2026 do not name it."
+  },
+  "cinderellas-custom-creation": {
+    "notes": "Has one more hidden requirement that neither the wiki nor other guides have identified yet.",
+    "verified": false,
+    "why": "Wiki says the hidden requirement has not been confirmed. ScreenHype guide lists it as unknown too."
+  },
+  "a-sticky-situation": {
+    "notes": "Appears seven days after first logging in on update 1.7 or later.",
+    "verified": true,
+    "why": "Wiki prerequisites line."
+  },
+  "you-have-mail": {
+    "notes": "The Valley Visit Station must be placed first.",
+    "verified": true,
+    "why": "Wiki prerequisites line."
+  },
+  "a-taste-for-literature": {
+    "verified": true,
+    "why": "Wiki prerequisites line.",
+    "setNotes": "Needs Chez Remy open, the pillar in the Glade of Trust restored, and Rice, Onion and Milk unlocked. Starts from the Mysterious Cajun Recipe Book."
+  },
+  "back-from-the-bayou": {
+    "verified": true,
+    "why": "Wiki gives the hidden requirement as finishing A Taste for Literature, which is also the quest that unlocks Tiana."
+  },
+  "a-very-merry-unbirthday": {
+    "notes": "Starts with a mail message from Merlin.",
+    "verified": true,
+    "why": "Wiki hidden requirement line."
+  },
+  "the-three-sisters-garden": {
+    "verified": true,
+    "why": "The unread text was only the words around the linked quest, which was imported."
+  },
+  "training-treasures": {
+    "notes": "Starts once the Circular Weights, Fan and Snorkel have been collected.",
+    "verified": true,
+    "why": "Wiki prerequisites line."
+  },
+  "the-haunting-of-beasts-castle": {
+    "notes": "Starts with a letter from the Beast.",
+    "verified": true,
+    "why": "Wiki prerequisites line."
+  },
+  "golden-potato-quest": {
+    "notes": "Starts from the Mysterious Golden Potato.",
+    "verified": true,
+    "why": "Wiki prerequisites line; page places the first clue in Merlin's House, so it sits in the Valley.",
+    "region": "valley"
+  },
+  "blue-potato-quest": {
+    "notes": "Opens once the Golden Potato Quest has been found; that quest does not have to be finished first.",
+    "verified": true,
+    "why": "Wiki prerequisites line and puzzle step 0.",
+    "region": "valley"
+  },
+  "these-legs-were-made-for-walking": {
+    "verified": true,
+    "why": "Wiki prerequisites line.",
+    "setNotes": "Needs Ursula's Transformation Dream Bundle, with Ursula wearing the Vanessa Dream Style. Needs further quest progress with Remy."
+  },
+  "a-show-like-no-other": {
+    "verified": true,
+    "why": "Wiki prerequisites line.",
+    "setNotes": "Needs Ursula's Transformation Dream Bundle, with Ursula wearing the Vanessa Dream Style. Needs further quest progress with Mother Gothel."
+  },
+  "voice-of-reason": {
+    "verified": true,
+    "why": "Wiki prerequisites line.",
+    "setNotes": "Needs Ursula's Transformation Dream Bundle, with Ursula wearing the Vanessa Dream Style."
+  },
+  "the-floating-festival": {
+    "type": "event",
+    "notes": "Only available while a Floating Festival event is running.",
+    "verified": true,
+    "why": "Wiki prerequisites line lists the four Floating Festival events."
+  },
+  "dreamlight-parks-fest-decorate": {
+    "type": "event",
+    "notes": "Only during the Dreamlight Parks Fest event. Opens after Scrooge McDuck's opening event quest, Dreamlight Parks Fest.",
+    "verified": true,
+    "why": "Wiki page text; the opening quest has no page in the export to link to."
+  },
+  "dreamlight-parks-fest-critter-snaps": {
+    "type": "event",
+    "notes": "Only during the Dreamlight Parks Fest event. Opens after the weekly event quest Dreamlight Parks Fest: Decorate More!",
+    "verified": true,
+    "why": "Wiki page text; Decorate More! has no page in the export to link to."
+  },
+  "dreamlight-parks-fest-scrooge-mcduck": {
+    "type": "event",
+    "notes": "Only during the Dreamlight Parks Fest event. Opens the day after the event quest Dreamlight Parks Fest: Decorate Most!",
+    "verified": true,
+    "why": "Wiki page text; Decorate Most! has no page in the export to link to."
+  },
+  "dreamlight-parks-fest-wall-e": {
+    "type": "event",
+    "notes": "Only during the Dreamlight Parks Fest event. Opens the day after the event quest Dreamlight Parks Fest: Decorate Most!",
+    "verified": true,
+    "why": "Wiki page text; Decorate Most! has no page in the export to link to."
+  },
+  "dreamlight-parks-fest-mickey": {
+    "type": "event",
+    "notes": "Only during the Dreamlight Parks Fest event. Opens the day after the event quest Dreamlight Parks Fest: Decorate Most!",
+    "verified": true,
+    "why": "Wiki page text; Decorate Most! has no page in the export to link to."
+  },
+  "dreamlight-parks-fest-moana": {
+    "type": "event",
+    "notes": "Only during the Dreamlight Parks Fest event. Opens the day after the event quest Dreamlight Parks Fest: Decorate Most!",
+    "verified": true,
+    "why": "Wiki page text; Decorate Most! has no page in the export to link to."
+  },
+  "dreamlight-parks-fest-ursula": {
+    "type": "event",
+    "notes": "Only during the Dreamlight Parks Fest event. Opens the day after the event quest Dreamlight Parks Fest: Decorate Most!",
+    "verified": true,
+    "why": "Wiki page text; Decorate Most! has no page in the export to link to."
+  },
+  "something-comes-aknocking": {
+    "notes": "Starts from picking up any Matryoshka Doll.",
+    "verified": true,
+    "why": "Wiki prerequisites line."
+  }
+}

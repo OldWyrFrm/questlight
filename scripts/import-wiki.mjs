@@ -90,7 +90,8 @@ function refs(line) {
 
 const HEADINGS = [
   [/^(un)?lock(ed|ing)?( the)? (char[a-z]*s?|villagers?)$/i, 'character'],
-  [/^characters unlocked$/i, 'character'],
+  [/^characters( unlocked)?$/i, 'character'],
+  [/^not listed$/i, null],
   [/^progr[a-z]*( further)?( with| in)?$/i, 'progress'],
   [/^level up friendships?$/i, 'character'],
   [/^(un)?lock(ed|ing)?( the)?( biomes?| buildings?| realms?| areas?)?$/i, 'place'],
@@ -119,6 +120,8 @@ export function parsePrerequisites(raw, lookup) {
     let lineMode = mode;
     if (rest) {
       const heading = HEADINGS.find(([pattern]) => pattern.test(rest));
+      // A bare bullet under an "Unlock Biomes" heading is an area name the wiki has not linked.
+      if (!heading && mode === 'place' && !found.length && /^\s*[*:]/.test(line)) { add(out.places, rest); continue; }
       if (!heading) { add(out.unknown, rest); lineMode = 'any'; }
       else if (heading[1]) lineMode = heading[1];
       // A heading on its own line also applies to the lines under it.
@@ -149,7 +152,7 @@ export function parsePrerequisites(raw, lookup) {
         add(out.places, ref.label);
       } else if (lineMode === 'item') {
         add(out.items, ref.label);
-      } else if (lineMode === 'any' && !/^(version history|characters$)/i.test(ref.target)) {
+      } else if ((lineMode === 'any' || lineMode === 'character') && !/^(version history|characters$)/i.test(ref.target)) {
         add(out.other, ref.label);
       } else {
         add(out.unknown, ref.target);
@@ -161,8 +164,11 @@ export function parsePrerequisites(raw, lookup) {
 
 const list = (items) => (items.length < 3 ? items.join(' and ') : `${items.slice(0, -1).join(', ')} and ${items.at(-1)}`);
 
-/** Convert parsed pages into { characters, quests: Map<region, quest[]>, report }. */
-export function convert(pages, regions) {
+/**
+ * Convert parsed pages into { characters, quests: Map<region, quest[]>, report }.
+ * `overrides` maps a quest id to hand-checked corrections; see scripts/wiki-overrides.json.
+ */
+export function convert(pages, regions, overrides = {}) {
   const report = [];
   const regionOf = new Map();
   for (const r of regions) for (const name of [r.name, r.id, ...(REGION_ALIASES[r.id] ?? [])]) regionOf.set(key(name), r.id);
@@ -267,6 +273,25 @@ export function convert(pages, regions) {
   });
   const questById = new Map(quests.map(({ q }) => [q.id, q]));
 
+  // Hand-checked corrections, kept in a file so a fresh import does not lose them.
+  for (const [id, fix] of Object.entries(overrides)) {
+    const item = quests.find(({ q }) => q.id === id);
+    if (!item) { report.push(`overrides: no quest with id "${id}"`); continue; }
+    const { q } = item;
+    if (fix.type) q.type = fix.type;
+    if (fix.region) q.region = fix.region;
+    for (const [field, extra] of Object.entries(fix.requires ?? {})) {
+      q.requires ??= {};
+      q.requires[field] = [...new Set([...(q.requires[field] ?? []), ...extra])];
+    }
+    if (fix.setNotes) q.notes = fix.setNotes;
+    if (fix.notes) q.notes = [q.notes, fix.notes].filter(Boolean).join(' ');
+    if (typeof fix.verified === 'boolean') {
+      q.verified = fix.verified;
+      if (fix.verified) item.problems.length = 0;
+    }
+  }
+
   // The quest named on a villager's page as their unlock.
   for (const { page, box } of charPages) {
     const who = ids.character.get(key(page.title));
@@ -355,7 +380,9 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const out = at >= 0 ? args.splice(at, 2)[1] : fileURLToPath(new URL('../data', import.meta.url));
   if (!args.length || !out) { console.error('Usage: node scripts/import-wiki.mjs <export.xml> [more.xml ...] [--out data]'); process.exit(1); }
   const regions = JSON.parse(readFileSync(join(out, 'regions.json'), 'utf8'));
-  const { characters, quests, report } = convert(args.flatMap((file) => parsePages(readFileSync(file, 'utf8'))), regions);
+  const overrides = JSON.parse(readFileSync(new URL('./wiki-overrides.json', import.meta.url), 'utf8'));
+  delete overrides['//'];
+  const { characters, quests, report } = convert(args.flatMap((file) => parsePages(readFileSync(file, 'utf8'))), regions, overrides);
   const write = (rel, value) => writeFileSync(join(out, rel), `${JSON.stringify(value, null, 2)}\n`);
   mkdirSync(join(out, 'quests'), { recursive: true });
   write('characters.json', characters);
