@@ -1,0 +1,94 @@
+[
+  {
+    "id": "first-light",
+    "name": "First Light",
+    "region": "sample-glade",
+    "type": "story",
+    "notes": "Fictional sample quest, used only to test the app.",
+    "unlocks": {
+      "characters": [
+        "lantern-keeper"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/",
+    "verified": false
+  },
+  {
+    "id": "mend-the-bridge",
+    "name": "Mend The Bridge",
+    "region": "sample-glade",
+    "type": "story",
+    "giver": "lantern-keeper",
+    "requires": {
+      "quests": [
+        "first-light"
+      ],
+      "characters": [
+        "lantern-keeper"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/",
+    "verified": false
+  },
+  {
+    "id": "a-door-of-ivy",
+    "name": "A Door Of Ivy",
+    "region": "sample-glade",
+    "type": "realm",
+    "requires": {
+      "quests": [
+        "mend-the-bridge"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "moss-gardener"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/",
+    "verified": false
+  },
+  {
+    "id": "seeds-for-supper",
+    "name": "Seeds For Supper",
+    "region": "sample-glade",
+    "type": "friendship",
+    "giver": "moss-gardener",
+    "level": 2,
+    "requires": {
+      "characters": [
+        "moss-gardener"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/",
+    "verified": false
+  },
+  {
+    "id": "the-hidden-bell",
+    "name": "The Hidden Bell",
+    "region": "sample-glade",
+    "type": "hidden",
+    "requires": {
+      "quests": [
+        "seeds-for-supper"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/",
+    "verified": false
+  },
+  {
+    "id": "map-of-the-shore",
+    "name": "Map Of The Shore",
+    "region": "sample-glade",
+    "type": "story",
+    "giver": "lantern-keeper",
+    "requires": {
+      "quests": [
+        "mend-the-bridge",
+        "the-hidden-bell"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/",
+    "verified": false
+  }
+]

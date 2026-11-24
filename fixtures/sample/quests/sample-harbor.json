@@ -1,0 +1,52 @@
+[
+  {
+    "id": "cast-off",
+    "name": "Cast Off",
+    "region": "sample-harbor",
+    "type": "story",
+    "requires": {
+      "quests": [
+        "map-of-the-shore"
+      ],
+      "regions": [
+        "sample-harbor"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "tide-captain"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/",
+    "verified": false
+  },
+  {
+    "id": "salt-and-starlight",
+    "name": "Salt And Starlight",
+    "region": "sample-harbor",
+    "type": "friendship",
+    "giver": "tide-captain",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "tide-captain"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/",
+    "verified": false
+  },
+  {
+    "id": "lanterns-at-sea",
+    "name": "Lanterns At Sea",
+    "region": "sample-harbor",
+    "type": "event",
+    "requires": {
+      "characters": [
+        "tide-captain",
+        "lantern-keeper"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/",
+    "verified": false
+  }
+]

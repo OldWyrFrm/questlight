@@ -1,0 +1,4 @@
+[
+  { "id": "sample-glade", "name": "Sample Glade", "kind": "base", "color": "#b48cff" },
+  { "id": "sample-harbor", "name": "Sample Harbor", "kind": "expansion", "color": "#4fd1d9" }
+]

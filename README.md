@@ -35,7 +35,12 @@ Requires [Node.js](https://nodejs.org/) 20 or newer. There are no npm dependenci
 
 ```sh
 npm run validate   # check all quest data for errors
+npm test           # run the unit tests
+npm run build      # build dist/index.html and dist/questlight.html
+npm run sample     # same, but with made-up sample quests for trying the app
 ```
+
+Open `dist/index.html` in a browser after building. No server is needed.
 
 ## Contributing
 
