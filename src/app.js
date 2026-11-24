@@ -38,6 +38,16 @@ const plural = (n, one, many = `${one}s`) => `${n} ${n === 1 ? one : many}`;
 const label = (n) => (n.kind === 'character' ? 'Villager' : `${TYPES[n.type] ?? 'Other'} quest`);
 const giverOf = (n) => graph.nodes.get(`character:${n.giver}`);
 const statusOf = (key) => game.status.get(key);
+// Each villager's own quests, lowest friendship level first.
+const givenBy = new Map();
+for (const q of data.quests) if (giverOf(q)) givenBy.set(q.giver, [...(givenBy.get(q.giver) ?? []), q]);
+for (const list of givenBy.values()) list.sort((a, b) => (a.level ?? 0) - (b.level ?? 0));
+/** A villager's quests the player can see, and how many are done. */
+function questsOf(n) {
+  const keys = (givenBy.get(n.id) ?? []).filter((q) => !unownedBy(q, game.unowned)).map((q) => `quest:${q.id}`);
+  const done = keys.filter((k) => game.done.has(k)).length;
+  return { keys, done, text: keys.length ? `${done} of ${plural(keys.length, 'quest')} done` : null };
+}
 // With spoiler mode on, anything the player cannot reach yet keeps its name to itself.
 const masked = (key) => game.spoilers && statusOf(key) === 'locked' && !game.revealed.has(key);
 const nameOf = (n) => (masked(n.key) ? 'Not reached yet' : n.name);
@@ -55,7 +65,7 @@ function progressWord(n) {
 }
 const meta = (n) => {
   if (masked(n.key)) return label(n);
-  const facts = n.kind === 'character' ? [label(n), n.film] : [label(n), giverOf(n)?.name, n.level && `Friendship level ${n.level}`];
+  const facts = n.kind === 'character' ? [label(n), n.film, questsOf(n).text] : [label(n), giverOf(n)?.name, n.level && `Friendship level ${n.level}`];
   return [...facts, progressWord(n)].filter(Boolean).join(' · ');
 };
 
@@ -251,14 +261,17 @@ function intro() {
 
 function steps(n) {
   const path = questPath(graph, n.key).filter((k) => k !== n.key);
-  const next = [...graph.after.get(n.key)].filter((k) => !unownedBy(graph.nodes.get(k), game.unowned));
+  const own = n.kind === 'character' ? questsOf(n) : { keys: [] };
+  const next = [...graph.after.get(n.key)].filter((k) => !own.keys.includes(k) && !unownedBy(graph.nodes.get(k), game.unowned));
   const later = reach(n.key, graph.after).size - graph.after.get(n.key).size;
   const nothingFirst = n.kind === 'character' ? 'No unlock quest is recorded for this villager yet.' : 'Nothing is needed first. You can start here.';
   return el('div', { class: 'block' },
     el('h3', { text: n.kind === 'character' ? `How to unlock ${n.name}` : 'Do these first' }),
     path.length ? items('ol', path, 'first') : el('p', { class: 'empty', text: nothingFirst }),
-    el('h3', { text: 'Opens up next' }),
-    next.length ? items('ul', next, 'next') : el('p', { class: 'empty', text: 'Nothing is recorded after this yet.' }),
+    own.keys.length > 0 && el('h3', { text: `${n.name}'s quests (${own.done} of ${own.keys.length} done)` }),
+    own.keys.length > 0 && items('ul', own.keys, 'own'),
+    el('h3', { text: own.keys.length ? 'Also needed for' : 'Opens up next' }),
+    next.length ? items('ul', next, 'next') : el('p', { class: 'empty', text: own.keys.length ? 'No other quests are recorded as needing this villager.' : 'Nothing is recorded after this yet.' }),
     later > 0 && el('p', { class: 'empty', text: `${later} more further along. Open the map to follow the whole chain.` }));
 }
 
@@ -389,6 +402,7 @@ function renderFocus() {
         n.film && el('span', { class: 'chip', text: n.film }),
         n.level && el('span', { class: 'chip', text: `Friendship level ${n.level}` }),
         word && el('span', { class: `chip ${statusOf(n.key)}`, text: word }),
+        n.kind === 'character' && questsOf(n).text && el('span', { class: 'chip', text: questsOf(n).text }),
         unownedBy(n, game.unowned) && el('span', { class: 'chip warn', text: 'In an expansion you do not own' }),
         n.verified === false && el('span', { class: 'chip warn', text: 'Not yet verified' }))),
     owned.length > 0 && el('p', { text: `Needs ${owned.join(' and ')}.` }),
