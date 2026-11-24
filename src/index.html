@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--CSP-->
+<title>Questlight</title>
+<meta name="description" content="Unofficial, fan-made quest and villager map for Dreamlight Valley. See what each quest needs and what it opens.">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23120b2e'/%3E%3Cpath d='M16 4l3 9 9 3-9 3-3 9-3-9-9-3 9-3z' fill='%23ffd97a'/%3E%3C/svg%3E">
+<!--STYLE-->
+</head>
+<body>
+<a class="skip" href="#browse">Skip to quests</a>
+<div class="sky" aria-hidden="true"></div>
+
+<header class="top">
+  <svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2l3.4 10.6L30 16l-10.6 3.4L16 30l-3.4-10.6L2 16l10.6-3.4z"/></svg>
+  <div>
+    <h1>Questlight</h1>
+    <p class="tag">A fan-made quest and villager map for Dreamlight Valley</p>
+  </div>
+</header>
+
+<p id="sample" class="notice" hidden>Sample data. These quests and villagers are made up to test the app; they are not from the game.</p>
+
+<main class="layout">
+  <section id="browse" aria-label="Browse quests and villagers">
+    <form id="tools" class="tools" role="search">
+      <label class="field grow" for="search">
+        <span>Search</span>
+        <input id="search" type="search" autocomplete="off" placeholder="Quest or villager name">
+      </label>
+      <label class="field" for="type">
+        <span>Show</span>
+        <select id="type">
+          <option value="">Everything</option>
+          <option value="character">Villagers</option>
+        </select>
+      </label>
+      <label class="field" for="region">
+        <span>Region</span>
+        <select id="region"><option value="">All regions</option></select>
+      </label>
+    </form>
+    <p id="count" class="count" aria-live="polite"></p>
+    <div id="lanes"></div>
+  </section>
+  <section id="focus" aria-label="Selected quest or villager"></section>
+</main>
+
+<footer class="foot">
+  <p><strong>Fan-made project.</strong> Questlight is not affiliated with, endorsed by, or sponsored by Disney or Gameloft. Game names are trademarks of their owners. No official artwork is used.</p>
+  <p>Quest facts are adapted from the community-run <a href="https://dreamlightvalleywiki.com" rel="noopener noreferrer">Dreamlight Valley Wiki</a> and shared under CC BY-NC-SA 4.0. This page makes no network requests and keeps nothing about you.</p>
+</footer>
+
+<!--DATA-->
+<!--SCRIPT-->
+</body>
+</html>
