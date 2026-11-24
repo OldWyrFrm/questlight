@@ -24,19 +24,23 @@ const REGION_ALIASES = {
 
 const decode = (s) => s.replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#0?39;/g, "'").replace(/&amp;/g, '&');
 /** Comparable form of a page title: no invisible characters, underscores or case. */
-const key = (s) => s.replace(/[​-‏‪-‮﻿]/g, '').replace(/_/g, ' ').replace(/\s+/g, ' ').trim().toLowerCase();
-const clean = (s) => s.replace(/[​-‏‪-‮﻿]/g, '').replace(/\s+/g, ' ').trim();
-/** Remove wiki comments and footnotes. Repeats until stable, so removing one cannot expose another. */
+const key = (s) => s.replace(/[\u200b-\u200f\u202a-\u202e\ufeff]/g, '').replace(/_/g, ' ').replace(/\s+/g, ' ').trim().toLowerCase();
+const clean = (s) => s.replace(/[\u200b-\u200f\u202a-\u202e\ufeff]/g, '').replace(/\s+/g, ' ').trim();
+/**
+ * Remove wiki comments and footnotes. Comments are removed until none are left, so taking one
+ * out cannot expose another, and an unclosed comment runs to the end as it does on the wiki.
+ */
 const strip = (s) => {
-  let text = s ?? '', before;
+  let text = (s ?? '').replace(/<ref[^>]*\/>/gi, '').replace(/<ref[\s\S]*?<\/ref>/gi, '');
+  let before;
   do {
     before = text;
-    text = text.replace(/<!--[\s\S]*?-->/g, '').replace(/<ref[^>]*\/>/gi, '').replace(/<ref[\s\S]*?<\/ref>/gi, '');
+    text = text.replace(/<!--[\s\S]*?(?:-->|$)/g, '');
   } while (text !== before);
   return text;
 };
 
-export const slug = (name) => name.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase()
+export const slug = (name) => name.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
   .replace(/&/g, ' and ').replace(/['’.]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
 
 export const wikiUrl = (title) => WIKI + encodeURIComponent(title.replace(/ /g, '_')).replace(/%3A/g, ':').replace(/%2C/g, ',');
