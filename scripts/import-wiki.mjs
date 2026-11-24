@@ -26,7 +26,15 @@ const decode = (s) => s.replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&qu
 /** Comparable form of a page title: no invisible characters, underscores or case. */
 const key = (s) => s.replace(/[​-‏‪-‮﻿]/g, '').replace(/_/g, ' ').replace(/\s+/g, ' ').trim().toLowerCase();
 const clean = (s) => s.replace(/[​-‏‪-‮﻿]/g, '').replace(/\s+/g, ' ').trim();
-const strip = (s) => (s ?? '').replace(/<!--[\s\S]*?-->/g, '').replace(/<ref[^>]*\/>/gi, '').replace(/<ref[\s\S]*?<\/ref>/gi, '');
+/** Remove wiki comments and footnotes. Repeats until stable, so removing one cannot expose another. */
+const strip = (s) => {
+  let text = s ?? '', before;
+  do {
+    before = text;
+    text = text.replace(/<!--[\s\S]*?-->/g, '').replace(/<ref[^>]*\/>/gi, '').replace(/<ref[\s\S]*?<\/ref>/gi, '');
+  } while (text !== before);
+  return text;
+};
 
 export const slug = (name) => name.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase()
   .replace(/&/g, ' and ').replace(/['’.]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
