@@ -81,3 +81,50 @@ test('focus map flows left to right, stays limited, and never overlaps', () => {
     assert.equal(wikiUrl('Forgotten Relics: The Storybook'), 'https://dreamlightvalleywiki.com/Forgotten_Relics:_The_Storybook');
   });
 }
+
+// Progress: what is done, what is available now, and reading saved files safely.
+{
+  const { parseSave, serialize, statuses } = await import('../src/progress.js');
+  const regions = [{ id: 'home', kind: 'base' }, { id: 'isle', kind: 'expansion' }];
+  const graph = makeGraph({
+    characters: [{ id: 'starter', region: 'home' }, { id: 'fern', region: 'home' }],
+    quests: [
+      { id: 'one', region: 'home', unlocks: { characters: ['fern'] } },
+      { id: 'two', region: 'home', requires: { quests: ['one'], characters: ['fern'] } },
+      { id: 'far', region: 'isle', requires: { characters: ['starter'] } },
+      { id: 'needs-isle', region: 'home', requires: { regions: ['isle'] } },
+    ],
+  });
+  const at = (done, unowned = []) => Object.fromEntries(statuses(graph, new Set(done), new Set(unowned)));
+
+  test('progress works out what is done, available and locked', () => {
+    assert.deepEqual(at([]), {
+      'quest:one': 'ready', 'quest:two': 'locked', 'quest:far': 'ready', 'quest:needs-isle': 'ready',
+      'character:starter': 'done', 'character:fern': 'ready',
+    });
+    const next = at(['quest:one']);
+    assert.equal(next['quest:one'], 'done');
+    assert.equal(next['character:fern'], 'done');
+    assert.equal(next['quest:two'], 'ready');
+  });
+
+  test('quests in or needing an unowned expansion are not available', () => {
+    const s = at([], ['isle']);
+    assert.equal(s['quest:far'], 'locked');
+    assert.equal(s['quest:needs-isle'], 'locked');
+  });
+
+  test('a save file round-trips and ignores what it does not recognise', () => {
+    const saved = JSON.stringify(serialize({ done: new Set(['quest:one']), unowned: new Set(['isle']), spoilers: true }));
+    const back = parseSave(saved, graph, regions);
+    assert.deepEqual([[...back.done], [...back.unowned], back.spoilers, back.skipped], [['quest:one'], ['isle'], true, 0]);
+    const odd = parseSave(JSON.stringify({ app: 'questlight', version: 1, done: ['one', 'gone', 7, 'fern'], unowned: ['home', 'nowhere'], spoilers: 'yes' }), graph, regions);
+    assert.deepEqual([[...odd.done], [...odd.unowned], odd.spoilers, odd.skipped], [['quest:one'], [], false, 2]);
+  });
+
+  test('files that are not Questlight saves are refused in plain language', () => {
+    for (const text of ['not json', '[]', '{"app":"other"}', '{"app":"questlight","version":99}', 5]) {
+      assert.throws(() => parseSave(text, graph, regions), /Questlight save|newer version/);
+    }
+  });
+}

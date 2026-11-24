@@ -1,4 +1,5 @@
 import { focusColumns, layout, makeGraph, questPath, reach } from './graph.js';
+import { parseSave, serialize, statuses, unownedBy } from './progress.js';
 
 const data = JSON.parse(document.getElementById('data').textContent);
 const graph = makeGraph(data);
@@ -7,9 +8,12 @@ const TYPES = { story: 'Story', friendship: 'Friendship', realm: 'Realm', event:
 const GLYPHS = { story: '✦', friendship: '♥︎', realm: '◈', event: '✺', hidden: '◐', other: '•' };
 const KINDS = { base: 'Base game', expansion: 'Expansion', 'adventure-pack': 'Adventure pack' };
 const SVG_NS = 'http://www.w3.org/2000/svg';
+const STORE = 'questlight:progress';
 const NEAR = 2; // steps shown each way before "show the whole chain"
 const wide = window.matchMedia('(min-width: 60rem)');
-const state = { focus: null, query: '', type: '', region: '', tab: null, full: false, open: new Set() };
+const state = { focus: null, query: '', type: '', region: '', status: '', tab: null, full: false, open: new Set() };
+// What the player has told us. `revealed` is spoilers they chose to see; it is not saved.
+const game = { done: new Set(), unowned: new Set(), spoilers: false, revealed: new Set(), status: new Map(), stored: true };
 const $ = (id) => document.getElementById(id);
 
 // Everything is built with DOM calls, never innerHTML, so data can't inject markup.
@@ -33,12 +37,37 @@ function tint(node, regionId) {
 const plural = (n, one, many = `${one}s`) => `${n} ${n === 1 ? one : many}`;
 const label = (n) => (n.kind === 'character' ? 'Villager' : `${TYPES[n.type] ?? 'Other'} quest`);
 const giverOf = (n) => graph.nodes.get(`character:${n.giver}`);
-const monogram = (n) => (n.kind === 'character'
-  ? n.name.split(/\s+/).slice(0, 2).map((w) => w[0]).join('').toUpperCase()
-  : GLYPHS[n.type] ?? GLYPHS.other);
-const meta = (n) => (n.kind === 'character'
-  ? [label(n), n.film].filter(Boolean).join(' · ')
-  : [label(n), giverOf(n)?.name, n.level && `Friendship level ${n.level}`].filter(Boolean).join(' · '));
+const statusOf = (key) => game.status.get(key);
+// Each villager's own quests, lowest friendship level first.
+const givenBy = new Map();
+for (const q of data.quests) if (giverOf(q)) givenBy.set(q.giver, [...(givenBy.get(q.giver) ?? []), q]);
+for (const list of givenBy.values()) list.sort((a, b) => (a.level ?? 0) - (b.level ?? 0));
+/** A villager's quests the player can see, and how many are done. */
+function questsOf(n) {
+  const keys = (givenBy.get(n.id) ?? []).filter((q) => !unownedBy(q, game.unowned)).map((q) => `quest:${q.id}`);
+  const done = keys.filter((k) => game.done.has(k)).length;
+  return { keys, done, text: keys.length ? `${done} of ${plural(keys.length, 'quest')} done` : null };
+}
+// With spoiler mode on, anything the player cannot reach yet keeps its name to itself.
+const masked = (key) => game.spoilers && statusOf(key) === 'locked' && !game.revealed.has(key);
+const nameOf = (n) => (masked(n.key) ? 'Not reached yet' : n.name);
+const monogram = (n) => {
+  if (masked(n.key)) return '?';
+  return n.kind === 'character'
+    ? n.name.split(/\s+/).slice(0, 2).map((w) => w[0]).join('').toUpperCase()
+    : GLYPHS[n.type] ?? GLYPHS.other;
+};
+function progressWord(n) {
+  const status = statusOf(n.key);
+  if (n.kind === 'quest') return { done: 'Done', ready: 'Available now' }[status];
+  if (!graph.before.get(n.key).size) return null; // starting villager, or no unlock quest recorded
+  return { done: 'Unlocked', ready: 'Unlock quest available' }[status];
+}
+const meta = (n) => {
+  if (masked(n.key)) return label(n);
+  const facts = n.kind === 'character' ? [label(n), n.film, questsOf(n).text] : [label(n), giverOf(n)?.name, n.level && `Friendship level ${n.level}`];
+  return [...facts, progressWord(n)].filter(Boolean).join(' · ');
+};
 
 function wikiLink(value) {
   try {
@@ -53,48 +82,167 @@ function select(key) {
   location.hash = key ? key.replace(':', '-') : '';
 }
 
-function item(key) {
+// --- Progress: kept only in this browser, with a file for backup or moving devices. ---
+
+function load() {
+  try {
+    const text = localStorage.getItem(STORE);
+    if (text) Object.assign(game, parseSave(text, graph, data.regions));
+  } catch {
+    // Storage is blocked or the saved text is damaged: start fresh and carry on.
+  }
+}
+
+function save() {
+  try {
+    localStorage.setItem(STORE, JSON.stringify(serialize(game)));
+    game.stored = true;
+  } catch {
+    game.stored = false;
+  }
+}
+
+/** Apply a change to progress, save it, redraw, and put keyboard focus back where it was. */
+function update(change, refocus) {
+  change();
+  game.status = statuses(graph, game.done, game.unowned);
+  save();
+  renderGame();
+  renderBrowse();
+  renderFocus();
+  if (refocus) document.querySelector(refocus)?.focus();
+}
+const say = (message) => { $('saved').textContent = message; };
+
+/** Quests still to do before this entry, in order. For a villager, the shortest way to unlock them. */
+const pathTo = (key) => questPath(graph, key).filter((k) => k !== key && graph.nodes.get(k).kind === 'quest');
+const attr = (value) => `"${value.replace(/["\\]/g, '\\$&')}"`;
+
+function tick(n, where) {
+  const box = el('input', {
+    type: 'checkbox',
+    'data-tick': `${where}:${n.key}`,
+    'aria-label': masked(n.key) ? 'Mark this quest as done' : `Mark ${n.name} as done`,
+    onchange: (e) => update(() => game.done[e.target.checked ? 'add' : 'delete'](n.key), `[data-tick=${attr(`${where}:${n.key}`)}]`),
+  });
+  box.checked = game.done.has(n.key);
+  return el('label', { class: 'tick' }, box);
+}
+
+/** One quest or villager row: a button that opens it, and for quests a box to tick it off. */
+function item(key, where) {
   const n = graph.nodes.get(key);
-  const button = el('button', { class: `item ${n.kind}`, type: 'button', onclick: () => select(key) },
+  const classes = ['item', n.kind, statusOf(key), masked(key) && 'spoiler'].filter(Boolean).join(' ');
+  const button = el('button', { class: classes, type: 'button', onclick: () => select(key) },
     el('span', { class: 'badge', 'aria-hidden': 'true', text: monogram(n) }),
     el('span', { class: 'item-text' },
-      el('span', { class: 'item-name', text: n.name }),
+      el('span', { class: 'item-name', text: nameOf(n) }),
       el('span', { class: 'item-meta', text: meta(n) })));
   if (key === state.focus) button.setAttribute('aria-current', 'true');
-  return tint(button, n.region);
+  return tint(el('div', { class: 'row' }, button, n.kind === 'quest' && tick(n, where)), n.region);
 }
-const items = (tag, keys) => el(tag, { class: 'items' }, ...keys.map((k) => el('li', {}, item(k))));
+const items = (tag, keys, where) => el(tag, { class: 'items' }, ...keys.map((k) => el('li', {}, item(k, where))));
 
 function matches(n) {
+  if (unownedBy(n, game.unowned)) return false;
   if (state.region && n.region !== state.region) return false;
   if (state.type && (state.type === 'character' ? n.kind !== 'character' : n.type !== state.type)) return false;
+  const status = statusOf(n.key);
+  if (state.status && (state.status === 'todo' ? status === 'done' : status !== state.status)) return false;
   if (!state.query) return true;
+  // Searching must not reveal the names spoiler mode is hiding.
+  if (masked(n.key)) return false;
   return [n.name, n.film, giverOf(n)?.name].some((t) => t?.toLowerCase().includes(state.query));
 }
 
+/** A lane's entries under short headings, so a region with hundreds of quests stays readable. */
+function grouped(nodes) {
+  const byGiver = (a, b) => (giverOf(a)?.name ?? '').localeCompare(giverOf(b)?.name ?? '') || (a.level ?? 99) - (b.level ?? 99);
+  const groups = [['Villagers', nodes.filter((n) => n.kind === 'character')]];
+  for (const [type, name] of Object.entries(TYPES)) {
+    const quests = nodes.filter((n) => n.kind === 'quest' && (TYPES[n.type] ? n.type : 'other') === type);
+    groups.push([`${name} quests`, type === 'friendship' ? quests.sort(byGiver) : quests]);
+  }
+  return groups.filter(([, list]) => list.length).flatMap(([title, list]) => [
+    el('h3', { class: 'group-title', text: `${title} (${list.length})` }),
+    items('ul', list.map((n) => n.key), 'browse'),
+  ]);
+}
+
 function renderBrowse() {
-  const filtering = Boolean(state.query || state.type || state.region);
+  const filtering = Boolean(state.query || state.type || state.region || state.status);
   const lanes = [];
   let total = 0;
   for (const region of data.regions) {
-    const keys = [...graph.nodes.values()].filter((n) => n.region === region.id && matches(n)).map((n) => n.key);
-    if (filtering && !keys.length) continue;
-    total += keys.length;
+    if (game.unowned.has(region.id)) continue;
+    const nodes = [...graph.nodes.values()].filter((n) => n.region === region.id && matches(n));
+    if (filtering && !nodes.length) continue;
+    total += nodes.length;
+    const quests = nodes.filter((n) => n.kind === 'quest');
+    const finished = quests.filter((n) => statusOf(n.key) === 'done').length;
+    const count = !nodes.length ? KINDS[region.kind] ?? ''
+      : finished && !filtering ? `${finished} of ${plural(quests.length, 'quest')} done`
+        : plural(nodes.length, 'entry', 'entries');
+    const body = el('div', { class: 'lane-body' });
     const lane = tint(el('details', { class: 'lane' },
       el('summary', {},
         el('span', { class: 'lane-name', text: region.name }),
-        el('span', { class: 'lane-count', text: keys.length ? plural(keys.length, 'entry', 'entries') : KINDS[region.kind] ?? '' })),
-      el('div', { class: 'lane-body' },
-        keys.length ? items('ul', keys) : el('p', { class: 'empty', text: 'Nothing recorded here yet.' }))), region.id);
+        el('span', { class: 'lane-count', text: count })),
+      body), region.id);
+    // Rows are only built for lanes that are open, which keeps typing in the search box quick.
+    const fill = () => {
+      if (!lane.open || body.childNodes.length) return;
+      body.append(...(nodes.length ? grouped(nodes) : [el('p', { class: 'empty', text: 'Nothing recorded here yet.' })]));
+    };
     lane.open = filtering || state.open.has(region.id);
+    fill();
     lane.addEventListener('toggle', () => {
-      if (!state.query && !state.type && !state.region) state.open[lane.open ? 'add' : 'delete'](region.id);
+      fill();
+      if (!state.query && !state.type && !state.region && !state.status) state.open[lane.open ? 'add' : 'delete'](region.id);
     });
     lanes.push(lane);
   }
   if (filtering && !total) lanes.push(el('p', { class: 'empty', text: 'Nothing matches. Try a shorter search or clear the filters.' }));
   $('lanes').replaceChildren(...lanes);
   $('count').textContent = filtering ? plural(total, 'match', 'matches') : '';
+}
+
+/** The "Your game" panel: totals, and the switches that mirror what is saved. */
+function renderGame() {
+  const quests = data.quests.filter((q) => !unownedBy(q, game.unowned));
+  const finished = quests.filter((q) => game.done.has(`quest:${q.id}`)).length;
+  const ready = quests.filter((q) => statusOf(`quest:${q.id}`) === 'ready').length;
+  $('tally').textContent = quests.length ? `${finished} of ${quests.length} done` : '';
+  $('summary').textContent = quests.length
+    ? `${plural(finished, 'quest')} done and ${ready} available now, out of ${quests.length}.`
+    : 'There are no quests to track yet.';
+  $('spoilers').checked = game.spoilers;
+  for (const box of $('owned').querySelectorAll('input')) box.checked = !game.unowned.has(box.value);
+  if (!game.stored) say('This browser is not letting the page save, so progress will be lost when you close it. Save it to a file to keep it.');
+}
+
+function exportFile() {
+  const blob = new Blob([`${JSON.stringify(serialize(game), null, 2)}\n`], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const link = el('a', { href: url, download: 'questlight-progress.json' });
+  document.body.append(link);
+  link.click();
+  link.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+  say('Progress saved to a file named questlight-progress.json.');
+}
+
+async function importFile(file) {
+  if (!file) return;
+  try {
+    const next = parseSave(await file.text(), graph, data.regions);
+    if (game.done.size && !window.confirm(`Replace your current progress (${plural(game.done.size, 'quest')} done) with the file's (${next.done.size} done)?`)) return;
+    const { skipped, ...loaded } = next;
+    update(() => Object.assign(game, loaded, { revealed: new Set() }));
+    say(`Loaded ${plural(loaded.done.size, 'finished quest')}.${skipped ? ` ${plural(skipped, 'entry', 'entries')} in the file did not match a known quest and ${skipped === 1 ? 'was' : 'were'} skipped.` : ''}`);
+  } catch (error) {
+    say(error.message || 'That file could not be read.');
+  }
 }
 
 function intro() {
@@ -107,27 +255,31 @@ function intro() {
   return el('div', { class: 'card' },
     el('h2', { text: 'Pick a quest or villager' }),
     el('p', { class: 'lede', text: 'You will see only what leads to it and what it opens up. Everything else stays out of the way.' }),
-    el('p', { class: 'lede', text: `${plural(quests, 'quest')} and ${plural(villagers, 'villager')} across ${plural(data.regions.length, 'region')}.` }));
+    el('p', { class: 'lede', text: `${plural(quests, 'quest')} and ${plural(villagers, 'villager')} across ${plural(data.regions.length, 'region')}.` }),
+    el('p', { class: 'lede', text: 'Tick quests off as you finish them and Questlight will show what is available now. Your progress stays in this browser.' }));
 }
 
 function steps(n) {
   const path = questPath(graph, n.key).filter((k) => k !== n.key);
-  const next = [...graph.after.get(n.key)];
-  const later = reach(n.key, graph.after).size - next.length;
+  const own = n.kind === 'character' ? questsOf(n) : { keys: [] };
+  const next = [...graph.after.get(n.key)].filter((k) => !own.keys.includes(k) && !unownedBy(graph.nodes.get(k), game.unowned));
+  const later = reach(n.key, graph.after).size - graph.after.get(n.key).size;
   const nothingFirst = n.kind === 'character' ? 'No unlock quest is recorded for this villager yet.' : 'Nothing is needed first. You can start here.';
   return el('div', { class: 'block' },
     el('h3', { text: n.kind === 'character' ? `How to unlock ${n.name}` : 'Do these first' }),
-    path.length ? items('ol', path) : el('p', { class: 'empty', text: nothingFirst }),
-    el('h3', { text: 'Opens up next' }),
-    next.length ? items('ul', next) : el('p', { class: 'empty', text: 'Nothing is recorded after this yet.' }),
+    path.length ? items('ol', path, 'first') : el('p', { class: 'empty', text: nothingFirst }),
+    own.keys.length > 0 && el('h3', { text: `${n.name}'s quests (${own.done} of ${own.keys.length} done)` }),
+    own.keys.length > 0 && items('ul', own.keys, 'own'),
+    el('h3', { text: own.keys.length ? 'Also needed for' : 'Opens up next' }),
+    next.length ? items('ul', next, 'next') : el('p', { class: 'empty', text: own.keys.length ? 'No other quests are recorded as needing this villager.' : 'Nothing is recorded after this yet.' }),
     later > 0 && el('p', { class: 'empty', text: `${later} more further along. Open the map to follow the whole chain.` }));
 }
 
 function map(n) {
   const W = 180, H = 46, GAP_X = 64, GAP_Y = 14, PAD = 16, HEAD = 30;
-  const columns = focusColumns(graph, n.key, state.full ? Infinity : NEAR);
-  const total = reach(n.key, graph.before).size + reach(n.key, graph.after).size + 1;
-  const nearCount = state.full ? focusColumns(graph, n.key, NEAR).size : columns.size;
+  const shown = (columns) => new Map([...columns].filter(([k]) => k === n.key || !unownedBy(graph.nodes.get(k), game.unowned)));
+  const columns = shown(focusColumns(graph, n.key, state.full ? Infinity : NEAR));
+  const total = shown(new Map([...reach(n.key, graph.before), ...reach(n.key, graph.after)])).size + 1;
   const { lanes, position } = layout(graph, columns, data.regions.map((r) => r.id));
   const cols = [...columns.values()];
   const first = Math.min(...cols), span = Math.max(...cols) - first;
@@ -160,51 +312,88 @@ function map(n) {
         d: `M${x1} ${y1} C${x1 + GAP_X / 2} ${y1} ${b.x - GAP_X / 2} ${y2} ${b.x} ${y2}`,
       }));
     }
-    const name = node.name.length > 23 ? `${node.name.slice(0, 22)}…` : node.name;
+    const full = nameOf(node), word = progressWord(node);
+    const name = full.length > 23 ? `${full.slice(0, 22)}…` : full;
+    const status = masked(key) ? 'spoiler' : statusOf(key);
     const g = svg('g', {
-      class: `node ${node.kind}${key === n.key ? ' focus' : ''}`,
+      class: `node ${node.kind} ${status}${key === n.key ? ' focus' : ''}`,
       transform: `translate(${a.x} ${a.y})`,
       tabindex: 0,
       role: 'button',
-      'aria-label': `${node.name}, ${label(node)}${key === n.key ? ', selected' : ''}`,
+      'aria-label': [full, label(node), !masked(key) && word, key === n.key && 'selected'].filter(Boolean).join(', '),
       onclick: () => select(key),
       onkeydown: (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); select(key); } },
     },
-      svg('title', { text: node.name }),
+      svg('title', { text: full }),
       svg('rect', { width: W, height: H, rx: node.kind === 'character' ? H / 2 : 9 }),
       svg('text', { class: 'node-name', x: 14, y: 20, text: name }),
-      svg('text', { class: 'node-meta', x: 14, y: 36, text: label(node) }));
+      svg('text', { class: 'node-meta', x: 14, y: 36, text: !masked(key) && word ? `${statusOf(key) === 'done' ? '✓ ' : ''}${word}` : label(node) }));
     nodes.push(tint(g, node.region));
   }
 
-  const scroller = el('div', { class: 'map-scroll', tabindex: 0, role: 'group', 'aria-label': `Map of quests around ${n.name}. Scroll sideways to see more.` },
+  const scroller = el('div', { class: 'map-scroll', tabindex: 0, role: 'group', 'aria-label': `Map of quests around ${nameOf(n)}. Scroll sideways to see more.` },
     svg('svg', { width, height: y + PAD - 10, viewBox: `0 0 ${width} ${y + PAD - 10}` }, ...bands, ...edges, ...nodes));
   requestAnimationFrame(() => { scroller.scrollLeft = at(n.key).x + W / 2 - scroller.clientWidth / 2; });
 
   return el('div', { class: 'block' },
     el('p', { class: 'empty', text: 'Left is what leads here, right is what it opens. Select any box to move there, and scroll sideways for more.' }),
     scroller,
-    total > nearCount && el('button', {
+    (state.full || total > columns.size) && el('button', {
       class: 'more',
       type: 'button',
+      'data-act': 'chain',
       text: state.full ? 'Show only nearby steps' : `Show the whole chain (${total - columns.size} more)`,
-      onclick: () => { state.full = !state.full; renderFocus(); },
+      onclick: () => { state.full = !state.full; renderFocus(); document.querySelector('[data-act="chain"]')?.focus(); },
     }));
+}
+
+/** Buttons for ticking off the selected quest, or everything needed for the selected villager. */
+function actions(n) {
+  const todo = pathTo(n.key).filter((k) => !game.done.has(k));
+  const earlier = todo.length > 0 && `${plural(todo.length, 'quest')} before it`;
+  const markAll = (text, also) => el('button', {
+    class: 'link', type: 'button', 'data-act': 'all', text,
+    onclick: () => update(() => { for (const k of [...todo, ...also]) game.done.add(k); }, '#focus-title'),
+  });
+  if (n.kind === 'character') {
+    if (statusOf(n.key) === 'done' || !todo.length) return null;
+    return el('div', { class: 'actions' }, markAll(`I already have ${n.name} (marks ${plural(todo.length, 'quest')} done)`, []));
+  }
+  const isDone = game.done.has(n.key);
+  return el('div', { class: 'actions' },
+    el('button', {
+      class: isDone ? 'link on' : 'link', type: 'button', 'data-act': 'done', 'aria-pressed': String(isDone),
+      text: isDone ? '✓ Done (select to undo)' : 'Mark as done',
+      onclick: () => update(() => game.done[isDone ? 'delete' : 'add'](n.key), '[data-act="done"]'),
+    }),
+    !isDone && earlier && markAll(`Mark done, with the ${earlier}`, [n.key]));
 }
 
 function renderFocus() {
   const n = graph.nodes.get(state.focus);
   if (!n) return $('focus').replaceChildren(intro());
+  const back = el('button', { class: 'back', type: 'button', text: '← All quests', onclick: () => select(null) });
+  if (masked(n.key)) {
+    return $('focus').replaceChildren(tint(el('article', { class: 'card' },
+      back,
+      el('h2', { id: 'focus-title', tabindex: -1, text: 'Not reached yet' }),
+      el('p', { class: 'lede', text: `This ${n.kind === 'character' ? 'villager' : 'quest'} is further along than your progress, so it is hidden to avoid spoilers.` }),
+      el('div', { class: 'actions' }, el('button', {
+        class: 'link', type: 'button', text: 'Show it anyway',
+        onclick: () => update(() => game.revealed.add(n.key), '#focus-title'),
+      }))), n.region));
+  }
   const tab = state.tab ?? (wide.matches ? 'map' : 'steps');
   const giver = n.kind === 'quest' && giverOf(n);
   const owned = (n.requires?.regions ?? []).map((id) => regions.get(id)?.name).filter(Boolean);
   const wiki = wikiLink(n.wiki);
+  const word = progressWord(n);
   const tabButton = (id, text) => el('button', {
-    class: 'tab', type: 'button', 'aria-pressed': String(tab === id), text,
-    onclick: () => { state.tab = id; renderFocus(); },
+    class: 'tab', type: 'button', 'aria-pressed': String(tab === id), 'data-act': `tab-${id}`, text,
+    onclick: () => { state.tab = id; renderFocus(); document.querySelector(`[data-act="tab-${id}"]`)?.focus(); },
   });
   $('focus').replaceChildren(tint(el('article', { class: 'card' },
-    el('button', { class: 'back', type: 'button', text: '← All quests', onclick: () => select(null) }),
+    back,
     el('div', { class: 'block' },
       el('h2', { id: 'focus-title', tabindex: -1, text: n.name }),
       el('div', { class: 'chips' },
@@ -212,10 +401,14 @@ function renderFocus() {
         el('span', { class: 'chip region', text: regions.get(n.region)?.name ?? n.region }),
         n.film && el('span', { class: 'chip', text: n.film }),
         n.level && el('span', { class: 'chip', text: `Friendship level ${n.level}` }),
+        word && el('span', { class: `chip ${statusOf(n.key)}`, text: word }),
+        n.kind === 'character' && questsOf(n).text && el('span', { class: 'chip', text: questsOf(n).text }),
+        unownedBy(n, game.unowned) && el('span', { class: 'chip warn', text: 'In an expansion you do not own' }),
         n.verified === false && el('span', { class: 'chip warn', text: 'Not yet verified' }))),
     owned.length > 0 && el('p', { text: `Needs ${owned.join(' and ')}.` }),
     n.notes && el('p', { text: n.notes }),
-    giver && el('div', { class: 'block' }, el('h3', { text: 'Given by' }), item(giver.key)),
+    actions(n),
+    giver && el('div', { class: 'block' }, el('h3', { text: 'Given by' }), item(giver.key, 'giver')),
     el('div', { class: 'tabs' }, tabButton('steps', 'Steps'), tabButton('map', 'Map')),
     tab === 'map' ? map(n) : steps(n),
     wiki && el('p', {}, el('a', { href: wiki, rel: 'noopener noreferrer', target: '_blank', text: 'Read about this on the Dreamlight Valley Wiki' }))), n.region));
@@ -235,12 +428,35 @@ function route(moveFocus) {
 }
 
 for (const [id, name] of Object.entries(TYPES)) $('type').append(el('option', { value: id, text: `${name} quests` }));
-for (const r of data.regions) $('region').append(el('option', { value: r.id, text: r.name }));
+for (const r of data.regions) {
+  $('region').append(el('option', { value: r.id, text: r.name }));
+  if (r.kind === 'base') continue;
+  $('owned').append(el('label', { class: 'check' },
+    el('input', {
+      type: 'checkbox', value: r.id,
+      onchange: (e) => update(() => game.unowned[e.target.checked ? 'delete' : 'add'](r.id), `#owned input[value=${attr(r.id)}]`),
+    }),
+    el('span', { text: r.name })));
+}
 $('sample').hidden = !data.sample;
 $('tools').addEventListener('submit', (e) => e.preventDefault());
 $('search').addEventListener('input', (e) => { state.query = e.target.value.trim().toLowerCase(); renderBrowse(); });
 $('type').addEventListener('change', (e) => { state.type = e.target.value; renderBrowse(); });
 $('region').addEventListener('change', (e) => { state.region = e.target.value; renderBrowse(); });
+$('status').addEventListener('change', (e) => { state.status = e.target.value; renderBrowse(); });
+$('spoilers').addEventListener('change', (e) => update(() => { game.spoilers = e.target.checked; game.revealed.clear(); }, '#spoilers'));
+$('export').addEventListener('click', exportFile);
+$('import').addEventListener('click', () => $('file').click());
+$('file').addEventListener('change', (e) => { importFile(e.target.files[0]); e.target.value = ''; });
+$('reset').addEventListener('click', () => {
+  if (!game.done.size) return say('There is no progress to clear.');
+  if (!window.confirm(`Clear all progress (${plural(game.done.size, 'quest')} done)? This cannot be undone unless you saved it to a file.`)) return;
+  update(() => { game.done.clear(); game.revealed.clear(); }, '#reset');
+  say('Progress cleared.');
+});
 wide.addEventListener('change', () => { if (!state.tab) renderFocus(); });
 window.addEventListener('hashchange', () => route(true));
+load();
+game.status = statuses(graph, game.done, game.unowned);
+renderGame();
 route(false);
