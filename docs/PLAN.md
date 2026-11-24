@@ -38,7 +38,8 @@ to any villager. It covers the base game and all expansions, and stays easy to e
 
 1. Validator + CI workflow, so data can be added safely.
 2. Seed data: base Valley story quests and character unlocks, then each expansion.
-   Keepsake Sea (released Nov 18, 2026) will be incomplete at first; mark `verified: false`.
+   Done by importing wiki exports (see docs/DATA_FORMAT.md). Quests the importer or the wiki
+   cannot fully account for are marked `verified: false`.
 3. App shell, theme and mobile list view.
 4. Focus mode and graph view.
 5. Path finder, search, character cards.

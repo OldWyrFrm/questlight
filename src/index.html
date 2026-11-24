@@ -42,7 +42,35 @@
         <span>Region</span>
         <select id="region"><option value="">All regions</option></select>
       </label>
+      <label class="field" for="status">
+        <span>Progress</span>
+        <select id="status">
+          <option value="">Any</option>
+          <option value="ready">Available now</option>
+          <option value="todo">Not done yet</option>
+          <option value="done">Done</option>
+        </select>
+      </label>
     </form>
+    <details id="game" class="lane panel">
+      <summary><span class="lane-name">Your game</span><span id="tally" class="lane-count"></span></summary>
+      <div class="panel-body">
+        <p id="summary"></p>
+        <fieldset class="group">
+          <legend>Expansions I own</legend>
+          <div id="owned" class="checks"></div>
+        </fieldset>
+        <label class="check"><input id="spoilers" type="checkbox"><span>Spoiler mode: hide names of what I can't reach yet</span></label>
+        <div class="actions">
+          <button id="export" class="link" type="button">Save progress to a file</button>
+          <button id="import" class="link" type="button">Load progress from a file</button>
+          <button id="reset" class="link" type="button">Clear progress</button>
+          <input id="file" type="file" accept="application/json,.json" hidden>
+        </div>
+        <p id="saved" class="empty" role="status"></p>
+        <p class="empty">Progress is kept in this browser only and never sent anywhere. Save it to a file to back it up or move it to another device.</p>
+      </div>
+    </details>
     <p id="count" class="count" aria-live="polite"></p>
     <div id="lanes"></div>
   </section>

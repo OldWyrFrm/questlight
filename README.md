@@ -10,23 +10,27 @@ the Valley and every expansion.
 
 ## Status
 
-🚧 Early setup — the data format and tooling are in place; the web app is in progress.
+The app is live with quest and villager data for the base game and every expansion,
+imported from the Dreamlight Valley Wiki. A handful of quests are still marked "not yet
+verified" where the wiki itself does not know a requirement.
 
-## Planned features
+## Features
 
 - **Focus mode** — pick a character or quest and see only what leads to it and what it unlocks
 - **"How do I get…?"** — the shortest ordered quest path to unlock any villager
 - **Progress tracking** — check off quests and see what's available now (saved only in your browser)
 - **Expansion toggles** — hide content from expansions you don't own
-- **Spoiler mode** — blur quests and characters you haven't reached
+- **Spoiler mode** — hide the names of quests and characters you can't reach yet
+- **Backup** — save your progress to a file and load it on another device
 - **Mobile-first** — list/tree view on phones, full map on larger screens
 
 ## Running it
 
 Questlight is a static site with no server, accounts, analytics, or third-party requests.
 
-- **Online:** _GitHub Pages link coming soon_
-- **Offline:** download `questlight.html` from the latest [Release](../../releases) and open it in any browser.
+- **Online:** <https://oldwyrfrm.github.io/questlight/>
+- **Offline:** open <https://oldwyrfrm.github.io/questlight/questlight.html> and save the page; that one file
+  works from disk in any browser. It will also be attached to each [Release](../../releases).
 - **Self-host:** serve the built `dist/` folder from any static web server.
 
 ## Development

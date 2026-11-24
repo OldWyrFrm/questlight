@@ -14,7 +14,7 @@ const errors = validate(data);
 if (errors.length) fail(`Data is not valid, so nothing was built:\n  ${errors.join('\n  ')}`);
 
 // Source files are ES modules; inlined they become one script, so imports and exports go.
-const js = `(() => {\n'use strict';\n${['src/graph.js', 'src/app.js'].map(read).join('\n')
+const js = `(() => {\n'use strict';\n${['src/graph.js', 'src/progress.js', 'src/app.js'].map(read).join('\n')
   .replace(/^import .*$/gm, '')
   .replace(/^export /gm, '')}\n})();`;
 const css = read('src/styles.css');
