@@ -104,10 +104,10 @@
     "why": "Wiki prerequisites line."
   },
   "golden-potato-quest": {
-    "notes": "Starts from the Mysterious Golden Potato.",
     "verified": true,
     "why": "Wiki prerequisites line; page places the first clue in Merlin's House, so it sits in the Valley.",
-    "region": "valley"
+    "region": "valley",
+    "setNotes": "Starts from the Mysterious Golden Potato."
   },
   "blue-potato-quest": {
     "notes": "Opens once the Golden Potato Quest has been found; that quest does not have to be finished first.",
