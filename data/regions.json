@@ -1,0 +1,38 @@
+[
+  {
+    "id": "valley",
+    "name": "Dreamlight Valley",
+    "kind": "base",
+    "color": "#b48cff"
+  },
+  {
+    "id": "eternity-isle",
+    "name": "A Rift in Time (Eternity Isle)",
+    "kind": "expansion",
+    "color": "#ffb347"
+  },
+  {
+    "id": "storybook-vale",
+    "name": "The Storybook Vale",
+    "kind": "expansion",
+    "color": "#7fd6a4"
+  },
+  {
+    "id": "wishblossom-ranch",
+    "name": "Wishblossom Ranch",
+    "kind": "expansion",
+    "color": "#ff8fb8"
+  },
+  {
+    "id": "honeyglow-woods",
+    "name": "Honeyglow Woods",
+    "kind": "adventure-pack",
+    "color": "#ffd166"
+  },
+  {
+    "id": "keepsake-sea",
+    "name": "The Keepsake Sea",
+    "kind": "expansion",
+    "color": "#4fd1d9"
+  }
+]
