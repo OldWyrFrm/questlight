@@ -1,0 +1,12 @@
+{
+  "name": "questlight",
+  "private": true,
+  "description": "Unofficial interactive quest and villager map for Disney Dreamlight Valley",
+  "license": "MIT",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "build": "node scripts/build.mjs"
+  }
+}
