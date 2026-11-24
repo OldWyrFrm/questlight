@@ -1,1 +1,7565 @@
-[]
+[
+  {
+    "id": "with-great-power",
+    "name": "With Great Power...",
+    "region": "valley",
+    "type": "story",
+    "giver": "merlin",
+    "requires": {
+      "quests": [
+        "friendship-is-everything"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "ursula"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/With_Great_Power...",
+    "verified": true,
+    "notes": "Needs Dazzle Beach unlocked."
+  },
+  {
+    "id": "making-cents-of-things",
+    "name": "Making Cents of Things",
+    "region": "valley",
+    "type": "story",
+    "giver": "scrooge-mcduck",
+    "requires": {
+      "quests": [
+        "welcome-to-dreamlight-valley"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Making_Cents_of_Things",
+    "verified": true
+  },
+  {
+    "id": "welcome-to-dreamlight-valley",
+    "name": "Welcome to Dreamlight Valley",
+    "region": "valley",
+    "type": "story",
+    "giver": "merlin",
+    "wiki": "https://dreamlightvalleywiki.com/Welcome_to_Dreamlight_Valley",
+    "verified": true
+  },
+  {
+    "id": "the-royal-tools",
+    "name": "The Royal Tools",
+    "region": "valley",
+    "type": "story",
+    "giver": "merlin",
+    "requires": {
+      "quests": [
+        "welcome-to-dreamlight-valley"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Royal_Tools",
+    "verified": true
+  },
+  {
+    "id": "the-dream-castle",
+    "name": "The Dream Castle",
+    "region": "valley",
+    "type": "story",
+    "giver": "merlin",
+    "requires": {
+      "quests": [
+        "welcome-to-dreamlight-valley"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Dream_Castle",
+    "verified": true
+  },
+  {
+    "id": "fishing-expedition",
+    "name": "Fishing Expedition",
+    "region": "valley",
+    "type": "story",
+    "giver": "goofy",
+    "requires": {
+      "quests": [
+        "welcome-to-dreamlight-valley"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Fishing_Expedition",
+    "verified": true
+  },
+  {
+    "id": "scrooge-mcducks-grand-re-opening",
+    "name": "Scrooge McDuck's Grand Re-opening",
+    "region": "valley",
+    "type": "story",
+    "giver": "scrooge-mcduck",
+    "requires": {
+      "quests": [
+        "making-cents-of-things"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Scrooge_McDuck's_Grand_Re-opening",
+    "verified": true
+  },
+  {
+    "id": "mickeys-memories",
+    "name": "Mickey's Memories",
+    "region": "valley",
+    "type": "story",
+    "giver": "mickey-mouse",
+    "requires": {
+      "quests": [
+        "welcome-to-dreamlight-valley"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Mickey's_Memories",
+    "verified": true
+  },
+  {
+    "id": "foodception",
+    "name": "Foodception",
+    "region": "valley",
+    "type": "story",
+    "giver": "mickey-mouse",
+    "requires": {
+      "quests": [
+        "mickeys-memories"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Foodception",
+    "verified": true
+  },
+  {
+    "id": "friendship-is-everything",
+    "name": "Friendship Is Everything",
+    "region": "valley",
+    "type": "story",
+    "giver": "merlin",
+    "requires": {
+      "quests": [
+        "the-royal-tools",
+        "the-dream-castle"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Friendship_Is_Everything",
+    "verified": true
+  },
+  {
+    "id": "rebuild-the-valley-peaceful-meadow",
+    "name": "Rebuild the Valley: Peaceful Meadow",
+    "region": "valley",
+    "type": "story",
+    "giver": "scrooge-mcduck",
+    "requires": {
+      "quests": [
+        "friendship-is-everything"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Rebuild_the_Valley:_Peaceful_Meadow",
+    "verified": true
+  },
+  {
+    "id": "rebuild-the-valley-dazzle-beach",
+    "name": "Rebuild the Valley: Dazzle Beach",
+    "region": "valley",
+    "type": "story",
+    "giver": "scrooge-mcduck",
+    "requires": {
+      "quests": [
+        "with-great-power"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Rebuild_the_Valley:_Dazzle_Beach",
+    "verified": true
+  },
+  {
+    "id": "rebuild-the-valley-forest-of-valor",
+    "name": "Rebuild the Valley: Forest of Valor",
+    "region": "valley",
+    "type": "story",
+    "giver": "scrooge-mcduck",
+    "requires": {
+      "quests": [
+        "lost-in-the-dark-grove"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Rebuild_the_Valley:_Forest_of_Valor",
+    "verified": true
+  },
+  {
+    "id": "rebuild-the-valley-glade-of-trust",
+    "name": "Rebuild the Valley: Glade of Trust",
+    "region": "valley",
+    "type": "story",
+    "giver": "scrooge-mcduck",
+    "requires": {
+      "quests": [
+        "the-curse"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Rebuild_the_Valley:_Glade_of_Trust",
+    "verified": true
+  },
+  {
+    "id": "the-curse",
+    "name": "The Curse",
+    "region": "valley",
+    "type": "story",
+    "giver": "mother-gothel",
+    "requires": {
+      "quests": [
+        "with-great-power",
+        "lost-in-the-dark-grove"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "mother-gothel"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Curse",
+    "verified": true,
+    "notes": "Needs Glade of Trust unlocked."
+  },
+  {
+    "id": "lost-in-the-dark-grove",
+    "name": "Lost in the Dark Grove",
+    "region": "valley",
+    "type": "story",
+    "giver": "kristoff",
+    "requires": {
+      "quests": [
+        "friendship-is-everything"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "kristoff",
+        "donald-duck"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Lost_in_the_Dark_Grove",
+    "verified": true,
+    "notes": "Needs Forest of Valor unlocked."
+  },
+  {
+    "id": "nature-and-nurture",
+    "name": "Nature & Nurture",
+    "region": "valley",
+    "type": "story",
+    "giver": "scar",
+    "requires": {
+      "quests": [
+        "the-curse"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "scar"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Nature_%26_Nurture",
+    "verified": true,
+    "notes": "Needs Sunlit Plateau unlocked."
+  },
+  {
+    "id": "rebuild-the-valley-sunlit-plateau",
+    "name": "Rebuild the Valley: Sunlit Plateau",
+    "region": "valley",
+    "type": "story",
+    "giver": "scrooge-mcduck",
+    "requires": {
+      "quests": [
+        "nature-and-nurture"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Rebuild_the_Valley:_Sunlit_Plateau",
+    "verified": true
+  },
+  {
+    "id": "working-miracles",
+    "name": "Working Miracles",
+    "region": "valley",
+    "type": "story",
+    "giver": "merlin",
+    "wiki": "https://dreamlightvalleywiki.com/Working_Miracles",
+    "verified": true
+  },
+  {
+    "id": "the-great-blizzard",
+    "name": "The Great Blizzard",
+    "region": "valley",
+    "type": "story",
+    "giver": "olaf",
+    "requires": {
+      "quests": [
+        "the-curse"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "olaf"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Great_Blizzard",
+    "verified": true,
+    "notes": "Needs Frosted Heights unlocked."
+  },
+  {
+    "id": "rebuild-the-valley-frosted-heights",
+    "name": "Rebuild the Valley: Frosted Heights",
+    "region": "valley",
+    "type": "story",
+    "giver": "scrooge-mcduck",
+    "requires": {
+      "quests": [
+        "the-great-blizzard"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Rebuild_the_Valley:_Frosted_Heights",
+    "verified": true
+  },
+  {
+    "id": "miracles-take-time",
+    "name": "Miracles Take Time",
+    "region": "valley",
+    "type": "story",
+    "giver": "the-fairy-godmother",
+    "wiki": "https://dreamlightvalleywiki.com/Miracles_Take_Time",
+    "verified": true,
+    "notes": "Needs Forgotten Lands unlocked. Six pillars must be restored first."
+  },
+  {
+    "id": "forgotten-memories-nurturing",
+    "name": "Forgotten Memories: Nurturing",
+    "region": "valley",
+    "type": "story",
+    "giver": "the-fairy-godmother",
+    "requires": {
+      "quests": [
+        "forgotten-memories-trust"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Forgotten_Memories:_Nurturing",
+    "verified": true
+  },
+  {
+    "id": "whats-left-behind",
+    "name": "What's Left Behind",
+    "region": "valley",
+    "type": "story",
+    "giver": "the-fairy-godmother",
+    "requires": {
+      "quests": [
+        "forgotten-memories-nurturing"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "the-fairy-godmother"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/What's_Left_Behind",
+    "verified": true
+  },
+  {
+    "id": "forgotten-relics-the-storybook",
+    "name": "Forgotten Relics: The Storybook",
+    "region": "valley",
+    "type": "story",
+    "giver": "mickey-mouse",
+    "requires": {
+      "quests": [
+        "the-forgotten-relics"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Forgotten_Relics:_The_Storybook",
+    "verified": true,
+    "notes": "Opens while The Forgotten Relics is under way; that quest does not have to be finished first."
+  },
+  {
+    "id": "forgotten-relics-the-blanket",
+    "name": "Forgotten Relics: The Blanket",
+    "region": "valley",
+    "type": "story",
+    "giver": "olaf",
+    "requires": {
+      "quests": [
+        "the-forgotten-relics"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Forgotten_Relics:_The_Blanket",
+    "verified": true,
+    "notes": "Opens while The Forgotten Relics is under way; that quest does not have to be finished first."
+  },
+  {
+    "id": "forgotten-relics-the-drawing",
+    "name": "Forgotten Relics: The Drawing",
+    "region": "valley",
+    "type": "story",
+    "giver": "scar",
+    "requires": {
+      "quests": [
+        "the-forgotten-relics"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Forgotten_Relics:_The_Drawing",
+    "verified": true,
+    "notes": "Opens while The Forgotten Relics is under way; that quest does not have to be finished first."
+  },
+  {
+    "id": "forgotten-relics-beach-toys",
+    "name": "Forgotten Relics: Beach Toys",
+    "region": "valley",
+    "type": "story",
+    "giver": "ursula",
+    "requires": {
+      "quests": [
+        "the-forgotten-relics"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Forgotten_Relics:_Beach_Toys",
+    "verified": true,
+    "notes": "Opens while The Forgotten Relics is under way; that quest does not have to be finished first."
+  },
+  {
+    "id": "the-forgotten-relics",
+    "name": "The Forgotten Relics",
+    "region": "valley",
+    "type": "story",
+    "giver": "merlin",
+    "requires": {
+      "quests": [
+        "whats-left-behind"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Forgotten_Relics",
+    "verified": true,
+    "notes": "There is a waiting period after the earlier quest before this one appears."
+  },
+  {
+    "id": "the-remembered",
+    "name": "The Remembered",
+    "region": "valley",
+    "type": "story",
+    "giver": "merlin",
+    "requires": {
+      "quests": [
+        "the-dark-castle"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "the-forgotten"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Remembered",
+    "verified": true
+  },
+  {
+    "id": "odds-and-ends",
+    "name": "Odds & Ends...",
+    "region": "valley",
+    "type": "story",
+    "giver": "merlin",
+    "requires": {
+      "quests": [
+        "the-remembered"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Odds_%26_Ends...",
+    "verified": true
+  },
+  {
+    "id": "forgotten-memories-trust",
+    "name": "Forgotten Memories: Trust",
+    "region": "valley",
+    "type": "story",
+    "giver": "the-fairy-godmother",
+    "requires": {
+      "quests": [
+        "forgotten-memories-friendship"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Forgotten_Memories:_Trust",
+    "verified": true
+  },
+  {
+    "id": "forgotten-memories-friendship",
+    "name": "Forgotten Memories: Friendship",
+    "region": "valley",
+    "type": "story",
+    "giver": "the-fairy-godmother",
+    "requires": {
+      "quests": [
+        "miracles-take-time"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Forgotten_Memories:_Friendship",
+    "verified": true
+  },
+  {
+    "id": "between-a-skull-rock-and-a-hard-place",
+    "name": "Between a Skull Rock and a Hard Place",
+    "region": "valley",
+    "type": "story",
+    "giver": "merlin",
+    "requires": {
+      "quests": [
+        "the-dark-castle"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Between_a_Skull_Rock_and_a_Hard_Place",
+    "verified": true
+  },
+  {
+    "id": "rebuild-the-valley-forgotten-lands",
+    "name": "Rebuild the Valley: Forgotten Lands",
+    "region": "valley",
+    "type": "story",
+    "giver": "scrooge-mcduck",
+    "wiki": "https://dreamlightvalleywiki.com/Rebuild_the_Valley:_Forgotten_Lands",
+    "verified": true
+  },
+  {
+    "id": "the-port-of-many-worlds",
+    "name": "The Port of Many Worlds",
+    "region": "valley",
+    "type": "story",
+    "giver": "merlin",
+    "requires": {
+      "quests": [
+        "the-dream-castle",
+        "making-cents-of-things",
+        "fishing-expedition",
+        "scrooge-mcducks-grand-re-opening"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Port_of_Many_Worlds",
+    "verified": true,
+    "notes": "Needs at least one of the A Rift in Time, Storybook Vale or Wishblossom Ranch expansions."
+  },
+  {
+    "id": "the-monochrome-mystery",
+    "name": "The Monochrome Mystery",
+    "region": "valley",
+    "type": "story",
+    "giver": "merlin",
+    "requires": {
+      "quests": [
+        "the-spark-of-imagination"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Monochrome_Mystery",
+    "verified": true
+  },
+  {
+    "id": "mysterious-mickey",
+    "name": "Mysterious Mickey",
+    "region": "valley",
+    "type": "story",
+    "giver": "merlin",
+    "requires": {
+      "quests": [
+        "the-monochrome-mystery",
+        "a-new-directive",
+        "center-of-attention",
+        "oswalds-many-dimensions"
+      ],
+      "characters": [
+        "remy"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Mysterious_Mickey",
+    "verified": true,
+    "notes": "Needs The Promenade, The Grove and The Lagoon unlocked."
+  },
+  {
+    "id": "use-your-imagination-mickey",
+    "name": "Use Your Imagination: Mickey",
+    "region": "valley",
+    "type": "story",
+    "giver": "mickey-mouse",
+    "requires": {
+      "quests": [
+        "mysterious-mickey"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Use_Your_Imagination:_Mickey",
+    "verified": true,
+    "notes": "Opens while Mysterious Mickey is under way; that quest does not have to be finished first."
+  },
+  {
+    "id": "the-palace-of-time",
+    "name": "The Palace of Time",
+    "region": "valley",
+    "type": "story",
+    "giver": "merlin",
+    "requires": {
+      "quests": [
+        "mysterious-mickey"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Palace_of_Time",
+    "verified": true
+  },
+  {
+    "id": "jafars-laboratory",
+    "name": "Jafar's Laboratory",
+    "region": "valley",
+    "type": "story",
+    "giver": "merlin",
+    "requires": {
+      "quests": [
+        "the-palace-of-time"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Jafar's_Laboratory",
+    "verified": true,
+    "notes": "Opens while The Palace of Time is under way; that quest does not have to be finished first."
+  },
+  {
+    "id": "the-now-and-then",
+    "name": "The Now and Then",
+    "region": "valley",
+    "type": "story",
+    "giver": "merlin",
+    "requires": {
+      "quests": [
+        "the-palace-of-time"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Now_and_Then",
+    "verified": true
+  },
+  {
+    "id": "islands-in-the-sky",
+    "name": "Islands in the Sky",
+    "region": "valley",
+    "type": "story",
+    "giver": "merlin",
+    "requires": {
+      "quests": [
+        "whats-left-behind"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Islands_in_the_Sky",
+    "verified": true
+  },
+  {
+    "id": "slow-and-steady",
+    "name": "Slow and Steady",
+    "region": "valley",
+    "type": "story",
+    "giver": "tiana",
+    "requires": {
+      "characters": [
+        "tiana"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Slow_and_Steady",
+    "verified": true
+  },
+  {
+    "id": "the-memento",
+    "name": "The Memento",
+    "region": "valley",
+    "type": "story",
+    "giver": "merlin",
+    "requires": {
+      "quests": [
+        "wild-wild-wishes",
+        "the-fractured-glass",
+        "a-guide-to-better-castle-keeping",
+        "a-dream-come-true",
+        "a-curious-dish"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Memento",
+    "verified": true
+  },
+  {
+    "id": "shadows-on-the-wall",
+    "name": "Shadows on the Wall",
+    "region": "valley",
+    "type": "story",
+    "giver": "the-forgotten",
+    "requires": {
+      "quests": [
+        "a-forgotten-name"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Shadows_on_the_Wall",
+    "verified": true
+  },
+  {
+    "id": "a-ship-of-gold",
+    "name": "A Ship of Gold",
+    "region": "valley",
+    "type": "story",
+    "giver": "the-forgotten",
+    "requires": {
+      "quests": [
+        "shadows-on-the-wall"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Ship_of_Gold",
+    "verified": true
+  },
+  {
+    "id": "the-musics-on-the-walls",
+    "name": "The Music's on the Walls",
+    "region": "valley",
+    "type": "story",
+    "giver": "the-forgotten",
+    "unlocks": {
+      "characters": [
+        "peter-pan"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Music's_on_the_Walls",
+    "verified": true
+  },
+  {
+    "id": "the-moose-hunt",
+    "name": "The Moose Hunt",
+    "region": "valley",
+    "type": "story",
+    "giver": "merlin",
+    "requires": {
+      "quests": [
+        "create-a-bear",
+        "wild-wild-wishes",
+        "a-very-merry-unbirthday",
+        "a-guide-to-better-castle-keeping",
+        "a-dream-come-true",
+        "a-curious-dish"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Moose_Hunt",
+    "verified": true
+  },
+  {
+    "id": "the-dark-castle",
+    "name": "The Dark Castle",
+    "region": "valley",
+    "type": "story",
+    "giver": "merlin",
+    "requires": {
+      "quests": [
+        "the-forgotten-relics"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Dark_Castle",
+    "verified": true
+  },
+  {
+    "id": "dreamlight-parks-fest-playground-games",
+    "name": "Dreamlight Parks Fest: Playground Games",
+    "region": "valley",
+    "type": "story",
+    "giver": "woody",
+    "requires": {
+      "quests": [
+        "dreamlight-parks-fest-toy-camera"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Dreamlight_Parks_Fest:_Playground_Games",
+    "verified": true,
+    "notes": "Also needs Dreamlight Parks Fest."
+  },
+  {
+    "id": "developed-decorating",
+    "name": "Developed Decorating",
+    "region": "valley",
+    "type": "story",
+    "giver": "scrooge-mcduck",
+    "wiki": "https://dreamlightvalleywiki.com/Developed_Decorating",
+    "verified": true,
+    "notes": "Also needs Scrooge's Store."
+  },
+  {
+    "id": "on-the-path-of-stars",
+    "name": "On the Path of Stars",
+    "region": "valley",
+    "type": "story",
+    "giver": "merlin",
+    "requires": {
+      "characters": [
+        "mickey-mouse",
+        "goofy",
+        "scrooge-mcduck"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/On_the_Path_of_Stars",
+    "verified": true
+  },
+  {
+    "id": "undersea-reunion",
+    "name": "Undersea Reunion",
+    "region": "valley",
+    "type": "story",
+    "giver": "ariel",
+    "requires": {
+      "quests": [
+        "the-four-guardians"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Undersea_Reunion",
+    "verified": true,
+    "notes": "Also needs Editions#The_Keepsake Sea."
+  },
+  {
+    "id": "a-new-enchantment",
+    "name": "A New Enchantment",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "merlin",
+    "level": 2,
+    "requires": {
+      "characters": [
+        "merlin",
+        "scrooge-mcduck"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_New_Enchantment",
+    "verified": true,
+    "notes": "Needs further quest progress with Scrooge McDuck."
+  },
+  {
+    "id": "fixing-the-boat",
+    "name": "Fixing the Boat",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "moana",
+    "level": 2,
+    "requires": {
+      "characters": [
+        "moana"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Fixing_the_Boat",
+    "verified": true,
+    "notes": "Needs Dazzle Beach unlocked."
+  },
+  {
+    "id": "dreamlight-valley-economy-101",
+    "name": "Dreamlight Valley Economy 101",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "scrooge-mcduck",
+    "requires": {
+      "characters": [
+        "goofy"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Dreamlight_Valley_Economy_101",
+    "verified": true,
+    "notes": "Needs further quest progress with Goofy. Needs Pickaxe unlocked."
+  },
+  {
+    "id": "hangin-with-mickey",
+    "name": "Hangin' with Mickey",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "mickey-mouse",
+    "level": 2,
+    "requires": {
+      "characters": [
+        "mickey-mouse",
+        "scrooge-mcduck"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Hangin'_with_Mickey",
+    "verified": true,
+    "notes": "Needs further quest progress with Scrooge McDuck."
+  },
+  {
+    "id": "the-mysterious-wreck",
+    "name": "The Mysterious Wreck",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "goofy",
+    "wiki": "https://dreamlightvalleywiki.com/The_Mysterious_Wreck",
+    "verified": true,
+    "notes": "Needs Dazzle Beach unlocked. Starts from Mysterious Paddle."
+  },
+  {
+    "id": "poor-unfortunate-prince",
+    "name": "Poor Unfortunate Prince",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "prince-eric",
+    "requires": {
+      "characters": [
+        "ursula"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "prince-eric"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Poor_Unfortunate_Prince",
+    "verified": true,
+    "notes": "Needs further quest progress with Ursula."
+  },
+  {
+    "id": "part-of-his-world",
+    "name": "Part of His World",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "prince-eric",
+    "level": 3,
+    "requires": {
+      "characters": [
+        "prince-eric",
+        "remy",
+        "maui"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Part_of_His_World",
+    "verified": true
+  },
+  {
+    "id": "a-deal-with-ursula",
+    "name": "A Deal with Ursula",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "ursula",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "ursula",
+        "ariel"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Deal_with_Ursula",
+    "verified": true,
+    "notes": "Needs further quest progress with Ariel. Needs Forgotten Lands, Sunlit Plateau, Glade of Trust and Frosted Heights unlocked."
+  },
+  {
+    "id": "the-dreamlight-fountain",
+    "name": "The Dreamlight Fountain",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "donald-duck",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "donald-duck"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Dreamlight_Fountain",
+    "verified": true,
+    "notes": "Needs Forgotten Lands unlocked."
+  },
+  {
+    "id": "the-ceremony",
+    "name": "The Ceremony",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "moana",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "moana",
+        "maui"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Ceremony",
+    "verified": true
+  },
+  {
+    "id": "the-price-of-fame",
+    "name": "The Price of Fame",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "remy",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "remy"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Price_of_Fame",
+    "verified": true
+  },
+  {
+    "id": "the-ice-cavern-mystery",
+    "name": "The Ice Cavern Mystery",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "elsa",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "elsa"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Ice_Cavern_Mystery",
+    "verified": true
+  },
+  {
+    "id": "the-ancient-doorway",
+    "name": "The Ancient Doorway",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "ariel",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "ariel",
+        "moana",
+        "ursula",
+        "merlin"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Ancient_Doorway",
+    "verified": true,
+    "notes": "Needs further quest progress with Merlin."
+  },
+  {
+    "id": "village-project-restoring-the-sunstone",
+    "name": "Village Project: Restoring the Sunstone",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "mother-gothel",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "mother-gothel"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Village_Project:_Restoring_the_Sunstone",
+    "verified": true,
+    "notes": "Needs Frosted Heights and Forgotten Lands unlocked."
+  },
+  {
+    "id": "thingamabobs-gadgets-and-gizmos",
+    "name": "Thingamabobs, Gadgets, and Gizmos",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "ariel",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "ariel",
+        "minnie-mouse",
+        "remy",
+        "wall-e"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Thingamabobs,_Gadgets,_and_Gizmos",
+    "verified": true,
+    "notes": "Needs Frosted Heights unlocked."
+  },
+  {
+    "id": "the-treasure-hunt-part-2",
+    "name": "The Treasure Hunt Part 2",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "scrooge-mcduck",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "scrooge-mcduck"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Treasure_Hunt_Part_2",
+    "verified": true,
+    "notes": "Needs Forest of Valor, Frosted Heights, Glade of Trust and Forgotten Lands unlocked."
+  },
+  {
+    "id": "remembering-old-times",
+    "name": "Remembering Old Times",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "minnie-mouse",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "minnie-mouse"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Remembering_Old_Times",
+    "verified": true,
+    "notes": "Needs Glade of Trust and Sunlit Plateau unlocked."
+  },
+  {
+    "id": "the-mystical-crystal",
+    "name": "The Mystical Crystal",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "prince-eric",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "prince-eric"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Mystical_Crystal",
+    "verified": true
+  },
+  {
+    "id": "back-on-the-waves",
+    "name": "Back on the Waves",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "prince-eric",
+    "level": 7,
+    "requires": {
+      "quests": [
+        "part-of-his-world"
+      ],
+      "characters": [
+        "prince-eric",
+        "wall-e"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Back_on_the_Waves",
+    "verified": true
+  },
+  {
+    "id": "the-unknown-flavor",
+    "name": "The Unknown Flavor",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "remy",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "remy",
+        "wall-e"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Unknown_Flavor",
+    "verified": true,
+    "notes": "Needs Sunlit Plateau, Frosted Heights and Dazzle Beach unlocked."
+  },
+  {
+    "id": "customers-know-best",
+    "name": "Customers Know Best",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "scrooge-mcduck",
+    "level": 2,
+    "requires": {
+      "characters": [
+        "scrooge-mcduck",
+        "merlin"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Customers_Know_Best",
+    "verified": true
+  },
+  {
+    "id": "a-forgotten-combination",
+    "name": "A Forgotten Combination",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "scrooge-mcduck",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "scrooge-mcduck"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Forgotten_Combination",
+    "verified": true
+  },
+  {
+    "id": "whats-bad-for-the-business",
+    "name": "What's Bad for the Business",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "scrooge-mcduck",
+    "level": 6,
+    "requires": {
+      "characters": [
+        "scrooge-mcduck",
+        "ursula",
+        "merlin"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/What's_Bad_for_the_Business",
+    "verified": true,
+    "notes": "Needs further quest progress with Merlin and Ursula. Needs Dazzle Beach unlocked."
+  },
+  {
+    "id": "the-treasure-hunt",
+    "name": "The Treasure Hunt",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "scrooge-mcduck",
+    "level": 8,
+    "requires": {
+      "characters": [
+        "scrooge-mcduck"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Treasure_Hunt",
+    "verified": true,
+    "notes": "Needs Dazzle Beach and Glade of Trust unlocked."
+  },
+  {
+    "id": "lair-sweet-lair",
+    "name": "Lair Sweet Lair",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "ursula",
+    "requires": {
+      "characters": [
+        "merlin"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Lair_Sweet_Lair",
+    "verified": true,
+    "notes": "Needs further quest progress with Merlin."
+  },
+  {
+    "id": "missing-minnie",
+    "name": "Missing Minnie",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "mickey-mouse",
+    "level": 3,
+    "requires": {
+      "characters": [
+        "mickey-mouse"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Missing_Minnie",
+    "verified": true
+  },
+  {
+    "id": "shadows-and-bows",
+    "name": "Shadows and Bows",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "mickey-mouse",
+    "level": 6,
+    "requires": {
+      "characters": [
+        "mickey-mouse"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Shadows_and_Bows",
+    "verified": true
+  },
+  {
+    "id": "memory-magnification",
+    "name": "Memory Magnification",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "mickey-mouse",
+    "level": 8,
+    "requires": {
+      "characters": [
+        "mickey-mouse"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "minnie-mouse"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Memory_Magnification",
+    "verified": true,
+    "notes": "Needs Forest of Valor unlocked."
+  },
+  {
+    "id": "a-warm-welcome",
+    "name": "A Warm Welcome",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "goofy",
+    "requires": {
+      "characters": [
+        "mickey-mouse",
+        "merlin"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Warm_Welcome",
+    "verified": true,
+    "notes": "Needs further quest progress with Mickey Mouse and Merlin."
+  },
+  {
+    "id": "photographic-memory",
+    "name": "Photographic Memory",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "goofy",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "goofy"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Photographic_Memory",
+    "verified": true
+  },
+  {
+    "id": "dinner-with-a-friend",
+    "name": "Dinner with a Friend",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "goofy",
+    "level": 6,
+    "requires": {
+      "characters": [
+        "goofy"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Dinner_with_a_Friend",
+    "verified": true,
+    "notes": "Needs Dazzle Beach unlocked."
+  },
+  {
+    "id": "photo-fervor",
+    "name": "Photo Fervor",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "goofy",
+    "level": 8,
+    "requires": {
+      "characters": [
+        "goofy",
+        "remy",
+        "scrooge-mcduck"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Photo_Fervor",
+    "verified": true,
+    "notes": "Needs further quest progress with Remy and Scrooge McDuck. Needs Sunlit Plateau, Forest of Valor and Glade of Trust unlocked."
+  },
+  {
+    "id": "a-house-fit-for-a-duck",
+    "name": "A House Fit for a Duck",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "donald-duck",
+    "requires": {
+      "characters": [
+        "kristoff"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_House_Fit_for_a_Duck",
+    "verified": true,
+    "notes": "Needs further quest progress with Kristoff. Needs Dazzle Beach unlocked."
+  },
+  {
+    "id": "a-fishy-dispute",
+    "name": "A Fishy Dispute",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "donald-duck",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "donald-duck"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Fishy_Dispute",
+    "verified": true,
+    "notes": "Needs Sunlit Plateau unlocked."
+  },
+  {
+    "id": "a-lesson-in-frustration",
+    "name": "A Lesson in Frustration",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "merlin",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "merlin"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Lesson_in_Frustration",
+    "verified": true,
+    "notes": "Needs Dazzle Beach unlocked."
+  },
+  {
+    "id": "crystal-mystery",
+    "name": "Crystal Mystery",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "merlin",
+    "level": 6,
+    "requires": {
+      "characters": [
+        "merlin",
+        "donald-duck"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Crystal_Mystery",
+    "verified": true,
+    "notes": "Needs further quest progress with Donald Duck. Needs Forest of Valor unlocked."
+  },
+  {
+    "id": "a-dark-experiment",
+    "name": "A Dark Experiment",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "merlin",
+    "level": 8,
+    "requires": {
+      "characters": [
+        "merlin"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Dark_Experiment",
+    "verified": true,
+    "notes": "Needs Glade of Trust unlocked."
+  },
+  {
+    "id": "the-final-trial",
+    "name": "The Final Trial",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "merlin",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "merlin",
+        "wall-e"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Final_Trial",
+    "verified": true
+  },
+  {
+    "id": "its-good-to-be-home",
+    "name": "It's Good to Be Home!",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "wall-e",
+    "requires": {
+      "characters": [
+        "merlin"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/It's_Good_to_Be_Home!",
+    "verified": true,
+    "notes": "Needs further quest progress with Merlin."
+  },
+  {
+    "id": "village-project-the-garden",
+    "name": "Village Project: The Garden",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "wall-e",
+    "level": 2,
+    "requires": {
+      "characters": [
+        "wall-e"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Village_Project:_The_Garden",
+    "verified": true,
+    "notes": "Needs Dazzle Beach unlocked."
+  },
+  {
+    "id": "the-compressed-garbage-incident",
+    "name": "The Compressed Garbage Incident",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "wall-e",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "wall-e"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Compressed_Garbage_Incident",
+    "verified": true
+  },
+  {
+    "id": "the-broken-memory",
+    "name": "The Broken Memory",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "wall-e",
+    "level": 6,
+    "requires": {
+      "characters": [
+        "wall-e"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Broken_Memory",
+    "verified": true,
+    "notes": "Needs Forest of Valor unlocked. WALL-E's Memory has to be found first."
+  },
+  {
+    "id": "my-kingdom-for-a-scroll",
+    "name": "My Kingdom for a Scroll",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "mother-gothel",
+    "level": 2,
+    "requires": {
+      "characters": [
+        "mother-gothel",
+        "wall-e"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/My_Kingdom_for_a_Scroll",
+    "verified": true
+  },
+  {
+    "id": "shine-a-light",
+    "name": "Shine a Light",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "mother-gothel",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "mother-gothel",
+        "wall-e"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Shine_a_Light",
+    "verified": true
+  },
+  {
+    "id": "the-forgotten-project",
+    "name": "The Forgotten Project",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "donald-duck",
+    "level": 6,
+    "requires": {
+      "characters": [
+        "donald-duck",
+        "mickey-mouse"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Forgotten_Project",
+    "verified": true,
+    "notes": "Needs further quest progress with Mickey Mouse. Needs Glade of Trust unlocked."
+  },
+  {
+    "id": "the-enchanted-ring",
+    "name": "The Enchanted Ring",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "anna",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "anna",
+        "kristoff"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Enchanted_Ring",
+    "verified": true,
+    "notes": "Needs further quest progress with Kristoff. Needs Glade of Trust unlocked."
+  },
+  {
+    "id": "a-broken-sled",
+    "name": "A Broken Sled",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "kristoff",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "kristoff"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Broken_Sled",
+    "verified": true,
+    "notes": "Needs Glade of Trust and Frosted Heights unlocked."
+  },
+  {
+    "id": "the-singing-ice",
+    "name": "The Singing Ice",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "elsa",
+    "level": 6,
+    "requires": {
+      "characters": [
+        "elsa"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Singing_Ice",
+    "verified": true,
+    "notes": "Needs Frosted Heights unlocked."
+  },
+  {
+    "id": "demigod-of-the-wind-and-sun",
+    "name": "Demigod of the Wind and Sun",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "maui",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "maui",
+        "merlin",
+        "goofy",
+        "wall-e"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Demigod_of_the_Wind_and_Sun",
+    "verified": true
+  },
+  {
+    "id": "the-secret-door",
+    "name": "The Secret Door",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "mickey-mouse",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "mickey-mouse"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Secret_Door",
+    "verified": true,
+    "notes": "Needs Sunlit Plateau unlocked."
+  },
+  {
+    "id": "the-search-for-pua",
+    "name": "The Search for Pua",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "moana",
+    "level": 8,
+    "requires": {
+      "characters": [
+        "moana",
+        "remy"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Search_for_Pua",
+    "verified": true,
+    "notes": "Needs further quest progress with Remy."
+  },
+  {
+    "id": "the-sunstone-fragments",
+    "name": "The Sunstone Fragments",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "mother-gothel",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "mother-gothel",
+        "merlin"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Sunstone_Fragments",
+    "verified": true,
+    "notes": "Needs further quest progress with Merlin. Needs Sunlit Plateau unlocked."
+  },
+  {
+    "id": "leaving-the-woods-behind",
+    "name": "Leaving The Woods Behind",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "kristoff",
+    "requires": {
+      "characters": [
+        "maui"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Leaving_The_Woods_Behind",
+    "verified": true,
+    "notes": "Needs further quest progress with Maui."
+  },
+  {
+    "id": "village-project-a-mountain-mans-stall",
+    "name": "Village Project: A Mountain Man's Stall",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "kristoff",
+    "level": 6,
+    "requires": {
+      "characters": [
+        "kristoff"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Village_Project:_A_Mountain_Man's_Stall",
+    "verified": true
+  },
+  {
+    "id": "burying-the-eel",
+    "name": "Burying the Eel",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "maui",
+    "level": 2,
+    "requires": {
+      "characters": [
+        "maui",
+        "goofy"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Burying_the_Eel",
+    "verified": true
+  },
+  {
+    "id": "a-tale-of-stone-and-fire",
+    "name": "A Tale of Stone and Fire",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "maui",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "maui"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Tale_of_Stone_and_Fire",
+    "verified": true
+  },
+  {
+    "id": "a-restaurant-makeover",
+    "name": "A Restaurant Makeover",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "remy",
+    "requires": {
+      "characters": [
+        "scrooge-mcduck"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Restaurant_Makeover",
+    "verified": true,
+    "notes": "Needs further quest progress with Scrooge McDuck."
+  },
+  {
+    "id": "remys-recipe-book",
+    "name": "Remy's Recipe Book",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "remy",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "remy",
+        "merlin"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Remy's_Recipe_Book",
+    "verified": true,
+    "notes": "Needs further quest progress with Merlin. Needs Dazzle Beach unlocked."
+  },
+  {
+    "id": "the-heart-of-dreamlight-valley",
+    "name": "The Heart of Dreamlight Valley",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "maui",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "maui",
+        "merlin",
+        "moana"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Heart_of_Dreamlight_Valley",
+    "verified": true,
+    "notes": "Needs further quest progress with Merlin. Needs Forgotten Lands, Frosted Heights and Forest of Valor unlocked."
+  },
+  {
+    "id": "the-language-of-flowers",
+    "name": "The Language of Flowers",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "minnie-mouse",
+    "level": 2,
+    "requires": {
+      "characters": [
+        "minnie-mouse",
+        "mickey-mouse",
+        "merlin"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Language_of_Flowers",
+    "verified": true,
+    "notes": "Needs further quest progress with Merlin and Mickey Mouse. Needs Forest of Valor and Dazzle Beach unlocked."
+  },
+  {
+    "id": "the-remembering",
+    "name": "The Remembering",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "moana",
+    "level": 6,
+    "requires": {
+      "characters": [
+        "moana"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Remembering",
+    "verified": true,
+    "notes": "Needs Forest of Valor unlocked."
+  },
+  {
+    "id": "what-home-feels-like",
+    "name": "What Home Feels Like",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "elsa",
+    "level": 3,
+    "requires": {
+      "characters": [
+        "elsa",
+        "remy"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/What_Home_Feels_Like",
+    "verified": true,
+    "notes": "Needs further quest progress with Remy. Needs Glade of Trust unlocked."
+  },
+  {
+    "id": "breaking-the-ice",
+    "name": "Breaking the Ice",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "elsa",
+    "requires": {
+      "quests": [
+        "welcoming-elsa"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Breaking_the_Ice",
+    "verified": true
+  },
+  {
+    "id": "do-you-wanna-build-a-snowman",
+    "name": "Do You Wanna Build a Snowman?",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "anna",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "anna",
+        "elsa",
+        "remy"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Do_You_Wanna_Build_a_Snowman%3F",
+    "verified": true,
+    "notes": "Needs further quest progress with Elsa and Remy. Needs Sunlit Plateau and Frosted Heights unlocked."
+  },
+  {
+    "id": "frozen-memories",
+    "name": "Frozen Memories",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "kristoff",
+    "level": 3,
+    "requires": {
+      "characters": [
+        "kristoff",
+        "elsa",
+        "anna"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Frozen_Memories",
+    "verified": true,
+    "notes": "Needs further quest progress with Anna."
+  },
+  {
+    "id": "the-lonely-island",
+    "name": "The Lonely Island",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "ariel",
+    "requires": {
+      "quests": [
+        "the-mysterious-wreck"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "ariel"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Lonely_Island",
+    "verified": true
+  },
+  {
+    "id": "the-missing-prince",
+    "name": "The Missing Prince",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "ariel",
+    "level": 3,
+    "requires": {
+      "characters": [
+        "ariel",
+        "kristoff",
+        "maui",
+        "donald-duck"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Missing_Prince",
+    "verified": true,
+    "notes": "Needs Glade of Trust unlocked."
+  },
+  {
+    "id": "lost-loves-and-missing-memories",
+    "name": "Lost Loves and Missing Memories",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "anna",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "anna",
+        "kristoff",
+        "mother-gothel"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Lost_Loves_and_Missing_Memories",
+    "verified": true,
+    "notes": "Needs further quest progress with Mother Gothel. Needs Sunlit Plateau unlocked."
+  },
+  {
+    "id": "magic-moments",
+    "name": "Magic Moments",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "ursula",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "ursula",
+        "mother-gothel",
+        "remy"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Magic_Moments",
+    "verified": true,
+    "notes": "Needs further quest progress with Mother Gothel and Remy. Needs Glade of Trust unlocked."
+  },
+  {
+    "id": "scrapbook-blitz",
+    "name": "Scrapbook Blitz",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "goofy",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "goofy",
+        "mickey-mouse",
+        "donald-duck"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Scrapbook_Blitz",
+    "verified": true
+  },
+  {
+    "id": "the-ritual",
+    "name": "The Ritual",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "ursula",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "ursula",
+        "moana"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Ritual",
+    "verified": true,
+    "notes": "Needs Sunlit Plateau unlocked."
+  },
+  {
+    "id": "on-the-trail-of-minnies-memory",
+    "name": "On the Trail of Minnie's Memory",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "minnie-mouse",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "minnie-mouse"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/On_the_Trail_of_Minnie's_Memory",
+    "verified": true,
+    "notes": "Needs Forest of Valor and Dazzle Beach unlocked."
+  },
+  {
+    "id": "peacemakers",
+    "name": "Peacemakers",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "moana",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "moana",
+        "maui"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Peacemakers",
+    "verified": true,
+    "notes": "Needs Forest of Valor unlocked."
+  },
+  {
+    "id": "a-friendly-exchange",
+    "name": "A Friendly Exchange",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "wall-e",
+    "level": 8,
+    "requires": {
+      "characters": [
+        "wall-e",
+        "ariel"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Friendly_Exchange",
+    "verified": true,
+    "notes": "WALL-E's Memory has to be found first."
+  },
+  {
+    "id": "an-icy-invitation",
+    "name": "An Icy Invitation",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "anna",
+    "level": 2,
+    "requires": {
+      "characters": [
+        "anna"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/An_Icy_Invitation",
+    "verified": true
+  },
+  {
+    "id": "friends-arent-food",
+    "name": "Friends Aren't Food",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "scar",
+    "level": 2,
+    "requires": {
+      "characters": [
+        "scar",
+        "remy"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Friends_Aren't_Food",
+    "verified": true,
+    "notes": "Needs further quest progress with Remy."
+  },
+  {
+    "id": "breaking-bones",
+    "name": "Breaking Bones",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "scar",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "scar"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Breaking_Bones",
+    "verified": true
+  },
+  {
+    "id": "the-circle-of-life",
+    "name": "The Circle of Life",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "scar",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "scar"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Circle_of_Life",
+    "verified": true
+  },
+  {
+    "id": "the-making-of-a-monarch",
+    "name": "The Making of a Monarch",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "scar",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "scar"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Making_of_a_Monarch",
+    "verified": true
+  },
+  {
+    "id": "failing-better",
+    "name": "Failing Better",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "woody",
+    "level": 2,
+    "requires": {
+      "characters": [
+        "woody",
+        "remy"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Failing_Better",
+    "verified": true,
+    "notes": "Needs further quest progress with Remy. Needs Dazzle Beach and Peaceful Meadow unlocked."
+  },
+  {
+    "id": "the-sock-stealing-space-alien-strikes-again",
+    "name": "The Sock-Stealing Space Alien Strikes Again!",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "donald-duck",
+    "requires": {
+      "quests": [
+        "the-mystery-of-the-stolen-socks"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Sock-Stealing_Space_Alien_Strikes_Again!",
+    "verified": true,
+    "notes": "Needs Donald's Boat unlocked. Starts from Chewed-Up Sock."
+  },
+  {
+    "id": "the-club-renewal",
+    "name": "The Club Renewal",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "minnie-mouse",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "minnie-mouse",
+        "anna",
+        "woody"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Club_Renewal",
+    "verified": true,
+    "notes": "Needs Glade of Trust, Sunlit Plateau and Frosted Heights unlocked."
+  },
+  {
+    "id": "a-bit-of-a-fixer-upper",
+    "name": "A Bit of a Fixer Upper",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "woody",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "woody",
+        "wall-e",
+        "kristoff"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Bit_of_a_Fixer_Upper",
+    "verified": true,
+    "notes": "Needs Forest of Valor and Sunlit Plateau unlocked."
+  },
+  {
+    "id": "a-space-ranger-recruit",
+    "name": "A Space Ranger Recruit",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "buzz-lightyear",
+    "level": 2,
+    "requires": {
+      "characters": [
+        "buzz-lightyear"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Space_Ranger_Recruit",
+    "verified": true,
+    "notes": "Needs Dazzle Beach and Forest of Valor unlocked."
+  },
+  {
+    "id": "the-astronomy-club",
+    "name": "The Astronomy Club",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "wall-e",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "wall-e",
+        "prince-eric",
+        "buzz-lightyear"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Astronomy_Club",
+    "verified": true,
+    "notes": "Needs Frosted Heights unlocked. Starts from Dreamlight Valley Memory 7."
+  },
+  {
+    "id": "the-illumination",
+    "name": "The Illumination",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "woody",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "woody",
+        "ariel",
+        "moana",
+        "mother-gothel"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Illumination",
+    "verified": true,
+    "notes": "Needs further quest progress with Mother Gothel."
+  },
+  {
+    "id": "the-definition-of-a-hero",
+    "name": "The Definition of a Hero",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "buzz-lightyear",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "buzz-lightyear",
+        "moana",
+        "remy",
+        "scrooge-mcduck"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Definition_of_a_Hero",
+    "verified": true,
+    "notes": "Needs further quest progress with Scrooge McDuck."
+  },
+  {
+    "id": "wanted-aliens",
+    "name": "Wanted: Aliens",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "woody",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "woody",
+        "buzz-lightyear",
+        "scar"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Wanted:_Aliens",
+    "verified": true,
+    "notes": "Needs further quest progress with Scar. Needs Frosted Heights and Glade of Trust unlocked."
+  },
+  {
+    "id": "the-mystery-of-the-stolen-socks",
+    "name": "The Mystery of the Stolen Socks",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "donald-duck",
+    "wiki": "https://dreamlightvalleywiki.com/The_Mystery_of_the_Stolen_Socks",
+    "verified": true,
+    "notes": "Needs Donald's Boat unlocked. Starts from Slimy Stocking."
+  },
+  {
+    "id": "the-fragmented-past",
+    "name": "The Fragmented Past",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "buzz-lightyear",
+    "level": 6,
+    "requires": {
+      "characters": [
+        "buzz-lightyear",
+        "scar",
+        "remy"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Fragmented_Past",
+    "verified": true,
+    "notes": "Needs further quest progress with Scar and Remy."
+  },
+  {
+    "id": "a-space-ranger-reputation",
+    "name": "A Space Ranger Reputation",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "buzz-lightyear",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "buzz-lightyear",
+        "ursula",
+        "maui",
+        "donald-duck"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Space_Ranger_Reputation",
+    "verified": true,
+    "notes": "Needs further quest progress with Donald Duck."
+  },
+  {
+    "id": "built-to-destroy",
+    "name": "Built to Destroy!",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "donald-duck",
+    "requires": {
+      "quests": [
+        "the-sock-stealing-space-alien-strikes-again"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "stitch"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Built_to_Destroy!",
+    "verified": true,
+    "notes": "Needs Donald's Boat unlocked. Starts from Knitted Orange Sock."
+  },
+  {
+    "id": "goodness-level-check",
+    "name": "Goodness Level Check",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "stitch",
+    "level": 2,
+    "requires": {
+      "characters": [
+        "stitch",
+        "donald-duck"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Goodness_Level_Check",
+    "verified": true,
+    "notes": "Needs further quest progress with Donald Duck. Also needs Vandalized Sign and Peaceful Meadow. Starts from the Vandalized Sign in Peaceful Meadow."
+  },
+  {
+    "id": "very-sleepy-stitch",
+    "name": "Very Sleepy Stitch",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "stitch",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "stitch",
+        "remy",
+        "wall-e"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Very_Sleepy_Stitch",
+    "verified": true,
+    "notes": "Needs further quest progress with WALL-E. Needs Glade of Trust unlocked. Also needs Coffee Cup and WALL-E's Garden. Starts from the Coffee Cup beside WALL-E's Garden."
+  },
+  {
+    "id": "making-music",
+    "name": "Making Music",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "stitch",
+    "level": 10,
+    "requires": {
+      "quests": [
+        "stitchs-hobby"
+      ],
+      "characters": [
+        "stitch"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Making_Music",
+    "verified": true,
+    "notes": "There is a waiting period after the earlier quest before this one appears."
+  },
+  {
+    "id": "stitchs-hobby",
+    "name": "Stitch's Hobby",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "stitch",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "stitch",
+        "ariel",
+        "ursula"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Stitch's_Hobby",
+    "verified": true,
+    "notes": "Needs further quest progress with Ursula. Needs Sunlit Plateau unlocked."
+  },
+  {
+    "id": "the-golden-doorknob",
+    "name": "The Golden Doorknob",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "merlin",
+    "unlocks": {
+      "characters": [
+        "mirabel"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Golden_Doorknob",
+    "verified": true,
+    "notes": "Starts from Golden Doorknob."
+  },
+  {
+    "id": "a-place-for-joy",
+    "name": "A Place for Joy",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "olaf",
+    "level": 2,
+    "requires": {
+      "characters": [
+        "olaf",
+        "scar",
+        "mickey-mouse"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Place_for_Joy",
+    "verified": true,
+    "notes": "Needs further quest progress with Mickey Mouse. Needs Sunlit Plateau unlocked."
+  },
+  {
+    "id": "a-story-to-tell",
+    "name": "A Story to Tell",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "olaf",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "olaf",
+        "elsa",
+        "remy",
+        "kristoff"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Story_to_Tell",
+    "verified": true,
+    "notes": "Needs further quest progress with Kristoff. Needs Chez Remy and Forgotten Lands unlocked."
+  },
+  {
+    "id": "the-role-of-a-lifetime",
+    "name": "The Role of a Lifetime",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "olaf",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "olaf",
+        "buzz-lightyear",
+        "anna"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Role_of_a_Lifetime",
+    "verified": true
+  },
+  {
+    "id": "olaf-presents-dreamlight-valley",
+    "name": "Olaf Presents...\"Dreamlight Valley\"",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "olaf",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "olaf",
+        "donald-duck"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Olaf_Presents...%22Dreamlight_Valley%22",
+    "verified": true,
+    "notes": "Needs further quest progress with Donald Duck."
+  },
+  {
+    "id": "healing-house",
+    "name": "Healing House",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "mirabel",
+    "level": 2,
+    "requires": {
+      "characters": [
+        "mirabel",
+        "scrooge-mcduck"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Healing_House",
+    "verified": true,
+    "notes": "Needs further quest progress with Scrooge McDuck."
+  },
+  {
+    "id": "a-taste-of-home",
+    "name": "A Taste of Home",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "mirabel",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "mirabel",
+        "remy"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Taste_of_Home",
+    "verified": true,
+    "notes": "Needs further quest progress with Remy."
+  },
+  {
+    "id": "meddling-mirabel",
+    "name": "Meddling Mirabel",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "mirabel",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "mirabel",
+        "donald-duck"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Meddling_Mirabel",
+    "verified": true,
+    "notes": "Needs Dazzle Beach unlocked."
+  },
+  {
+    "id": "a-festival-of-friendship",
+    "name": "A Festival of Friendship",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "mirabel",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "mirabel",
+        "moana",
+        "elsa"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Festival_of_Friendship",
+    "verified": true,
+    "notes": "Needs Glade of Trust unlocked."
+  },
+  {
+    "id": "collect-em-all-little-green-men",
+    "name": "Collect 'Em All: Little Green Men!",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "buzz-lightyear",
+    "wiki": "https://dreamlightvalleywiki.com/Collect_'Em_All:_Little_Green_Men!",
+    "verified": true
+  },
+  {
+    "id": "very-magical-minnie",
+    "name": "Very Magical Minnie",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "minnie-mouse",
+    "requires": {
+      "quests": [
+        "on-the-trail-of-minnies-memory"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Very_Magical_Minnie",
+    "verified": true,
+    "notes": "Starts from Borrowed Spellbook."
+  },
+  {
+    "id": "secrets-and-schemes",
+    "name": "Secrets & Schemes",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "merlin",
+    "wiki": "https://dreamlightvalleywiki.com/Secrets_%26_Schemes",
+    "verified": true,
+    "notes": "Starts from Merlin's Notes."
+  },
+  {
+    "id": "a-three-course-thank-you",
+    "name": "A Three-Course Thank-You",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "remy",
+    "wiki": "https://dreamlightvalleywiki.com/A_Three-Course_Thank-You",
+    "verified": true,
+    "notes": "Starts from Bag of Ingredients."
+  },
+  {
+    "id": "staking-your-territory",
+    "name": "Staking Your Territory",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "nala",
+    "level": 2,
+    "requires": {
+      "characters": [
+        "nala",
+        "scrooge-mcduck"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Staking_Your_Territory",
+    "verified": true,
+    "notes": "Needs further quest progress with Scrooge McDuck. Needs Dazzle Beach unlocked."
+  },
+  {
+    "id": "hakuna-matata",
+    "name": "Hakuna Matata",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "simba",
+    "level": 2,
+    "requires": {
+      "characters": [
+        "simba",
+        "scrooge-mcduck"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Hakuna_Matata",
+    "verified": true,
+    "notes": "Needs further quest progress with Scrooge McDuck. Needs Dazzle Beach unlocked."
+  },
+  {
+    "id": "fishy-business",
+    "name": "Fishy Business",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "nala",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "nala",
+        "ursula",
+        "mickey-mouse"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Fishy_Business",
+    "verified": true,
+    "notes": "Needs further quest progress with Mickey Mouse. Needs Glade of Trust and Frosted Heights unlocked."
+  },
+  {
+    "id": "the-heart-of-a-lioness",
+    "name": "The Heart of a Lioness",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "nala",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "nala",
+        "moana",
+        "remy",
+        "donald-duck",
+        "mickey-mouse"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Heart_of_a_Lioness",
+    "verified": true,
+    "notes": "Needs further quest progress with Mickey Mouse."
+  },
+  {
+    "id": "here-and-there-and-back-again",
+    "name": "Here and There and Back Again",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "nala",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "nala",
+        "remy"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Here_and_There_and_Back_Again",
+    "verified": true,
+    "notes": "Needs further quest progress with Remy."
+  },
+  {
+    "id": "the-dreamlight-grove",
+    "name": "The Dreamlight Grove",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "simba",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "simba"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Dreamlight_Grove",
+    "verified": true,
+    "notes": "Needs Forgotten Lands and Frosted Heights unlocked."
+  },
+  {
+    "id": "seed-of-memories",
+    "name": "Seed of Memories",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "simba",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "simba",
+        "scar"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Seed_of_Memories",
+    "verified": true,
+    "notes": "Needs further quest progress with Scar. Needs Forgotten Lands unlocked."
+  },
+  {
+    "id": "the-great-gathering",
+    "name": "The Great Gathering",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "simba",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "simba",
+        "minnie-mouse",
+        "maui",
+        "remy"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Great_Gathering",
+    "verified": true,
+    "notes": "Needs further quest progress with Remy."
+  },
+  {
+    "id": "collect-em-all-strangers-from-the-outside",
+    "name": "Collect 'Em All: Strangers from the Outside!",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "buzz-lightyear",
+    "requires": {
+      "quests": [
+        "collect-em-all-little-green-men"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Collect_'Em_All:_Strangers_from_the_Outside!",
+    "verified": true
+  },
+  {
+    "id": "collect-em-all-attic-mode",
+    "name": "Collect 'Em All: Attic Mode",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "buzz-lightyear",
+    "requires": {
+      "quests": [
+        "collect-em-all-strangers-from-the-outside"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Collect_'Em_All:_Attic_Mode",
+    "verified": true
+  },
+  {
+    "id": "we-are-eternally-grateful",
+    "name": "We Are Eternally Grateful!",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "buzz-lightyear",
+    "requires": {
+      "quests": [
+        "collect-em-all-attic-mode"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/We_Are_Eternally_Grateful!",
+    "verified": true
+  },
+  {
+    "id": "fire-alarm",
+    "name": "Fire Alarm",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "the-fairy-godmother",
+    "level": 2,
+    "requires": {
+      "characters": [
+        "the-fairy-godmother"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Fire_Alarm",
+    "verified": true
+  },
+  {
+    "id": "a-lost-book",
+    "name": "A Lost Book",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "the-fairy-godmother",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "the-fairy-godmother",
+        "anna",
+        "remy"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Lost_Book",
+    "verified": true,
+    "notes": "Needs further quest progress with Remy."
+  },
+  {
+    "id": "bibbidi-bobbidi-oops",
+    "name": "Bibbidi-Bobbidi-Oops",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "the-fairy-godmother",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "the-fairy-godmother",
+        "wall-e",
+        "minnie-mouse"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Bibbidi-Bobbidi-Oops",
+    "verified": true
+  },
+  {
+    "id": "a-magical-moment",
+    "name": "A Magical Moment",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "the-fairy-godmother",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "the-fairy-godmother"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Magical_Moment",
+    "verified": true
+  },
+  {
+    "id": "the-haunting-of-dreamlight-valley",
+    "name": "The Haunting of Dreamlight Valley",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "scrooge-mcduck",
+    "wiki": "https://dreamlightvalleywiki.com/The_Haunting_of_Dreamlight_Valley",
+    "verified": true
+  },
+  {
+    "id": "faith-trust-and-pixel-dust",
+    "name": "Faith, Trust, and Pixel Dust",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "vanellope",
+    "requires": {
+      "quests": [
+        "the-haunting-of-dreamlight-valley"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "vanellope"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Faith,_Trust,_and_Pixel_Dust",
+    "verified": true
+  },
+  {
+    "id": "extreme-biome-makeover",
+    "name": "Extreme Biome Makeover",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "vanellope",
+    "level": 2,
+    "requires": {
+      "characters": [
+        "vanellope",
+        "wall-e",
+        "remy"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Extreme_Biome_Makeover",
+    "verified": false,
+    "notes": "Needs further quest progress with Remy. Needs Dazzle Beach unlocked. Has one more hidden requirement that neither the wiki nor other guides have identified yet."
+  },
+  {
+    "id": "press-start",
+    "name": "Press Start",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "vanellope",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "vanellope",
+        "nala",
+        "mirabel",
+        "scar"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Press_Start",
+    "verified": true,
+    "notes": "Needs further quest progress with Scar."
+  },
+  {
+    "id": "boss-up",
+    "name": "Boss Up",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "vanellope",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "vanellope",
+        "ursula",
+        "anna"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Boss_Up",
+    "verified": true,
+    "notes": "Needs further quest progress with Ursula and Anna. Needs Frosted Heights unlocked."
+  },
+  {
+    "id": "questination-unknown",
+    "name": "Questination Unknown",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "vanellope",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "vanellope",
+        "buzz-lightyear",
+        "olaf",
+        "stitch"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Questination_Unknown",
+    "verified": true
+  },
+  {
+    "id": "book-hunt",
+    "name": "Book Hunt",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "belle",
+    "level": 2,
+    "requires": {
+      "characters": [
+        "belle",
+        "remy",
+        "mirabel"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Book_Hunt",
+    "verified": true,
+    "notes": "Needs Dazzle Beach and Peaceful Meadow unlocked."
+  },
+  {
+    "id": "the-beast-with-no-bite",
+    "name": "The Beast with No Bite",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "the-beast",
+    "level": 2,
+    "requires": {
+      "characters": [
+        "the-beast",
+        "mirabel",
+        "remy",
+        "scrooge-mcduck"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Beast_with_No_Bite",
+    "verified": true,
+    "notes": "Needs further quest progress with Remy and Scrooge McDuck. Needs Dazzle Beach unlocked."
+  },
+  {
+    "id": "be-our-friend",
+    "name": "Be Our Friend",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "the-beast",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "the-beast",
+        "wall-e",
+        "kristoff"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Be_Our_Friend",
+    "verified": true
+  },
+  {
+    "id": "breaking-the-code",
+    "name": "Breaking the Code",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "belle",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "belle",
+        "wall-e"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Breaking_the_Code",
+    "verified": true
+  },
+  {
+    "id": "the-best-mystery-solver-in-dreamlight-valley",
+    "name": "The Best Mystery Solver in Dreamlight Valley",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "belle",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "belle",
+        "mickey-mouse",
+        "scrooge-mcduck"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Best_Mystery_Solver_in_Dreamlight_Valley",
+    "verified": true,
+    "notes": "Needs further quest progress with Mickey Mouse and Scrooge McDuck. Needs Scrooge's Store and Glade of Trust unlocked."
+  },
+  {
+    "id": "the-crown-or-the-claw",
+    "name": "The Crown or the Claw",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "the-beast",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "the-beast",
+        "mother-gothel"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Crown_or_the_Claw",
+    "verified": true,
+    "notes": "Needs Sunlit Plateau and Glade of Trust unlocked."
+  },
+  {
+    "id": "the-chronicles-of-the-ancients",
+    "name": "The Chronicles of the Ancients",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "belle",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "belle",
+        "the-fairy-godmother",
+        "ariel"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Chronicles_of_the_Ancients",
+    "verified": true,
+    "notes": "Needs Frosted Heights unlocked."
+  },
+  {
+    "id": "a-gift-in-crimson",
+    "name": "A Gift in Crimson",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "the-beast",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "the-beast"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Gift_in_Crimson",
+    "verified": true,
+    "notes": "Needs Forgotten Lands unlocked."
+  },
+  {
+    "id": "a-sticky-situation",
+    "name": "A Sticky Situation",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "olaf",
+    "requires": {
+      "quests": [
+        "a-lost-book"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Sticky_Situation",
+    "verified": true,
+    "notes": "Appears seven days after first logging in on update 1.7 or later."
+  },
+  {
+    "id": "acts-of-care",
+    "name": "Acts of Care",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "the-forgotten",
+    "requires": {
+      "quests": [
+        "the-magic-in-everything"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Acts_of_Care",
+    "verified": true,
+    "notes": "There is a waiting period after the earlier quest before this one appears."
+  },
+  {
+    "id": "poetic-license",
+    "name": "Poetic License",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "the-forgotten",
+    "requires": {
+      "quests": [
+        "acts-of-care"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Poetic_License",
+    "verified": true,
+    "notes": "There is a waiting period after the earlier quest before this one appears."
+  },
+  {
+    "id": "the-magic-in-everything",
+    "name": "The Magic in Everything",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "the-forgotten",
+    "requires": {
+      "quests": [
+        "odds-and-ends"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Magic_in_Everything",
+    "verified": true,
+    "notes": "There is a waiting period after the earlier quest before this one appears."
+  },
+  {
+    "id": "valley-visits",
+    "name": "Valley Visits!",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "vanellope",
+    "requires": {
+      "characters": [
+        "vanellope"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Valley_Visits!",
+    "verified": true
+  },
+  {
+    "id": "something-comes-aknocking",
+    "name": "Something Comes A'Knocking",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "merlin",
+    "requires": {
+      "quests": [
+        "miracles-take-time"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "jack-skellington"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Something_Comes_A'Knocking",
+    "verified": true,
+    "notes": "Also needs Big Matryoshka Doll, Medium-Sized Matryoshka Doll, Small Matryoshka Doll and Tiny Matryoshka Doll. Starts from picking up any Matryoshka Doll."
+  },
+  {
+    "id": "the-pumpkin-king-returns",
+    "name": "The Pumpkin King Returns",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "jack-skellington",
+    "level": 2,
+    "requires": {
+      "characters": [
+        "jack-skellington",
+        "remy"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Pumpkin_King_Returns",
+    "verified": true,
+    "notes": "Needs further quest progress with Remy."
+  },
+  {
+    "id": "the-scientific-method",
+    "name": "The Scientific Method",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "jack-skellington",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "jack-skellington",
+        "simba"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Scientific_Method",
+    "verified": true,
+    "notes": "Needs further quest progress with Simba."
+  },
+  {
+    "id": "the-holiday-poll",
+    "name": "The Holiday Poll",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "jack-skellington",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "jack-skellington",
+        "vanellope"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Holiday_Poll",
+    "verified": true,
+    "notes": "Needs further quest progress with Vanellope."
+  },
+  {
+    "id": "a-holiday-treat-for-olaf",
+    "name": "A Holiday Treat for Olaf",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "olaf",
+    "requires": {
+      "quests": [
+        "the-holiday-poll"
+      ],
+      "characters": [
+        "jack-skellington"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Holiday_Treat_for_Olaf",
+    "verified": true,
+    "notes": "Needs friendship level 7 with Jack Skellington."
+  },
+  {
+    "id": "dreamlight-day",
+    "name": "Dreamlight Day",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "jack-skellington",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "jack-skellington"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Dreamlight_Day",
+    "verified": true
+  },
+  {
+    "id": "a-holiday-treat-for-vanellope",
+    "name": "A Holiday Treat for Vanellope",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "vanellope",
+    "requires": {
+      "quests": [
+        "the-holiday-poll"
+      ],
+      "characters": [
+        "jack-skellington"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Holiday_Treat_for_Vanellope",
+    "verified": true,
+    "notes": "Needs friendship level 7 with Jack Skellington."
+  },
+  {
+    "id": "a-holiday-treat-for-scar",
+    "name": "A Holiday Treat for Scar",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "scar",
+    "requires": {
+      "quests": [
+        "the-holiday-poll"
+      ],
+      "characters": [
+        "jack-skellington"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Holiday_Treat_for_Scar",
+    "verified": true,
+    "notes": "Needs friendship level 7 with Jack Skellington."
+  },
+  {
+    "id": "have-your-people-talk-to-my-people",
+    "name": "Have Your People Talk to My People",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "mike-wazowski",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "mike-wazowski"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Have_Your_People_Talk_to_My_People",
+    "verified": true
+  },
+  {
+    "id": "germs-abound",
+    "name": "Germs Abound",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "mike-wazowski",
+    "level": 2,
+    "requires": {
+      "characters": [
+        "mike-wazowski",
+        "scrooge-mcduck"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Germs_Abound",
+    "verified": true,
+    "notes": "Needs further quest progress with Scrooge McDuck. Needs Scrooge's Store and Dazzle Beach unlocked."
+  },
+  {
+    "id": "monstrously-good-taste",
+    "name": "Monstrously Good Taste",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "mike-wazowski",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "mike-wazowski",
+        "scar",
+        "vanellope",
+        "sulley",
+        "remy"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Monstrously_Good_Taste",
+    "verified": true,
+    "notes": "Needs further quest progress with Scar. Needs Sunlit Plateau unlocked."
+  },
+  {
+    "id": "a-comedic-proposition",
+    "name": "A Comedic Proposition",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "mike-wazowski",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "mike-wazowski",
+        "wall-e",
+        "the-fairy-godmother"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Comedic_Proposition",
+    "verified": true
+  },
+  {
+    "id": "villager-of-the-month-mike",
+    "name": "Villager of the Month: Mike",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "mike-wazowski",
+    "requires": {
+      "quests": [
+        "villager-of-the-month"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Villager_of_the_Month:_Mike",
+    "verified": true,
+    "notes": "Opens while Villager of the Month is under way; that quest does not have to be finished first."
+  },
+  {
+    "id": "villager-of-the-month-ursula",
+    "name": "Villager of the Month: Ursula",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "ursula",
+    "requires": {
+      "quests": [
+        "villager-of-the-month"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Villager_of_the_Month:_Ursula",
+    "verified": true,
+    "notes": "Opens while Villager of the Month is under way; that quest does not have to be finished first."
+  },
+  {
+    "id": "villager-of-the-month-donald",
+    "name": "Villager of the Month: Donald",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "donald-duck",
+    "requires": {
+      "quests": [
+        "villager-of-the-month"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Villager_of_the_Month:_Donald",
+    "verified": true,
+    "notes": "Opens while Villager of the Month is under way; that quest does not have to be finished first."
+  },
+  {
+    "id": "monster-movie-night",
+    "name": "Monster Movie Night",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "sulley",
+    "level": 2,
+    "requires": {
+      "characters": [
+        "sulley",
+        "merlin",
+        "mike-wazowski"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Monster_Movie_Night",
+    "verified": true,
+    "notes": "Needs further quest progress with Merlin and Mike Wazowski."
+  },
+  {
+    "id": "the-power-of-knowledge",
+    "name": "The Power of Knowledge",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "sulley",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "sulley",
+        "vanellope",
+        "wall-e"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Power_of_Knowledge",
+    "verified": true,
+    "notes": "Needs Frosted Heights and Sunlit Plateau unlocked."
+  },
+  {
+    "id": "the-scavenger-hunt",
+    "name": "The Scavenger Hunt",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "sulley",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "sulley",
+        "stitch",
+        "olaf",
+        "vanellope",
+        "scar"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Scavenger_Hunt",
+    "verified": true,
+    "notes": "Needs further quest progress with Scar."
+  },
+  {
+    "id": "villager-of-the-month",
+    "name": "Villager of the Month",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "sulley",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "sulley",
+        "kristoff",
+        "remy"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Villager_of_the_Month",
+    "verified": true,
+    "notes": "Needs further quest progress with Kristoff and Remy."
+  },
+  {
+    "id": "you-have-mail",
+    "name": "You Have Mail!",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "mickey-mouse",
+    "requires": {
+      "quests": [
+        "faith-trust-and-pixel-dust"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "daisy"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/You_Have_Mail!",
+    "verified": true,
+    "notes": "Also needs Valley Visit Station. The Valley Visit Station must be placed first."
+  },
+  {
+    "id": "trouble-in-paradise",
+    "name": "Trouble in Paradise",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "daisy",
+    "level": 2,
+    "requires": {
+      "quests": [
+        "you-have-mail"
+      ],
+      "characters": [
+        "daisy",
+        "kristoff",
+        "remy"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Trouble_in_Paradise",
+    "verified": true,
+    "notes": "Needs further quest progress with Kristoff and Remy. Needs Dazzle Beach unlocked."
+  },
+  {
+    "id": "ask-daisy",
+    "name": "Ask Daisy",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "daisy",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "daisy",
+        "anna",
+        "merlin"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Ask_Daisy",
+    "verified": true,
+    "notes": "Needs further quest progress with Anna and Merlin. Needs Frosted Heights and Sunlit Plateau unlocked."
+  },
+  {
+    "id": "dots-and-daisies",
+    "name": "Dots & Daisies",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "daisy",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "daisy",
+        "mirabel",
+        "anna",
+        "mickey-mouse",
+        "merlin"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Dots_%26_Daisies",
+    "verified": true,
+    "notes": "Needs further quest progress with Mickey Mouse and Merlin."
+  },
+  {
+    "id": "the-glittered-gala",
+    "name": "The Glittered Gala",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "daisy",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "daisy",
+        "stitch"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Glittered_Gala",
+    "verified": true
+  },
+  {
+    "id": "kristoff-a-romantic-in-the-making",
+    "name": "Kristoff: A Romantic in the Making",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "kristoff",
+    "requires": {
+      "quests": [
+        "ask-daisy"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Kristoff:_A_Romantic_in_the_Making",
+    "verified": true,
+    "notes": "Opens while Ask Daisy is under way; that quest does not have to be finished first."
+  },
+  {
+    "id": "vanellope-the-next-level",
+    "name": "Vanellope: The Next Level",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "vanellope",
+    "requires": {
+      "quests": [
+        "ask-daisy"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Vanellope:_The_Next_Level",
+    "verified": true,
+    "notes": "Opens while Ask Daisy is under way; that quest does not have to be finished first."
+  },
+  {
+    "id": "bon-appetit",
+    "name": "Bon Appétit!",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "remy",
+    "requires": {
+      "characters": [
+        "anna",
+        "donald-duck",
+        "mirabel",
+        "elsa",
+        "scar",
+        "the-fairy-godmother",
+        "stitch",
+        "olaf",
+        "nala",
+        "ariel",
+        "simba",
+        "vanellope",
+        "minnie-mouse",
+        "jack-skellington",
+        "woody",
+        "belle",
+        "mother-gothel"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Bon_App%C3%A9tit!",
+    "verified": true
+  },
+  {
+    "id": "a-daily-regime",
+    "name": "A Daily Regime",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "mulan",
+    "level": 2,
+    "requires": {
+      "characters": [
+        "mulan",
+        "mirabel",
+        "scrooge-mcduck",
+        "remy",
+        "mushu",
+        "goofy"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Daily_Regime",
+    "verified": true,
+    "notes": "Needs further quest progress with Scrooge McDuck, Remy, Mushu and Goofy. Needs Dazzle Beach unlocked."
+  },
+  {
+    "id": "the-mushu-program",
+    "name": "The M.U.S.H.U. Program",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "mushu",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "mushu",
+        "the-beast",
+        "stitch",
+        "daisy",
+        "mulan",
+        "remy"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_M.U.S.H.U._Program",
+    "verified": true,
+    "notes": "Needs further quest progress with Remy. Needs Chez Remy and Forest of Valor unlocked."
+  },
+  {
+    "id": "a-reminder-in-stone",
+    "name": "A Reminder in Stone",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "mushu",
+    "level": 2,
+    "requires": {
+      "characters": [
+        "mushu"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Reminder_in_Stone",
+    "verified": true,
+    "notes": "Needs Dazzle Beach and Peaceful Meadow unlocked."
+  },
+  {
+    "id": "cooking-sesame-balls",
+    "name": "Cooking Sesame Balls",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "mushu",
+    "requires": {
+      "quests": [
+        "the-guardian-party"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Cooking_Sesame_Balls",
+    "verified": true,
+    "notes": "Opens while The Guardian Party is under way; that quest does not have to be finished first."
+  },
+  {
+    "id": "the-red-pouch-hunt",
+    "name": "The Red Pouch Hunt",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "mushu",
+    "requires": {
+      "quests": [
+        "the-guardian-party"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Red_Pouch_Hunt",
+    "verified": true,
+    "notes": "Opens while The Guardian Party is under way; that quest does not have to be finished first."
+  },
+  {
+    "id": "mushus-pinata-extravaganza",
+    "name": "Mushu's Piñata Extravaganza",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "mushu",
+    "requires": {
+      "quests": [
+        "the-guardian-party"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Mushu's_Pi%C3%B1ata_Extravaganza",
+    "verified": true,
+    "notes": "Opens while The Guardian Party is under way; that quest does not have to be finished first."
+  },
+  {
+    "id": "the-guardian-party",
+    "name": "The Guardian Party",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "mushu",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "mushu",
+        "simba",
+        "mirabel",
+        "scar"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Guardian_Party",
+    "verified": true,
+    "notes": "Needs further quest progress with Scar. Needs Sunlit Plateau unlocked."
+  },
+  {
+    "id": "training-games-the-space-ranger",
+    "name": "Training Games: The Space Ranger",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "buzz-lightyear",
+    "requires": {
+      "quests": [
+        "training-games"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Training_Games:_The_Space_Ranger",
+    "verified": true,
+    "notes": "Opens while Training Games is under way; that quest does not have to be finished first."
+  },
+  {
+    "id": "training-games-the-lioness",
+    "name": "Training Games: The Lioness",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "nala",
+    "requires": {
+      "quests": [
+        "training-games"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Training_Games:_The_Lioness",
+    "verified": true,
+    "notes": "Opens while Training Games is under way; that quest does not have to be finished first."
+  },
+  {
+    "id": "training-games-the-shapeshifter",
+    "name": "Training Games: The Shapeshifter",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "maui",
+    "requires": {
+      "quests": [
+        "training-games"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Training_Games:_The_Shapeshifter",
+    "verified": true,
+    "notes": "Opens while Training Games is under way; that quest does not have to be finished first."
+  },
+  {
+    "id": "training-games",
+    "name": "Training Games",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "mulan",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "mulan",
+        "buzz-lightyear",
+        "mother-gothel",
+        "the-fairy-godmother",
+        "nala",
+        "maui",
+        "merlin",
+        "elsa",
+        "scar"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Training_Games",
+    "verified": true,
+    "notes": "Needs further quest progress with Merlin, Elsa, Scar and The Fairy Godmother. Needs Sunlit Plateau, Forgotten Lands and Frosted Heights unlocked."
+  },
+  {
+    "id": "the-art-of-fun",
+    "name": "The Art of Fun",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "mulan",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "mulan"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Art_of_Fun",
+    "verified": true,
+    "notes": "Needs Sunlit Plateau unlocked."
+  },
+  {
+    "id": "the-shadow-play",
+    "name": "The Shadow Play",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "mulan",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "mulan",
+        "mushu",
+        "mickey-mouse"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Shadow_Play",
+    "verified": true,
+    "notes": "Needs further quest progress with Mickey Mouse. Needs Glade of Trust unlocked."
+  },
+  {
+    "id": "the-tiny-villagers-society",
+    "name": "The Tiny Villagers Society",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "mushu",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "mushu",
+        "scar",
+        "buzz-lightyear",
+        "woody"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Tiny_Villagers_Society",
+    "verified": true
+  },
+  {
+    "id": "a-taste-for-literature",
+    "name": "A Taste for Literature",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "remy",
+    "requires": {
+      "characters": [
+        "moana"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "tiana"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Taste_for_Literature",
+    "verified": true,
+    "notes": "Needs Chez Remy open, the pillar in the Glade of Trust restored, and Rice, Onion and Milk unlocked. Starts from the Mysterious Cajun Recipe Book."
+  },
+  {
+    "id": "back-from-the-bayou",
+    "name": "Back from the Bayou",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "tiana",
+    "level": 2,
+    "requires": {
+      "quests": [
+        "a-taste-for-literature"
+      ],
+      "characters": [
+        "tiana"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Back_from_the_Bayou",
+    "verified": true
+  },
+  {
+    "id": "little-louiss-big-break",
+    "name": "Little Louis's Big Break",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "tiana",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "tiana"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Little_Louis's_Big_Break",
+    "verified": true
+  },
+  {
+    "id": "dreamlight-gastronomy",
+    "name": "Dreamlight Gastronomy",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "tiana",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "tiana",
+        "mulan",
+        "anna",
+        "mike-wazowski",
+        "kristoff",
+        "woody",
+        "remy"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Dreamlight_Gastronomy",
+    "verified": true,
+    "notes": "Needs further quest progress with Woody and Remy. Needs Frosted Heights unlocked."
+  },
+  {
+    "id": "villagers-on-parade",
+    "name": "Villagers on Parade",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "tiana",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "tiana",
+        "daisy",
+        "stitch",
+        "minnie-mouse",
+        "mickey-mouse",
+        "anna"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Villagers_on_Parade",
+    "verified": true,
+    "notes": "Needs further quest progress with Mickey Mouse and Anna."
+  },
+  {
+    "id": "remys-special-deliveries",
+    "name": "Remy's Special Deliveries",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "remy",
+    "requires": {
+      "characters": [
+        "anna",
+        "donald-duck",
+        "mirabel",
+        "elsa",
+        "scar",
+        "the-fairy-godmother",
+        "stitch",
+        "olaf",
+        "nala",
+        "ariel",
+        "simba",
+        "vanellope",
+        "minnie-mouse",
+        "jack-skellington",
+        "woody",
+        "belle",
+        "mother-gothel"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Remy's_Special_Deliveries",
+    "verified": true
+  },
+  {
+    "id": "somethings-off",
+    "name": "Something's Off",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "pumbaa",
+    "level": 2,
+    "requires": {
+      "characters": [
+        "pumbaa",
+        "elsa",
+        "daisy",
+        "sulley",
+        "the-beast",
+        "minnie-mouse",
+        "remy",
+        "timon",
+        "mickey-mouse",
+        "the-fairy-godmother"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Something's_Off",
+    "verified": true,
+    "notes": "Needs further quest progress with Mickey Mouse, The Fairy Godmother and Timon. Needs Chez Remy unlocked."
+  },
+  {
+    "id": "fine-arts-for-warthogs",
+    "name": "Fine Arts for Warthogs",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "pumbaa",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "pumbaa"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Fine_Arts_for_Warthogs",
+    "verified": true
+  },
+  {
+    "id": "down-to-earth",
+    "name": "Down to Earth",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "pumbaa",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "pumbaa",
+        "buzz-lightyear",
+        "wall-e",
+        "prince-eric",
+        "tiana"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Down_to_Earth",
+    "verified": true
+  },
+  {
+    "id": "the-infestation-part-2",
+    "name": "The Infestation Part 2",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "pumbaa",
+    "level": 10,
+    "requires": {
+      "quests": [
+        "the-infestation-part-1",
+        "a-creepy-crawly-mystery"
+      ],
+      "characters": [
+        "pumbaa"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Infestation_Part_2",
+    "verified": true
+  },
+  {
+    "id": "a-creepy-crawly-mystery",
+    "name": "A Creepy Crawly Mystery",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "merlin",
+    "requires": {
+      "quests": [
+        "down-to-earth",
+        "the-timon-talk"
+      ],
+      "characters": [
+        "pumbaa",
+        "timon"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Creepy_Crawly_Mystery",
+    "verified": true,
+    "notes": "Needs friendship level 10 with Pumbaa. Needs friendship level 9 with Timon."
+  },
+  {
+    "id": "the-infestation-finale",
+    "name": "The Infestation Finale",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "merlin",
+    "requires": {
+      "quests": [
+        "the-infestation-part-3"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Infestation_Finale",
+    "verified": true
+  },
+  {
+    "id": "drawings",
+    "name": "Drawings?",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "timon",
+    "requires": {
+      "characters": [
+        "timon"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Drawings%3F",
+    "verified": true
+  },
+  {
+    "id": "old-enemies",
+    "name": "Old Enemies",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "timon",
+    "level": 2,
+    "requires": {
+      "characters": [
+        "timon",
+        "vanellope",
+        "ursula",
+        "remy",
+        "simba",
+        "scar"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Old_Enemies",
+    "verified": true,
+    "notes": "Needs further quest progress with Ursula, Remy, Simba and Scar."
+  },
+  {
+    "id": "curious-about-critters",
+    "name": "Curious About Critters",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "timon",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "timon",
+        "buzz-lightyear",
+        "mushu",
+        "the-beast",
+        "the-forgotten",
+        "merlin",
+        "scrooge-mcduck",
+        "anna"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Curious_About_Critters",
+    "verified": true,
+    "notes": "Needs further quest progress with Merlin, Scrooge McDuck and Anna."
+  },
+  {
+    "id": "the-timon-talk",
+    "name": "The Timon Talk",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "timon",
+    "level": 7,
+    "requires": {
+      "quests": [
+        "fine-arts-for-warthogs"
+      ],
+      "characters": [
+        "timon",
+        "donald-duck",
+        "moana",
+        "anna",
+        "elsa",
+        "ariel"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Timon_Talk",
+    "verified": true
+  },
+  {
+    "id": "the-infestation-part-1",
+    "name": "The Infestation Part 1",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "timon",
+    "level": 9,
+    "requires": {
+      "quests": [
+        "a-creepy-crawly-mystery"
+      ],
+      "characters": [
+        "timon"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Infestation_Part_1",
+    "verified": true
+  },
+  {
+    "id": "the-infestation-part-3",
+    "name": "The Infestation Part 3",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "timon",
+    "level": 10,
+    "requires": {
+      "quests": [
+        "the-infestation-part-2"
+      ],
+      "characters": [
+        "timon",
+        "pumbaa"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Infestation_Part_3",
+    "verified": true
+  },
+  {
+    "id": "a-hoot-and-a-half",
+    "name": "A Hoot and a Half",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "olaf",
+    "wiki": "https://dreamlightvalleywiki.com/A_Hoot_and_a_Half",
+    "verified": true,
+    "notes": "Starts from Olaf's Fun Facts."
+  },
+  {
+    "id": "belles-enchanted-day",
+    "name": "Belle's Enchanted Day",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "the-beast",
+    "wiki": "https://dreamlightvalleywiki.com/Belle's_Enchanted_Day",
+    "verified": true,
+    "notes": "Also needs Mysterious Page."
+  },
+  {
+    "id": "the-woven-bridge",
+    "name": "The Woven Bridge",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "jack-skellington",
+    "requires": {
+      "quests": [
+        "healing-house",
+        "odds-and-ends"
+      ],
+      "characters": [
+        "jack-skellington",
+        "vanellope"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "sally"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Woven_Bridge",
+    "verified": true
+  },
+  {
+    "id": "uncanny-romance",
+    "name": "Uncanny Romance",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "sally",
+    "level": 2,
+    "requires": {
+      "characters": [
+        "sally",
+        "daisy",
+        "minnie-mouse"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Uncanny_Romance",
+    "verified": false,
+    "notes": "Has one more hidden requirement that neither the wiki nor other guides have identified yet."
+  },
+  {
+    "id": "decay-to-grow",
+    "name": "Decay to Grow",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "sally",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "sally",
+        "mike-wazowski"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Decay_to_Grow",
+    "verified": true
+  },
+  {
+    "id": "patchwork-party",
+    "name": "Patchwork Party",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "sally",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "sally"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Patchwork_Party",
+    "verified": true
+  },
+  {
+    "id": "preposterous-premonitions",
+    "name": "Preposterous Premonitions",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "sally",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "sally"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Preposterous_Premonitions",
+    "verified": true
+  },
+  {
+    "id": "good-as-gold",
+    "name": "Good As Gold",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "aladdin",
+    "level": 2,
+    "requires": {
+      "characters": [
+        "aladdin",
+        "scrooge-mcduck"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Good_As_Gold",
+    "verified": true,
+    "notes": "Needs further quest progress with Scrooge McDuck. Needs Dazzle Beach unlocked."
+  },
+  {
+    "id": "bring-your-own-carpet",
+    "name": "Bring Your Own Carpet",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "aladdin",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "aladdin",
+        "minnie-mouse",
+        "maui",
+        "kristoff",
+        "mickey-mouse"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Bring_Your_Own_Carpet",
+    "verified": true,
+    "notes": "Needs further quest progress with Kristoff, Mickey Mouse and Maui."
+  },
+  {
+    "id": "all-that-glitters",
+    "name": "All That Glitters",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "aladdin",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "aladdin",
+        "ariel",
+        "belle"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/All_That_Glitters",
+    "verified": false,
+    "notes": "Needs further quest progress with Belle. Has one more hidden requirement that neither the wiki nor other guides have identified yet."
+  },
+  {
+    "id": "advanced-marketing",
+    "name": "Advanced Marketing",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "aladdin",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "aladdin",
+        "wall-e",
+        "mulan",
+        "kristoff",
+        "the-beast",
+        "tiana"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Advanced_Marketing",
+    "verified": true,
+    "notes": "Needs further quest progress with Mulan, Kristoff, The Beast and Tiana. Needs Forgotten Lands unlocked."
+  },
+  {
+    "id": "the-enchanted-flower",
+    "name": "The Enchanted Flower",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "jasmine",
+    "level": 2,
+    "requires": {
+      "characters": [
+        "jasmine",
+        "aladdin"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Enchanted_Flower",
+    "verified": true,
+    "notes": "Needs further quest progress with Aladdin."
+  },
+  {
+    "id": "a-sandy-competition",
+    "name": "A Sandy Competition",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "jasmine",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "jasmine",
+        "moana",
+        "maui",
+        "mother-gothel"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Sandy_Competition",
+    "verified": true,
+    "notes": "Needs further quest progress with Mother Gothel. Needs Glade of Trust unlocked."
+  },
+  {
+    "id": "wild-wild-wishes",
+    "name": "Wild, Wild Wishes",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "jasmine",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "jasmine",
+        "mike-wazowski",
+        "belle",
+        "mulan",
+        "the-fairy-godmother"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Wild,_Wild_Wishes",
+    "verified": true,
+    "notes": "Needs further quest progress with Mulan and The Fairy Godmother."
+  },
+  {
+    "id": "hot-and-cold",
+    "name": "Hot and Cold",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "jasmine",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "jasmine",
+        "elsa"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Hot_and_Cold",
+    "verified": true,
+    "notes": "Needs further quest progress with Elsa. Needs Sunlit Plateau unlocked."
+  },
+  {
+    "id": "mannequin-madness",
+    "name": "Mannequin Madness",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "scrooge-mcduck",
+    "requires": {
+      "quests": [
+        "leaving-wonderland"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Mannequin_Madness",
+    "verified": true
+  },
+  {
+    "id": "a-very-merry-unbirthday",
+    "name": "A Very Merry Unbirthday",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "alice",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "alice",
+        "mushu",
+        "pumbaa",
+        "wall-e",
+        "merlin",
+        "elsa"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Very_Merry_Unbirthday",
+    "verified": true,
+    "notes": "Needs further quest progress with Elsa. Needs Forgotten Lands unlocked. Starts with a mail message from Merlin."
+  },
+  {
+    "id": "books-with-no-pictures",
+    "name": "Books with No Pictures",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "alice",
+    "level": 2,
+    "requires": {
+      "characters": [
+        "alice",
+        "vanellope",
+        "ursula",
+        "remy",
+        "mirabel"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Books_with_No_Pictures",
+    "verified": true,
+    "notes": "Needs Dazzle Beach unlocked."
+  },
+  {
+    "id": "mimsy-were-the-borogoves",
+    "name": "Mimsy Were the Borogoves",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "alice",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "alice",
+        "merlin",
+        "anna"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Mimsy_Were_the_Borogoves",
+    "verified": true,
+    "notes": "Needs further quest progress with Merlin and Anna. Needs Forest of Valor unlocked."
+  },
+  {
+    "id": "the-fractured-glass",
+    "name": "The Fractured Glass",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "alice",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "alice",
+        "olaf",
+        "mother-gothel",
+        "remy"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Fractured_Glass",
+    "verified": true,
+    "notes": "Needs further quest progress with Remy. Needs Sunlit Plateau unlocked."
+  },
+  {
+    "id": "chaos-in-the-kitchen",
+    "name": "Chaos in the Kitchen",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "remy",
+    "requires": {
+      "quests": [
+        "mannequin-madness"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Chaos_in_the_Kitchen",
+    "verified": true
+  },
+  {
+    "id": "cat-tree-catastrophe",
+    "name": "Cat Tree Catastrophe",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "alice",
+    "requires": {
+      "quests": [
+        "chaos-in-the-kitchen",
+        "fixing-the-boat"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "cheshire-cat"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Cat_Tree_Catastrophe",
+    "verified": true
+  },
+  {
+    "id": "furniture-fluster",
+    "name": "Furniture Fluster",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "cheshire-cat",
+    "level": 2,
+    "requires": {
+      "characters": [
+        "cheshire-cat",
+        "wall-e",
+        "daisy",
+        "aladdin",
+        "vanellope",
+        "mirabel",
+        "mother-gothel"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Furniture_Fluster",
+    "verified": false,
+    "notes": "Needs further quest progress with Mother Gothel. Has one more hidden requirement that neither the wiki nor other guides have identified yet."
+  },
+  {
+    "id": "its-all-nonsense",
+    "name": "It's All Nonsense!",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "cheshire-cat",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "cheshire-cat",
+        "tiana",
+        "scar"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/It's_All_Nonsense!",
+    "verified": true,
+    "notes": "Needs further quest progress with Scar. Needs Frosted Heights unlocked."
+  },
+  {
+    "id": "the-uncrafting-station",
+    "name": "The Uncrafting Station",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "cheshire-cat",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "cheshire-cat"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Uncrafting_Station",
+    "verified": true
+  },
+  {
+    "id": "on-a-wild-cheshire-chase",
+    "name": "On a Wild Cheshire Chase",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "cheshire-cat",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "cheshire-cat",
+        "stitch",
+        "mickey-mouse"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/On_a_Wild_Cheshire_Chase",
+    "verified": true,
+    "notes": "Needs further quest progress with Stitch and Mickey Mouse."
+  },
+  {
+    "id": "dreamlight-parks-fest-critter-snaps",
+    "name": "Dreamlight Parks Fest: Critter Snaps",
+    "region": "valley",
+    "type": "event",
+    "giver": "mirabel",
+    "wiki": "https://dreamlightvalleywiki.com/Dreamlight_Parks_Fest:_Critter_Snaps",
+    "verified": true,
+    "notes": "Only during the Dreamlight Parks Fest event. Opens after the weekly event quest Dreamlight Parks Fest: Decorate More!"
+  },
+  {
+    "id": "dreamlight-parks-fest-dig-it",
+    "name": "Dreamlight Parks Fest: Dig It",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "scrooge-mcduck",
+    "requires": {
+      "quests": [
+        "dreamlight-parks-fest-decorate"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Dreamlight_Parks_Fest:_Dig_It",
+    "verified": true
+  },
+  {
+    "id": "dreamlight-parks-fest-ovals",
+    "name": "Dreamlight Parks Fest: Ovals",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "scrooge-mcduck",
+    "requires": {
+      "quests": [
+        "dreamlight-parks-fest-dig-it"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Dreamlight_Parks_Fest:_Ovals",
+    "verified": true,
+    "notes": "There is a waiting period after the earlier quest before this one appears."
+  },
+  {
+    "id": "dreamlight-parks-fest-rectangles",
+    "name": "Dreamlight Parks Fest: Rectangles",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "scrooge-mcduck",
+    "requires": {
+      "quests": [
+        "dreamlight-parks-fest-ovals"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Dreamlight_Parks_Fest:_Rectangles",
+    "verified": true,
+    "notes": "There is a waiting period after the earlier quest before this one appears."
+  },
+  {
+    "id": "dreamlight-parks-fest-critter-snacks",
+    "name": "Dreamlight Parks Fest: Critter Snacks",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "mirabel",
+    "requires": {
+      "quests": [
+        "dreamlight-parks-fest-critter-snaps"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Dreamlight_Parks_Fest:_Critter_Snacks",
+    "verified": true
+  },
+  {
+    "id": "dreamlight-parks-fest-shinies",
+    "name": "Dreamlight Parks Fest: Shinies!",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "scrooge-mcduck",
+    "requires": {
+      "quests": [
+        "dreamlight-parks-fest-rectangles"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Dreamlight_Parks_Fest:_Shinies!",
+    "verified": true,
+    "notes": "There is a waiting period after the earlier quest before this one appears."
+  },
+  {
+    "id": "dreamlight-parks-fest-take-your-pic",
+    "name": "Dreamlight Parks Fest: Take Your Pic",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "mirabel",
+    "requires": {
+      "quests": [
+        "dreamlight-parks-fest-critter-snacks"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Dreamlight_Parks_Fest:_Take_Your_Pic",
+    "verified": true
+  },
+  {
+    "id": "a-forgotten-name",
+    "name": "A Forgotten Name",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "the-forgotten",
+    "requires": {
+      "quests": [
+        "poetic-license"
+      ],
+      "characters": [
+        "ariel"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "the-forgotten"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Forgotten_Name",
+    "verified": true,
+    "notes": "There is a waiting period after the earlier quest before this one appears."
+  },
+  {
+    "id": "shadow-tag",
+    "name": "Shadow Tag",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "peter-pan",
+    "level": 2,
+    "requires": {
+      "characters": [
+        "peter-pan",
+        "minnie-mouse",
+        "sally",
+        "belle",
+        "the-beast"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Shadow_Tag",
+    "verified": true,
+    "notes": "Needs Minnie's House and Beast's Castle unlocked."
+  },
+  {
+    "id": "a-real-hideout",
+    "name": "A Real Hideout",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "peter-pan",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "peter-pan",
+        "remy",
+        "sulley"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Real_Hideout",
+    "verified": true,
+    "notes": "Needs Forgotten Lands and Frosted Heights unlocked."
+  },
+  {
+    "id": "the-new-lost-boys",
+    "name": "The New Lost Boys",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "peter-pan",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "peter-pan",
+        "the-fairy-godmother",
+        "vanellope",
+        "wall-e",
+        "olaf",
+        "scar"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_New_Lost_Boys",
+    "verified": true,
+    "notes": "Needs Donald's Boat, Forgotten Lands and Frosted Heights unlocked."
+  },
+  {
+    "id": "the-valley-pirates",
+    "name": "The Valley Pirates",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "peter-pan",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "peter-pan",
+        "prince-eric",
+        "olaf",
+        "vanellope",
+        "wall-e",
+        "the-forgotten"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Valley_Pirates",
+    "verified": true,
+    "notes": "Needs further quest progress with The Forgotten. Needs Frosted Heights unlocked."
+  },
+  {
+    "id": "capture-the-sun",
+    "name": "Capture the Sun",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "joy",
+    "level": 2,
+    "requires": {
+      "characters": [
+        "joy",
+        "donald-duck",
+        "vanellope",
+        "scrooge-mcduck",
+        "sadness"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Capture_the_Sun",
+    "verified": true,
+    "notes": "Needs Peaceful Meadow unlocked."
+  },
+  {
+    "id": "mood-swings",
+    "name": "Mood Swings",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "joy",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "joy",
+        "sadness",
+        "donald-duck"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Mood_Swings",
+    "verified": true,
+    "notes": "Needs further quest progress with Sadness and Donald Duck. Needs Glade of Trust and Forest of Valor unlocked."
+  },
+  {
+    "id": "storms-a-brewin",
+    "name": "Storm's A-Brewin'!",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "sadness",
+    "level": 2,
+    "requires": {
+      "characters": [
+        "sadness",
+        "joy"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Storm's_A-Brewin'!",
+    "verified": true,
+    "notes": "Needs further quest progress with Joy. Needs Chez Remy, Scrooge's Store and Dazzle Beach unlocked."
+  },
+  {
+    "id": "the-fortress-of-saditude",
+    "name": "The Fortress of Saditude",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "sadness",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "sadness",
+        "wall-e",
+        "joy"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Fortress_of_Saditude",
+    "verified": true,
+    "notes": "Needs further quest progress with Joy."
+  },
+  {
+    "id": "imagination-land",
+    "name": "Imagination Land",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "joy",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "joy",
+        "the-fairy-godmother",
+        "sadness"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Imagination_Land",
+    "verified": true,
+    "notes": "Needs further quest progress with Sadness and The Fairy Godmother. Needs Forgotten Lands unlocked."
+  },
+  {
+    "id": "the-big-worry",
+    "name": "The Big Worry",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "sadness",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "sadness",
+        "the-beast",
+        "elsa",
+        "joy"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Big_Worry",
+    "verified": true,
+    "notes": "Needs further quest progress with Joy. Needs Frosted Heights unlocked."
+  },
+  {
+    "id": "dream-a-little-dream",
+    "name": "Dream a Little Dream",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "joy",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "joy",
+        "the-forgotten",
+        "belle",
+        "sadness",
+        "scar",
+        "the-fairy-godmother",
+        "olaf"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Dream_a_Little_Dream",
+    "verified": true,
+    "notes": "Needs further quest progress with Sadness, Scar, The Fairy Godmother and Olaf."
+  },
+  {
+    "id": "create-a-bear",
+    "name": "Create a Bear",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "sadness",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "sadness",
+        "joy"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Create_a_Bear",
+    "verified": true,
+    "notes": "Needs further quest progress with Joy."
+  },
+  {
+    "id": "on-her-majestys-festive-service",
+    "name": "On Her Majesty's Festive Service",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "cogsworth",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "cogsworth",
+        "olaf",
+        "remy"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/On_Her_Majesty's_Festive_Service",
+    "verified": true,
+    "notes": "Needs further quest progress with Olaf and Remy. Needs Sunlit Plateau unlocked."
+  },
+  {
+    "id": "at-your-service",
+    "name": "At Your Service",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "lumiere",
+    "level": 2,
+    "requires": {
+      "characters": [
+        "lumiere",
+        "cogsworth",
+        "tiana"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/At_Your_Service",
+    "verified": true,
+    "notes": "Needs further quest progress with Cogsworth and Tiana."
+  },
+  {
+    "id": "the-circle-of-friendship",
+    "name": "The Circle of Friendship",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "cogsworth",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "cogsworth",
+        "timon",
+        "pumbaa",
+        "the-beast"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Circle_of_Friendship",
+    "verified": true,
+    "notes": "Needs further quest progress with The Beast."
+  },
+  {
+    "id": "long-lost-loves",
+    "name": "Long Lost Loves",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "lumiere",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "lumiere",
+        "the-beast"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Long_Lost_Loves",
+    "verified": true,
+    "notes": "Needs further quest progress with The Beast."
+  },
+  {
+    "id": "here-there-and-everywhere",
+    "name": "Here, There, and Everywhere",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "lumiere",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "lumiere",
+        "jack-skellington",
+        "minnie-mouse",
+        "mickey-mouse",
+        "the-fairy-godmother"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Here,_There,_and_Everywhere",
+    "verified": true,
+    "notes": "Needs further quest progress with Mickey Mouse and The Fairy Godmother."
+  },
+  {
+    "id": "spirit-hunters",
+    "name": "Spirit Hunters",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "lumiere",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "lumiere",
+        "elsa",
+        "merlin",
+        "joy"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Spirit_Hunters",
+    "verified": true,
+    "notes": "Needs further quest progress with Elsa, Merlin and Joy."
+  },
+  {
+    "id": "running-like-clockwork",
+    "name": "Running Like Clockwork",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "cogsworth",
+    "level": 2,
+    "requires": {
+      "characters": [
+        "cogsworth",
+        "vanellope",
+        "moana",
+        "stitch",
+        "anna"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Running_Like_Clockwork",
+    "verified": true,
+    "notes": "Needs further quest progress with Anna. Needs Forest of Valor and Frosted Heights unlocked."
+  },
+  {
+    "id": "vote-for-cogsworth",
+    "name": "Vote for Cogsworth!",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "cogsworth",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "cogsworth",
+        "buzz-lightyear",
+        "jack-skellington",
+        "mushu",
+        "aladdin"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Vote_for_Cogsworth!",
+    "verified": true,
+    "notes": "Needs further quest progress with Aladdin."
+  },
+  {
+    "id": "scars-campaign-a-suspicious-stew",
+    "name": "Scar's Campaign: A Suspicious Stew",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "scar",
+    "requires": {
+      "quests": [
+        "vote-for-cogsworth"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Scar's_Campaign:_A_Suspicious_Stew",
+    "verified": true,
+    "notes": "Opens while Vote for Cogsworth! is under way; that quest does not have to be finished first."
+  },
+  {
+    "id": "jasmines-campaign-forest-beautification",
+    "name": "Jasmine's Campaign: Forest Beautification",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "jasmine",
+    "requires": {
+      "quests": [
+        "vote-for-cogsworth"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Jasmine's_Campaign:_Forest_Beautification",
+    "verified": true,
+    "notes": "Opens while Vote for Cogsworth! is under way; that quest does not have to be finished first."
+  },
+  {
+    "id": "cogsworths-campaign-no-substitute-for-hard-work",
+    "name": "Cogsworth's Campaign: No Substitute for Hard Work",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "cogsworth",
+    "requires": {
+      "quests": [
+        "vote-for-cogsworth"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Cogsworth's_Campaign:_No_Substitute_for_Hard_Work",
+    "verified": true,
+    "notes": "Opens while Vote for Cogsworth! is under way; that quest does not have to be finished first."
+  },
+  {
+    "id": "the-floating-festival",
+    "name": "The Floating Festival!",
+    "region": "valley",
+    "type": "event",
+    "giver": "merlin",
+    "wiki": "https://dreamlightvalleywiki.com/The_Floating_Festival!",
+    "verified": true,
+    "notes": "Also needs Springtime Floating Festival, Parks Floating Festival, The Haunted Floating Festival and The Winter Floating Festival. Only available while a Floating Festival event is running."
+  },
+  {
+    "id": "home-is-where-the-heart-is",
+    "name": "Home Is Where the Heart Is",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "tinker-bell",
+    "requires": {
+      "quests": [
+        "the-decay"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "tinker-bell"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Home_Is_Where_the_Heart_Is",
+    "verified": true
+  },
+  {
+    "id": "time-to-fly",
+    "name": "Time to Fly",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "tinker-bell",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "tinker-bell",
+        "peter-pan"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Time_to_Fly",
+    "verified": true
+  },
+  {
+    "id": "tinks-trinkets",
+    "name": "Tink's Trinkets",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "tinker-bell",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "tinker-bell",
+        "olaf",
+        "the-fairy-godmother",
+        "buzz-lightyear",
+        "stitch"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Tink's_Trinkets",
+    "verified": true
+  },
+  {
+    "id": "uneasy-neighbors",
+    "name": "Uneasy Neighbors",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "tinker-bell",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "tinker-bell"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Uneasy_Neighbors",
+    "verified": true,
+    "notes": "Needs Hunny Falls unlocked."
+  },
+  {
+    "id": "the-pumpkin-and-the-princess",
+    "name": "The Pumpkin and the Princess",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "the-fairy-godmother",
+    "requires": {
+      "quests": [
+        "miracles-take-time"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "cinderella"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Pumpkin_and_the_Princess",
+    "verified": true,
+    "notes": "Starts from Lost Shoe."
+  },
+  {
+    "id": "cinderellas-custom-creation",
+    "name": "Cinderella's Custom Creation",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "cinderella",
+    "level": 2,
+    "requires": {
+      "characters": [
+        "cinderella",
+        "daisy",
+        "minnie-mouse",
+        "jasmine",
+        "vanellope"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Cinderella's_Custom_Creation",
+    "verified": false,
+    "notes": "Needs further quest progress with Vanellope. Needs The Boutique and Sunlit Plateau unlocked. Has one more hidden requirement that neither the wiki nor other guides have identified yet."
+  },
+  {
+    "id": "critter-chaos",
+    "name": "Critter Chaos",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "cinderella",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "cinderella",
+        "alice",
+        "cheshire-cat"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Critter_Chaos",
+    "verified": true
+  },
+  {
+    "id": "a-dream-come-true",
+    "name": "A Dream Come True",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "cinderella",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "cinderella",
+        "aladdin",
+        "mushu",
+        "mickey-mouse"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Dream_Come_True",
+    "verified": true
+  },
+  {
+    "id": "the-friendship-ball",
+    "name": "The Friendship Ball",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "cinderella",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "cinderella",
+        "the-beast",
+        "belle",
+        "tiana",
+        "moana",
+        "maui",
+        "mulan",
+        "anna",
+        "kristoff",
+        "vanellope",
+        "cogsworth",
+        "lumiere",
+        "jasmine"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Friendship_Ball",
+    "verified": true
+  },
+  {
+    "id": "getting-on-like-cats-and-dogs",
+    "name": "Getting On Like Cats and Dogs",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "lady",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "lady",
+        "nala",
+        "scar",
+        "anna"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Getting_On_Like_Cats_and_Dogs",
+    "verified": true,
+    "notes": "Needs further quest progress with Nala, Scar and Anna."
+  },
+  {
+    "id": "portrait-of-a-lady",
+    "name": "Portrait of a Lady",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "lady",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "lady",
+        "joy",
+        "alice",
+        "stitch",
+        "aladdin",
+        "tramp",
+        "mickey-mouse"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Portrait_of_a_Lady",
+    "verified": true,
+    "notes": "Needs further quest progress with Tramp and Mickey Mouse."
+  },
+  {
+    "id": "a-little-off-the-top",
+    "name": "A Little Off the Top",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "lady",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "lady",
+        "minnie-mouse",
+        "the-beast",
+        "daisy",
+        "cheshire-cat",
+        "mickey-mouse"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Little_Off_the_Top",
+    "verified": true,
+    "notes": "Needs further quest progress with Daisy, Cheshire Cat and Mickey Mouse. Needs Sunlit Plateau unlocked."
+  },
+  {
+    "id": "canine-cuisine",
+    "name": "Canine Cuisine",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "lady",
+    "level": 2,
+    "requires": {
+      "characters": [
+        "lady",
+        "cheshire-cat",
+        "remy",
+        "merlin"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Canine_Cuisine",
+    "verified": true,
+    "notes": "Needs further quest progress with Remy and Merlin."
+  },
+  {
+    "id": "not-your-average-squeaky-toy",
+    "name": "Not Your Average Squeaky Toy",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "tramp",
+    "level": 2,
+    "requires": {
+      "characters": [
+        "tramp",
+        "buzz-lightyear",
+        "woody",
+        "mirabel",
+        "vanellope",
+        "lady"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Not_Your_Average_Squeaky_Toy",
+    "verified": true,
+    "notes": "Needs further quest progress with Lady. Needs Dazzle Beach unlocked."
+  },
+  {
+    "id": "and-how-did-that-make-you-feel",
+    "name": "And How Did That Make You Feel?",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "tramp",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "tramp",
+        "timon",
+        "pumbaa",
+        "joy",
+        "sadness"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/And_How_Did_That_Make_You_Feel%3F",
+    "verified": true,
+    "notes": "Needs Glade of Trust, Forest of Valor, Forgotten Lands and Frosted Heights unlocked."
+  },
+  {
+    "id": "canine-archaeology",
+    "name": "Canine Archaeology",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "tramp",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "tramp",
+        "nala",
+        "cogsworth"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Canine_Archaeology",
+    "verified": true,
+    "notes": "Needs Forgotten Lands and Sunlit Plateau unlocked."
+  },
+  {
+    "id": "cleanliness-is-next-to-dogliness",
+    "name": "Cleanliness Is Next to Dogliness",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "tramp",
+    "level": 4,
+    "requires": {
+      "quests": [
+        "a-little-off-the-top"
+      ],
+      "characters": [
+        "tramp",
+        "mike-wazowski",
+        "daisy",
+        "minnie-mouse"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Cleanliness_Is_Next_to_Dogliness",
+    "verified": true
+  },
+  {
+    "id": "the-spaghetti-incident",
+    "name": "The Spaghetti Incident",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "lady",
+    "wiki": "https://dreamlightvalleywiki.com/The_Spaghetti_Incident",
+    "verified": true
+  },
+  {
+    "id": "lifes-a-meat-ball",
+    "name": "Life's a (Meat)Ball",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "lady",
+    "requires": {
+      "quests": [
+        "the-spaghetti-incident"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Life's_a_(Meat)Ball",
+    "verified": true
+  },
+  {
+    "id": "a-curious-dish",
+    "name": "A Curious Dish",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "lady",
+    "requires": {
+      "quests": [
+        "lifes-a-meat-ball"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Curious_Dish",
+    "verified": true
+  },
+  {
+    "id": "whispers-in-the-wind",
+    "name": "Whispers in the Wind",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "moana",
+    "requires": {
+      "characters": [
+        "moana"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "pocahontas"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Whispers_in_the_Wind",
+    "verified": true,
+    "notes": "Needs Dazzle Beach and Forest of Valor unlocked. Starts from Glowing Algae."
+  },
+  {
+    "id": "the-three-sisters-garden",
+    "name": "The Three Sisters Garden",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "pocahontas",
+    "level": 2,
+    "requires": {
+      "quests": [
+        "whispers-in-the-wind"
+      ],
+      "characters": [
+        "pocahontas",
+        "wall-e"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Three_Sisters_Garden",
+    "verified": true
+  },
+  {
+    "id": "working-together",
+    "name": "Working Together",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "pocahontas",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "pocahontas",
+        "cogsworth",
+        "stitch"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Working_Together",
+    "verified": true,
+    "notes": "Needs Frosted Heights unlocked."
+  },
+  {
+    "id": "a-raccoons-return",
+    "name": "A Raccoon's Return",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "pocahontas",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "pocahontas",
+        "remy"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Raccoon's_Return",
+    "verified": true
+  },
+  {
+    "id": "a-little-algae-problem",
+    "name": "A Little Algae Problem",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "pocahontas",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "pocahontas",
+        "jasmine",
+        "cinderella",
+        "mike-wazowski",
+        "mother-gothel"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Little_Algae_Problem",
+    "verified": true
+  },
+  {
+    "id": "olafs-grand-exhibition",
+    "name": "Olaf's Grand Exhibition",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "olaf",
+    "requires": {
+      "characters": [
+        "olaf"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Olaf's_Grand_Exhibition",
+    "verified": true
+  },
+  {
+    "id": "grand-exhibition-aquarium",
+    "name": "Grand Exhibition: Aquarium",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "olaf",
+    "requires": {
+      "quests": [
+        "olafs-grand-exhibition"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Grand_Exhibition:_Aquarium",
+    "verified": true,
+    "notes": "Opens while Olaf's Grand Exhibition is under way; that quest does not have to be finished first."
+  },
+  {
+    "id": "grand-exhibition-diorama",
+    "name": "Grand Exhibition: Diorama",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "olaf",
+    "requires": {
+      "quests": [
+        "olafs-grand-exhibition"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Grand_Exhibition:_Diorama",
+    "verified": true,
+    "notes": "Opens while Olaf's Grand Exhibition is under way; that quest does not have to be finished first."
+  },
+  {
+    "id": "grand-exhibition-habitat",
+    "name": "Grand Exhibition: Habitat",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "olaf",
+    "requires": {
+      "quests": [
+        "olafs-grand-exhibition"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Grand_Exhibition:_Habitat",
+    "verified": true,
+    "notes": "Opens while Olaf's Grand Exhibition is under way; that quest does not have to be finished first."
+  },
+  {
+    "id": "a-tangled-web",
+    "name": "A Tangled Web",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "merlin",
+    "requires": {
+      "quests": [
+        "a-raccoons-return",
+        "a-real-godly-mess"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Tangled_Web",
+    "verified": true
+  },
+  {
+    "id": "satyrical-theater",
+    "name": "Satyrical Theater",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "phil",
+    "level": 2,
+    "requires": {
+      "characters": [
+        "phil",
+        "scrooge-mcduck",
+        "goofy",
+        "remy",
+        "mickey-mouse"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Satyrical_Theater",
+    "verified": true,
+    "notes": "Needs Dazzle Beach, Peaceful Meadow and Forest of Valor unlocked."
+  },
+  {
+    "id": "an-unlikely-hero",
+    "name": "An Unlikely Hero",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "phil",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "phil",
+        "joy"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/An_Unlikely_Hero",
+    "verified": true,
+    "notes": "Needs Glade of Trust and Sunlit Plateau unlocked."
+  },
+  {
+    "id": "sweet-sweet-retirement",
+    "name": "Sweet Sweet Retirement",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "phil",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "phil",
+        "daisy",
+        "vanellope",
+        "stitch",
+        "mike-wazowski",
+        "donald-duck"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Sweet_Sweet_Retirement",
+    "verified": true
+  },
+  {
+    "id": "coachs-commission",
+    "name": "Coach's Commission",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "phil",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "phil",
+        "the-fairy-godmother",
+        "cogsworth",
+        "lumiere",
+        "belle",
+        "mirabel"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Coach's_Commission",
+    "verified": true,
+    "notes": "Needs Forgotten Lands unlocked."
+  },
+  {
+    "id": "the-grecian-urn",
+    "name": "The Grecian Urn",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "hercules",
+    "level": 2,
+    "requires": {
+      "characters": [
+        "hercules",
+        "phil",
+        "mirabel"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Grecian_Urn",
+    "verified": true,
+    "notes": "Needs further quest progress with Phil. Needs Chez Remy and Dazzle Beach unlocked."
+  },
+  {
+    "id": "aquatic-musings",
+    "name": "Aquatic Musings",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "hercules",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "hercules",
+        "ursula",
+        "moana",
+        "merlin"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Aquatic_Musings",
+    "verified": true,
+    "notes": "Needs further quest progress with Merlin."
+  },
+  {
+    "id": "medicinal-mortality",
+    "name": "Medicinal Mortality",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "hercules",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "hercules",
+        "alice",
+        "stitch",
+        "scar"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Medicinal_Mortality",
+    "verified": true,
+    "notes": "Needs further quest progress with Scar. Needs Sunlit Plateau and Forest of Valor unlocked."
+  },
+  {
+    "id": "battle-of-the-coaches",
+    "name": "Battle of the Coaches",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "hercules",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "hercules",
+        "ariel",
+        "mushu",
+        "pumbaa",
+        "scar",
+        "mike-wazowski",
+        "mulan"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Battle_of_the_Coaches",
+    "verified": true,
+    "notes": "Needs further quest progress with Mike Wazowski. Needs Forest of Valor unlocked."
+  },
+  {
+    "id": "dreamlight-parks-fest-checkerboard-chums",
+    "name": "Dreamlight Parks Fest: Checkerboard Chums",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "woody",
+    "wiki": "https://dreamlightvalleywiki.com/Dreamlight_Parks_Fest:_Checkerboard_Chums",
+    "verified": true,
+    "notes": "Also needs Dreamlight Parks Fest."
+  },
+  {
+    "id": "dreamlight-parks-fest-toy-camera",
+    "name": "Dreamlight Parks Fest: Toy Camera",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "buzz-lightyear",
+    "requires": {
+      "quests": [
+        "dreamlight-parks-fest-checkerboard-chums"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Dreamlight_Parks_Fest:_Toy_Camera",
+    "verified": true,
+    "notes": "Also needs Dreamlight Parks Fest."
+  },
+  {
+    "id": "picture-pursuit-merlin",
+    "name": "Picture Pursuit: Merlin",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "merlin",
+    "wiki": "https://dreamlightvalleywiki.com/Picture_Pursuit:_Merlin",
+    "verified": true,
+    "notes": "Also needs Picture Pursuit."
+  },
+  {
+    "id": "picture-pursuit-alice",
+    "name": "Picture Pursuit: Alice",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "alice",
+    "wiki": "https://dreamlightvalleywiki.com/Picture_Pursuit:_Alice",
+    "verified": true,
+    "notes": "Also needs Picture Pursuit."
+  },
+  {
+    "id": "picture-pursuit-buzz",
+    "name": "Picture Pursuit: Buzz",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "buzz-lightyear",
+    "wiki": "https://dreamlightvalleywiki.com/Picture_Pursuit:_Buzz",
+    "verified": true,
+    "notes": "Also needs Picture Pursuit."
+  },
+  {
+    "id": "picture-pursuit-cinderella",
+    "name": "Picture Pursuit: Cinderella",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "cinderella",
+    "wiki": "https://dreamlightvalleywiki.com/Picture_Pursuit:_Cinderella",
+    "verified": true,
+    "notes": "Also needs Picture Pursuit."
+  },
+  {
+    "id": "picture-pursuit-mickey",
+    "name": "Picture Pursuit: Mickey",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "mickey-mouse",
+    "wiki": "https://dreamlightvalleywiki.com/Picture_Pursuit:_Mickey",
+    "verified": true,
+    "notes": "Also needs Picture Pursuit."
+  },
+  {
+    "id": "picture-pursuit-moana",
+    "name": "Picture Pursuit: Moana",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "moana",
+    "wiki": "https://dreamlightvalleywiki.com/Picture_Pursuit:_Moana",
+    "verified": true,
+    "notes": "Also needs Picture Pursuit."
+  },
+  {
+    "id": "picture-pursuit-peter-pan",
+    "name": "Picture Pursuit: Peter Pan",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "peter-pan",
+    "wiki": "https://dreamlightvalleywiki.com/Picture_Pursuit:_Peter_Pan",
+    "verified": true,
+    "notes": "Also needs Picture Pursuit."
+  },
+  {
+    "id": "continue",
+    "name": "Continue?",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "the-forgotten",
+    "requires": {
+      "quests": [
+        "the-musics-on-the-walls"
+      ],
+      "characters": [
+        "the-forgotten",
+        "peter-pan"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "ralph"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Continue%3F",
+    "verified": true
+  },
+  {
+    "id": "bad-anon-valley-chapter",
+    "name": "Bad-Anon: Valley Chapter",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "ralph",
+    "level": 2,
+    "requires": {
+      "characters": [
+        "ralph",
+        "stitch",
+        "mother-gothel",
+        "scar",
+        "ursula",
+        "scrooge-mcduck"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Bad-Anon:_Valley_Chapter",
+    "verified": true,
+    "notes": "Needs further quest progress with Scrooge McDuck."
+  },
+  {
+    "id": "mini-game-mayhem",
+    "name": "Mini-game Mayhem",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "ralph",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "ralph",
+        "tiana",
+        "alice",
+        "sulley"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Mini-game_Mayhem",
+    "verified": true,
+    "notes": "Needs Skull Rock unlocked."
+  },
+  {
+    "id": "green-monster-inc",
+    "name": "Green Monster, Inc.",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "ralph",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "ralph"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Green_Monster,_Inc.",
+    "verified": true
+  },
+  {
+    "id": "ralph-breaks-the-valley",
+    "name": "Ralph Breaks the Valley",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "ralph",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "ralph",
+        "peter-pan"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Ralph_Breaks_the_Valley",
+    "verified": true,
+    "notes": "Needs further quest progress with Peter Pan."
+  },
+  {
+    "id": "the-magic-of-friendship",
+    "name": "The Magic of Friendship!",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "merlin",
+    "wiki": "https://dreamlightvalleywiki.com/The_Magic_of_Friendship!",
+    "verified": true
+  },
+  {
+    "id": "rescue-mission",
+    "name": "Rescue Mission",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "oogie-boogie",
+    "requires": {
+      "quests": [
+        "the-ghost-in-the-portrait"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Rescue_Mission",
+    "verified": true
+  },
+  {
+    "id": "a-halloween-invasion",
+    "name": "A Halloween Invasion",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "oogie-boogie",
+    "wiki": "https://dreamlightvalleywiki.com/A_Halloween_Invasion",
+    "verified": true,
+    "notes": "Needs Peaceful Meadow, Scrooge's Store and Chez Remy unlocked."
+  },
+  {
+    "id": "the-oogie-boogie-contract",
+    "name": "The Oogie Boogie Contract",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "oogie-boogie",
+    "requires": {
+      "quests": [
+        "a-halloween-invasion"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Oogie_Boogie_Contract",
+    "verified": true,
+    "notes": "Starts from Lucky Wheel Ticket."
+  },
+  {
+    "id": "the-ghost-in-the-portrait",
+    "name": "The Ghost in the Portrait",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "oogie-boogie",
+    "requires": {
+      "quests": [
+        "the-oogie-boogie-contract"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Ghost_in_the_Portrait",
+    "verified": true
+  },
+  {
+    "id": "let-the-games-begin",
+    "name": "Let the Games Begin",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "oogie-boogie",
+    "requires": {
+      "quests": [
+        "rescue-mission"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Let_the_Games_Begin",
+    "verified": true
+  },
+  {
+    "id": "oogie-boogies-big-game",
+    "name": "Oogie Boogie's Big Game",
+    "region": "valley",
+    "type": "friendship",
+    "giver": "oogie-boogie",
+    "requires": {
+      "quests": [
+        "let-the-games-begin"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "oogie-boogie"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Oogie_Boogie's_Big_Game",
+    "verified": true
+  },
+  {
+    "id": "after-the-storm",
+    "name": "After the Storm",
+    "region": "valley",
+    "type": "realm",
+    "giver": "moana",
+    "wiki": "https://dreamlightvalleywiki.com/After_the_Storm",
+    "verified": true,
+    "notes": "Needs Moana Realm unlocked."
+  },
+  {
+    "id": "the-great-maui",
+    "name": "The Great Maui",
+    "region": "valley",
+    "type": "realm",
+    "giver": "maui",
+    "wiki": "https://dreamlightvalleywiki.com/The_Great_Maui",
+    "verified": true,
+    "notes": "Needs Moana Realm unlocked."
+  },
+  {
+    "id": "how-far-youll-go",
+    "name": "How Far You'll Go",
+    "region": "valley",
+    "type": "realm",
+    "giver": "moana",
+    "requires": {
+      "quests": [
+        "after-the-storm",
+        "the-great-maui"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "moana"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/How_Far_You'll_Go",
+    "verified": true
+  },
+  {
+    "id": "a-feast-worthy-of-a-demigod",
+    "name": "A Feast Worthy Of A Demigod",
+    "region": "valley",
+    "type": "realm",
+    "giver": "maui",
+    "requires": {
+      "quests": [
+        "how-far-youll-go"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "maui"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Feast_Worthy_Of_A_Demigod",
+    "verified": true
+  },
+  {
+    "id": "an-important-night-at-the-restaurant",
+    "name": "An Important Night at the Restaurant",
+    "region": "valley",
+    "type": "realm",
+    "giver": "remy",
+    "unlocks": {
+      "characters": [
+        "remy"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/An_Important_Night_at_the_Restaurant",
+    "verified": true,
+    "notes": "Needs Ratatouille Realm unlocked."
+  },
+  {
+    "id": "the-shy-little-robot",
+    "name": "The Shy Little Robot",
+    "region": "valley",
+    "type": "realm",
+    "giver": "wall-e",
+    "unlocks": {
+      "characters": [
+        "wall-e"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Shy_Little_Robot",
+    "verified": true,
+    "notes": "Needs WALL-E Realm unlocked."
+  },
+  {
+    "id": "welcoming-elsa",
+    "name": "Welcoming Elsa",
+    "region": "valley",
+    "type": "realm",
+    "giver": "elsa",
+    "requires": {
+      "quests": [
+        "an-icy-invitation"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "elsa"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Welcoming_Elsa",
+    "verified": true
+  },
+  {
+    "id": "the-spirits-of-nature",
+    "name": "The Spirits of Nature",
+    "region": "valley",
+    "type": "realm",
+    "giver": "anna",
+    "wiki": "https://dreamlightvalleywiki.com/The_Spirits_of_Nature",
+    "verified": true,
+    "notes": "Needs Frozen Realm unlocked."
+  },
+  {
+    "id": "welcoming-anna",
+    "name": "Welcoming Anna",
+    "region": "valley",
+    "type": "realm",
+    "giver": "anna",
+    "requires": {
+      "quests": [
+        "chasing-the-wind"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "anna"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Welcoming_Anna",
+    "verified": true,
+    "notes": "Also needs Frozen Realm."
+  },
+  {
+    "id": "chasing-the-wind",
+    "name": "Chasing The Wind",
+    "region": "valley",
+    "type": "realm",
+    "giver": "elsa",
+    "requires": {
+      "quests": [
+        "the-spirits-of-nature"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Chasing_The_Wind",
+    "verified": true,
+    "notes": "Also needs Frozen Realm."
+  },
+  {
+    "id": "a-secret-mission-in-uncharted-space",
+    "name": "A Secret Mission in Uncharted Space",
+    "region": "valley",
+    "type": "realm",
+    "giver": "buzz-lightyear",
+    "unlocks": {
+      "characters": [
+        "buzz-lightyear"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Secret_Mission_in_Uncharted_Space",
+    "verified": true,
+    "notes": "Also needs Toy Story Realm."
+  },
+  {
+    "id": "youre-my-favorite-deputy",
+    "name": "You're My Favorite Deputy",
+    "region": "valley",
+    "type": "realm",
+    "giver": "woody",
+    "requires": {
+      "quests": [
+        "a-secret-mission-in-uncharted-space"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "woody"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/You're_My_Favorite_Deputy",
+    "verified": true,
+    "notes": "Also needs Toy Story Realm."
+  },
+  {
+    "id": "eyes-in-the-dark",
+    "name": "Eyes in the Dark",
+    "region": "valley",
+    "type": "realm",
+    "giver": "nala",
+    "unlocks": {
+      "characters": [
+        "nala"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Eyes_in_the_Dark",
+    "verified": true,
+    "notes": "Needs The Lion King Realm unlocked."
+  },
+  {
+    "id": "stars-to-guide-us",
+    "name": "Stars to Guide Us",
+    "region": "valley",
+    "type": "realm",
+    "giver": "simba",
+    "requires": {
+      "quests": [
+        "eyes-in-the-dark"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "simba"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Stars_to_Guide_Us",
+    "verified": true
+  },
+  {
+    "id": "into-the-west-wing",
+    "name": "Into the West Wing!",
+    "region": "valley",
+    "type": "realm",
+    "giver": "belle",
+    "wiki": "https://dreamlightvalleywiki.com/Into_the_West_Wing!",
+    "verified": true,
+    "notes": "Needs Beauty and the Beast Realm unlocked."
+  },
+  {
+    "id": "a-prince-in-disguise",
+    "name": "A Prince in Disguise",
+    "region": "valley",
+    "type": "realm",
+    "giver": "the-beast",
+    "requires": {
+      "quests": [
+        "into-the-west-wing"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "belle",
+        "the-beast"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Prince_in_Disguise",
+    "verified": true
+  },
+  {
+    "id": "escape-claws",
+    "name": "Escape Claws",
+    "region": "valley",
+    "type": "realm",
+    "giver": "sulley",
+    "wiki": "https://dreamlightvalleywiki.com/Escape_Claws",
+    "verified": true,
+    "notes": "Starts from Monsters, Inc.."
+  },
+  {
+    "id": "eye-on-the-prize",
+    "name": "Eye on the Prize",
+    "region": "valley",
+    "type": "realm",
+    "giver": "mike-wazowski",
+    "requires": {
+      "quests": [
+        "escape-claws"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "mike-wazowski",
+        "sulley"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Eye_on_the_Prize",
+    "verified": true
+  },
+  {
+    "id": "clearing-the-road",
+    "name": "Clearing the Road",
+    "region": "valley",
+    "type": "realm",
+    "giver": "mushu",
+    "requires": {
+      "quests": [
+        "the-dragon-army"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "mushu"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Clearing_the_Road",
+    "verified": true
+  },
+  {
+    "id": "protecting-the-camp",
+    "name": "Protecting the Camp",
+    "region": "valley",
+    "type": "realm",
+    "giver": "mulan",
+    "requires": {
+      "quests": [
+        "the-dragon-army"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "mulan"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Protecting_the_Camp",
+    "verified": true
+  },
+  {
+    "id": "a-defenders-training",
+    "name": "A Defender's Training",
+    "region": "valley",
+    "type": "realm",
+    "giver": "mulan",
+    "requires": {
+      "quests": [
+        "the-dragon-army"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Defender's_Training",
+    "verified": true
+  },
+  {
+    "id": "brick-breaking",
+    "name": "Brick Breaking",
+    "region": "valley",
+    "type": "realm",
+    "giver": "mulan",
+    "requires": {
+      "quests": [
+        "the-dragon-army"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Brick_Breaking",
+    "verified": true
+  },
+  {
+    "id": "fishing-for-precision",
+    "name": "Fishing for Precision",
+    "region": "valley",
+    "type": "realm",
+    "giver": "mulan",
+    "requires": {
+      "quests": [
+        "the-dragon-army"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Fishing_for_Precision",
+    "verified": true
+  },
+  {
+    "id": "training-treasures",
+    "name": "Training Treasures",
+    "region": "valley",
+    "type": "realm",
+    "giver": "mulan",
+    "wiki": "https://dreamlightvalleywiki.com/Training_Treasures",
+    "verified": true,
+    "notes": "Also needs Circular Weights, Fan and Snorkel. Starts once the Circular Weights, Fan and Snorkel have been collected."
+  },
+  {
+    "id": "orienteering",
+    "name": "Orienteering",
+    "region": "valley",
+    "type": "realm",
+    "giver": "mulan",
+    "requires": {
+      "quests": [
+        "the-dragon-army"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Orienteering",
+    "verified": true
+  },
+  {
+    "id": "the-dragon-army",
+    "name": "The Dragon Army",
+    "region": "valley",
+    "type": "realm",
+    "giver": "mushu",
+    "requires": {
+      "quests": [
+        "a-new-recruit"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Dragon_Army",
+    "verified": true
+  },
+  {
+    "id": "a-new-recruit",
+    "name": "A New Recruit",
+    "region": "valley",
+    "type": "realm",
+    "giver": "mushu",
+    "wiki": "https://dreamlightvalleywiki.com/A_New_Recruit",
+    "verified": true,
+    "notes": "Needs Mulan (Universe) unlocked."
+  },
+  {
+    "id": "finding-old-friends",
+    "name": "Finding Old Friends",
+    "region": "valley",
+    "type": "realm",
+    "giver": "simba",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "simba",
+        "nala"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Finding_Old_Friends",
+    "verified": true,
+    "notes": "Needs friendship level 10 with Nala. Also needs The Lion King."
+  },
+  {
+    "id": "relax",
+    "name": "Relax!",
+    "region": "valley",
+    "type": "realm",
+    "giver": "pumbaa",
+    "requires": {
+      "quests": [
+        "finding-old-friends"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Relax!",
+    "verified": true,
+    "notes": "Also needs The Lion King."
+  },
+  {
+    "id": "wheres-pumbaa",
+    "name": "Where's Pumbaa?",
+    "region": "valley",
+    "type": "realm",
+    "giver": "timon",
+    "requires": {
+      "quests": [
+        "relax"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "timon",
+        "pumbaa"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Where's_Pumbaa%3F",
+    "verified": true,
+    "notes": "Also needs The Lion King."
+  },
+  {
+    "id": "the-ancient-revealed",
+    "name": "The Ancient Revealed",
+    "region": "valley",
+    "type": "realm",
+    "giver": "jasmine",
+    "wiki": "https://dreamlightvalleywiki.com/The_Ancient_Revealed",
+    "verified": true,
+    "notes": "Needs Aladdin Realm unlocked."
+  },
+  {
+    "id": "brave-the-storm",
+    "name": "Brave the Storm",
+    "region": "valley",
+    "type": "realm",
+    "giver": "aladdin",
+    "requires": {
+      "quests": [
+        "the-ancient-revealed"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Brave_the_Storm",
+    "verified": true
+  },
+  {
+    "id": "monkey-business",
+    "name": "Monkey Business",
+    "region": "valley",
+    "type": "realm",
+    "giver": "aladdin",
+    "requires": {
+      "quests": [
+        "brave-the-storm"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Monkey_Business",
+    "verified": true
+  },
+  {
+    "id": "breaking-through",
+    "name": "Breaking Through",
+    "region": "valley",
+    "type": "realm",
+    "giver": "jasmine",
+    "requires": {
+      "quests": [
+        "monkey-business"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Breaking_Through",
+    "verified": true
+  },
+  {
+    "id": "wish-magic",
+    "name": "Wish Magic",
+    "region": "valley",
+    "type": "realm",
+    "giver": "jasmine",
+    "requires": {
+      "quests": [
+        "breaking-through"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Wish_Magic",
+    "verified": true
+  },
+  {
+    "id": "carpet-diem",
+    "name": "Carpet Diem",
+    "region": "valley",
+    "type": "realm",
+    "giver": "aladdin",
+    "requires": {
+      "quests": [
+        "wish-magic"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "aladdin",
+        "jasmine"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Carpet_Diem",
+    "verified": true
+  },
+  {
+    "id": "wonders-of-wonderland",
+    "name": "Wonders of Wonderland",
+    "region": "valley",
+    "type": "realm",
+    "giver": "cheshire-cat",
+    "wiki": "https://dreamlightvalleywiki.com/Wonders_of_Wonderland",
+    "verified": true,
+    "notes": "Needs Alice in Wonderland Realm unlocked."
+  },
+  {
+    "id": "the-queens-maze",
+    "name": "The Queen's Maze",
+    "region": "valley",
+    "type": "realm",
+    "giver": "cheshire-cat",
+    "requires": {
+      "quests": [
+        "wonders-of-wonderland"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Queen's_Maze",
+    "verified": true
+  },
+  {
+    "id": "teeny-tiny-problems",
+    "name": "Teeny, Tiny Problems",
+    "region": "valley",
+    "type": "realm",
+    "giver": "alice",
+    "wiki": "https://dreamlightvalleywiki.com/Teeny,_Tiny_Problems",
+    "verified": true,
+    "notes": "Needs Alice in Wonderland Realm unlocked."
+  },
+  {
+    "id": "leaving-wonderland",
+    "name": "Leaving Wonderland",
+    "region": "valley",
+    "type": "realm",
+    "giver": "alice",
+    "unlocks": {
+      "characters": [
+        "alice"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Leaving_Wonderland",
+    "verified": true,
+    "notes": "Needs Alice in Wonderland Realm unlocked."
+  },
+  {
+    "id": "emotional-rescue",
+    "name": "Emotional Rescue",
+    "region": "valley",
+    "type": "realm",
+    "giver": "joy",
+    "wiki": "https://dreamlightvalleywiki.com/Emotional_Rescue",
+    "verified": true,
+    "notes": "Starts from Inside Out."
+  },
+  {
+    "id": "out-of-the-blue",
+    "name": "Out of the Blue",
+    "region": "valley",
+    "type": "realm",
+    "giver": "sadness",
+    "requires": {
+      "quests": [
+        "emotional-rescue"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Out_of_the_Blue",
+    "verified": true
+  },
+  {
+    "id": "dream-on",
+    "name": "Dream On!",
+    "region": "valley",
+    "type": "realm",
+    "giver": "joy",
+    "requires": {
+      "quests": [
+        "out-of-the-blue"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "joy"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Dream_On!",
+    "verified": true
+  },
+  {
+    "id": "get-up-and-glow",
+    "name": "Get Up and Glow!",
+    "region": "valley",
+    "type": "realm",
+    "giver": "sadness",
+    "requires": {
+      "quests": [
+        "dream-on"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "sadness"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Get_Up_and_Glow!",
+    "verified": true
+  },
+  {
+    "id": "the-haunting-of-beasts-castle",
+    "name": "The Haunting of Beast's Castle",
+    "region": "valley",
+    "type": "realm",
+    "giver": "lumiere",
+    "requires": {
+      "characters": [
+        "belle",
+        "the-beast"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Haunting_of_Beast's_Castle",
+    "verified": true,
+    "notes": "Starts with a letter from the Beast."
+  },
+  {
+    "id": "a-growing-mystery",
+    "name": "A Growing Mystery",
+    "region": "valley",
+    "type": "realm",
+    "giver": "cogsworth",
+    "requires": {
+      "quests": [
+        "the-haunting-of-beasts-castle"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Growing_Mystery",
+    "verified": true
+  },
+  {
+    "id": "belle-book-and-candle",
+    "name": "Belle, Book, and Candle",
+    "region": "valley",
+    "type": "realm",
+    "giver": "lumiere",
+    "requires": {
+      "quests": [
+        "a-growing-mystery"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Belle,_Book,_and_Candle",
+    "verified": true
+  },
+  {
+    "id": "a-guide-to-better-castle-keeping",
+    "name": "A Guide to Better Castle-Keeping",
+    "region": "valley",
+    "type": "realm",
+    "giver": "cogsworth",
+    "requires": {
+      "quests": [
+        "belle-book-and-candle"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "cogsworth",
+        "lumiere"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Guide_to_Better_Castle-Keeping",
+    "verified": true
+  },
+  {
+    "id": "canine-courtship",
+    "name": "Canine Courtship",
+    "region": "valley",
+    "type": "realm",
+    "giver": "tramp",
+    "wiki": "https://dreamlightvalleywiki.com/Canine_Courtship",
+    "verified": true,
+    "notes": "Starts from Lady and the Tramp."
+  },
+  {
+    "id": "the-jailbreak",
+    "name": "The Jailbreak",
+    "region": "valley",
+    "type": "realm",
+    "giver": "lady",
+    "requires": {
+      "quests": [
+        "canine-courtship"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Jailbreak",
+    "verified": true
+  },
+  {
+    "id": "meatballs",
+    "name": "Meatballs",
+    "region": "valley",
+    "type": "realm",
+    "giver": "tramp",
+    "requires": {
+      "quests": [
+        "the-jailbreak"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "tramp"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Meatballs",
+    "verified": true
+  },
+  {
+    "id": "critters-and-compassion",
+    "name": "Critters and Compassion",
+    "region": "valley",
+    "type": "realm",
+    "giver": "lady",
+    "requires": {
+      "quests": [
+        "meatballs"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "lady"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Critters_and_Compassion",
+    "verified": true
+  },
+  {
+    "id": "moonlighting-as-a-hero",
+    "name": "Moonlighting as a Hero",
+    "region": "valley",
+    "type": "realm",
+    "giver": "phil",
+    "wiki": "https://dreamlightvalleywiki.com/Moonlighting_as_a_Hero",
+    "verified": true,
+    "notes": "Starts from Hercules (Universe)."
+  },
+  {
+    "id": "a-real-godly-mess",
+    "name": "A Real Godly Mess",
+    "region": "valley",
+    "type": "realm",
+    "giver": "phil",
+    "requires": {
+      "quests": [
+        "thunderstruck"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "phil",
+        "hercules"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Real_Godly_Mess",
+    "verified": true
+  },
+  {
+    "id": "thunderstruck",
+    "name": "Thunderstruck",
+    "region": "valley",
+    "type": "realm",
+    "giver": "hercules",
+    "requires": {
+      "quests": [
+        "speedrun-crash-course"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Thunderstruck",
+    "verified": true
+  },
+  {
+    "id": "speedrun-crash-course",
+    "name": "Speedrun Crash Course",
+    "region": "valley",
+    "type": "realm",
+    "giver": "hercules",
+    "requires": {
+      "quests": [
+        "moonlighting-as-a-hero"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Speedrun_Crash_Course",
+    "verified": true
+  },
+  {
+    "id": "red-potato-quest",
+    "name": "Red Potato Quest",
+    "region": "valley",
+    "type": "hidden",
+    "requires": {
+      "quests": [
+        "an-important-night-at-the-restaurant"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Red_Potato_Quest",
+    "verified": true,
+    "notes": "Needs Ratatouille Realm unlocked."
+  },
+  {
+    "id": "orange-potato-quest",
+    "name": "Orange Potato Quest",
+    "region": "valley",
+    "type": "hidden",
+    "requires": {
+      "quests": [
+        "the-secret-door",
+        "golden-potato-quest",
+        "red-potato-quest",
+        "the-treasure-hunt-part-2"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Orange_Potato_Quest",
+    "verified": true
+  },
+  {
+    "id": "blue-potato-quest",
+    "name": "Blue Potato Quest",
+    "region": "valley",
+    "type": "hidden",
+    "requires": {
+      "quests": [
+        "golden-potato-quest"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Blue_Potato_Quest",
+    "verified": true,
+    "notes": "Opens once the Golden Potato Quest has been found; that quest does not have to be finished first."
+  },
+  {
+    "id": "purple-potato-quest",
+    "name": "Purple Potato Quest",
+    "region": "valley",
+    "type": "hidden",
+    "requires": {
+      "quests": [
+        "golden-potato-quest",
+        "orange-potato-quest",
+        "blue-potato-quest"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Purple_Potato_Quest",
+    "verified": true
+  },
+  {
+    "id": "golden-potato-quest",
+    "name": "Golden Potato Quest",
+    "region": "valley",
+    "type": "hidden",
+    "wiki": "https://dreamlightvalleywiki.com/Golden_Potato_Quest",
+    "verified": true,
+    "notes": "Starts from the Mysterious Golden Potato."
+  },
+  {
+    "id": "green-potato-quest",
+    "name": "Green Potato Quest",
+    "region": "valley",
+    "type": "hidden",
+    "requires": {
+      "quests": [
+        "golden-potato-quest",
+        "red-potato-quest",
+        "orange-potato-quest",
+        "blue-potato-quest",
+        "seed-of-memories"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Green_Potato_Quest",
+    "verified": true
+  },
+  {
+    "id": "your-sunday-best",
+    "name": "Your Sunday Best",
+    "region": "valley",
+    "type": "other",
+    "giver": "wall-e",
+    "requires": {
+      "characters": [
+        "wall-e",
+        "mirabel",
+        "ursula"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Your_Sunday_Best",
+    "verified": true,
+    "notes": "Needs further quest progress with Ursula. Also needs Premium Shop#Dapper WALL-E Dream Bundle. Listed on the wiki as a dream bundle quest."
+  },
+  {
+    "id": "matchmaking-magic",
+    "name": "Matchmaking Magic",
+    "region": "valley",
+    "type": "other",
+    "giver": "wall-e",
+    "requires": {
+      "quests": [
+        "your-sunday-best"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Matchmaking_Magic",
+    "verified": true,
+    "notes": "Also needs Dapper WALL-E Dream Bundle. Listed on the wiki as a dream bundle quest."
+  },
+  {
+    "id": "strut-your-stuff",
+    "name": "Strut Your Stuff",
+    "region": "valley",
+    "type": "other",
+    "giver": "wall-e",
+    "requires": {
+      "quests": [
+        "matchmaking-magic"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Strut_Your_Stuff",
+    "verified": true,
+    "notes": "Also needs Dapper WALL-E Dream Bundle. Listed on the wiki as a dream bundle quest."
+  },
+  {
+    "id": "sprouting-a-story",
+    "name": "Sprouting a Story",
+    "region": "valley",
+    "type": "other",
+    "giver": "wall-e",
+    "wiki": "https://dreamlightvalleywiki.com/Sprouting_a_Story",
+    "verified": true,
+    "notes": "Also needs Missing prereqs and Dapper WALL-E Dream Bundle. Listed on the wiki as a dream bundle quest."
+  },
+  {
+    "id": "these-legs-were-made-for-walking",
+    "name": "These Legs Were Made for Walking",
+    "region": "valley",
+    "type": "other",
+    "giver": "ursula",
+    "requires": {
+      "characters": [
+        "ursula",
+        "remy"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/These_Legs_Were_Made_for_Walking",
+    "verified": true,
+    "notes": "Needs Ursula's Transformation Dream Bundle, with Ursula wearing the Vanessa Dream Style. Needs further quest progress with Remy."
+  },
+  {
+    "id": "a-show-like-no-other",
+    "name": "A Show Like No Other",
+    "region": "valley",
+    "type": "other",
+    "giver": "ursula",
+    "requires": {
+      "quests": [
+        "healing-house",
+        "these-legs-were-made-for-walking"
+      ],
+      "characters": [
+        "mother-gothel"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Show_Like_No_Other",
+    "verified": true,
+    "notes": "Needs Ursula's Transformation Dream Bundle, with Ursula wearing the Vanessa Dream Style. Needs further quest progress with Mother Gothel."
+  },
+  {
+    "id": "voice-of-reason",
+    "name": "Voice of Reason",
+    "region": "valley",
+    "type": "other",
+    "giver": "ursula",
+    "requires": {
+      "quests": [
+        "a-show-like-no-other"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Voice_of_Reason",
+    "verified": true,
+    "notes": "Needs Ursula's Transformation Dream Bundle, with Ursula wearing the Vanessa Dream Style."
+  },
+  {
+    "id": "deal-of-the-day-off-the-hook",
+    "name": "Deal of the Day: Off the Hook",
+    "region": "valley",
+    "type": "other",
+    "giver": "ursula",
+    "requires": {
+      "characters": [
+        "ursula"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Deal_of_the_Day:_Off_the_Hook",
+    "verified": true,
+    "notes": "Needs further quest progress with Ursula. Needs Glade of Trust unlocked. Also needs Ursula's Transformation Dream Bundle. Listed on the wiki as a dream bundle quest."
+  },
+  {
+    "id": "deal-of-the-day-bad-hair-day",
+    "name": "Deal of the Day: Bad Hair Day",
+    "region": "valley",
+    "type": "other",
+    "giver": "ursula",
+    "requires": {
+      "characters": [
+        "wall-e"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Deal_of_the_Day:_Bad_Hair_Day",
+    "verified": true,
+    "notes": "Also needs Ursula's Transformation Dream Bundle. Listed on the wiki as a dream bundle quest."
+  },
+  {
+    "id": "deal-of-the-day-the-gift",
+    "name": "Deal of the Day: The Gift",
+    "region": "valley",
+    "type": "other",
+    "giver": "ursula",
+    "requires": {
+      "characters": [
+        "donald-duck"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Deal_of_the_Day:_The_Gift",
+    "verified": true,
+    "notes": "Needs further quest progress with Donald Duck. Also needs Ursula's Transformation Dream Bundle. Listed on the wiki as a dream bundle quest."
+  },
+  {
+    "id": "deal-of-the-day-the-chocolate-fountain",
+    "name": "Deal of the Day: The Chocolate Fountain",
+    "region": "valley",
+    "type": "other",
+    "giver": "ursula",
+    "wiki": "https://dreamlightvalleywiki.com/Deal_of_the_Day:_The_Chocolate_Fountain",
+    "verified": true,
+    "notes": "Also needs Ursula's Transformation Dream Bundle and Add prereqs. Listed on the wiki as a dream bundle quest."
+  },
+  {
+    "id": "deal-of-the-day-like-a-warm-hug",
+    "name": "Deal of the Day: Like a Warm Hug",
+    "region": "valley",
+    "type": "other",
+    "giver": "ursula",
+    "wiki": "https://dreamlightvalleywiki.com/Deal_of_the_Day:_Like_a_Warm_Hug",
+    "verified": true,
+    "notes": "Also needs Ursula's Transformation Dream Bundle and Add prereqs. Listed on the wiki as a dream bundle quest."
+  },
+  {
+    "id": "serenade-of-memory",
+    "name": "Serenade of Memory",
+    "region": "valley",
+    "type": "other",
+    "giver": "the-beast",
+    "wiki": "https://dreamlightvalleywiki.com/Serenade_of_Memory",
+    "verified": true,
+    "notes": "Also needs Once Upon a Dance Dream Bundle. Listed on the wiki as a dream bundle quest."
+  },
+  {
+    "id": "the-rising-rhapsody",
+    "name": "The Rising Rhapsody",
+    "region": "valley",
+    "type": "other",
+    "giver": "the-beast",
+    "requires": {
+      "quests": [
+        "serenade-of-memory"
+      ],
+      "characters": [
+        "minnie-mouse",
+        "kristoff",
+        "remy"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Rising_Rhapsody",
+    "verified": true,
+    "notes": "Needs Dazzle Beach, Forest of Valor and Sunlit Plateau unlocked. Also needs Once Upon a Dance Dream Bundle. Listed on the wiki as a dream bundle quest."
+  },
+  {
+    "id": "the-grand-enchanted-ball",
+    "name": "The Grand Enchanted Ball",
+    "region": "valley",
+    "type": "other",
+    "giver": "the-beast",
+    "requires": {
+      "quests": [
+        "the-rising-rhapsody"
+      ],
+      "characters": [
+        "anna",
+        "daisy"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Grand_Enchanted_Ball",
+    "verified": true,
+    "notes": "Needs Glade of Trust unlocked. Also needs Once Upon a Dance Dream Bundle. Listed on the wiki as a dream bundle quest."
+  },
+  {
+    "id": "once-upon-a-dance-pieces-of-the-hearts",
+    "name": "Once Upon a Dance: Pieces of the Hearts",
+    "region": "valley",
+    "type": "other",
+    "giver": "mirabel",
+    "requires": {
+      "quests": [
+        "the-grand-enchanted-ball"
+      ],
+      "characters": [
+        "wall-e",
+        "woody",
+        "moana",
+        "the-beast"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Once_Upon_a_Dance:_Pieces_of_the_Hearts",
+    "verified": true,
+    "notes": "Needs further quest progress with The Beast. Also needs Once Upon a Dance Dream Bundle. There is a waiting period after the earlier quest before this one appears. Listed on the wiki as a dream bundle quest."
+  },
+  {
+    "id": "once-upon-a-dance-essence-of-moments",
+    "name": "Once Upon a Dance: Essence of Moments",
+    "region": "valley",
+    "type": "other",
+    "giver": "daisy",
+    "requires": {
+      "quests": [
+        "once-upon-a-dance-pieces-of-the-hearts"
+      ],
+      "characters": [
+        "donald-duck"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Once_Upon_a_Dance:_Essence_of_Moments",
+    "verified": true,
+    "notes": "Needs Frosted Heights unlocked. Also needs Once Upon a Dance Dream Bundle. There is a waiting period after the earlier quest before this one appears. Listed on the wiki as a dream bundle quest."
+  },
+  {
+    "id": "once-upon-a-dance-soft-steps-strong-ties",
+    "name": "Once Upon a Dance: Soft Steps, Strong Ties",
+    "region": "valley",
+    "type": "other",
+    "giver": "kristoff",
+    "requires": {
+      "quests": [
+        "once-upon-a-dance-essence-of-moments"
+      ],
+      "characters": [
+        "remy",
+        "the-beast"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Once_Upon_a_Dance:_Soft_Steps,_Strong_Ties",
+    "verified": true,
+    "notes": "Needs further quest progress with Remy and The Beast. Also needs Once Upon a Dance Dream Bundle. There is a waiting period after the earlier quest before this one appears. Listed on the wiki as a dream bundle quest."
+  },
+  {
+    "id": "once-upon-a-dance-frightfully-formal",
+    "name": "Once Upon a Dance: Frightfully Formal",
+    "region": "valley",
+    "type": "other",
+    "giver": "jack-skellington",
+    "requires": {
+      "quests": [
+        "once-upon-a-dance-soft-steps-strong-ties"
+      ],
+      "characters": [
+        "mother-gothel",
+        "scar",
+        "ursula"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Once_Upon_a_Dance:_Frightfully_Formal",
+    "verified": true,
+    "notes": "Also needs Once Upon a Dance Dream Bundle. There is a waiting period after the earlier quest before this one appears. Listed on the wiki as a dream bundle quest."
+  },
+  {
+    "id": "bunnies-on-the-run",
+    "name": "Bunnies on the Run",
+    "region": "valley",
+    "type": "other",
+    "giver": "wall-e",
+    "requires": {
+      "characters": [
+        "wall-e"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Bunnies_on_the_Run",
+    "verified": true,
+    "notes": "Listed on the wiki as a repeatable quest."
+  },
+  {
+    "id": "blooming-and-blossoming",
+    "name": "Blooming and Blossoming",
+    "region": "valley",
+    "type": "other",
+    "giver": "wall-e",
+    "requires": {
+      "characters": [
+        "wall-e"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Blooming_and_Blossoming",
+    "verified": true,
+    "notes": "Listed on the wiki as a repeatable quest."
+  },
+  {
+    "id": "dreamlight-parks-fest-decorate",
+    "name": "Dreamlight Parks Fest: Decorate!",
+    "region": "valley",
+    "type": "event",
+    "giver": "scrooge-mcduck",
+    "wiki": "https://dreamlightvalleywiki.com/Dreamlight_Parks_Fest:_Decorate!",
+    "verified": true,
+    "notes": "Listed on the wiki as a repeatable quest. Only during the Dreamlight Parks Fest event. Opens after Scrooge McDuck's opening event quest, Dreamlight Parks Fest."
+  },
+  {
+    "id": "dreamlight-parks-fest-scrooge-mcduck",
+    "name": "Dreamlight Parks Fest: Scrooge McDuck",
+    "region": "valley",
+    "type": "event",
+    "giver": "scrooge-mcduck",
+    "wiki": "https://dreamlightvalleywiki.com/Dreamlight_Parks_Fest:_Scrooge_McDuck",
+    "verified": true,
+    "notes": "Listed on the wiki as a repeatable quest. Only during the Dreamlight Parks Fest event. Opens the day after the event quest Dreamlight Parks Fest: Decorate Most!"
+  },
+  {
+    "id": "dreamlight-parks-fest-wall-e",
+    "name": "Dreamlight Parks Fest: WALL-E",
+    "region": "valley",
+    "type": "event",
+    "giver": "wall-e",
+    "wiki": "https://dreamlightvalleywiki.com/Dreamlight_Parks_Fest:_WALL-E",
+    "verified": true,
+    "notes": "Listed on the wiki as a repeatable quest. Only during the Dreamlight Parks Fest event. Opens the day after the event quest Dreamlight Parks Fest: Decorate Most!"
+  },
+  {
+    "id": "dreamlight-parks-fest-mickey",
+    "name": "Dreamlight Parks Fest: Mickey",
+    "region": "valley",
+    "type": "event",
+    "giver": "mickey-mouse",
+    "wiki": "https://dreamlightvalleywiki.com/Dreamlight_Parks_Fest:_Mickey",
+    "verified": true,
+    "notes": "Listed on the wiki as a repeatable quest. Only during the Dreamlight Parks Fest event. Opens the day after the event quest Dreamlight Parks Fest: Decorate Most!"
+  },
+  {
+    "id": "dreamlight-parks-fest-moana",
+    "name": "Dreamlight Parks Fest: Moana",
+    "region": "valley",
+    "type": "event",
+    "giver": "moana",
+    "wiki": "https://dreamlightvalleywiki.com/Dreamlight_Parks_Fest:_Moana",
+    "verified": true,
+    "notes": "Listed on the wiki as a repeatable quest. Only during the Dreamlight Parks Fest event. Opens the day after the event quest Dreamlight Parks Fest: Decorate Most!"
+  },
+  {
+    "id": "dreamlight-parks-fest-ursula",
+    "name": "Dreamlight Parks Fest: Ursula",
+    "region": "valley",
+    "type": "event",
+    "giver": "ursula",
+    "wiki": "https://dreamlightvalleywiki.com/Dreamlight_Parks_Fest:_Ursula",
+    "verified": true,
+    "notes": "Listed on the wiki as a repeatable quest. Only during the Dreamlight Parks Fest event. Opens the day after the event quest Dreamlight Parks Fest: Decorate Most!"
+  },
+  {
+    "id": "summer-sizzle-go-fish",
+    "name": "Summer Sizzle: Go Fish!",
+    "region": "valley",
+    "type": "other",
+    "giver": "goofy",
+    "requires": {
+      "characters": [
+        "goofy"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Summer_Sizzle:_Go_Fish!",
+    "verified": true,
+    "notes": "Needs Peaceful Meadow and Dazzle Beach unlocked. Listed on the wiki as a repeatable quest."
+  }
+]

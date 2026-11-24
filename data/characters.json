@@ -1,1 +1,567 @@
-[]
+[
+  {
+    "id": "ariel",
+    "name": "Ariel",
+    "region": "valley",
+    "film": "The Little Mermaid",
+    "wiki": "https://dreamlightvalleywiki.com/Ariel"
+  },
+  {
+    "id": "merlin",
+    "name": "Merlin",
+    "region": "valley",
+    "film": "The Sword in the Stone",
+    "wiki": "https://dreamlightvalleywiki.com/Merlin"
+  },
+  {
+    "id": "wall-e",
+    "name": "WALL-E",
+    "region": "valley",
+    "film": "WALL-E",
+    "wiki": "https://dreamlightvalleywiki.com/WALL-E"
+  },
+  {
+    "id": "maui",
+    "name": "Maui",
+    "region": "valley",
+    "film": "Moana",
+    "wiki": "https://dreamlightvalleywiki.com/Maui"
+  },
+  {
+    "id": "moana",
+    "name": "Moana",
+    "region": "valley",
+    "film": "Moana",
+    "wiki": "https://dreamlightvalleywiki.com/Moana"
+  },
+  {
+    "id": "remy",
+    "name": "Remy",
+    "region": "valley",
+    "film": "Ratatouille",
+    "wiki": "https://dreamlightvalleywiki.com/Remy"
+  },
+  {
+    "id": "prince-eric",
+    "name": "Prince Eric",
+    "region": "valley",
+    "film": "The Little Mermaid",
+    "wiki": "https://dreamlightvalleywiki.com/Prince_Eric"
+  },
+  {
+    "id": "ursula",
+    "name": "Ursula",
+    "region": "valley",
+    "film": "The Little Mermaid",
+    "wiki": "https://dreamlightvalleywiki.com/Ursula"
+  },
+  {
+    "id": "anna",
+    "name": "Anna",
+    "region": "valley",
+    "film": "Frozen",
+    "wiki": "https://dreamlightvalleywiki.com/Anna"
+  },
+  {
+    "id": "elsa",
+    "name": "Elsa",
+    "region": "valley",
+    "film": "Frozen",
+    "wiki": "https://dreamlightvalleywiki.com/Elsa"
+  },
+  {
+    "id": "kristoff",
+    "name": "Kristoff",
+    "region": "valley",
+    "film": "Frozen",
+    "wiki": "https://dreamlightvalleywiki.com/Kristoff"
+  },
+  {
+    "id": "mother-gothel",
+    "name": "Mother Gothel",
+    "region": "valley",
+    "film": "Tangled",
+    "wiki": "https://dreamlightvalleywiki.com/Mother_Gothel"
+  },
+  {
+    "id": "donald-duck",
+    "name": "Donald Duck",
+    "region": "valley",
+    "film": "Mickey & Friends",
+    "wiki": "https://dreamlightvalleywiki.com/Donald_Duck"
+  },
+  {
+    "id": "goofy",
+    "name": "Goofy",
+    "region": "valley",
+    "film": "Mickey & Friends",
+    "wiki": "https://dreamlightvalleywiki.com/Goofy"
+  },
+  {
+    "id": "mickey-mouse",
+    "name": "Mickey Mouse",
+    "region": "valley",
+    "film": "Mickey & Friends",
+    "wiki": "https://dreamlightvalleywiki.com/Mickey_Mouse"
+  },
+  {
+    "id": "minnie-mouse",
+    "name": "Minnie Mouse",
+    "region": "valley",
+    "film": "Mickey & Friends",
+    "wiki": "https://dreamlightvalleywiki.com/Minnie_Mouse"
+  },
+  {
+    "id": "scrooge-mcduck",
+    "name": "Scrooge McDuck",
+    "region": "valley",
+    "film": "Mickey & Friends",
+    "wiki": "https://dreamlightvalleywiki.com/Scrooge_McDuck"
+  },
+  {
+    "id": "scar",
+    "name": "Scar",
+    "region": "valley",
+    "film": "The Lion King",
+    "wiki": "https://dreamlightvalleywiki.com/Scar"
+  },
+  {
+    "id": "stitch",
+    "name": "Stitch",
+    "region": "valley",
+    "film": "Lilo & Stitch",
+    "wiki": "https://dreamlightvalleywiki.com/Stitch"
+  },
+  {
+    "id": "woody",
+    "name": "Woody",
+    "region": "valley",
+    "film": "Toy Story",
+    "wiki": "https://dreamlightvalleywiki.com/Woody"
+  },
+  {
+    "id": "buzz-lightyear",
+    "name": "Buzz Lightyear",
+    "region": "valley",
+    "film": "Toy Story",
+    "wiki": "https://dreamlightvalleywiki.com/Buzz_Lightyear"
+  },
+  {
+    "id": "mirabel",
+    "name": "Mirabel",
+    "region": "valley",
+    "film": "Encanto",
+    "wiki": "https://dreamlightvalleywiki.com/Mirabel"
+  },
+  {
+    "id": "olaf",
+    "name": "Olaf",
+    "region": "valley",
+    "film": "Frozen",
+    "wiki": "https://dreamlightvalleywiki.com/Olaf"
+  },
+  {
+    "id": "simba",
+    "name": "Simba",
+    "region": "valley",
+    "film": "The Lion King",
+    "wiki": "https://dreamlightvalleywiki.com/Simba"
+  },
+  {
+    "id": "nala",
+    "name": "Nala",
+    "region": "valley",
+    "film": "The Lion King",
+    "wiki": "https://dreamlightvalleywiki.com/Nala"
+  },
+  {
+    "id": "the-fairy-godmother",
+    "name": "The Fairy Godmother",
+    "region": "valley",
+    "film": "Cinderella",
+    "wiki": "https://dreamlightvalleywiki.com/The_Fairy_Godmother"
+  },
+  {
+    "id": "the-forgotten",
+    "name": "The Forgotten",
+    "region": "valley",
+    "wiki": "https://dreamlightvalleywiki.com/The_Forgotten"
+  },
+  {
+    "id": "vanellope",
+    "name": "Vanellope",
+    "region": "valley",
+    "film": "Wreck-It Ralph",
+    "wiki": "https://dreamlightvalleywiki.com/Vanellope"
+  },
+  {
+    "id": "belle",
+    "name": "Belle",
+    "region": "valley",
+    "film": "Beauty and the Beast",
+    "wiki": "https://dreamlightvalleywiki.com/Belle"
+  },
+  {
+    "id": "the-beast",
+    "name": "The Beast",
+    "region": "valley",
+    "film": "Beauty and the Beast",
+    "wiki": "https://dreamlightvalleywiki.com/The_Beast"
+  },
+  {
+    "id": "jack-skellington",
+    "name": "Jack Skellington",
+    "region": "valley",
+    "film": "Tim Burton's The Nightmare Before Christmas",
+    "wiki": "https://dreamlightvalleywiki.com/Jack_Skellington"
+  },
+  {
+    "id": "gaston",
+    "name": "Gaston",
+    "region": "eternity-isle",
+    "film": "Beauty and the Beast",
+    "wiki": "https://dreamlightvalleywiki.com/Gaston"
+  },
+  {
+    "id": "rapunzel",
+    "name": "Rapunzel",
+    "region": "eternity-isle",
+    "film": "Tangled",
+    "wiki": "https://dreamlightvalleywiki.com/Rapunzel"
+  },
+  {
+    "id": "eve",
+    "name": "EVE",
+    "region": "eternity-isle",
+    "film": "WALL-E",
+    "wiki": "https://dreamlightvalleywiki.com/EVE"
+  },
+  {
+    "id": "jafar",
+    "name": "Jafar",
+    "region": "eternity-isle",
+    "film": "Aladdin",
+    "wiki": "https://dreamlightvalleywiki.com/Jafar"
+  },
+  {
+    "id": "mike-wazowski",
+    "name": "Mike Wazowski",
+    "region": "valley",
+    "film": "Monsters, Inc.",
+    "wiki": "https://dreamlightvalleywiki.com/Mike_Wazowski"
+  },
+  {
+    "id": "sulley",
+    "name": "Sulley",
+    "region": "valley",
+    "film": "Monsters, Inc.",
+    "wiki": "https://dreamlightvalleywiki.com/Sulley"
+  },
+  {
+    "id": "oswald",
+    "name": "Oswald",
+    "region": "eternity-isle",
+    "film": "Oswald the Lucky Rabbit",
+    "wiki": "https://dreamlightvalleywiki.com/Oswald"
+  },
+  {
+    "id": "daisy",
+    "name": "Daisy",
+    "region": "valley",
+    "film": "Mickey & Friends",
+    "wiki": "https://dreamlightvalleywiki.com/Daisy"
+  },
+  {
+    "id": "mulan",
+    "name": "Mulan",
+    "region": "valley",
+    "film": "Mulan",
+    "wiki": "https://dreamlightvalleywiki.com/Mulan"
+  },
+  {
+    "id": "mushu",
+    "name": "Mushu",
+    "region": "valley",
+    "film": "Mulan",
+    "wiki": "https://dreamlightvalleywiki.com/Mushu"
+  },
+  {
+    "id": "tiana",
+    "name": "Tiana",
+    "region": "valley",
+    "film": "The Princess and the Frog",
+    "wiki": "https://dreamlightvalleywiki.com/Tiana"
+  },
+  {
+    "id": "timon",
+    "name": "Timon",
+    "region": "valley",
+    "film": "The Lion King",
+    "wiki": "https://dreamlightvalleywiki.com/Timon"
+  },
+  {
+    "id": "pumbaa",
+    "name": "Pumbaa",
+    "region": "valley",
+    "film": "The Lion King",
+    "wiki": "https://dreamlightvalleywiki.com/Pumbaa"
+  },
+  {
+    "id": "merida",
+    "name": "Merida",
+    "region": "storybook-vale",
+    "film": "Brave",
+    "wiki": "https://dreamlightvalleywiki.com/Merida"
+  },
+  {
+    "id": "flynn",
+    "name": "Flynn",
+    "region": "storybook-vale",
+    "film": "Tangled",
+    "wiki": "https://dreamlightvalleywiki.com/Flynn"
+  },
+  {
+    "id": "maleficent",
+    "name": "Maleficent",
+    "region": "storybook-vale",
+    "film": "Sleeping Beauty",
+    "wiki": "https://dreamlightvalleywiki.com/Maleficent"
+  },
+  {
+    "id": "the-lorekeeper",
+    "name": "The Lorekeeper",
+    "region": "storybook-vale",
+    "wiki": "https://dreamlightvalleywiki.com/The_Lorekeeper"
+  },
+  {
+    "id": "sally",
+    "name": "Sally",
+    "region": "valley",
+    "film": "Tim Burton's The Nightmare Before Christmas",
+    "wiki": "https://dreamlightvalleywiki.com/Sally"
+  },
+  {
+    "id": "hades",
+    "name": "Hades",
+    "region": "storybook-vale",
+    "film": "Hercules",
+    "wiki": "https://dreamlightvalleywiki.com/Hades"
+  },
+  {
+    "id": "aladdin",
+    "name": "Aladdin",
+    "region": "valley",
+    "film": "Aladdin",
+    "wiki": "https://dreamlightvalleywiki.com/Aladdin"
+  },
+  {
+    "id": "jasmine",
+    "name": "Jasmine",
+    "region": "valley",
+    "film": "Aladdin",
+    "wiki": "https://dreamlightvalleywiki.com/Jasmine"
+  },
+  {
+    "id": "alice",
+    "name": "Alice",
+    "region": "valley",
+    "film": "Alice in Wonderland",
+    "wiki": "https://dreamlightvalleywiki.com/Alice"
+  },
+  {
+    "id": "cheshire-cat",
+    "name": "Cheshire Cat",
+    "region": "valley",
+    "film": "Alice in Wonderland",
+    "wiki": "https://dreamlightvalleywiki.com/Cheshire_Cat"
+  },
+  {
+    "id": "peter-pan",
+    "name": "Peter Pan",
+    "region": "valley",
+    "film": "Peter Pan",
+    "wiki": "https://dreamlightvalleywiki.com/Peter_Pan"
+  },
+  {
+    "id": "aurora",
+    "name": "Aurora",
+    "region": "storybook-vale",
+    "film": "Sleeping Beauty",
+    "wiki": "https://dreamlightvalleywiki.com/Aurora"
+  },
+  {
+    "id": "joy",
+    "name": "Joy",
+    "region": "valley",
+    "film": "Inside Out",
+    "wiki": "https://dreamlightvalleywiki.com/Joy"
+  },
+  {
+    "id": "sadness",
+    "name": "Sadness",
+    "region": "valley",
+    "film": "Inside Out",
+    "wiki": "https://dreamlightvalleywiki.com/Sadness"
+  },
+  {
+    "id": "snow-white",
+    "name": "Snow White",
+    "region": "wishblossom-ranch",
+    "film": "Snow White",
+    "wiki": "https://dreamlightvalleywiki.com/Snow_White"
+  },
+  {
+    "id": "tinker-bell",
+    "name": "Tinker Bell",
+    "region": "wishblossom-ranch",
+    "film": "Peter Pan",
+    "wiki": "https://dreamlightvalleywiki.com/Tinker_Bell"
+  },
+  {
+    "id": "cogsworth",
+    "name": "Cogsworth",
+    "region": "valley",
+    "film": "Beauty and the Beast",
+    "wiki": "https://dreamlightvalleywiki.com/Cogsworth"
+  },
+  {
+    "id": "lumiere",
+    "name": "Lumiere",
+    "region": "valley",
+    "film": "Beauty and the Beast",
+    "wiki": "https://dreamlightvalleywiki.com/Lumiere"
+  },
+  {
+    "id": "cinderella",
+    "name": "Cinderella",
+    "region": "valley",
+    "film": "Cinderella",
+    "wiki": "https://dreamlightvalleywiki.com/Cinderella"
+  },
+  {
+    "id": "tigger",
+    "name": "Tigger",
+    "region": "wishblossom-ranch",
+    "film": "Winnie the Pooh",
+    "wiki": "https://dreamlightvalleywiki.com/Tigger"
+  },
+  {
+    "id": "cruella",
+    "name": "Cruella",
+    "region": "wishblossom-ranch",
+    "film": "One Hundred and One Dalmatians",
+    "wiki": "https://dreamlightvalleywiki.com/Cruella"
+  },
+  {
+    "id": "lady",
+    "name": "Lady",
+    "region": "valley",
+    "film": "Lady and the Tramp",
+    "wiki": "https://dreamlightvalleywiki.com/Lady"
+  },
+  {
+    "id": "tramp",
+    "name": "Tramp",
+    "region": "valley",
+    "film": "Lady and the Tramp",
+    "wiki": "https://dreamlightvalleywiki.com/Tramp"
+  },
+  {
+    "id": "pocahontas",
+    "name": "Pocahontas",
+    "region": "valley",
+    "film": "Pocahontas",
+    "wiki": "https://dreamlightvalleywiki.com/Pocahontas"
+  },
+  {
+    "id": "phil",
+    "name": "Phil",
+    "region": "valley",
+    "film": "Hercules",
+    "wiki": "https://dreamlightvalleywiki.com/Phil"
+  },
+  {
+    "id": "hercules",
+    "name": "Hercules",
+    "region": "valley",
+    "film": "Hercules",
+    "wiki": "https://dreamlightvalleywiki.com/Hercules"
+  },
+  {
+    "id": "winnie-the-pooh",
+    "name": "Winnie the Pooh",
+    "region": "honeyglow-woods",
+    "film": "Winnie the Pooh",
+    "wiki": "https://dreamlightvalleywiki.com/Winnie_the_Pooh"
+  },
+  {
+    "id": "piglet",
+    "name": "Piglet",
+    "region": "honeyglow-woods",
+    "film": "Winnie the Pooh",
+    "wiki": "https://dreamlightvalleywiki.com/Piglet"
+  },
+  {
+    "id": "eeyore",
+    "name": "Eeyore",
+    "region": "honeyglow-woods",
+    "film": "Winnie the Pooh",
+    "wiki": "https://dreamlightvalleywiki.com/Eeyore"
+  },
+  {
+    "id": "ralph",
+    "name": "Ralph",
+    "region": "valley",
+    "film": "Wreck-It Ralph",
+    "wiki": "https://dreamlightvalleywiki.com/Ralph"
+  },
+  {
+    "id": "captain-jack-sparrow",
+    "name": "Captain Jack Sparrow",
+    "region": "keepsake-sea",
+    "film": "Pirates of the Caribbean",
+    "wiki": "https://dreamlightvalleywiki.com/Captain_Jack_Sparrow"
+  },
+  {
+    "id": "megara",
+    "name": "Megara",
+    "region": "keepsake-sea",
+    "film": "Hercules",
+    "wiki": "https://dreamlightvalleywiki.com/Megara"
+  },
+  {
+    "id": "oogie-boogie",
+    "name": "Oogie Boogie",
+    "region": "valley",
+    "film": "Tim Burton's The Nightmare Before Christmas",
+    "wiki": "https://dreamlightvalleywiki.com/Oogie_Boogie"
+  },
+  {
+    "id": "lilo",
+    "name": "Lilo",
+    "region": "valley",
+    "film": "Lilo & Stitch",
+    "wiki": "https://dreamlightvalleywiki.com/Lilo"
+  },
+  {
+    "id": "milo",
+    "name": "Milo",
+    "region": "keepsake-sea",
+    "film": "Atlantis",
+    "wiki": "https://dreamlightvalleywiki.com/Milo"
+  },
+  {
+    "id": "captain-hook",
+    "name": "Captain Hook",
+    "region": "keepsake-sea",
+    "film": "Peter Pan",
+    "wiki": "https://dreamlightvalleywiki.com/Captain_Hook"
+  },
+  {
+    "id": "wendy",
+    "name": "Wendy",
+    "region": "keepsake-sea",
+    "film": "Peter Pan",
+    "wiki": "https://dreamlightvalleywiki.com/Wendy"
+  }
+]

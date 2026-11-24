@@ -92,3 +92,22 @@ both directions.
 
 Run `npm run validate` after editing. It checks required fields, unique IDs, that every
 reference points to something that exists, and that no quests require each other in a loop.
+
+## Refreshing from the wiki
+
+The quest and villager files are generated from Dreamlight Valley Wiki exports, so they can
+be refreshed after a game update without retyping anything:
+
+1. Open `https://dreamlightvalleywiki.com/Special:Export`.
+2. In **Add pages from category**, add `Characters`, export, and save the file.
+3. Do the same for the quest categories (`Story Quests`, `Friendship Quests`, `Realm Quests`,
+   `Hidden Quests`, `Character Quests`, `Dream Bundle Quests`, `Repeatable Quests`,
+   `Time-Restricted Quests`) and save that file too.
+4. Run `node scripts/import-wiki.mjs <characters.xml> <quests.xml>`, then `npm run validate`.
+
+Keep the export files outside the repo: they contain wiki prose, and only facts belong in
+`data/`. The importer rewrites `characters.json` and every `quests/*.json`, so hand edits to
+those files are lost on the next import. Put corrections in `scripts/wiki-overrides.json`
+instead: the importer applies them every time, and each one records why it was made. The
+importer lists every prerequisite line it could not read and marks those quests
+`"verified": false`; `regions.json` is never touched.

@@ -1,0 +1,692 @@
+[
+  {
+    "id": "just-keep-swimming",
+    "name": "Just Keep Swimming",
+    "region": "keepsake-sea",
+    "type": "story",
+    "giver": "ursula",
+    "requires": {
+      "quests": [
+        "with-great-power",
+        "friendship-is-everything",
+        "making-cents-of-things",
+        "scrooge-mcducks-grand-re-opening",
+        "fishing-expedition"
+      ],
+      "characters": [
+        "ursula"
+      ],
+      "regions": [
+        "keepsake-sea"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Just_Keep_Swimming",
+    "verified": true
+  },
+  {
+    "id": "a-kingdom-across-the-sea",
+    "name": "A Kingdom Across the Sea",
+    "region": "keepsake-sea",
+    "type": "story",
+    "giver": "milo",
+    "requires": {
+      "quests": [
+        "just-keep-swimming"
+      ],
+      "regions": [
+        "keepsake-sea"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Kingdom_Across_the_Sea",
+    "verified": true
+  },
+  {
+    "id": "sunken-echo-the-binoculars",
+    "name": "Sunken Echo: The Binoculars",
+    "region": "keepsake-sea",
+    "type": "story",
+    "requires": {
+      "quests": [
+        "a-kingdom-across-the-sea"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Sunken_Echo:_The_Binoculars",
+    "verified": true,
+    "notes": "Opens while A Kingdom Across the Sea is under way; that quest does not have to be finished first."
+  },
+  {
+    "id": "the-four-guardians",
+    "name": "The Four Guardians",
+    "region": "keepsake-sea",
+    "type": "story",
+    "giver": "milo",
+    "requires": {
+      "quests": [
+        "a-kingdom-across-the-sea"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "milo"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Four_Guardians",
+    "verified": true
+  },
+  {
+    "id": "sunken-echo-the-rain-boots",
+    "name": "Sunken Echo: The Rain Boots",
+    "region": "keepsake-sea",
+    "type": "story",
+    "giver": "milo",
+    "requires": {
+      "quests": [
+        "the-four-guardians"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Sunken_Echo:_The_Rain_Boots",
+    "verified": true
+  },
+  {
+    "id": "sunken-echo-first-aid-kit",
+    "name": "Sunken Echo: First Aid Kit",
+    "region": "keepsake-sea",
+    "type": "story",
+    "giver": "milo",
+    "requires": {
+      "quests": [
+        "captain-of-the-dead"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Sunken_Echo:_First_Aid_Kit",
+    "verified": true
+  },
+  {
+    "id": "sunken-echo-the-helmet",
+    "name": "Sunken Echo: The Helmet",
+    "region": "keepsake-sea",
+    "type": "story",
+    "giver": "milo",
+    "requires": {
+      "quests": [
+        "the-enchanted-ship"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Sunken_Echo:_The_Helmet",
+    "verified": true
+  },
+  {
+    "id": "sunken-echo-the-art-supplies",
+    "name": "Sunken Echo: The Art Supplies",
+    "region": "keepsake-sea",
+    "type": "story",
+    "giver": "milo",
+    "requires": {
+      "quests": [
+        "a-piece-of-cake"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Sunken_Echo:_The_Art_Supplies",
+    "verified": true
+  },
+  {
+    "id": "captain-of-the-dead",
+    "name": "Captain of the Dead",
+    "region": "keepsake-sea",
+    "type": "story",
+    "giver": "captain-jack-sparrow",
+    "requires": {
+      "quests": [
+        "the-four-guardians"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Captain_of_the_Dead",
+    "verified": true
+  },
+  {
+    "id": "the-enchanted-ship",
+    "name": "The Enchanted Ship",
+    "region": "keepsake-sea",
+    "type": "story",
+    "giver": "captain-jack-sparrow",
+    "requires": {
+      "quests": [
+        "captain-of-the-dead"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "captain-jack-sparrow"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Enchanted_Ship",
+    "verified": true
+  },
+  {
+    "id": "a-slippery-situation",
+    "name": "A Slippery Situation",
+    "region": "keepsake-sea",
+    "type": "story",
+    "giver": "megara",
+    "requires": {
+      "quests": [
+        "the-enchanted-ship"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Slippery_Situation",
+    "verified": true
+  },
+  {
+    "id": "a-piece-of-cake",
+    "name": "A Piece of Cake",
+    "region": "keepsake-sea",
+    "type": "story",
+    "giver": "megara",
+    "requires": {
+      "quests": [
+        "a-slippery-situation"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "megara"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Piece_of_Cake",
+    "verified": true
+  },
+  {
+    "id": "sunken-echo-the-fancy-hat",
+    "name": "Sunken Echo: The Fancy Hat",
+    "region": "keepsake-sea",
+    "type": "story",
+    "giver": "milo",
+    "requires": {
+      "quests": [
+        "donut-of-destiny"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Sunken_Echo:_The_Fancy_Hat",
+    "verified": true
+  },
+  {
+    "id": "sunken-echo-the-cookie-cutters",
+    "name": "Sunken Echo: The Cookie Cutters",
+    "region": "keepsake-sea",
+    "type": "story",
+    "giver": "milo",
+    "requires": {
+      "quests": [
+        "i-caaaaaannn-speeeaaaaaaakkkk-wwwhhaaaaaleeee"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Sunken_Echo:_The_Cookie_Cutters",
+    "verified": true
+  },
+  {
+    "id": "sunken-echo-the-pool-floatie",
+    "name": "Sunken Echo: The Pool Floatie",
+    "region": "keepsake-sea",
+    "type": "story",
+    "giver": "milo",
+    "requires": {
+      "quests": [
+        "the-pinky-promise"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Sunken_Echo:_The_Pool_Floatie",
+    "verified": true
+  },
+  {
+    "id": "sunken-echo-the-seashell",
+    "name": "Sunken Echo: The Seashell",
+    "region": "keepsake-sea",
+    "type": "story",
+    "giver": "milo",
+    "requires": {
+      "quests": [
+        "the-forgotten-throne-room"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Sunken_Echo:_The_Seashell",
+    "verified": true
+  },
+  {
+    "id": "sunken-echo-the-most-valuable-treasure",
+    "name": "Sunken Echo: The Most Valuable Treasure",
+    "region": "keepsake-sea",
+    "type": "story",
+    "giver": "milo",
+    "requires": {
+      "quests": [
+        "you-have-to-believe"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Sunken_Echo:_The_Most_Valuable_Treasure",
+    "verified": true
+  },
+  {
+    "id": "donut-of-destiny",
+    "name": "Donut of Destiny",
+    "region": "keepsake-sea",
+    "type": "story",
+    "giver": "captain-hook",
+    "requires": {
+      "quests": [
+        "a-piece-of-cake"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Donut_of_Destiny",
+    "verified": true
+  },
+  {
+    "id": "i-caaaaaannn-speeeaaaaaaakkkk-wwwhhaaaaaleeee",
+    "name": "I CaaAAAannn SpeeeaAAAAAAKKkk WWWHHAAAAALEeee!!!",
+    "region": "keepsake-sea",
+    "type": "story",
+    "giver": "captain-hook",
+    "requires": {
+      "quests": [
+        "donut-of-destiny"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/I_CaaAAAannn_SpeeeaAAAAAAKKkk_WWWHHAAAAALEeee!!!",
+    "verified": true
+  },
+  {
+    "id": "no-pirates-allowed",
+    "name": "No Pirates Allowed",
+    "region": "keepsake-sea",
+    "type": "story",
+    "giver": "captain-hook",
+    "requires": {
+      "quests": [
+        "i-caaaaaannn-speeeaaaaaaakkkk-wwwhhaaaaaleeee"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "captain-hook"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/No_Pirates_Allowed",
+    "verified": true
+  },
+  {
+    "id": "the-pinky-promise",
+    "name": "The Pinky Promise",
+    "region": "keepsake-sea",
+    "type": "story",
+    "giver": "wendy",
+    "requires": {
+      "quests": [
+        "no-pirates-allowed"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Pinky_Promise",
+    "verified": true
+  },
+  {
+    "id": "the-forgotten-throne-room",
+    "name": "The Forgotten Throne Room",
+    "region": "keepsake-sea",
+    "type": "story",
+    "giver": "wendy",
+    "requires": {
+      "quests": [
+        "the-pinky-promise"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Forgotten_Throne_Room",
+    "verified": true
+  },
+  {
+    "id": "forging-friendships",
+    "name": "Forging Friendships",
+    "region": "keepsake-sea",
+    "type": "story",
+    "giver": "wendy",
+    "requires": {
+      "quests": [
+        "the-forgotten-throne-room"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "wendy"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Forging_Friendships",
+    "verified": true
+  },
+  {
+    "id": "you-have-to-believe",
+    "name": "You Have to Believe",
+    "region": "keepsake-sea",
+    "type": "story",
+    "giver": "wendy",
+    "requires": {
+      "quests": [
+        "forging-friendships"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/You_Have_to_Believe",
+    "verified": true
+  },
+  {
+    "id": "field-research",
+    "name": "Field Research",
+    "region": "keepsake-sea",
+    "type": "friendship",
+    "giver": "milo",
+    "requires": {
+      "quests": [
+        "the-four-guardians"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Field_Research",
+    "verified": true
+  },
+  {
+    "id": "bring-me-that-horizon",
+    "name": "Bring Me That Horizon",
+    "region": "keepsake-sea",
+    "type": "friendship",
+    "giver": "captain-jack-sparrow",
+    "requires": {
+      "quests": [
+        "the-enchanted-ship"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Bring_Me_That_Horizon",
+    "verified": true
+  },
+  {
+    "id": "shellfish-behavior",
+    "name": "Shellfish Behavior",
+    "region": "keepsake-sea",
+    "type": "friendship",
+    "giver": "captain-jack-sparrow",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "captain-jack-sparrow"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Shellfish_Behavior",
+    "verified": true,
+    "notes": "Also needs Dory."
+  },
+  {
+    "id": "not-all-treasure-is-gold",
+    "name": "Not All Treasure Is Gold",
+    "region": "keepsake-sea",
+    "type": "friendship",
+    "giver": "captain-jack-sparrow",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "captain-jack-sparrow",
+        "milo"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Not_All_Treasure_Is_Gold",
+    "verified": true,
+    "notes": "Needs further quest progress with Milo."
+  },
+  {
+    "id": "them-crooked-pirates",
+    "name": "Them Crooked Pirates",
+    "region": "keepsake-sea",
+    "type": "friendship",
+    "giver": "captain-jack-sparrow",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "captain-jack-sparrow",
+        "captain-hook",
+        "wendy"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Them_Crooked_Pirates",
+    "verified": true,
+    "notes": "Needs further quest progress with Wendy. Needs The Coral Depths unlocked."
+  },
+  {
+    "id": "the-curious-curator",
+    "name": "The Curious Curator",
+    "region": "keepsake-sea",
+    "type": "friendship",
+    "giver": "milo",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "milo",
+        "moana",
+        "wendy"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Curious_Curator",
+    "verified": true,
+    "notes": "Needs further quest progress with Wendy. Needs The Coral Depths unlocked."
+  },
+  {
+    "id": "mssng-lttrs",
+    "name": "Mssng Lttrs",
+    "region": "keepsake-sea",
+    "type": "friendship",
+    "giver": "milo",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "milo",
+        "jack-skellington",
+        "captain-jack-sparrow",
+        "megara"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Mssng_Lttrs",
+    "verified": true,
+    "notes": "Needs further quest progress with Captain Jack Sparrow and Megara."
+  },
+  {
+    "id": "the-ungrateful-dead",
+    "name": "The Ungrateful Dead",
+    "region": "keepsake-sea",
+    "type": "friendship",
+    "giver": "milo",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "milo",
+        "captain-jack-sparrow"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Ungrateful_Dead",
+    "verified": true,
+    "notes": "Needs further quest progress with Captain Jack Sparrow."
+  },
+  {
+    "id": "back-to-page-one",
+    "name": "Back to Page One",
+    "region": "keepsake-sea",
+    "type": "friendship",
+    "giver": "wendy",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "wendy"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Back_to_Page_One",
+    "verified": true
+  },
+  {
+    "id": "a-villainous-twist",
+    "name": "A Villainous Twist",
+    "region": "keepsake-sea",
+    "type": "friendship",
+    "giver": "wendy",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "wendy"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Villainous_Twist",
+    "verified": true
+  },
+  {
+    "id": "picture-perfect",
+    "name": "Picture Perfect",
+    "region": "keepsake-sea",
+    "type": "friendship",
+    "giver": "wendy",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "wendy"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Picture_Perfect",
+    "verified": true
+  },
+  {
+    "id": "hooks-souvenirs",
+    "name": "Hook's Souvenirs",
+    "region": "keepsake-sea",
+    "type": "friendship",
+    "giver": "captain-hook",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "captain-hook",
+        "peter-pan",
+        "the-forgotten"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Hook's_Souvenirs",
+    "verified": true,
+    "notes": "Needs further quest progress with The Forgotten."
+  },
+  {
+    "id": "the-treasure-trap",
+    "name": "The Treasure Trap",
+    "region": "keepsake-sea",
+    "type": "friendship",
+    "giver": "captain-hook",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "captain-hook"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Treasure_Trap",
+    "verified": true
+  },
+  {
+    "id": "the-calamitous-crew",
+    "name": "The Calamitous Crew",
+    "region": "keepsake-sea",
+    "type": "friendship",
+    "giver": "captain-hook",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "captain-hook"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Calamitous_Crew",
+    "verified": true
+  },
+  {
+    "id": "worst-pirates-ever",
+    "name": "Worst! Pirates! Ever!",
+    "region": "keepsake-sea",
+    "type": "friendship",
+    "giver": "megara",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "megara",
+        "tiana"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Worst!_Pirates!_Ever!",
+    "verified": true
+  },
+  {
+    "id": "the-unbreakable-parchment",
+    "name": "The Unbreakable Parchment",
+    "region": "keepsake-sea",
+    "type": "friendship",
+    "giver": "megara",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "megara"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Unbreakable_Parchment",
+    "verified": true
+  },
+  {
+    "id": "oceans-of-truth",
+    "name": "Oceans of Truth",
+    "region": "keepsake-sea",
+    "type": "friendship",
+    "giver": "megara",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "megara",
+        "wendy"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Oceans_of_Truth",
+    "verified": true
+  },
+  {
+    "id": "the-statues-secret",
+    "name": "The Statue's Secret",
+    "region": "keepsake-sea",
+    "type": "friendship",
+    "giver": "megara",
+    "requires": {
+      "quests": [
+        "a-piece-of-cake"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Statue's_Secret",
+    "verified": true,
+    "notes": "Also needs Dory."
+  },
+  {
+    "id": "smeecoming-smee",
+    "name": "Smeecoming Smee",
+    "region": "keepsake-sea",
+    "type": "friendship",
+    "giver": "captain-hook",
+    "requires": {
+      "quests": [
+        "no-pirates-allowed"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Smeecoming_Smee",
+    "verified": true
+  },
+  {
+    "id": "journal-to-adventure",
+    "name": "Journal to Adventure",
+    "region": "keepsake-sea",
+    "type": "friendship",
+    "giver": "wendy",
+    "requires": {
+      "quests": [
+        "forging-friendships"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Journal_to_Adventure",
+    "verified": true
+  }
+]

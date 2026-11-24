@@ -1,0 +1,794 @@
+[
+  {
+    "id": "welcome-to-the-storybook-vale",
+    "name": "Welcome to the Storybook Vale",
+    "region": "storybook-vale",
+    "type": "story",
+    "giver": "merida",
+    "requires": {
+      "quests": [
+        "the-dream-castle",
+        "friendship-is-everything",
+        "making-cents-of-things",
+        "scrooge-mcducks-grand-re-opening",
+        "fishing-expedition"
+      ],
+      "regions": [
+        "storybook-vale"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "the-lorekeeper"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Welcome_to_the_Storybook_Vale",
+    "verified": true
+  },
+  {
+    "id": "a-new-chapter",
+    "name": "A New Chapter",
+    "region": "storybook-vale",
+    "type": "story",
+    "giver": "merida",
+    "requires": {
+      "quests": [
+        "welcome-to-the-storybook-vale"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "merida"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_New_Chapter",
+    "verified": true
+  },
+  {
+    "id": "a-land-of-myths-and-legends",
+    "name": "A Land of Myths and Legends",
+    "region": "storybook-vale",
+    "type": "story",
+    "giver": "merida",
+    "wiki": "https://dreamlightvalleywiki.com/A_Land_of_Myths_and_Legends",
+    "verified": true,
+    "notes": "Needs Mythopia unlocked."
+  },
+  {
+    "id": "the-wolf-of-the-wilds",
+    "name": "The Wolf of the Wilds",
+    "region": "storybook-vale",
+    "type": "story",
+    "giver": "merida",
+    "wiki": "https://dreamlightvalleywiki.com/The_Wolf_of_the_Wilds",
+    "verified": true,
+    "notes": "Needs Everafter unlocked."
+  },
+  {
+    "id": "guts-and-glory",
+    "name": "Guts & Glory",
+    "region": "storybook-vale",
+    "type": "story",
+    "giver": "hades",
+    "requires": {
+      "quests": [
+        "a-land-of-myths-and-legends"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "hades"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Guts_%26_Glory",
+    "verified": true
+  },
+  {
+    "id": "a-sheep-in-wolfs-clothing",
+    "name": "A Sheep in Wolf's Clothing",
+    "region": "storybook-vale",
+    "type": "story",
+    "giver": "flynn",
+    "requires": {
+      "quests": [
+        "the-wolf-of-the-wilds"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "flynn"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Sheep_in_Wolf's_Clothing",
+    "verified": true
+  },
+  {
+    "id": "the-mistress-of-all-evil",
+    "name": "The Mistress of All Evil",
+    "region": "storybook-vale",
+    "type": "story",
+    "giver": "maleficent",
+    "wiki": "https://dreamlightvalleywiki.com/The_Mistress_of_All_Evil",
+    "verified": true,
+    "notes": "Needs The Beanstalk Marshes unlocked."
+  },
+  {
+    "id": "a-moth-to-a-flame",
+    "name": "A Moth to a Flame",
+    "region": "storybook-vale",
+    "type": "story",
+    "giver": "hades",
+    "wiki": "https://dreamlightvalleywiki.com/A_Moth_to_a_Flame",
+    "verified": true,
+    "notes": "Needs The Fiery Plains unlocked."
+  },
+  {
+    "id": "curiouser-and-curiouser",
+    "name": "Curiouser and Curiouser...",
+    "region": "storybook-vale",
+    "type": "story",
+    "giver": "flynn",
+    "wiki": "https://dreamlightvalleywiki.com/Curiouser_and_Curiouser...",
+    "verified": true,
+    "notes": "Needs Teapot Falls unlocked."
+  },
+  {
+    "id": "mount-olympus",
+    "name": "Mount Olympus",
+    "region": "storybook-vale",
+    "type": "story",
+    "giver": "hades",
+    "wiki": "https://dreamlightvalleywiki.com/Mount_Olympus",
+    "verified": true,
+    "notes": "Needs Mount Olympus unlocked."
+  },
+  {
+    "id": "the-fallen-fortress",
+    "name": "The Fallen Fortress",
+    "region": "storybook-vale",
+    "type": "story",
+    "giver": "flynn",
+    "wiki": "https://dreamlightvalleywiki.com/The_Fallen_Fortress",
+    "verified": true,
+    "notes": "Needs The Fallen Fortress unlocked."
+  },
+  {
+    "id": "the-marble-colossus",
+    "name": "The Marble Colossus",
+    "region": "storybook-vale",
+    "type": "story",
+    "giver": "hades",
+    "wiki": "https://dreamlightvalleywiki.com/The_Marble_Colossus",
+    "verified": true,
+    "notes": "Needs The Statue's Shadow unlocked."
+  },
+  {
+    "id": "losing-your-marbles",
+    "name": "Losing Your Marbles",
+    "region": "storybook-vale",
+    "type": "story",
+    "giver": "hades",
+    "requires": {
+      "quests": [
+        "a-moth-to-a-flame"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Losing_Your_Marbles",
+    "verified": true
+  },
+  {
+    "id": "not-by-the-hair-on-my-chinny-chin-chin",
+    "name": "Not by the Hair on My Chinny Chin Chin",
+    "region": "storybook-vale",
+    "type": "story",
+    "requires": {
+      "quests": [
+        "a-sheep-in-wolfs-clothing"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Not_by_the_Hair_on_My_Chinny_Chin_Chin",
+    "verified": true
+  },
+  {
+    "id": "the-promethean-flame",
+    "name": "The Promethean Flame",
+    "region": "storybook-vale",
+    "type": "story",
+    "giver": "hades",
+    "requires": {
+      "quests": [
+        "a-moth-to-a-flame"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Promethean_Flame",
+    "verified": true
+  },
+  {
+    "id": "teapot-falls",
+    "name": "Teapot Falls",
+    "region": "storybook-vale",
+    "type": "story",
+    "giver": "flynn",
+    "requires": {
+      "quests": [
+        "curiouser-and-curiouser"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Teapot_Falls",
+    "verified": true
+  },
+  {
+    "id": "the-knights-of-the-round-table",
+    "name": "The Knights of the Round Table",
+    "region": "storybook-vale",
+    "type": "story",
+    "giver": "flynn",
+    "requires": {
+      "quests": [
+        "the-fallen-fortress"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Knights_of_the_Round_Table",
+    "verified": true
+  },
+  {
+    "id": "a-long-awaited-invitation",
+    "name": "A Long-Awaited Invitation",
+    "region": "storybook-vale",
+    "type": "story",
+    "giver": "the-lorekeeper",
+    "requires": {
+      "quests": [
+        "the-mistress-of-all-evil",
+        "mount-olympus"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Long-Awaited_Invitation",
+    "verified": true
+  },
+  {
+    "id": "a-storm-of-stories",
+    "name": "A Storm of Stories",
+    "region": "storybook-vale",
+    "type": "story",
+    "giver": "the-lorekeeper",
+    "requires": {
+      "quests": [
+        "a-long-awaited-invitation"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Storm_of_Stories",
+    "verified": true
+  },
+  {
+    "id": "the-unwritten-realms-maleficents-gift",
+    "name": "The Unwritten Realms: Maleficent's Gift",
+    "region": "storybook-vale",
+    "type": "story",
+    "giver": "maleficent",
+    "requires": {
+      "quests": [
+        "a-storm-of-stories"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Unwritten_Realms:_Maleficent's_Gift",
+    "verified": true
+  },
+  {
+    "id": "the-unwritten-realms-the-spinning-wheel",
+    "name": "The Unwritten Realms: The Spinning Wheel",
+    "region": "storybook-vale",
+    "type": "story",
+    "giver": "maleficent",
+    "requires": {
+      "quests": [
+        "the-unwritten-realms-maleficents-gift"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Unwritten_Realms:_The_Spinning_Wheel",
+    "verified": true
+  },
+  {
+    "id": "the-unwritten-realms-maleficents-demise",
+    "name": "The Unwritten Realms: Maleficent's Demise",
+    "region": "storybook-vale",
+    "type": "story",
+    "giver": "maleficent",
+    "requires": {
+      "quests": [
+        "the-unwritten-realms-the-spinning-wheel"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "maleficent"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Unwritten_Realms:_Maleficent's_Demise",
+    "verified": true
+  },
+  {
+    "id": "the-missing-princess",
+    "name": "The Missing Princess",
+    "region": "storybook-vale",
+    "type": "story",
+    "giver": "flynn",
+    "requires": {
+      "quests": [
+        "the-unwritten-realms-maleficents-demise"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Missing_Princess",
+    "verified": true
+  },
+  {
+    "id": "a-hero-of-ink-and-paper",
+    "name": "A Hero of Ink and Paper",
+    "region": "storybook-vale",
+    "type": "story",
+    "giver": "the-lorekeeper",
+    "requires": {
+      "quests": [
+        "the-missing-princess"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Hero_of_Ink_and_Paper",
+    "verified": true
+  },
+  {
+    "id": "the-trial-of-virtue",
+    "name": "The Trial of Virtue",
+    "region": "storybook-vale",
+    "type": "story",
+    "requires": {
+      "quests": [
+        "the-ink-stained-world"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Trial_of_Virtue",
+    "verified": true,
+    "notes": "Opens while The Ink-Stained World is under way; that quest does not have to be finished first."
+  },
+  {
+    "id": "the-trial-of-truth",
+    "name": "The Trial of Truth",
+    "region": "storybook-vale",
+    "type": "story",
+    "requires": {
+      "quests": [
+        "the-ink-stained-world"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Trial_of_Truth",
+    "verified": true,
+    "notes": "Opens while The Ink-Stained World is under way; that quest does not have to be finished first."
+  },
+  {
+    "id": "the-trial-of-song",
+    "name": "The Trial of Song",
+    "region": "storybook-vale",
+    "type": "story",
+    "requires": {
+      "quests": [
+        "the-ink-stained-world"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Trial_of_Song",
+    "verified": true,
+    "notes": "Opens while The Ink-Stained World is under way; that quest does not have to be finished first."
+  },
+  {
+    "id": "the-ink-stained-world",
+    "name": "The Ink-Stained World",
+    "region": "storybook-vale",
+    "type": "story",
+    "giver": "the-lorekeeper",
+    "requires": {
+      "quests": [
+        "a-hero-of-ink-and-paper"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Ink-Stained_World",
+    "verified": true
+  },
+  {
+    "id": "the-tales-that-bind",
+    "name": "The Tales That Bind",
+    "region": "storybook-vale",
+    "type": "story",
+    "giver": "aurora",
+    "requires": {
+      "quests": [
+        "the-ink-stained-world"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "aurora"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Tales_That_Bind",
+    "verified": true
+  },
+  {
+    "id": "clan-dunbrochs-rules-of-the-hunt",
+    "name": "Clan DunBroch's Rules of the Hunt",
+    "region": "storybook-vale",
+    "type": "friendship",
+    "giver": "merida",
+    "level": 2,
+    "requires": {
+      "characters": [
+        "merida"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Clan_DunBroch's_Rules_of_the_Hunt",
+    "verified": true,
+    "notes": "Needs The Bind unlocked."
+  },
+  {
+    "id": "mythic-restoration",
+    "name": "Mythic Restoration",
+    "region": "storybook-vale",
+    "type": "friendship",
+    "giver": "hades",
+    "requires": {
+      "characters": [
+        "remy",
+        "merida",
+        "mickey-mouse"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Mythic_Restoration",
+    "verified": true,
+    "notes": "Needs further quest progress with Mickey Mouse. Needs The Elysian Fields unlocked."
+  },
+  {
+    "id": "the-company-of-the-wolf",
+    "name": "The Company of the Wolf",
+    "region": "storybook-vale",
+    "type": "friendship",
+    "giver": "flynn",
+    "requires": {
+      "characters": [
+        "flynn",
+        "kristoff",
+        "mirabel",
+        "wall-e"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Company_of_the_Wolf",
+    "verified": true,
+    "notes": "Needs further quest progress with Kristoff. Needs The Bind and Royal Net unlocked."
+  },
+  {
+    "id": "archery-and-archrivals",
+    "name": "Archery and Archrivals",
+    "region": "storybook-vale",
+    "type": "friendship",
+    "giver": "merida",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "merida",
+        "flynn"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Archery_and_Archrivals",
+    "verified": true,
+    "notes": "Needs The Wild Woods unlocked."
+  },
+  {
+    "id": "change-your-fate",
+    "name": "Change Your Fate",
+    "region": "storybook-vale",
+    "type": "friendship",
+    "giver": "merida",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "merida",
+        "hades",
+        "mulan",
+        "moana",
+        "mirabel"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Change_Your_Fate",
+    "verified": true
+  },
+  {
+    "id": "memory-lane",
+    "name": "Memory Lane",
+    "region": "storybook-vale",
+    "type": "friendship",
+    "giver": "flynn",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "flynn",
+        "hades",
+        "merlin"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Memory_Lane",
+    "verified": true,
+    "notes": "Needs further quest progress with Merlin. Needs The Elysian Fields unlocked."
+  },
+  {
+    "id": "yes-your-lugubriousness",
+    "name": "Yes, Your Lugubriousness",
+    "region": "storybook-vale",
+    "type": "friendship",
+    "giver": "hades",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "hades",
+        "ursula",
+        "mother-gothel",
+        "vanellope",
+        "flynn",
+        "scrooge-mcduck",
+        "remy"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Yes,_Your_Lugubriousness",
+    "verified": true,
+    "notes": "Needs further quest progress with Scrooge McDuck, Remy, Flynn and Ursula. Needs Chez Remy, Scrooge's Store, The Fiery Plains and The Wild Woods unlocked."
+  },
+  {
+    "id": "an-old-fashioned-heist",
+    "name": "An Old-Fashioned Heist",
+    "region": "storybook-vale",
+    "type": "friendship",
+    "giver": "flynn",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "flynn",
+        "stitch",
+        "vanellope",
+        "mulan",
+        "merida",
+        "buzz-lightyear",
+        "remy",
+        "olaf",
+        "mushu"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/An_Old-Fashioned_Heist",
+    "verified": false,
+    "notes": "Also needs main story progress in the Storybook Vale; the wiki does not say how far."
+  },
+  {
+    "id": "the-adventures-of-flynn-rider",
+    "name": "The Adventures of Flynn Rider",
+    "region": "storybook-vale",
+    "type": "friendship",
+    "giver": "flynn",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "flynn",
+        "belle"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Adventures_of_Flynn_Rider",
+    "verified": true,
+    "notes": "Needs Mount Olympus unlocked."
+  },
+  {
+    "id": "a-very-scottish-celebration",
+    "name": "A Very Scottish Celebration",
+    "region": "storybook-vale",
+    "type": "friendship",
+    "giver": "merida",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "merida",
+        "tiana"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Very_Scottish_Celebration",
+    "verified": true
+  },
+  {
+    "id": "your-own-personal-hades",
+    "name": "Your Own Personal Hades",
+    "region": "storybook-vale",
+    "type": "friendship",
+    "giver": "hades",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "hades",
+        "daisy",
+        "scrooge-mcduck",
+        "flynn",
+        "minnie-mouse",
+        "mickey-mouse"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Your_Own_Personal_Hades",
+    "verified": true,
+    "notes": "Needs further quest progress with Mickey Mouse. Needs The Statue's Shadow unlocked."
+  },
+  {
+    "id": "fine-ill-do-it-myself",
+    "name": "Fine, I'll Do It Myself",
+    "region": "storybook-vale",
+    "type": "friendship",
+    "giver": "hades",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "hades",
+        "tiana",
+        "prince-eric",
+        "mirabel"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Fine,_I'll_Do_It_Myself",
+    "verified": true
+  },
+  {
+    "id": "a-romantic-reunion",
+    "name": "A Romantic Reunion",
+    "region": "storybook-vale",
+    "type": "friendship",
+    "giver": "flynn",
+    "level": 10,
+    "requires": {
+      "quests": [
+        "home-is-where-the-art-is",
+        "the-adventures-of-flynn-rider"
+      ],
+      "characters": [
+        "flynn",
+        "rapunzel"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Romantic_Reunion",
+    "verified": true,
+    "notes": "Needs friendship level 10 with Rapunzel."
+  },
+  {
+    "id": "the-family-recipe",
+    "name": "The Family Recipe",
+    "region": "storybook-vale",
+    "type": "friendship",
+    "giver": "aurora",
+    "level": 2,
+    "requires": {
+      "characters": [
+        "aurora"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Family_Recipe",
+    "verified": true
+  },
+  {
+    "id": "redeeming-literature",
+    "name": "Redeeming Literature",
+    "region": "storybook-vale",
+    "type": "friendship",
+    "giver": "aurora",
+    "level": 3,
+    "requires": {
+      "characters": [
+        "aurora",
+        "belle",
+        "stitch"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Redeeming_Literature",
+    "verified": true
+  },
+  {
+    "id": "the-corvid-companion",
+    "name": "The Corvid Companion",
+    "region": "storybook-vale",
+    "type": "friendship",
+    "giver": "maleficent",
+    "requires": {
+      "characters": [
+        "aurora",
+        "hades"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Corvid_Companion",
+    "verified": true,
+    "notes": "Needs further quest progress with Aurora and Hades."
+  },
+  {
+    "id": "rekindling-the-fire",
+    "name": "Rekindling the Fire",
+    "region": "storybook-vale",
+    "type": "friendship",
+    "giver": "maleficent",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "maleficent",
+        "daisy",
+        "donald-duck",
+        "hades"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Rekindling_the_Fire",
+    "verified": true,
+    "notes": "Needs further quest progress with Hades."
+  },
+  {
+    "id": "collateral-damage",
+    "name": "Collateral Damage",
+    "region": "storybook-vale",
+    "type": "friendship",
+    "giver": "maleficent",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "maleficent",
+        "remy"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Collateral_Damage",
+    "verified": true
+  },
+  {
+    "id": "the-two-flames-united",
+    "name": "The Two Flames United",
+    "region": "storybook-vale",
+    "type": "friendship",
+    "giver": "maleficent",
+    "requires": {
+      "quests": [
+        "collateral-damage",
+        "dreams-and-dark-designs"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Two_Flames_United",
+    "verified": true
+  },
+  {
+    "id": "the-princess-tour",
+    "name": "The Princess Tour",
+    "region": "storybook-vale",
+    "type": "friendship",
+    "giver": "aurora",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "aurora",
+        "jasmine",
+        "tiana",
+        "mulan"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Princess_Tour",
+    "verified": true
+  },
+  {
+    "id": "dreams-and-dark-designs",
+    "name": "Dreams and Dark Designs",
+    "region": "storybook-vale",
+    "type": "friendship",
+    "giver": "aurora",
+    "requires": {
+      "quests": [
+        "the-princess-tour",
+        "collateral-damage"
+      ],
+      "characters": [
+        "remy",
+        "hades",
+        "maleficent"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Dreams_and_Dark_Designs",
+    "verified": true,
+    "notes": "Needs further quest progress with Hades and Maleficent."
+  }
+]
