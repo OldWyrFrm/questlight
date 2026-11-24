@@ -1,0 +1,585 @@
+[
+  {
+    "id": "a-wishful-invitation",
+    "name": "A Wishful Invitation",
+    "region": "wishblossom-ranch",
+    "type": "story",
+    "giver": "snow-white",
+    "requires": {
+      "quests": [
+        "the-dream-castle",
+        "friendship-is-everything",
+        "making-cents-of-things",
+        "scrooge-mcducks-grand-re-opening",
+        "fishing-expedition"
+      ],
+      "regions": [
+        "wishblossom-ranch"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Wishful_Invitation",
+    "verified": true
+  },
+  {
+    "id": "tales-of-a-broken-heart",
+    "name": "Tales of a Broken Heart",
+    "region": "wishblossom-ranch",
+    "type": "story",
+    "giver": "snow-white",
+    "requires": {
+      "quests": [
+        "a-wishful-invitation"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "snow-white"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Tales_of_a_Broken_Heart",
+    "verified": true
+  },
+  {
+    "id": "ghost-town",
+    "name": "Ghost Town",
+    "region": "wishblossom-ranch",
+    "type": "story",
+    "giver": "scrooge-mcduck",
+    "requires": {
+      "quests": [
+        "tales-of-a-broken-heart"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Ghost_Town",
+    "verified": true
+  },
+  {
+    "id": "water-tower-of-terror",
+    "name": "Water Tower of Terror",
+    "region": "wishblossom-ranch",
+    "type": "story",
+    "giver": "scrooge-mcduck",
+    "requires": {
+      "quests": [
+        "wheel-big-trouble"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Water_Tower_of_Terror",
+    "verified": true,
+    "notes": "Opens while Wheel Big Trouble is under way; that quest does not have to be finished first."
+  },
+  {
+    "id": "wheel-big-trouble",
+    "name": "Wheel Big Trouble",
+    "region": "wishblossom-ranch",
+    "type": "story",
+    "giver": "goofy",
+    "requires": {
+      "quests": [
+        "ghost-town"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Wheel_Big_Trouble",
+    "verified": true
+  },
+  {
+    "id": "equine-delicacies",
+    "name": "Equine Delicacies",
+    "region": "wishblossom-ranch",
+    "type": "story",
+    "giver": "remy",
+    "requires": {
+      "quests": [
+        "wheel-big-trouble"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Equine_Delicacies",
+    "verified": true,
+    "notes": "Opens while Wheel Big Trouble is under way; that quest does not have to be finished first."
+  },
+  {
+    "id": "crystal-cavern-wishing-alps",
+    "name": "Crystal Cavern: Wishing Alps",
+    "region": "wishblossom-ranch",
+    "type": "story",
+    "giver": "tinker-bell",
+    "requires": {
+      "quests": [
+        "wheel-big-trouble"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Crystal_Cavern:_Wishing_Alps",
+    "verified": true
+  },
+  {
+    "id": "crystal-caverns-glamour-gulch",
+    "name": "Crystal Caverns: Glamour Gulch",
+    "region": "wishblossom-ranch",
+    "type": "story",
+    "giver": "tinker-bell",
+    "requires": {
+      "quests": [
+        "the-skunk-rebellion"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Crystal_Caverns:_Glamour_Gulch",
+    "verified": true
+  },
+  {
+    "id": "crystal-cavern-pixie-acres",
+    "name": "Crystal Cavern: Pixie Acres",
+    "region": "wishblossom-ranch",
+    "type": "story",
+    "giver": "tinker-bell",
+    "requires": {
+      "quests": [
+        "fun-fun-fun"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Crystal_Cavern:_Pixie_Acres",
+    "verified": true
+  },
+  {
+    "id": "the-decay",
+    "name": "The Decay",
+    "region": "wishblossom-ranch",
+    "type": "story",
+    "giver": "tinker-bell",
+    "requires": {
+      "quests": [
+        "crystal-cavern-pixie-acres"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Decay",
+    "verified": true
+  },
+  {
+    "id": "bounce-up-never-down",
+    "name": "Bounce Up, Never Down",
+    "region": "wishblossom-ranch",
+    "type": "story",
+    "giver": "tigger",
+    "requires": {
+      "quests": [
+        "crystal-caverns-glamour-gulch"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Bounce_Up,_Never_Down",
+    "verified": true
+  },
+  {
+    "id": "test-your-strength",
+    "name": "Test Your Strength",
+    "region": "wishblossom-ranch",
+    "type": "story",
+    "giver": "tigger",
+    "requires": {
+      "quests": [
+        "fun-fun-fun"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Test_Your_Strength",
+    "verified": true,
+    "notes": "Opens while Fun! Fun! Fun! is under way; that quest does not have to be finished first."
+  },
+  {
+    "id": "fun-fun-fun",
+    "name": "Fun! Fun! Fun!",
+    "region": "wishblossom-ranch",
+    "type": "story",
+    "giver": "tigger",
+    "requires": {
+      "quests": [
+        "the-balloon-family"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "tigger"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Fun!_Fun!_Fun!",
+    "verified": true
+  },
+  {
+    "id": "catch-the-lucky-lily-pad",
+    "name": "Catch the Lucky Lily Pad",
+    "region": "wishblossom-ranch",
+    "type": "story",
+    "giver": "tigger",
+    "requires": {
+      "quests": [
+        "fun-fun-fun"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Catch_the_Lucky_Lily_Pad",
+    "verified": true,
+    "notes": "Opens while Fun! Fun! Fun! is under way; that quest does not have to be finished first."
+  },
+  {
+    "id": "solve-the-puzzle",
+    "name": "Solve the Puzzle",
+    "region": "wishblossom-ranch",
+    "type": "story",
+    "giver": "tigger",
+    "requires": {
+      "quests": [
+        "fun-fun-fun"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Solve_the_Puzzle",
+    "verified": true,
+    "notes": "Opens while Fun! Fun! Fun! is under way; that quest does not have to be finished first."
+  },
+  {
+    "id": "the-decay-of-fashion",
+    "name": "The Decay of Fashion",
+    "region": "wishblossom-ranch",
+    "type": "story",
+    "giver": "cruella",
+    "requires": {
+      "quests": [
+        "crystal-cavern-wishing-alps"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Decay_of_Fashion",
+    "verified": true
+  },
+  {
+    "id": "the-de-vil-crash",
+    "name": "The De Vil Crash",
+    "region": "wishblossom-ranch",
+    "type": "story",
+    "giver": "cruella",
+    "requires": {
+      "quests": [
+        "the-decay-of-fashion"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_De_Vil_Crash",
+    "verified": true
+  },
+  {
+    "id": "the-skunk-rebellion",
+    "name": "The Skunk Rebellion",
+    "region": "wishblossom-ranch",
+    "type": "story",
+    "giver": "cruella",
+    "requires": {
+      "quests": [
+        "the-de-vil-crash"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "cruella"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Skunk_Rebellion",
+    "verified": true
+  },
+  {
+    "id": "reindeer-are-better-than-people",
+    "name": "Reindeer Are Better Than People",
+    "region": "wishblossom-ranch",
+    "type": "story",
+    "giver": "kristoff",
+    "requires": {
+      "quests": [
+        "crystal-cavern-wishing-alps"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Reindeer_Are_Better_Than_People",
+    "verified": true,
+    "notes": "Also needs Editions."
+  },
+  {
+    "id": "the-balloon-family",
+    "name": "The BallOOn Family",
+    "region": "wishblossom-ranch",
+    "type": "story",
+    "giver": "tigger",
+    "requires": {
+      "quests": [
+        "bounce-up-never-down"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_BallOOn_Family",
+    "verified": true
+  },
+  {
+    "id": "handle-with-care",
+    "name": "Handle with Care",
+    "region": "wishblossom-ranch",
+    "type": "friendship",
+    "giver": "snow-white",
+    "requires": {
+      "quests": [
+        "tales-of-a-broken-heart"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Handle_with_Care",
+    "verified": true
+  },
+  {
+    "id": "making-peace",
+    "name": "Making Peace",
+    "region": "wishblossom-ranch",
+    "type": "friendship",
+    "giver": "snow-white",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "snow-white",
+        "cruella"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Making_Peace",
+    "verified": true
+  },
+  {
+    "id": "the-wishblossom-fair",
+    "name": "The Wishblossom Fair",
+    "region": "wishblossom-ranch",
+    "type": "friendship",
+    "giver": "snow-white",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "snow-white",
+        "cruella",
+        "mulan",
+        "daisy",
+        "tiana"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Wishblossom_Fair",
+    "verified": true
+  },
+  {
+    "id": "automotive-appeal",
+    "name": "Automotive Appeal",
+    "region": "wishblossom-ranch",
+    "type": "friendship",
+    "giver": "cruella",
+    "requires": {
+      "quests": [
+        "the-skunk-rebellion"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Automotive_Appeal",
+    "verified": true
+  },
+  {
+    "id": "youre-really-wearing-that",
+    "name": "You're Really Wearing THAT?",
+    "region": "wishblossom-ranch",
+    "type": "friendship",
+    "giver": "cruella",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "cruella",
+        "daisy",
+        "donald-duck",
+        "alice",
+        "moana",
+        "kristoff",
+        "ursula"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/You're_Really_Wearing_THAT%3F",
+    "verified": true
+  },
+  {
+    "id": "a-honey-of-a-problem",
+    "name": "A Honey of a Problem",
+    "region": "wishblossom-ranch",
+    "type": "friendship",
+    "giver": "tigger",
+    "requires": {
+      "quests": [
+        "fun-fun-fun"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Honey_of_a_Problem",
+    "verified": true
+  },
+  {
+    "id": "stripes-are-in-this-season",
+    "name": "Stripes Are In This Season",
+    "region": "wishblossom-ranch",
+    "type": "friendship",
+    "giver": "cruella",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "cruella",
+        "tigger"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Stripes_Are_In_This_Season",
+    "verified": true,
+    "notes": "Needs Hunny Falls unlocked."
+  },
+  {
+    "id": "terribly-twitchy-tigger",
+    "name": "Terribly Twitchy Tigger",
+    "region": "wishblossom-ranch",
+    "type": "friendship",
+    "giver": "tigger",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "tigger",
+        "stitch",
+        "tinker-bell"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Terribly_Twitchy_Tigger",
+    "verified": true,
+    "notes": "Needs further quest progress with Stitch and Tinker Bell."
+  },
+  {
+    "id": "a-tiggerific-day",
+    "name": "A Tiggerific Day",
+    "region": "wishblossom-ranch",
+    "type": "friendship",
+    "giver": "tigger",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "tigger"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Tiggerific_Day",
+    "verified": true
+  },
+  {
+    "id": "wishblossom-fair-horse-beauty-contest",
+    "name": "Wishblossom Fair: Horse Beauty Contest",
+    "region": "wishblossom-ranch",
+    "type": "friendship",
+    "giver": "daisy",
+    "requires": {
+      "quests": [
+        "the-wishblossom-fair"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Wishblossom_Fair:_Horse_Beauty_Contest",
+    "verified": true,
+    "notes": "Opens while The Wishblossom Fair is under way; that quest does not have to be finished first."
+  },
+  {
+    "id": "wishblossom-fair-riding-demonstration",
+    "name": "Wishblossom Fair: Riding Demonstration",
+    "region": "wishblossom-ranch",
+    "type": "friendship",
+    "giver": "mulan",
+    "requires": {
+      "quests": [
+        "the-wishblossom-fair"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Wishblossom_Fair:_Riding_Demonstration",
+    "verified": true,
+    "notes": "Opens while The Wishblossom Fair is under way; that quest does not have to be finished first."
+  },
+  {
+    "id": "wishblossom-fair-cooking-competition",
+    "name": "Wishblossom Fair: Cooking Competition",
+    "region": "wishblossom-ranch",
+    "type": "friendship",
+    "giver": "tiana",
+    "requires": {
+      "quests": [
+        "the-wishblossom-fair"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Wishblossom_Fair:_Cooking_Competition",
+    "verified": true,
+    "notes": "Opens while The Wishblossom Fair is under way; that quest does not have to be finished first."
+  },
+  {
+    "id": "the-copycat",
+    "name": "The Copycat",
+    "region": "wishblossom-ranch",
+    "type": "friendship",
+    "giver": "snow-white",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "snow-white",
+        "wall-e",
+        "olaf",
+        "goofy",
+        "cruella"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Copycat",
+    "verified": true,
+    "notes": "Needs further quest progress with Cruella."
+  },
+  {
+    "id": "headdress-to-impress",
+    "name": "Headdress to Impress",
+    "region": "wishblossom-ranch",
+    "type": "friendship",
+    "giver": "cruella",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "cruella",
+        "sally",
+        "mirabel"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Headdress_to_Impress",
+    "verified": true
+  },
+  {
+    "id": "hold-your-horses-glamour-gulch",
+    "name": "Hold Your Horses: Glamour Gulch",
+    "region": "wishblossom-ranch",
+    "type": "friendship",
+    "giver": "snow-white",
+    "requires": {
+      "quests": [
+        "hold-your-horses-the-wishing-alps"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Hold_Your_Horses:_Glamour_Gulch",
+    "verified": true,
+    "notes": "Opens while Hold Your Horses: The Wishing Alps is under way; that quest does not have to be finished first."
+  },
+  {
+    "id": "hold-your-horses-the-wishing-alps",
+    "name": "Hold Your Horses: The Wishing Alps",
+    "region": "wishblossom-ranch",
+    "type": "friendship",
+    "giver": "snow-white",
+    "requires": {
+      "quests": [
+        "a-wishful-invitation"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Hold_Your_Horses:_The_Wishing_Alps",
+    "verified": true,
+    "notes": "Opens while A Wishful Invitation is under way; that quest does not have to be finished first."
+  },
+  {
+    "id": "hold-your-horses-pixie-acres",
+    "name": "Hold Your Horses: Pixie Acres",
+    "region": "wishblossom-ranch",
+    "type": "friendship",
+    "giver": "snow-white",
+    "requires": {
+      "quests": [
+        "hold-your-horses-glamour-gulch"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Hold_Your_Horses:_Pixie_Acres",
+    "verified": true,
+    "notes": "Opens while Hold Your Horses: Glamour Gulch is under way; that quest does not have to be finished first."
+  }
+]

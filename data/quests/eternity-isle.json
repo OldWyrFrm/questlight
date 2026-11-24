@@ -1,0 +1,966 @@
+[
+  {
+    "id": "the-secrets-of-eternity-isle",
+    "name": "The Secrets of Eternity Isle",
+    "region": "eternity-isle",
+    "type": "story",
+    "giver": "jafar",
+    "requires": {
+      "regions": [
+        "eternity-isle"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Secrets_of_Eternity_Isle",
+    "verified": true
+  },
+  {
+    "id": "a-game-of-coins",
+    "name": "A Game of Coins",
+    "region": "eternity-isle",
+    "type": "story",
+    "giver": "mickey-mouse",
+    "requires": {
+      "regions": [
+        "eternity-isle"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Game_of_Coins",
+    "verified": true
+  },
+  {
+    "id": "new-ventures-and-adventures",
+    "name": "New Ventures (and Adventures)",
+    "region": "eternity-isle",
+    "type": "story",
+    "giver": "scrooge-mcduck",
+    "requires": {
+      "regions": [
+        "eternity-isle"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/New_Ventures_(and_Adventures)",
+    "verified": true,
+    "notes": "Also needs Condemned Building Sign."
+  },
+  {
+    "id": "give-me-a-sign",
+    "name": "Give Me a Sign",
+    "region": "eternity-isle",
+    "type": "story",
+    "giver": "goofy",
+    "requires": {
+      "regions": [
+        "eternity-isle"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Give_Me_a_Sign",
+    "verified": true,
+    "notes": "Starts from Goofy's Stall Sign."
+  },
+  {
+    "id": "the-flying-metal-nuisance",
+    "name": "The Flying Metal Nuisance",
+    "region": "eternity-isle",
+    "type": "story",
+    "giver": "jafar",
+    "requires": {
+      "quests": [
+        "the-secrets-of-eternity-isle"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "eve"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Flying_Metal_Nuisance",
+    "verified": true
+  },
+  {
+    "id": "the-sands-in-the-hourglass",
+    "name": "The Sands in the Hourglass",
+    "region": "eternity-isle",
+    "type": "story",
+    "giver": "jafar",
+    "requires": {
+      "quests": [
+        "the-flying-metal-nuisance"
+      ],
+      "regions": [
+        "eternity-isle"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Sands_in_the_Hourglass",
+    "verified": true
+  },
+  {
+    "id": "the-ancient-door",
+    "name": "The Ancient Door",
+    "region": "eternity-isle",
+    "type": "story",
+    "giver": "rapunzel",
+    "requires": {
+      "quests": [
+        "the-sands-in-the-hourglass"
+      ],
+      "regions": [
+        "eternity-isle"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Ancient_Door",
+    "verified": true
+  },
+  {
+    "id": "the-sundial",
+    "name": "The Sundial",
+    "region": "eternity-isle",
+    "type": "story",
+    "giver": "rapunzel",
+    "requires": {
+      "quests": [
+        "the-ancient-door"
+      ],
+      "regions": [
+        "eternity-isle"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Sundial",
+    "verified": true
+  },
+  {
+    "id": "the-tower",
+    "name": "The Tower",
+    "region": "eternity-isle",
+    "type": "story",
+    "giver": "rapunzel",
+    "requires": {
+      "quests": [
+        "the-sundial"
+      ],
+      "regions": [
+        "eternity-isle"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "rapunzel"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Tower",
+    "verified": true
+  },
+  {
+    "id": "ancients-landing-fine-dining",
+    "name": "Ancient's Landing Fine Dining",
+    "region": "eternity-isle",
+    "type": "story",
+    "giver": "remy",
+    "requires": {
+      "regions": [
+        "eternity-isle"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Ancient's_Landing_Fine_Dining",
+    "verified": true,
+    "notes": "Starts from Eternity Isle's Menu."
+  },
+  {
+    "id": "the-wanderer-of-the-dunes",
+    "name": "The Wanderer of the Dunes",
+    "region": "eternity-isle",
+    "type": "story",
+    "giver": "gaston",
+    "requires": {
+      "quests": [
+        "the-sands-in-the-hourglass"
+      ],
+      "regions": [
+        "eternity-isle"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Wanderer_of_the_Dunes",
+    "verified": true
+  },
+  {
+    "id": "the-wild-tangles-swarm",
+    "name": "The Wild Tangle's Swarm",
+    "region": "eternity-isle",
+    "type": "story",
+    "giver": "gaston",
+    "requires": {
+      "quests": [
+        "the-wanderer-of-the-dunes"
+      ],
+      "regions": [
+        "eternity-isle"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Wild_Tangle's_Swarm",
+    "verified": true
+  },
+  {
+    "id": "diamond-in-the-rough",
+    "name": "Diamond in the Rough",
+    "region": "eternity-isle",
+    "type": "story",
+    "giver": "gaston",
+    "requires": {
+      "quests": [
+        "the-wild-tangles-swarm"
+      ],
+      "regions": [
+        "eternity-isle"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "gaston"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Diamond_in_the_Rough",
+    "verified": true
+  },
+  {
+    "id": "your-eternal-reward",
+    "name": "Your Eternal Reward",
+    "region": "eternity-isle",
+    "type": "story",
+    "giver": "jafar",
+    "requires": {
+      "quests": [
+        "the-tower",
+        "diamond-in-the-rough"
+      ],
+      "regions": [
+        "eternity-isle"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Your_Eternal_Reward",
+    "verified": true
+  },
+  {
+    "id": "the-sunken-ruins",
+    "name": "The Sunken Ruins",
+    "region": "eternity-isle",
+    "type": "story",
+    "giver": "merlin",
+    "requires": {
+      "quests": [
+        "your-eternal-reward",
+        "a-new-directive",
+        "center-of-attention",
+        "the-housewarming"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Sunken_Ruins",
+    "verified": true
+  },
+  {
+    "id": "does-not-compute",
+    "name": "Does Not Compute",
+    "region": "eternity-isle",
+    "type": "story",
+    "giver": "eve",
+    "requires": {
+      "quests": [
+        "the-sunken-ruins"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Does_Not_Compute",
+    "verified": true
+  },
+  {
+    "id": "hero-pose",
+    "name": "Hero Pose",
+    "region": "eternity-isle",
+    "type": "story",
+    "giver": "gaston",
+    "requires": {
+      "quests": [
+        "the-sunken-ruins"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Hero_Pose",
+    "verified": true
+  },
+  {
+    "id": "a-bit-of-help-from-your-friends",
+    "name": "A Bit of Help from Your Friends",
+    "region": "eternity-isle",
+    "type": "story",
+    "giver": "merlin",
+    "requires": {
+      "quests": [
+        "the-sunken-ruins"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Bit_of_Help_from_Your_Friends",
+    "verified": true
+  },
+  {
+    "id": "all-the-right-notes",
+    "name": "All the Right Notes",
+    "region": "eternity-isle",
+    "type": "story",
+    "giver": "rapunzel",
+    "requires": {
+      "quests": [
+        "the-sunken-ruins"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/All_the_Right_Notes",
+    "verified": true
+  },
+  {
+    "id": "the-spark-of-imagination",
+    "name": "The Spark of Imagination",
+    "region": "eternity-isle",
+    "type": "story",
+    "giver": "oswald",
+    "requires": {
+      "quests": [
+        "a-bit-of-help-from-your-friends"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "oswald"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Spark_of_Imagination",
+    "verified": true
+  },
+  {
+    "id": "use-your-imagination-rapunzel",
+    "name": "Use Your Imagination: Rapunzel",
+    "region": "eternity-isle",
+    "type": "story",
+    "giver": "rapunzel",
+    "requires": {
+      "quests": [
+        "mysterious-mickey"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Use_Your_Imagination:_Rapunzel",
+    "verified": true,
+    "notes": "Opens while Mysterious Mickey is under way; that quest does not have to be finished first."
+  },
+  {
+    "id": "use-your-imagination-gaston",
+    "name": "Use Your Imagination: Gaston",
+    "region": "eternity-isle",
+    "type": "story",
+    "giver": "gaston",
+    "requires": {
+      "quests": [
+        "mysterious-mickey"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Use_Your_Imagination:_Gaston",
+    "verified": true,
+    "notes": "Opens while Mysterious Mickey is under way; that quest does not have to be finished first."
+  },
+  {
+    "id": "use-your-imagination-eve",
+    "name": "Use Your Imagination: EVE",
+    "region": "eternity-isle",
+    "type": "story",
+    "giver": "eve",
+    "requires": {
+      "quests": [
+        "mysterious-mickey"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Use_Your_Imagination:_EVE",
+    "verified": true,
+    "notes": "Opens while Mysterious Mickey is under way; that quest does not have to be finished first."
+  },
+  {
+    "id": "directive-danger",
+    "name": "Directive: Danger!",
+    "region": "eternity-isle",
+    "type": "friendship",
+    "giver": "eve",
+    "requires": {
+      "quests": [
+        "the-flying-metal-nuisance"
+      ],
+      "regions": [
+        "eternity-isle"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Directive:_Danger!",
+    "verified": true
+  },
+  {
+    "id": "village-project-timeless-tools",
+    "name": "Village Project: Timeless Tools",
+    "region": "eternity-isle",
+    "type": "friendship",
+    "giver": "merlin",
+    "requires": {
+      "quests": [
+        "village-project-timeless-trash"
+      ],
+      "regions": [
+        "eternity-isle"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Village_Project:_Timeless_Tools",
+    "verified": false
+  },
+  {
+    "id": "a-new-directive",
+    "name": "A New Directive",
+    "region": "eternity-isle",
+    "type": "friendship",
+    "giver": "eve",
+    "level": 2,
+    "requires": {
+      "quests": [
+        "directive-danger"
+      ],
+      "characters": [
+        "eve",
+        "wall-e"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_New_Directive",
+    "verified": true
+  },
+  {
+    "id": "directive-plant",
+    "name": "Directive: Plant",
+    "region": "eternity-isle",
+    "type": "friendship",
+    "giver": "eve",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "eve"
+      ],
+      "regions": [
+        "eternity-isle"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Directive:_Plant",
+    "verified": false
+  },
+  {
+    "id": "lasers-and-crafts",
+    "name": "Lasers & Crafts",
+    "region": "eternity-isle",
+    "type": "friendship",
+    "giver": "eve",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "eve",
+        "mirabel"
+      ],
+      "regions": [
+        "eternity-isle"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Lasers_%26_Crafts",
+    "verified": true
+  },
+  {
+    "id": "when-things-go-boom",
+    "name": "When Things Go Boom",
+    "region": "eternity-isle",
+    "type": "friendship",
+    "giver": "eve",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "eve",
+        "stitch"
+      ],
+      "regions": [
+        "eternity-isle"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/When_Things_Go_Boom",
+    "verified": false
+  },
+  {
+    "id": "the-ones-that-got-away",
+    "name": "The Ones That Got Away",
+    "region": "eternity-isle",
+    "type": "friendship",
+    "giver": "goofy",
+    "requires": {
+      "regions": [
+        "eternity-isle"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Ones_That_Got_Away",
+    "verified": true
+  },
+  {
+    "id": "village-project-timeless-treasures",
+    "name": "Village Project: Timeless Treasures",
+    "region": "eternity-isle",
+    "type": "friendship",
+    "giver": "merlin",
+    "requires": {
+      "quests": [
+        "the-sands-in-the-hourglass"
+      ],
+      "regions": [
+        "eternity-isle"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Village_Project:_Timeless_Treasures",
+    "verified": true
+  },
+  {
+    "id": "village-project-gear-loose-and-fancy-free",
+    "name": "Village Project: Gear Loose and Fancy Free",
+    "region": "eternity-isle",
+    "type": "friendship",
+    "giver": "scrooge-mcduck",
+    "requires": {
+      "quests": [
+        "a-garden-in-the-desert"
+      ],
+      "regions": [
+        "eternity-isle"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Village_Project:_Gear_Loose_and_Fancy_Free",
+    "verified": true
+  },
+  {
+    "id": "a-garden-in-the-desert",
+    "name": "A Garden in the Desert",
+    "region": "eternity-isle",
+    "type": "friendship",
+    "giver": "scrooge-mcduck",
+    "requires": {
+      "regions": [
+        "eternity-isle"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Garden_in_the_Desert",
+    "verified": true
+  },
+  {
+    "id": "village-project-timeless-trash",
+    "name": "Village Project: Timeless Trash",
+    "region": "eternity-isle",
+    "type": "friendship",
+    "giver": "merlin",
+    "requires": {
+      "quests": [
+        "village-project-timeless-treasures"
+      ],
+      "regions": [
+        "eternity-isle"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Village_Project:_Timeless_Trash",
+    "verified": true
+  },
+  {
+    "id": "flower-power",
+    "name": "Flower Power",
+    "region": "eternity-isle",
+    "type": "friendship",
+    "giver": "mickey-mouse",
+    "requires": {
+      "regions": [
+        "eternity-isle"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Flower_Power",
+    "verified": true,
+    "notes": "Needs The Promenade unlocked."
+  },
+  {
+    "id": "no-one-heroes-like-gaston",
+    "name": "No One Heroes Like Gaston",
+    "region": "eternity-isle",
+    "type": "friendship",
+    "giver": "gaston",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "gaston",
+        "scrooge-mcduck"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/No_One_Heroes_Like_Gaston",
+    "verified": true,
+    "notes": "Needs further quest progress with Scrooge McDuck."
+  },
+  {
+    "id": "the-housewarming",
+    "name": "The Housewarming",
+    "region": "eternity-isle",
+    "type": "friendship",
+    "giver": "rapunzel",
+    "level": 2,
+    "requires": {
+      "characters": [
+        "rapunzel"
+      ],
+      "regions": [
+        "eternity-isle"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Housewarming",
+    "verified": false
+  },
+  {
+    "id": "ive-got-a-dreamlight",
+    "name": "I've Got a Dreamlight",
+    "region": "eternity-isle",
+    "type": "friendship",
+    "giver": "rapunzel",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "rapunzel",
+        "remy",
+        "goofy",
+        "gaston"
+      ],
+      "regions": [
+        "eternity-isle"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/I've_Got_a_Dreamlight",
+    "verified": true,
+    "notes": "Needs further quest progress with Remy, Goofy and Gaston."
+  },
+  {
+    "id": "a-letter-for-antonio",
+    "name": "A Letter for Antonio",
+    "region": "eternity-isle",
+    "type": "friendship",
+    "giver": "mirabel",
+    "requires": {
+      "regions": [
+        "eternity-isle"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Letter_for_Antonio",
+    "verified": true,
+    "notes": "Needs The Lagoon unlocked."
+  },
+  {
+    "id": "dreamlight-valleys-next-top-lefou",
+    "name": "Dreamlight Valley's Next Top LeFou",
+    "region": "eternity-isle",
+    "type": "friendship",
+    "giver": "gaston",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "gaston",
+        "minnie-mouse",
+        "vanellope",
+        "donald-duck",
+        "mickey-mouse",
+        "stitch",
+        "olaf"
+      ],
+      "regions": [
+        "eternity-isle"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Dreamlight_Valley's_Next_Top_LeFou",
+    "verified": true,
+    "notes": "Needs friendship level 2 with Olaf. Needs further quest progress with Mickey Mouse and Stitch."
+  },
+  {
+    "id": "gaston-the-hero",
+    "name": "Gaston the... Hero?",
+    "region": "eternity-isle",
+    "type": "friendship",
+    "giver": "gaston",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "gaston",
+        "wall-e",
+        "maui",
+        "kristoff"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Gaston_the..._Hero%3F",
+    "verified": false
+  },
+  {
+    "id": "center-of-attention",
+    "name": "Center of Attention",
+    "region": "eternity-isle",
+    "type": "friendship",
+    "giver": "gaston",
+    "level": 2,
+    "requires": {
+      "characters": [
+        "gaston",
+        "remy",
+        "rapunzel"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Center_of_Attention",
+    "verified": true,
+    "notes": "Needs further quest progress with Remy and Rapunzel. Needs Wild Tangle#The Grove unlocked."
+  },
+  {
+    "id": "glowing-up",
+    "name": "Glowing Up",
+    "region": "eternity-isle",
+    "type": "friendship",
+    "giver": "rapunzel",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "rapunzel",
+        "mother-gothel"
+      ],
+      "regions": [
+        "eternity-isle"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Glowing_Up",
+    "verified": false,
+    "notes": "Needs further quest progress with Mother Gothel."
+  },
+  {
+    "id": "home-is-where-the-art-is",
+    "name": "Home is Where the Art Is",
+    "region": "eternity-isle",
+    "type": "friendship",
+    "giver": "rapunzel",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "rapunzel",
+        "mirabel",
+        "simba"
+      ],
+      "regions": [
+        "eternity-isle"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Home_is_Where_the_Art_Is",
+    "verified": true
+  },
+  {
+    "id": "eves-challenge",
+    "name": "EVE's Challenge",
+    "region": "eternity-isle",
+    "type": "friendship",
+    "giver": "eve",
+    "requires": {
+      "quests": [
+        "a-cockamamie-contest"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/EVE's_Challenge",
+    "verified": true
+  },
+  {
+    "id": "gastons-challenge",
+    "name": "Gaston's Challenge",
+    "region": "eternity-isle",
+    "type": "friendship",
+    "giver": "gaston",
+    "requires": {
+      "quests": [
+        "a-cockamamie-contest"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Gaston's_Challenge",
+    "verified": true
+  },
+  {
+    "id": "rapunzels-challenge",
+    "name": "Rapunzel's Challenge",
+    "region": "eternity-isle",
+    "type": "friendship",
+    "giver": "rapunzel",
+    "requires": {
+      "quests": [
+        "a-cockamamie-contest"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Rapunzel's_Challenge",
+    "verified": true
+  },
+  {
+    "id": "oswalds-many-dimensions",
+    "name": "Oswald's Many Dimensions",
+    "region": "eternity-isle",
+    "type": "friendship",
+    "giver": "oswald",
+    "requires": {
+      "characters": [
+        "scrooge-mcduck"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Oswald's_Many_Dimensions",
+    "verified": true,
+    "notes": "Needs further quest progress with Scrooge McDuck. Needs Scrooge's Store unlocked."
+  },
+  {
+    "id": "an-alarming-development",
+    "name": "An Alarming Development",
+    "region": "eternity-isle",
+    "type": "friendship",
+    "giver": "oswald",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "oswald",
+        "stitch",
+        "olaf"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/An_Alarming_Development",
+    "verified": true,
+    "notes": "Needs The Oasis, The Borderlands, The Grove and The Lagoon unlocked."
+  },
+  {
+    "id": "a-cockamamie-contest",
+    "name": "A Cockamamie Contest",
+    "region": "eternity-isle",
+    "type": "friendship",
+    "giver": "oswald",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "oswald",
+        "gaston",
+        "rapunzel",
+        "eve"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Cockamamie_Contest",
+    "verified": true
+  },
+  {
+    "id": "erratic-transportation",
+    "name": "Erratic Transportation",
+    "region": "eternity-isle",
+    "type": "friendship",
+    "giver": "oswald",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "oswald"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Erratic_Transportation",
+    "verified": true
+  },
+  {
+    "id": "the-lesser-evil",
+    "name": "The Lesser Evil",
+    "region": "eternity-isle",
+    "type": "friendship",
+    "giver": "oswald",
+    "requires": {
+      "quests": [
+        "the-now-and-then"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "jafar"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Lesser_Evil",
+    "verified": true
+  },
+  {
+    "id": "the-optics-of-a-second-chance",
+    "name": "The Optics of a Second Chance",
+    "region": "eternity-isle",
+    "type": "friendship",
+    "giver": "jafar",
+    "level": 2,
+    "requires": {
+      "quests": [
+        "the-lesser-evil"
+      ],
+      "characters": [
+        "jafar",
+        "eve"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Optics_of_a_Second_Chance",
+    "verified": true,
+    "notes": "Needs further quest progress with EVE."
+  },
+  {
+    "id": "the-alchemical-revolution",
+    "name": "The Alchemical Revolution",
+    "region": "eternity-isle",
+    "type": "friendship",
+    "giver": "jafar",
+    "level": 4,
+    "requires": {
+      "quests": [
+        "the-scientific-method"
+      ],
+      "characters": [
+        "jafar",
+        "ursula",
+        "the-fairy-godmother"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Alchemical_Revolution",
+    "verified": true
+  },
+  {
+    "id": "the-serpents-gift",
+    "name": "The Serpent's Gift",
+    "region": "eternity-isle",
+    "type": "friendship",
+    "giver": "jafar",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "jafar"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Serpent's_Gift",
+    "verified": true
+  },
+  {
+    "id": "the-trial-of-eternity",
+    "name": "The Trial of Eternity",
+    "region": "eternity-isle",
+    "type": "friendship",
+    "giver": "jafar",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "jafar",
+        "remy"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Trial_of_Eternity",
+    "verified": true
+  },
+  {
+    "id": "making-amends",
+    "name": "Making Amends",
+    "region": "eternity-isle",
+    "type": "friendship",
+    "giver": "jafar",
+    "requires": {
+      "quests": [
+        "the-trial-of-eternity"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Making_Amends",
+    "verified": true
+  }
+]

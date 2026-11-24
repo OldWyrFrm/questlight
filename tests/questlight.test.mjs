@@ -48,3 +48,36 @@ test('focus map flows left to right, stays limited, and never overlaps', () => {
   assert.equal(new Set([...position.values()].map((p) => `${p.col},${p.row}`)).size, cols.size);
   assert.ok([...reach(focus, g.before, 1).values()].every((d) => d === 1));
 });
+
+// Wiki importer: facts come out, wiki wording does not.
+{
+  const { convert, parsePages, slug, wikiUrl } = await import('../scripts/import-wiki.mjs');
+  const page = (title, text) => `<page><title>${title}</title><ns>0</ns><revision><text xml:space="preserve">${text}</text></revision></page>`;
+  const xml = [
+    page('Fern', '{{infobox\n|type=Characters\n|collection=Sample Glade\n|universe=Sample Film\n|house=x\n|unlockquest={{quest|First Steps}}\n}}\nSome prose that must never be copied.'),
+    page('First Steps', '{{infobox\n|character=Fern\n|category=Story Quest\n|prerequisites=\n|rewards=x\n}}'),
+    page('Second &amp; Third?', '{{infobox\n|character=Fern\n|category=Friendship Quest\n|prerequisites={{Friendship|Fern|4}}&lt;br&gt;\nComplete quest {{quest|First Steps|realm=Story}}&lt;br&gt;\nUnlock Biomes&lt;br&gt;\n:{{name|Misty Hollow}}&lt;br&gt;\nSomething nobody expected\n|rewards=x\n}}'),
+  ].join('');
+  const regions = [{ id: 'sample-glade', name: 'Sample Glade', kind: 'base', color: '#b48cff' }];
+
+  test('importer turns wiki pages into villagers and quests', () => {
+    const { characters, quests, report } = convert(parsePages(`<mediawiki>${xml}</mediawiki>`), regions);
+    assert.deepEqual(characters, [{ id: 'fern', name: 'Fern', region: 'sample-glade', film: 'Sample Film', wiki: 'https://dreamlightvalleywiki.com/Fern' }]);
+    const [first, second] = quests.get('sample-glade');
+    assert.deepEqual(first.unlocks, { characters: ['fern'] });
+    assert.equal(first.verified, true);
+    assert.equal(second.id, 'second-and-third');
+    assert.equal(second.level, 4);
+    assert.deepEqual(second.requires, { quests: ['first-steps'], characters: ['fern'] });
+    assert.equal(second.notes, 'Needs Misty Hollow unlocked.');
+    assert.equal(second.verified, false, 'an unreadable line leaves the quest unverified');
+    assert.equal(report.length, 1);
+    assert.deepEqual(validate({ regions, characters, questFiles: [{ file: 'quests/sample-glade.json', region: 'sample-glade', quests: quests.get('sample-glade') }] }), []);
+  });
+
+  test('importer builds safe ids and wiki links', () => {
+    assert.equal(slug("Bon Appétit! It's Remy & Co."), 'bon-appetit-its-remy-and-co');
+    assert.equal(wikiUrl('Continue?'), 'https://dreamlightvalleywiki.com/Continue%3F');
+    assert.equal(wikiUrl('Forgotten Relics: The Storybook'), 'https://dreamlightvalleywiki.com/Forgotten_Relics:_The_Storybook');
+  });
+}

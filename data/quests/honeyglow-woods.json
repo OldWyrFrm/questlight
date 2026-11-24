@@ -1,0 +1,502 @@
+[
+  {
+    "id": "prologue-childhood-treasures",
+    "name": "Prologue: Childhood Treasures",
+    "region": "honeyglow-woods",
+    "type": "story",
+    "giver": "winnie-the-pooh",
+    "requires": {
+      "quests": [
+        "welcome-to-dreamlight-valley",
+        "friendship-is-everything",
+        "making-cents-of-things",
+        "scrooge-mcducks-grand-re-opening",
+        "fishing-expedition"
+      ],
+      "regions": [
+        "honeyglow-woods"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Prologue:_Childhood_Treasures",
+    "verified": true
+  },
+  {
+    "id": "chapter-1-all-you-need-is-honey",
+    "name": "Chapter 1: All You Need Is Honey",
+    "region": "honeyglow-woods",
+    "type": "story",
+    "giver": "winnie-the-pooh",
+    "requires": {
+      "quests": [
+        "prologue-childhood-treasures"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Chapter_1:_All_You_Need_Is_Honey",
+    "verified": true
+  },
+  {
+    "id": "chapter-2-about-thought-fog-and-light",
+    "name": "Chapter 2: About Thought, Fog, and Light",
+    "region": "honeyglow-woods",
+    "type": "story",
+    "giver": "winnie-the-pooh",
+    "requires": {
+      "quests": [
+        "chapter-1-all-you-need-is-honey"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Chapter_2:_About_Thought,_Fog,_and_Light",
+    "verified": true
+  },
+  {
+    "id": "chapter-3-a-very-satisfied-bear",
+    "name": "Chapter 3: A Very Satisfied Bear",
+    "region": "honeyglow-woods",
+    "type": "story",
+    "giver": "winnie-the-pooh",
+    "requires": {
+      "quests": [
+        "chapter-2-about-thought-fog-and-light"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "winnie-the-pooh"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Chapter_3:_A_Very_Satisfied_Bear",
+    "verified": true
+  },
+  {
+    "id": "interlude-the-misplaced-honey",
+    "name": "Interlude: The Misplaced Honey",
+    "region": "honeyglow-woods",
+    "type": "story",
+    "giver": "winnie-the-pooh",
+    "requires": {
+      "quests": [
+        "chapter-3-a-very-satisfied-bear"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Interlude:_The_Misplaced_Honey",
+    "verified": true
+  },
+  {
+    "id": "chapter-4-a-tail-tale",
+    "name": "Chapter 4: A Tail Tale",
+    "region": "honeyglow-woods",
+    "type": "story",
+    "giver": "eeyore",
+    "requires": {
+      "quests": [
+        "interlude-the-misplaced-honey"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Chapter_4:_A_Tail_Tale",
+    "verified": true
+  },
+  {
+    "id": "chapter-5-the-big-red-monster",
+    "name": "Chapter 5: The Big Red Monster",
+    "region": "honeyglow-woods",
+    "type": "story",
+    "giver": "eeyore",
+    "requires": {
+      "quests": [
+        "chapter-4-a-tail-tale"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Chapter_5:_The_Big_Red_Monster",
+    "verified": true
+  },
+  {
+    "id": "chapter-6-a-place-for-eeyore",
+    "name": "Chapter 6: A Place for Eeyore",
+    "region": "honeyglow-woods",
+    "type": "story",
+    "giver": "eeyore",
+    "requires": {
+      "quests": [
+        "chapter-5-the-big-red-monster"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "eeyore"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Chapter_6:_A_Place_for_Eeyore",
+    "verified": true
+  },
+  {
+    "id": "interlude-2-the-gloomy-hollow",
+    "name": "Interlude 2: The Gloomy Hollow",
+    "region": "honeyglow-woods",
+    "type": "story",
+    "giver": "eeyore",
+    "requires": {
+      "quests": [
+        "chapter-6-a-place-for-eeyore"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Interlude_2:_The_Gloomy_Hollow",
+    "verified": true
+  },
+  {
+    "id": "chapter-7-a-voice-behind-the-door",
+    "name": "Chapter 7: A Voice Behind the Door",
+    "region": "honeyglow-woods",
+    "type": "story",
+    "giver": "piglet",
+    "requires": {
+      "quests": [
+        "interlude-2-the-gloomy-hollow"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Chapter_7:_A_Voice_Behind_the_Door",
+    "verified": true
+  },
+  {
+    "id": "chapter-8-the-little-big-forest",
+    "name": "Chapter 8: The Little Big Forest",
+    "region": "honeyglow-woods",
+    "type": "story",
+    "giver": "piglet",
+    "requires": {
+      "quests": [
+        "chapter-7-a-voice-behind-the-door"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Chapter_8:_The_Little_Big_Forest",
+    "verified": true
+  },
+  {
+    "id": "chapter-9-how-to-meet-a-best-friend-again",
+    "name": "Chapter 9: How to Meet a Best Friend (Again)",
+    "region": "honeyglow-woods",
+    "type": "story",
+    "giver": "piglet",
+    "requires": {
+      "quests": [
+        "chapter-8-the-little-big-forest"
+      ]
+    },
+    "unlocks": {
+      "characters": [
+        "piglet"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Chapter_9:_How_to_Meet_a_Best_Friend_(Again)",
+    "verified": true
+  },
+  {
+    "id": "interlude-3-the-shadowy-surprise",
+    "name": "Interlude 3: The Shadowy Surprise",
+    "region": "honeyglow-woods",
+    "type": "story",
+    "giver": "piglet",
+    "requires": {
+      "quests": [
+        "chapter-9-how-to-meet-a-best-friend-again"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Interlude_3:_The_Shadowy_Surprise",
+    "verified": true
+  },
+  {
+    "id": "chapter-10-most-grand-adventure",
+    "name": "Chapter 10: Most Grand Adventure",
+    "region": "honeyglow-woods",
+    "type": "story",
+    "giver": "winnie-the-pooh",
+    "requires": {
+      "quests": [
+        "interlude-3-the-shadowy-surprise"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Chapter_10:_Most_Grand_Adventure",
+    "verified": true
+  },
+  {
+    "id": "chapter-11-the-anti-monster-camp",
+    "name": "Chapter 11: The Anti-monster Camp",
+    "region": "honeyglow-woods",
+    "type": "story",
+    "giver": "winnie-the-pooh",
+    "requires": {
+      "quests": [
+        "chapter-10-most-grand-adventure"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Chapter_11:_The_Anti-monster_Camp",
+    "verified": true
+  },
+  {
+    "id": "chapter-12-old-plans-new-wind",
+    "name": "Chapter 12: Old Plans, New Wind",
+    "region": "honeyglow-woods",
+    "type": "story",
+    "giver": "winnie-the-pooh",
+    "requires": {
+      "quests": [
+        "chapter-11-the-anti-monster-camp"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Chapter_12:_Old_Plans,_New_Wind",
+    "verified": true
+  },
+  {
+    "id": "interlude-4-curiosity-satisfied",
+    "name": "Interlude 4: Curiosity Satisfied",
+    "region": "honeyglow-woods",
+    "type": "story",
+    "giver": "winnie-the-pooh",
+    "requires": {
+      "quests": [
+        "chapter-12-old-plans-new-wind"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Interlude_4:_Curiosity_Satisfied",
+    "verified": true
+  },
+  {
+    "id": "epilogue-see-you-next-summer",
+    "name": "Epilogue: See You Next Summer",
+    "region": "honeyglow-woods",
+    "type": "story",
+    "giver": "winnie-the-pooh",
+    "requires": {
+      "quests": [
+        "interlude-4-curiosity-satisfied"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Epilogue:_See_You_Next_Summer",
+    "verified": true
+  },
+  {
+    "id": "sketch-woodland-trade",
+    "name": "Sketch: Woodland Trade",
+    "region": "honeyglow-woods",
+    "type": "story",
+    "wiki": "https://dreamlightvalleywiki.com/Sketch:_Woodland_Trade",
+    "verified": true,
+    "notes": "Starts from Shopping List."
+  },
+  {
+    "id": "the-backwards-day",
+    "name": "The Backwards Day",
+    "region": "honeyglow-woods",
+    "type": "friendship",
+    "giver": "winnie-the-pooh",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "winnie-the-pooh",
+        "eeyore"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Backwards_Day",
+    "verified": true
+  },
+  {
+    "id": "grown-up-things",
+    "name": "Grown-up Things",
+    "region": "honeyglow-woods",
+    "type": "friendship",
+    "giver": "winnie-the-pooh",
+    "requires": {
+      "characters": [
+        "winnie-the-pooh"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Grown-up_Things",
+    "verified": true
+  },
+  {
+    "id": "a-gloomy-goofy-adventure",
+    "name": "A Gloomy Goofy Adventure",
+    "region": "honeyglow-woods",
+    "type": "friendship",
+    "giver": "eeyore",
+    "requires": {
+      "characters": [
+        "eeyore",
+        "goofy"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/A_Gloomy_Goofy_Adventure",
+    "verified": true
+  },
+  {
+    "id": "poohs-grown-up-job",
+    "name": "Pooh's Grown-Up Job",
+    "region": "honeyglow-woods",
+    "type": "friendship",
+    "giver": "winnie-the-pooh",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "winnie-the-pooh",
+        "remy",
+        "aladdin",
+        "minnie-mouse"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Pooh's_Grown-Up_Job",
+    "verified": true
+  },
+  {
+    "id": "the-honey-disaster",
+    "name": "The Honey Disaster",
+    "region": "honeyglow-woods",
+    "type": "friendship",
+    "giver": "winnie-the-pooh",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "winnie-the-pooh",
+        "scrooge-mcduck",
+        "piglet",
+        "daisy",
+        "wall-e"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Honey_Disaster",
+    "verified": true
+  },
+  {
+    "id": "tails-and-tribulations",
+    "name": "Tails and Tribulations",
+    "region": "honeyglow-woods",
+    "type": "friendship",
+    "giver": "eeyore",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "eeyore",
+        "piglet",
+        "stitch"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Tails_and_Tribulations",
+    "verified": true
+  },
+  {
+    "id": "the-shy-villagers-society",
+    "name": "The Shy Villagers Society",
+    "region": "honeyglow-woods",
+    "type": "friendship",
+    "giver": "eeyore",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "eeyore",
+        "alice",
+        "sadness"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Shy_Villagers_Society",
+    "verified": true
+  },
+  {
+    "id": "eeyores-lost-and-found",
+    "name": "Eeyore's Lost and Found",
+    "region": "honeyglow-woods",
+    "type": "friendship",
+    "giver": "eeyore",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "eeyore"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Eeyore's_Lost_and_Found",
+    "verified": true
+  },
+  {
+    "id": "the-most-unexpected-friend",
+    "name": "The Most Unexpected Friend",
+    "region": "honeyglow-woods",
+    "type": "friendship",
+    "giver": "piglet",
+    "requires": {
+      "characters": [
+        "piglet",
+        "ursula"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_Most_Unexpected_Friend",
+    "verified": true
+  },
+  {
+    "id": "after-the-rain",
+    "name": "After the Rain",
+    "region": "honeyglow-woods",
+    "type": "friendship",
+    "giver": "piglet",
+    "level": 4,
+    "requires": {
+      "characters": [
+        "piglet",
+        "wall-e",
+        "moana"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/After_the_Rain",
+    "verified": true
+  },
+  {
+    "id": "collecting-little-wins",
+    "name": "Collecting Little Wins",
+    "region": "honeyglow-woods",
+    "type": "friendship",
+    "giver": "piglet",
+    "level": 7,
+    "requires": {
+      "characters": [
+        "piglet",
+        "joy",
+        "vanellope",
+        "the-beast",
+        "winnie-the-pooh"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Collecting_Little_Wins",
+    "verified": true,
+    "notes": "Needs further quest progress with Winnie the Pooh."
+  },
+  {
+    "id": "piglet-the-caretaker",
+    "name": "Piglet the Caretaker",
+    "region": "honeyglow-woods",
+    "type": "friendship",
+    "giver": "piglet",
+    "level": 10,
+    "requires": {
+      "characters": [
+        "piglet",
+        "kristoff",
+        "pocahontas",
+        "scar"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/Piglet_the_Caretaker",
+    "verified": true
+  },
+  {
+    "id": "the-new-expedition",
+    "name": "The New Expedition",
+    "region": "honeyglow-woods",
+    "type": "friendship",
+    "giver": "winnie-the-pooh",
+    "requires": {
+      "quests": [
+        "a-tiggerific-day",
+        "eeyores-lost-and-found",
+        "piglet-the-caretaker"
+      ]
+    },
+    "wiki": "https://dreamlightvalleywiki.com/The_New_Expedition",
+    "verified": true
+  }
+]
