@@ -19,6 +19,7 @@ verified" where the wiki itself does not know a requirement.
 - **Focus mode** — pick a character or quest and see only what leads to it and what it unlocks
 - **"How do I get…?"** — the shortest ordered quest path to unlock any villager
 - **Progress tracking** — check off quests and see what's available now (saved only in your browser)
+- **Friendship levels** — each villager's level is worked out from the quests you've finished, and you can raise it yourself so level-locked quests show correctly
 - **Expansion toggles** — hide content from expansions you don't own
 - **Spoiler mode** — hide the names of quests and characters you can't reach yet
 - **Backup** — save your progress to a file and load it on another device

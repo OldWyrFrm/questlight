@@ -49,7 +49,7 @@ never change once published, because players' saved progress refers to them.
 | `giver`    | no  | Character id who gives the quest |
 | `requires` | no  | What must be done first (see below) |
 | `unlocks`  | no  | What finishing it unlocks (see below) |
-| `level`    | no  | Friendship level needed, for friendship quests |
+| `level`    | no  | Friendship level needed with the quest's `giver` |
 | `wiki`     | yes | Link to the quest's wiki page (used for attribution) |
 | `verified` | yes | `true` once someone has checked it against the game or wiki |
 | `notes`    | no  | Short tip in your **own words** (do not copy wiki text) |
@@ -60,7 +60,8 @@ never change once published, because players' saved progress refers to them.
 "requires": {
   "quests": ["the-dream-castle"],
   "characters": ["ursula"],
-  "regions": ["keepsake-sea"]
+  "regions": ["keepsake-sea"],
+  "levels": { "rapunzel": 10 }
 },
 "unlocks": {
   "characters": ["jack-sparrow"],
@@ -68,7 +69,8 @@ never change once published, because players' saved progress refers to them.
 }
 ```
 
-`requires.regions` means "you must own this expansion". Use `unlocks.quests` only when
+`requires.regions` means "you must own this expansion". `requires.levels` is a friendship
+level needed with a villager other than the giver (the giver's goes in `level`). Use `unlocks.quests` only when
 a quest unlocks another without the second one listing it in `requires`; the app combines
 both directions.
 

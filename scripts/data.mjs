@@ -96,6 +96,15 @@ export function validate({ regions, characters, questFiles, errors: loadErrors =
       if (q[field] === undefined) continue;
       if (!isObject(q[field])) { errors.push(`${at}: ${field} must be an object`); continue; }
       for (const [key, list] of Object.entries(q[field])) {
+        if (field === 'requires' && key === 'levels') {
+          if (!isObject(list)) { errors.push(`${at}: requires.levels must be an object of villager id to level`); continue; }
+          for (const [id, level] of Object.entries(list)) {
+            if (!ids.character.has(id)) errors.push(`${at}: requires.levels refers to unknown character "${id}"`);
+            else link(`character:${id}`, `quest:${q.id}`);
+            if (!Number.isInteger(level) || level < 1) errors.push(`${at}: requires.levels.${id} must be a whole number of 1 or more`);
+          }
+          continue;
+        }
         if (!lists.includes(key)) { errors.push(`${at}: unknown field "${field}.${key}"`); continue; }
         if (!Array.isArray(list)) { errors.push(`${at}: ${field}.${key} must be a list`); continue; }
         const kind = key.slice(0, -1);

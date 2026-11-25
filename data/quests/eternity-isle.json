@@ -673,11 +673,14 @@
       ],
       "regions": [
         "eternity-isle"
-      ]
+      ],
+      "levels": {
+        "olaf": 2
+      }
     },
     "wiki": "https://dreamlightvalleywiki.com/Dreamlight_Valley's_Next_Top_LeFou",
     "verified": true,
-    "notes": "Needs friendship level 2 with Olaf. Needs further quest progress with Mickey Mouse and Stitch."
+    "notes": "Needs further quest progress with Mickey Mouse and Stitch."
   },
   {
     "id": "gaston-the-hero",

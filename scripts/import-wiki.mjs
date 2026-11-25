@@ -252,11 +252,12 @@ export function convert(pages, regions, overrides = {}) {
     const needChars = pre.friendship.some((f) => f.character === giver) ? [giver] : [];
     for (const c of pre.characters) if (!needChars.includes(c)) needChars.push(c);
     for (const c of pre.progress) if (!needChars.includes(c)) needChars.push(c);
+    const levels = {};
     for (const f of pre.friendship) {
       if (f.character === giver) q.level = f.level;
       else {
         if (!needChars.includes(f.character)) needChars.push(f.character);
-        notes.push(`Needs friendship level ${f.level} with ${name.character.get(f.character)}.`);
+        levels[f.character] = Math.max(f.level, levels[f.character] ?? 0);
       }
     }
     const needQuests = [...pre.quests, ...pre.started.filter((s) => !pre.quests.includes(s))].filter((x) => x !== id);
@@ -264,6 +265,7 @@ export function convert(pages, regions, overrides = {}) {
     if (needQuests.length) requires.quests = needQuests;
     if (needChars.length) requires.characters = needChars;
     if (pre.regions.length) requires.regions = pre.regions;
+    if (Object.keys(levels).length) requires.levels = levels;
     if (Object.keys(requires).length) q.requires = requires;
 
     if (pre.started.length) notes.push(`Opens while ${list(pre.started.map((s) => name.quest.get(s)))} is under way; that quest does not have to be finished first.`);
@@ -292,6 +294,12 @@ export function convert(pages, regions, overrides = {}) {
     const { q } = item;
     if (fix.type) q.type = fix.type;
     if (fix.region) q.region = fix.region;
+    if (fix.level) {
+      // A level with the giver; like the wiki's own, it means the giver has to be around.
+      q.level = fix.level;
+      q.requires ??= {};
+      if (q.giver && !q.requires.characters?.includes(q.giver)) q.requires.characters = [q.giver, ...(q.requires.characters ?? [])];
+    }
     for (const [field, extra] of Object.entries(fix.requires ?? {})) {
       q.requires ??= {};
       q.requires[field] = [...new Set([...(q.requires[field] ?? []), ...extra])];

@@ -56,15 +56,22 @@ test('focus map flows left to right, stays limited, and never overlaps', () => {
   const xml = [
     page('Fern', '{{infobox\n|type=Characters\n|collection=Sample Glade\n|universe=Sample Film\n|house=x\n|unlockquest={{quest|First Steps}}\n}}\nSome prose that must never be copied.'),
     page('First Steps', '{{infobox\n|character=Fern\n|category=Story Quest\n|prerequisites=\n|rewards=x\n}}'),
+    page('Moss', '{{infobox\n|type=Characters\n|collection=Sample Glade\n|universe=Sample Film\n|house=x\n}}'),
+    page('Old Friends', '{{infobox\n|character=Fern\n|category=Friendship Quest\n|prerequisites={{Friendship|Fern|7}}&lt;br&gt;{{Friendship|Moss|10}}\n}}'),
     page('Second &amp; Third?', '{{infobox\n|character=Fern\n|category=Friendship Quest\n|prerequisites={{Friendship|Fern|4}}&lt;br&gt;\nComplete quest {{quest|First Steps|realm=Story}}&lt;br&gt;\nUnlock Biomes&lt;br&gt;\n:{{name|Misty Hollow}}&lt;br&gt;\nSomething nobody expected\n|rewards=x\n}}'),
   ].join('');
   const regions = [{ id: 'sample-glade', name: 'Sample Glade', kind: 'base', color: '#b48cff' }];
 
   test('importer turns wiki pages into villagers and quests', () => {
-    const { characters, quests, report } = convert(parsePages(`<mediawiki>${xml}</mediawiki>`), regions);
-    assert.deepEqual(characters, [{ id: 'fern', name: 'Fern', region: 'sample-glade', film: 'Sample Film', wiki: 'https://dreamlightvalleywiki.com/Fern' }]);
-    const [first, second] = quests.get('sample-glade');
+    const { characters, quests, report } = convert(parsePages(`<mediawiki>${xml}</mediawiki>`), regions, { 'first-steps': { level: 2 } });
+    assert.deepEqual(characters.filter((c) => c.id === 'fern'), [{ id: 'fern', name: 'Fern', region: 'sample-glade', film: 'Sample Film', wiki: 'https://dreamlightvalleywiki.com/Fern' }]);
+    const [first, old, second] = ['first-steps', 'old-friends', 'second-and-third'].map((id) => quests.get('sample-glade').find((q) => q.id === id));
     assert.deepEqual(first.unlocks, { characters: ['fern'] });
+    assert.equal(first.level, 2, 'a level from the corrections file');
+    assert.equal(first.requires, undefined, 'a quest cannot need the villager it unlocks');
+    assert.equal(old.level, 7);
+    assert.deepEqual(old.requires, { characters: ['fern', 'moss'], levels: { moss: 10 } });
+    assert.equal(old.notes, undefined);
     assert.equal(first.verified, true);
     assert.equal(second.id, 'second-and-third');
     assert.equal(second.level, 4);
@@ -84,7 +91,7 @@ test('focus map flows left to right, stays limited, and never overlaps', () => {
 
 // Progress: what is done, what is available now, and reading saved files safely.
 {
-  const { parseSave, serialize, statuses } = await import('../src/progress.js');
+  const { friendship, parseSave, serialize, statuses } = await import('../src/progress.js');
   const regions = [{ id: 'home', kind: 'base' }, { id: 'isle', kind: 'expansion' }];
   const graph = makeGraph({
     characters: [{ id: 'starter', region: 'home' }, { id: 'fern', region: 'home' }],
@@ -112,6 +119,32 @@ test('focus map flows left to right, stays limited, and never overlaps', () => {
     const s = at([], ['isle']);
     assert.equal(s['quest:far'], 'locked');
     assert.equal(s['quest:needs-isle'], 'locked');
+  });
+
+  test('friendship levels follow finished quests and can only be raised by the player', () => {
+    const g = makeGraph({
+      characters: [{ id: 'starter', region: 'home' }, { id: 'pal', region: 'home' }],
+      quests: [
+        { id: 'early', region: 'home', giver: 'starter', level: 4 },
+        { id: 'late', region: 'home', giver: 'starter', level: 10 },
+        { id: 'both', region: 'home', giver: 'starter', level: 2, requires: { levels: { pal: 7 } } },
+      ],
+    });
+    const run = (done, levels = {}) => Object.fromEntries(statuses(g, new Set(done), new Set(), new Map(Object.entries(levels))));
+    assert.deepEqual([run([])['quest:early'], run([])['quest:late'], run([])['quest:both']], ['locked', 'locked', 'locked']);
+    assert.equal(run([], { starter: 4 })['quest:early'], 'ready');
+    assert.equal(run([], { starter: 4 })['quest:late'], 'locked');
+    // Finishing the level 10 quest proves level 10, which opens the level 4 one.
+    assert.equal(run(['quest:late'])['quest:early'], 'ready');
+    assert.equal(run(['quest:late'])['quest:both'], 'locked', 'the other villager is still short');
+    assert.equal(run(['quest:late'], { pal: 7 })['quest:both'], 'ready');
+    const friends = friendship(g, new Set(['quest:early']), new Map([['starter', 2], ['pal', 9]]));
+    assert.deepEqual([friends.shown('starter'), friends.level('starter'), friends.shown('pal'), friends.level('pal')], [4, 4, 1, 9]);
+    const saved = JSON.stringify(serialize({ done: new Set(), unowned: new Set(), spoilers: false, levels: new Map([['pal', 7]]) }));
+    assert.deepEqual([...parseSave(saved, g, regions).levels], [['pal', 7]]);
+    const odd = JSON.stringify({ app: 'questlight', version: 1, levels: { pal: 99, starter: '5', nobody: 3, early: 4 } });
+    assert.deepEqual([...parseSave(odd, g, regions).levels], []);
+    assert.equal(parseSave('{"app":"questlight","version":1}', g, regions).levels.size, 0);
   });
 
   test('a save file round-trips and ignores what it does not recognise', () => {

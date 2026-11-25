@@ -1,5 +1,15 @@
 {
-  "//": "Hand-checked corrections applied by scripts/import-wiki.mjs after reading the wiki export. Keys are quest ids. \"requires\" lists are added to what the importer found, \"notes\" is appended and \"setNotes\" replaces the imported note (original wording only), and \"type\", \"region\" and \"verified\" replace the imported value. \"why\" records where the fact came from and is not copied into data/.",
+  "//": "Hand-checked corrections applied by scripts/import-wiki.mjs after reading the wiki export. Keys are quest ids. \"requires\" lists are added to what the importer found, \"notes\" is appended and \"setNotes\" replaces the imported note (original wording only), and \"type\", \"region\", \"level\" (friendship level with the giver) and \"verified\" replace the imported value. \"why\" records where the fact came from and is not copied into data/.",
+  "the-missing-princess": {
+    "level": 10,
+    "notes": "Starts on its own, but cannot be finished until every one of Flynn's friendship quests is done.",
+    "why": "Stated in the wiki page's text (level 10 with Flynn and all his friendship quests), not in its prerequisites box."
+  },
+  "the-fallen-fortress": {
+    "level": 2,
+    "requires": { "quests": ["a-sheep-in-wolfs-clothing"] },
+    "why": "Stated in the wiki page's text (finish A Sheep in Wolf's Clothing and reach level 2 with Flynn), not in its prerequisites box."
+  },
   "village-project-timeless-tools": {
     "notes": "The Hourglass must be upgraded first.",
     "verified": true,

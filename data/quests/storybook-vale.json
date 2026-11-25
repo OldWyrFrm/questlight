@@ -148,6 +148,15 @@
     "region": "storybook-vale",
     "type": "story",
     "giver": "flynn",
+    "level": 2,
+    "requires": {
+      "characters": [
+        "flynn"
+      ],
+      "quests": [
+        "a-sheep-in-wolfs-clothing"
+      ]
+    },
     "wiki": "https://dreamlightvalleywiki.com/The_Fallen_Fortress",
     "verified": true,
     "notes": "Needs The Fallen Fortress unlocked."
@@ -313,13 +322,18 @@
     "region": "storybook-vale",
     "type": "story",
     "giver": "flynn",
+    "level": 10,
     "requires": {
       "quests": [
         "the-unwritten-realms-maleficents-demise"
+      ],
+      "characters": [
+        "flynn"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Missing_Princess",
-    "verified": true
+    "verified": true,
+    "notes": "Starts on its own, but cannot be finished until every one of Flynn's friendship quests is done."
   },
   {
     "id": "a-hero-of-ink-and-paper",
@@ -648,11 +662,13 @@
       "characters": [
         "flynn",
         "rapunzel"
-      ]
+      ],
+      "levels": {
+        "rapunzel": 10
+      }
     },
     "wiki": "https://dreamlightvalleywiki.com/A_Romantic_Reunion",
-    "verified": true,
-    "notes": "Needs friendship level 10 with Rapunzel."
+    "verified": true
   },
   {
     "id": "the-family-recipe",
