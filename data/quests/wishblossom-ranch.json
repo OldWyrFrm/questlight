@@ -507,8 +507,12 @@
       "quests": [
         "the-wishblossom-fair"
       ],
+      "levels": {
+        "snow-white": 10
+      },
       "characters": [
-        "daisy"
+        "daisy",
+        "snow-white"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Wishblossom_Fair:_Horse_Beauty_Contest",
@@ -525,8 +529,12 @@
       "quests": [
         "the-wishblossom-fair"
       ],
+      "levels": {
+        "snow-white": 10
+      },
       "characters": [
-        "mulan"
+        "mulan",
+        "snow-white"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Wishblossom_Fair:_Riding_Demonstration",
@@ -543,8 +551,12 @@
       "quests": [
         "the-wishblossom-fair"
       ],
+      "levels": {
+        "snow-white": 10
+      },
       "characters": [
-        "tiana"
+        "tiana",
+        "snow-white"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Wishblossom_Fair:_Cooking_Competition",
