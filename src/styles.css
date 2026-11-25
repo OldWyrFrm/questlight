@@ -79,6 +79,7 @@ button, input, select { font: inherit; color: inherit; }
 .layout { display: grid; gap: 1.25rem; align-items: start; }
 .layout > * { min-width: 0; }
 #focus { order: -1; }
+#focus:empty { display: none; }
 .has-focus #browse { display: none; }
 
 /* Search and filters */

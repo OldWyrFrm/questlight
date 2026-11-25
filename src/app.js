@@ -299,18 +299,12 @@ async function importFile(file) {
   }
 }
 
+/** Nothing is shown until something is picked, unless there is no data at all to pick from. */
 function intro() {
-  const quests = data.quests.length, villagers = data.characters.length;
-  if (!quests && !villagers) {
-    return el('div', { class: 'card' },
-      el('h2', { text: 'The map is waiting for its first quests' }),
-      el('p', { class: 'lede', text: `Quest data is still being gathered and checked against the wiki. ${plural(data.regions.length, 'region')} are set up and ready to fill.` }));
-  }
-  return el('div', { class: 'card' },
-    el('h2', { text: 'Pick a quest or villager' }),
-    el('p', { class: 'lede', text: 'You will see only what leads to it and what it opens up. Everything else stays out of the way.' }),
-    el('p', { class: 'lede', text: `${plural(quests, 'quest')} and ${plural(villagers, 'villager')} across ${plural(data.regions.length, 'region')}.` }),
-    el('p', { class: 'lede', text: 'Tick quests off as you finish them and Questlight will show what is available now. Your progress stays in this browser.' }));
+  if (data.quests.length || data.characters.length) return [];
+  return [el('div', { class: 'card' },
+    el('h2', { text: 'The map is waiting for its first quests' }),
+    el('p', { class: 'lede', text: `Quest data is still being gathered and checked against the wiki. ${plural(data.regions.length, 'region')} are set up and ready to fill.` }))];
 }
 
 function steps(n) {
@@ -464,7 +458,7 @@ function actions(n) {
 
 function renderFocus() {
   const n = graph.nodes.get(state.focus);
-  if (!n) return $('focus').replaceChildren(intro());
+  if (!n) return $('focus').replaceChildren(...intro());
   const back = el('button', { class: 'back', type: 'button', text: '← All quests', onclick: () => select(null) });
   if (masked(n.key)) {
     return $('focus').replaceChildren(tint(el('article', { class: 'card' },
