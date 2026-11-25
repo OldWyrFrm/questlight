@@ -369,6 +369,26 @@ export function convert(pages, regions, overrides = {}) {
     const next = kind === 'quest' ? before(questById.get(id) ?? {}) : (unlockers.get(id) ?? []).map((u) => `quest:${u}`);
     return next.some((n) => reaches(n, target, visited));
   };
+  // A game rule the wiki does not spell out quest by quest: a villager's friendship quests come
+  // in level order, so each one needs their friendship quests at the next level down. Quests
+  // with no level, and quests sharing a level, are left unordered.
+  const ladders = new Map();
+  for (const { q } of quests) {
+    if (q.type !== 'friendship' || !q.giver || !q.level) continue;
+    ladders.set(q.giver, [...(ladders.get(q.giver) ?? []), q]);
+  }
+  for (const ladder of ladders.values()) {
+    for (const q of ladder) {
+      const below = Math.max(0, ...ladder.filter((o) => o.level < q.level).map((o) => o.level));
+      for (const earlier of ladder.filter((o) => o.level === below)) {
+        if (q.requires?.quests?.includes(earlier.id)) continue;
+        if (reaches(`quest:${earlier.id}`, `quest:${q.id}`)) { report.push(`${q.name}: not placed after ${earlier.name} by level, because the wiki has them the other way round`); continue; }
+        q.requires ??= {};
+        q.requires.quests = [...(q.requires.quests ?? []), earlier.id];
+      }
+    }
+  }
+
   for (const item of quests) {
     const { q } = item;
     for (const field of ['quests', 'characters']) {

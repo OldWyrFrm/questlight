@@ -929,6 +929,9 @@
       "characters": [
         "ursula",
         "ariel"
+      ],
+      "quests": [
+        "the-ritual"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/A_Deal_with_Ursula",
@@ -945,6 +948,9 @@
     "requires": {
       "characters": [
         "donald-duck"
+      ],
+      "quests": [
+        "the-forgotten-project"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Dreamlight_Fountain",
@@ -962,6 +968,9 @@
       "characters": [
         "moana",
         "maui"
+      ],
+      "quests": [
+        "the-search-for-pua"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Ceremony",
@@ -977,6 +986,9 @@
     "requires": {
       "characters": [
         "remy"
+      ],
+      "quests": [
+        "remys-recipe-book"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Price_of_Fame",
@@ -992,6 +1004,9 @@
     "requires": {
       "characters": [
         "elsa"
+      ],
+      "quests": [
+        "the-singing-ice"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Ice_Cavern_Mystery",
@@ -1010,6 +1025,9 @@
         "moana",
         "ursula",
         "merlin"
+      ],
+      "quests": [
+        "thingamabobs-gadgets-and-gizmos"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Ancient_Doorway",
@@ -1026,6 +1044,9 @@
     "requires": {
       "characters": [
         "mother-gothel"
+      ],
+      "quests": [
+        "the-sunstone-fragments"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Village_Project:_Restoring_the_Sunstone",
@@ -1045,6 +1066,9 @@
         "minnie-mouse",
         "remy",
         "wall-e"
+      ],
+      "quests": [
+        "the-missing-prince"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Thingamabobs,_Gadgets,_and_Gizmos",
@@ -1061,6 +1085,9 @@
     "requires": {
       "characters": [
         "scrooge-mcduck"
+      ],
+      "quests": [
+        "the-treasure-hunt"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Treasure_Hunt_Part_2",
@@ -1077,6 +1104,9 @@
     "requires": {
       "characters": [
         "minnie-mouse"
+      ],
+      "quests": [
+        "on-the-trail-of-minnies-memory"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Remembering_Old_Times",
@@ -1093,6 +1123,9 @@
     "requires": {
       "characters": [
         "prince-eric"
+      ],
+      "quests": [
+        "back-on-the-waves"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Mystical_Crystal",
@@ -1128,6 +1161,9 @@
       "characters": [
         "remy",
         "wall-e"
+      ],
+      "quests": [
+        "the-price-of-fame"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Unknown_Flavor",
@@ -1160,6 +1196,9 @@
     "requires": {
       "characters": [
         "scrooge-mcduck"
+      ],
+      "quests": [
+        "customers-know-best"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/A_Forgotten_Combination",
@@ -1177,6 +1216,9 @@
         "scrooge-mcduck",
         "ursula",
         "merlin"
+      ],
+      "quests": [
+        "a-forgotten-combination"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/What's_Bad_for_the_Business",
@@ -1193,6 +1235,9 @@
     "requires": {
       "characters": [
         "scrooge-mcduck"
+      ],
+      "quests": [
+        "whats-bad-for-the-business"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Treasure_Hunt",
@@ -1224,6 +1269,9 @@
     "requires": {
       "characters": [
         "mickey-mouse"
+      ],
+      "quests": [
+        "hangin-with-mickey"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Missing_Minnie",
@@ -1239,6 +1287,9 @@
     "requires": {
       "characters": [
         "mickey-mouse"
+      ],
+      "quests": [
+        "missing-minnie"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Shadows_and_Bows",
@@ -1254,6 +1305,9 @@
     "requires": {
       "characters": [
         "mickey-mouse"
+      ],
+      "quests": [
+        "shadows-and-bows"
       ]
     },
     "unlocks": {
@@ -1306,6 +1360,9 @@
     "requires": {
       "characters": [
         "goofy"
+      ],
+      "quests": [
+        "photographic-memory"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Dinner_with_a_Friend",
@@ -1324,6 +1381,9 @@
         "goofy",
         "remy",
         "scrooge-mcduck"
+      ],
+      "quests": [
+        "dinner-with-a-friend"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Photo_Fervor",
@@ -1371,6 +1431,9 @@
     "requires": {
       "characters": [
         "merlin"
+      ],
+      "quests": [
+        "a-new-enchantment"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/A_Lesson_in_Frustration",
@@ -1388,6 +1451,9 @@
       "characters": [
         "merlin",
         "donald-duck"
+      ],
+      "quests": [
+        "a-lesson-in-frustration"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Crystal_Mystery",
@@ -1404,6 +1470,9 @@
     "requires": {
       "characters": [
         "merlin"
+      ],
+      "quests": [
+        "crystal-mystery"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/A_Dark_Experiment",
@@ -1421,6 +1490,9 @@
       "characters": [
         "merlin",
         "wall-e"
+      ],
+      "quests": [
+        "a-dark-experiment"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Final_Trial",
@@ -1467,6 +1539,9 @@
     "requires": {
       "characters": [
         "wall-e"
+      ],
+      "quests": [
+        "village-project-the-garden"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Compressed_Garbage_Incident",
@@ -1482,6 +1557,9 @@
     "requires": {
       "characters": [
         "wall-e"
+      ],
+      "quests": [
+        "the-compressed-garbage-incident"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Broken_Memory",
@@ -1515,6 +1593,9 @@
       "characters": [
         "mother-gothel",
         "wall-e"
+      ],
+      "quests": [
+        "my-kingdom-for-a-scroll"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Shine_a_Light",
@@ -1531,6 +1612,9 @@
       "characters": [
         "donald-duck",
         "mickey-mouse"
+      ],
+      "quests": [
+        "a-fishy-dispute"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Forgotten_Project",
@@ -1548,6 +1632,9 @@
       "characters": [
         "anna",
         "kristoff"
+      ],
+      "quests": [
+        "lost-loves-and-missing-memories"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Enchanted_Ring",
@@ -1564,6 +1651,9 @@
     "requires": {
       "characters": [
         "kristoff"
+      ],
+      "quests": [
+        "village-project-a-mountain-mans-stall"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/A_Broken_Sled",
@@ -1580,6 +1670,9 @@
     "requires": {
       "characters": [
         "elsa"
+      ],
+      "quests": [
+        "what-home-feels-like"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Singing_Ice",
@@ -1599,6 +1692,9 @@
         "merlin",
         "goofy",
         "wall-e"
+      ],
+      "quests": [
+        "a-tale-of-stone-and-fire"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Demigod_of_the_Wind_and_Sun",
@@ -1614,6 +1710,9 @@
     "requires": {
       "characters": [
         "mickey-mouse"
+      ],
+      "quests": [
+        "memory-magnification"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Secret_Door",
@@ -1631,6 +1730,9 @@
       "characters": [
         "moana",
         "remy"
+      ],
+      "quests": [
+        "the-remembering"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Search_for_Pua",
@@ -1648,6 +1750,9 @@
       "characters": [
         "mother-gothel",
         "merlin"
+      ],
+      "quests": [
+        "shine-a-light"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Sunstone_Fragments",
@@ -1679,6 +1784,9 @@
     "requires": {
       "characters": [
         "kristoff"
+      ],
+      "quests": [
+        "frozen-memories"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Village_Project:_A_Mountain_Man's_Stall",
@@ -1710,6 +1818,9 @@
     "requires": {
       "characters": [
         "maui"
+      ],
+      "quests": [
+        "burying-the-eel"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/A_Tale_of_Stone_and_Fire",
@@ -1759,6 +1870,9 @@
         "maui",
         "merlin",
         "moana"
+      ],
+      "quests": [
+        "demigod-of-the-wind-and-sun"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Heart_of_Dreamlight_Valley",
@@ -1793,6 +1907,9 @@
     "requires": {
       "characters": [
         "moana"
+      ],
+      "quests": [
+        "peacemakers"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Remembering",
@@ -1842,6 +1959,9 @@
         "anna",
         "elsa",
         "remy"
+      ],
+      "quests": [
+        "the-enchanted-ring"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Do_You_Wanna_Build_a_Snowman%3F",
@@ -1916,6 +2036,9 @@
         "anna",
         "kristoff",
         "mother-gothel"
+      ],
+      "quests": [
+        "an-icy-invitation"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Lost_Loves_and_Missing_Memories",
@@ -1952,6 +2075,9 @@
         "goofy",
         "mickey-mouse",
         "donald-duck"
+      ],
+      "quests": [
+        "photo-fervor"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Scrapbook_Blitz",
@@ -1968,6 +2094,9 @@
       "characters": [
         "ursula",
         "moana"
+      ],
+      "quests": [
+        "magic-moments"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Ritual",
@@ -1984,6 +2113,9 @@
     "requires": {
       "characters": [
         "minnie-mouse"
+      ],
+      "quests": [
+        "the-language-of-flowers"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/On_the_Trail_of_Minnie's_Memory",
@@ -2001,6 +2133,9 @@
       "characters": [
         "moana",
         "maui"
+      ],
+      "quests": [
+        "fixing-the-boat"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Peacemakers",
@@ -2018,6 +2153,9 @@
       "characters": [
         "wall-e",
         "ariel"
+      ],
+      "quests": [
+        "the-broken-memory"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/A_Friendly_Exchange",
@@ -2066,6 +2204,9 @@
     "requires": {
       "characters": [
         "scar"
+      ],
+      "quests": [
+        "friends-arent-food"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Breaking_Bones",
@@ -2081,6 +2222,9 @@
     "requires": {
       "characters": [
         "scar"
+      ],
+      "quests": [
+        "breaking-bones"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Circle_of_Life",
@@ -2096,6 +2240,9 @@
     "requires": {
       "characters": [
         "scar"
+      ],
+      "quests": [
+        "the-circle-of-life"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Making_of_a_Monarch",
@@ -2145,6 +2292,9 @@
         "minnie-mouse",
         "anna",
         "woody"
+      ],
+      "quests": [
+        "remembering-old-times"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Club_Renewal",
@@ -2163,6 +2313,9 @@
         "woody",
         "wall-e",
         "kristoff"
+      ],
+      "quests": [
+        "failing-better"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/A_Bit_of_a_Fixer_Upper",
@@ -2197,6 +2350,9 @@
         "wall-e",
         "prince-eric",
         "buzz-lightyear"
+      ],
+      "quests": [
+        "a-friendly-exchange"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Astronomy_Club",
@@ -2216,6 +2372,9 @@
         "ariel",
         "moana",
         "mother-gothel"
+      ],
+      "quests": [
+        "wanted-aliens"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Illumination",
@@ -2235,6 +2394,9 @@
         "moana",
         "remy",
         "scrooge-mcduck"
+      ],
+      "quests": [
+        "the-fragmented-past"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Definition_of_a_Hero",
@@ -2253,6 +2415,9 @@
         "woody",
         "buzz-lightyear",
         "scar"
+      ],
+      "quests": [
+        "a-bit-of-a-fixer-upper"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Wanted:_Aliens",
@@ -2281,6 +2446,9 @@
         "buzz-lightyear",
         "scar",
         "remy"
+      ],
+      "quests": [
+        "a-space-ranger-reputation"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Fragmented_Past",
@@ -2300,6 +2468,9 @@
         "ursula",
         "maui",
         "donald-duck"
+      ],
+      "quests": [
+        "a-space-ranger-recruit"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/A_Space_Ranger_Reputation",
@@ -2355,6 +2526,9 @@
         "stitch",
         "remy",
         "wall-e"
+      ],
+      "quests": [
+        "goodness-level-check"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Very_Sleepy_Stitch",
@@ -2392,6 +2566,9 @@
         "stitch",
         "ariel",
         "ursula"
+      ],
+      "quests": [
+        "very-sleepy-stitch"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Stitch's_Hobby",
@@ -2444,6 +2621,9 @@
         "elsa",
         "remy",
         "kristoff"
+      ],
+      "quests": [
+        "a-place-for-joy"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/A_Story_to_Tell",
@@ -2462,6 +2642,9 @@
         "olaf",
         "buzz-lightyear",
         "anna"
+      ],
+      "quests": [
+        "a-story-to-tell"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Role_of_a_Lifetime",
@@ -2478,6 +2661,9 @@
       "characters": [
         "olaf",
         "donald-duck"
+      ],
+      "quests": [
+        "the-role-of-a-lifetime"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Olaf_Presents...%22Dreamlight_Valley%22",
@@ -2512,6 +2698,9 @@
       "characters": [
         "mirabel",
         "remy"
+      ],
+      "quests": [
+        "healing-house"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/A_Taste_of_Home",
@@ -2529,6 +2718,9 @@
       "characters": [
         "mirabel",
         "donald-duck"
+      ],
+      "quests": [
+        "a-taste-of-home"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Meddling_Mirabel",
@@ -2547,6 +2739,9 @@
         "mirabel",
         "moana",
         "elsa"
+      ],
+      "quests": [
+        "meddling-mirabel"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/A_Festival_of_Friendship",
@@ -2643,6 +2838,9 @@
         "nala",
         "ursula",
         "mickey-mouse"
+      ],
+      "quests": [
+        "staking-your-territory"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Fishy_Business",
@@ -2663,6 +2861,9 @@
         "remy",
         "donald-duck",
         "mickey-mouse"
+      ],
+      "quests": [
+        "fishy-business"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Heart_of_a_Lioness",
@@ -2680,6 +2881,9 @@
       "characters": [
         "nala",
         "remy"
+      ],
+      "quests": [
+        "the-heart-of-a-lioness"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Here_and_There_and_Back_Again",
@@ -2696,6 +2900,9 @@
     "requires": {
       "characters": [
         "simba"
+      ],
+      "quests": [
+        "seed-of-memories"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Dreamlight_Grove",
@@ -2713,6 +2920,9 @@
       "characters": [
         "simba",
         "scar"
+      ],
+      "quests": [
+        "the-great-gathering"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Seed_of_Memories",
@@ -2732,6 +2942,9 @@
         "minnie-mouse",
         "maui",
         "remy"
+      ],
+      "quests": [
+        "hakuna-matata"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Great_Gathering",
@@ -2807,6 +3020,9 @@
         "the-fairy-godmother",
         "anna",
         "remy"
+      ],
+      "quests": [
+        "fire-alarm"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/A_Lost_Book",
@@ -2825,6 +3041,9 @@
         "the-fairy-godmother",
         "wall-e",
         "minnie-mouse"
+      ],
+      "quests": [
+        "a-lost-book"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Bibbidi-Bobbidi-Oops",
@@ -2840,6 +3059,9 @@
     "requires": {
       "characters": [
         "the-fairy-godmother"
+      ],
+      "quests": [
+        "bibbidi-bobbidi-oops"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/A_Magical_Moment",
@@ -2904,6 +3126,9 @@
         "nala",
         "mirabel",
         "scar"
+      ],
+      "quests": [
+        "extreme-biome-makeover"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Press_Start",
@@ -2922,6 +3147,9 @@
         "vanellope",
         "ursula",
         "anna"
+      ],
+      "quests": [
+        "press-start"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Boss_Up",
@@ -2941,6 +3169,9 @@
         "buzz-lightyear",
         "olaf",
         "stitch"
+      ],
+      "quests": [
+        "boss-up"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Questination_Unknown",
@@ -2995,6 +3226,9 @@
         "the-beast",
         "wall-e",
         "kristoff"
+      ],
+      "quests": [
+        "the-beast-with-no-bite"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Be_Our_Friend",
@@ -3011,6 +3245,9 @@
       "characters": [
         "belle",
         "wall-e"
+      ],
+      "quests": [
+        "book-hunt"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Breaking_the_Code",
@@ -3028,6 +3265,9 @@
         "belle",
         "mickey-mouse",
         "scrooge-mcduck"
+      ],
+      "quests": [
+        "breaking-the-code"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Best_Mystery_Solver_in_Dreamlight_Valley",
@@ -3045,6 +3285,9 @@
       "characters": [
         "the-beast",
         "mother-gothel"
+      ],
+      "quests": [
+        "be-our-friend"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Crown_or_the_Claw",
@@ -3063,6 +3306,9 @@
         "belle",
         "the-fairy-godmother",
         "ariel"
+      ],
+      "quests": [
+        "the-best-mystery-solver-in-dreamlight-valley"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Chronicles_of_the_Ancients",
@@ -3079,6 +3325,9 @@
     "requires": {
       "characters": [
         "the-beast"
+      ],
+      "quests": [
+        "the-crown-or-the-claw"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/A_Gift_in_Crimson",
@@ -3207,6 +3456,9 @@
       "characters": [
         "jack-skellington",
         "simba"
+      ],
+      "quests": [
+        "the-pumpkin-king-returns"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Scientific_Method",
@@ -3224,6 +3476,9 @@
       "characters": [
         "jack-skellington",
         "vanellope"
+      ],
+      "quests": [
+        "the-scientific-method"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Holiday_Poll",
@@ -3260,6 +3515,9 @@
     "requires": {
       "characters": [
         "jack-skellington"
+      ],
+      "quests": [
+        "the-holiday-poll"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Dreamlight_Day",
@@ -3315,6 +3573,9 @@
     "requires": {
       "characters": [
         "mike-wazowski"
+      ],
+      "quests": [
+        "a-comedic-proposition"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Have_Your_People_Talk_to_My_People",
@@ -3351,6 +3612,9 @@
         "vanellope",
         "sulley",
         "remy"
+      ],
+      "quests": [
+        "germs-abound"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Monstrously_Good_Taste",
@@ -3369,6 +3633,9 @@
         "mike-wazowski",
         "wall-e",
         "the-fairy-godmother"
+      ],
+      "quests": [
+        "monstrously-good-taste"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/A_Comedic_Proposition",
@@ -3449,6 +3716,9 @@
         "sulley",
         "vanellope",
         "wall-e"
+      ],
+      "quests": [
+        "villager-of-the-month"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Power_of_Knowledge",
@@ -3469,6 +3739,9 @@
         "olaf",
         "vanellope",
         "scar"
+      ],
+      "quests": [
+        "the-power-of-knowledge"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Scavenger_Hunt",
@@ -3487,6 +3760,9 @@
         "sulley",
         "kristoff",
         "remy"
+      ],
+      "quests": [
+        "monster-movie-night"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Villager_of_the_Month",
@@ -3546,6 +3822,9 @@
         "daisy",
         "anna",
         "merlin"
+      ],
+      "quests": [
+        "dots-and-daisies"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Ask_Daisy",
@@ -3566,6 +3845,9 @@
         "anna",
         "mickey-mouse",
         "merlin"
+      ],
+      "quests": [
+        "trouble-in-paradise"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Dots_%26_Daisies",
@@ -3583,6 +3865,9 @@
       "characters": [
         "daisy",
         "stitch"
+      ],
+      "quests": [
+        "ask-daisy"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Glittered_Gala",
@@ -3684,6 +3969,9 @@
         "daisy",
         "mulan",
         "remy"
+      ],
+      "quests": [
+        "a-reminder-in-stone"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_M.U.S.H.U._Program",
@@ -3764,6 +4052,9 @@
         "simba",
         "mirabel",
         "scar"
+      ],
+      "quests": [
+        "the-mushu-program"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Guardian_Party",
@@ -3833,6 +4124,9 @@
         "merlin",
         "elsa",
         "scar"
+      ],
+      "quests": [
+        "the-art-of-fun"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Training_Games",
@@ -3849,6 +4143,9 @@
     "requires": {
       "characters": [
         "mulan"
+      ],
+      "quests": [
+        "the-shadow-play"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Art_of_Fun",
@@ -3867,6 +4164,9 @@
         "mulan",
         "mushu",
         "mickey-mouse"
+      ],
+      "quests": [
+        "a-daily-regime"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Shadow_Play",
@@ -3886,6 +4186,9 @@
         "scar",
         "buzz-lightyear",
         "woody"
+      ],
+      "quests": [
+        "the-guardian-party"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Tiny_Villagers_Society",
@@ -3939,6 +4242,9 @@
     "requires": {
       "characters": [
         "tiana"
+      ],
+      "quests": [
+        "back-from-the-bayou"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Little_Louis's_Big_Break",
@@ -3960,6 +4266,9 @@
         "kristoff",
         "woody",
         "remy"
+      ],
+      "quests": [
+        "little-louiss-big-break"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Dreamlight_Gastronomy",
@@ -3981,6 +4290,9 @@
         "minnie-mouse",
         "mickey-mouse",
         "anna"
+      ],
+      "quests": [
+        "dreamlight-gastronomy"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Villagers_on_Parade",
@@ -4052,6 +4364,9 @@
     "requires": {
       "characters": [
         "pumbaa"
+      ],
+      "quests": [
+        "somethings-off"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Fine_Arts_for_Warthogs",
@@ -4071,6 +4386,9 @@
         "wall-e",
         "prince-eric",
         "tiana"
+      ],
+      "quests": [
+        "fine-arts-for-warthogs"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Down_to_Earth",
@@ -4086,7 +4404,8 @@
     "requires": {
       "quests": [
         "the-infestation-part-1",
-        "a-creepy-crawly-mystery"
+        "a-creepy-crawly-mystery",
+        "down-to-earth"
       ],
       "characters": [
         "pumbaa"
@@ -4184,6 +4503,9 @@
         "merlin",
         "scrooge-mcduck",
         "anna"
+      ],
+      "quests": [
+        "old-enemies"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Curious_About_Critters",
@@ -4199,7 +4521,8 @@
     "level": 7,
     "requires": {
       "quests": [
-        "fine-arts-for-warthogs"
+        "fine-arts-for-warthogs",
+        "curious-about-critters"
       ],
       "characters": [
         "timon",
@@ -4222,7 +4545,8 @@
     "level": 9,
     "requires": {
       "quests": [
-        "a-creepy-crawly-mystery"
+        "a-creepy-crawly-mystery",
+        "the-timon-talk"
       ],
       "characters": [
         "timon"
@@ -4240,7 +4564,8 @@
     "level": 10,
     "requires": {
       "quests": [
-        "the-infestation-part-2"
+        "the-infestation-part-2",
+        "the-infestation-part-1"
       ],
       "characters": [
         "timon",
@@ -4323,6 +4648,9 @@
       "characters": [
         "sally",
         "mike-wazowski"
+      ],
+      "quests": [
+        "uncanny-romance"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Decay_to_Grow",
@@ -4338,6 +4666,9 @@
     "requires": {
       "characters": [
         "sally"
+      ],
+      "quests": [
+        "decay-to-grow"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Patchwork_Party",
@@ -4353,6 +4684,9 @@
     "requires": {
       "characters": [
         "sally"
+      ],
+      "quests": [
+        "patchwork-party"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Preposterous_Premonitions",
@@ -4389,6 +4723,9 @@
         "maui",
         "kristoff",
         "mickey-mouse"
+      ],
+      "quests": [
+        "good-as-gold"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Bring_Your_Own_Carpet",
@@ -4407,6 +4744,9 @@
         "aladdin",
         "ariel",
         "belle"
+      ],
+      "quests": [
+        "bring-your-own-carpet"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/All_That_Glitters",
@@ -4428,6 +4768,9 @@
         "kristoff",
         "the-beast",
         "tiana"
+      ],
+      "quests": [
+        "all-that-glitters"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Advanced_Marketing",
@@ -4464,6 +4807,9 @@
         "moana",
         "maui",
         "mother-gothel"
+      ],
+      "quests": [
+        "the-enchanted-flower"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/A_Sandy_Competition",
@@ -4484,6 +4830,9 @@
         "belle",
         "mulan",
         "the-fairy-godmother"
+      ],
+      "quests": [
+        "hot-and-cold"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Wild,_Wild_Wishes",
@@ -4501,6 +4850,9 @@
       "characters": [
         "jasmine",
         "elsa"
+      ],
+      "quests": [
+        "a-sandy-competition"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Hot_and_Cold",
@@ -4536,6 +4888,9 @@
         "wall-e",
         "merlin",
         "elsa"
+      ],
+      "quests": [
+        "the-fractured-glass"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/A_Very_Merry_Unbirthday",
@@ -4574,6 +4929,9 @@
         "alice",
         "merlin",
         "anna"
+      ],
+      "quests": [
+        "books-with-no-pictures"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Mimsy_Were_the_Borogoves",
@@ -4593,6 +4951,9 @@
         "olaf",
         "mother-gothel",
         "remy"
+      ],
+      "quests": [
+        "mimsy-were-the-borogoves"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Fractured_Glass",
@@ -4667,6 +5028,9 @@
         "cheshire-cat",
         "tiana",
         "scar"
+      ],
+      "quests": [
+        "furniture-fluster"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/It's_All_Nonsense!",
@@ -4683,6 +5047,9 @@
     "requires": {
       "characters": [
         "cheshire-cat"
+      ],
+      "quests": [
+        "its-all-nonsense"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Uncrafting_Station",
@@ -4700,6 +5067,9 @@
         "cheshire-cat",
         "stitch",
         "mickey-mouse"
+      ],
+      "quests": [
+        "the-uncrafting-station"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/On_a_Wild_Cheshire_Chase",
@@ -4858,6 +5228,9 @@
         "peter-pan",
         "remy",
         "sulley"
+      ],
+      "quests": [
+        "shadow-tag"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/A_Real_Hideout",
@@ -4879,6 +5252,9 @@
         "wall-e",
         "olaf",
         "scar"
+      ],
+      "quests": [
+        "a-real-hideout"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_New_Lost_Boys",
@@ -4900,6 +5276,9 @@
         "vanellope",
         "wall-e",
         "the-forgotten"
+      ],
+      "quests": [
+        "the-new-lost-boys"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Valley_Pirates",
@@ -4938,6 +5317,9 @@
         "joy",
         "sadness",
         "donald-duck"
+      ],
+      "quests": [
+        "capture-the-sun"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Mood_Swings",
@@ -4973,6 +5355,9 @@
         "sadness",
         "wall-e",
         "joy"
+      ],
+      "quests": [
+        "storms-a-brewin"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Fortress_of_Saditude",
@@ -4991,6 +5376,9 @@
         "joy",
         "the-fairy-godmother",
         "sadness"
+      ],
+      "quests": [
+        "mood-swings"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Imagination_Land",
@@ -5010,6 +5398,9 @@
         "the-beast",
         "elsa",
         "joy"
+      ],
+      "quests": [
+        "the-fortress-of-saditude"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Big_Worry",
@@ -5032,6 +5423,9 @@
         "scar",
         "the-fairy-godmother",
         "olaf"
+      ],
+      "quests": [
+        "imagination-land"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Dream_a_Little_Dream",
@@ -5049,6 +5443,9 @@
       "characters": [
         "sadness",
         "joy"
+      ],
+      "quests": [
+        "the-big-worry"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Create_a_Bear",
@@ -5067,6 +5464,9 @@
         "cogsworth",
         "olaf",
         "remy"
+      ],
+      "quests": [
+        "running-like-clockwork"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/On_Her_Majesty's_Festive_Service",
@@ -5104,6 +5504,9 @@
         "timon",
         "pumbaa",
         "the-beast"
+      ],
+      "quests": [
+        "on-her-majestys-festive-service"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Circle_of_Friendship",
@@ -5121,6 +5524,9 @@
       "characters": [
         "lumiere",
         "the-beast"
+      ],
+      "quests": [
+        "spirit-hunters"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Long_Lost_Loves",
@@ -5141,6 +5547,9 @@
         "minnie-mouse",
         "mickey-mouse",
         "the-fairy-godmother"
+      ],
+      "quests": [
+        "at-your-service"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Here,_There,_and_Everywhere",
@@ -5160,6 +5569,9 @@
         "elsa",
         "merlin",
         "joy"
+      ],
+      "quests": [
+        "here-there-and-everywhere"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Spirit_Hunters",
@@ -5200,6 +5612,9 @@
         "jack-skellington",
         "mushu",
         "aladdin"
+      ],
+      "quests": [
+        "the-circle-of-friendship"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Vote_for_Cogsworth!",
@@ -5291,6 +5706,9 @@
       "characters": [
         "tinker-bell",
         "peter-pan"
+      ],
+      "quests": [
+        "tinks-trinkets"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Time_to_Fly",
@@ -5310,6 +5728,9 @@
         "the-fairy-godmother",
         "buzz-lightyear",
         "stitch"
+      ],
+      "quests": [
+        "uneasy-neighbors"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Tink's_Trinkets",
@@ -5383,6 +5804,9 @@
         "cinderella",
         "alice",
         "cheshire-cat"
+      ],
+      "quests": [
+        "cinderellas-custom-creation"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Critter_Chaos",
@@ -5401,6 +5825,9 @@
         "aladdin",
         "mushu",
         "mickey-mouse"
+      ],
+      "quests": [
+        "critter-chaos"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/A_Dream_Come_True",
@@ -5428,6 +5855,9 @@
         "cogsworth",
         "lumiere",
         "jasmine"
+      ],
+      "quests": [
+        "a-dream-come-true"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Friendship_Ball",
@@ -5446,6 +5876,9 @@
         "nala",
         "scar",
         "anna"
+      ],
+      "quests": [
+        "a-little-off-the-top"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Getting_On_Like_Cats_and_Dogs",
@@ -5468,6 +5901,9 @@
         "aladdin",
         "tramp",
         "mickey-mouse"
+      ],
+      "quests": [
+        "getting-on-like-cats-and-dogs"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Portrait_of_a_Lady",
@@ -5489,6 +5925,9 @@
         "daisy",
         "cheshire-cat",
         "mickey-mouse"
+      ],
+      "quests": [
+        "canine-cuisine"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/A_Little_Off_the_Top",
@@ -5549,6 +5988,9 @@
         "pumbaa",
         "joy",
         "sadness"
+      ],
+      "quests": [
+        "cleanliness-is-next-to-dogliness"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/And_How_Did_That_Make_You_Feel%3F",
@@ -5567,6 +6009,9 @@
         "tramp",
         "nala",
         "cogsworth"
+      ],
+      "quests": [
+        "and-how-did-that-make-you-feel"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Canine_Archaeology",
@@ -5582,7 +6027,8 @@
     "level": 4,
     "requires": {
       "quests": [
-        "a-little-off-the-top"
+        "a-little-off-the-top",
+        "not-your-average-squeaky-toy"
       ],
       "characters": [
         "tramp",
@@ -5682,6 +6128,9 @@
         "pocahontas",
         "cogsworth",
         "stitch"
+      ],
+      "quests": [
+        "the-three-sisters-garden"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Working_Together",
@@ -5699,6 +6148,9 @@
       "characters": [
         "pocahontas",
         "remy"
+      ],
+      "quests": [
+        "a-little-algae-problem"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/A_Raccoon's_Return",
@@ -5718,6 +6170,9 @@
         "cinderella",
         "mike-wazowski",
         "mother-gothel"
+      ],
+      "quests": [
+        "working-together"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/A_Little_Algae_Problem",
@@ -5828,6 +6283,9 @@
       "characters": [
         "phil",
         "joy"
+      ],
+      "quests": [
+        "satyrical-theater"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/An_Unlikely_Hero",
@@ -5849,6 +6307,9 @@
         "stitch",
         "mike-wazowski",
         "donald-duck"
+      ],
+      "quests": [
+        "an-unlikely-hero"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Sweet_Sweet_Retirement",
@@ -5869,6 +6330,9 @@
         "lumiere",
         "belle",
         "mirabel"
+      ],
+      "quests": [
+        "sweet-sweet-retirement"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Coach's_Commission",
@@ -5906,6 +6370,9 @@
         "ursula",
         "moana",
         "merlin"
+      ],
+      "quests": [
+        "the-grecian-urn"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Aquatic_Musings",
@@ -5925,6 +6392,9 @@
         "alice",
         "stitch",
         "scar"
+      ],
+      "quests": [
+        "aquatic-musings"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Medicinal_Mortality",
@@ -5947,6 +6417,9 @@
         "scar",
         "mike-wazowski",
         "mulan"
+      ],
+      "quests": [
+        "medicinal-mortality"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Battle_of_the_Coaches",
@@ -6105,6 +6578,9 @@
         "tiana",
         "alice",
         "sulley"
+      ],
+      "quests": [
+        "bad-anon-valley-chapter"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Mini-game_Mayhem",
@@ -6121,6 +6597,9 @@
     "requires": {
       "characters": [
         "ralph"
+      ],
+      "quests": [
+        "mini-game-mayhem"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Green_Monster,_Inc.",
@@ -6137,6 +6616,9 @@
       "characters": [
         "ralph",
         "peter-pan"
+      ],
+      "quests": [
+        "green-monster-inc"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Ralph_Breaks_the_Valley",

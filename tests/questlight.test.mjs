@@ -70,7 +70,7 @@ test('focus map flows left to right, stays limited, and never overlaps', () => {
     assert.equal(first.level, 2, 'a level from the corrections file');
     assert.equal(first.requires, undefined, 'a quest cannot need the villager it unlocks');
     assert.equal(old.level, 7);
-    assert.deepEqual(old.requires, { characters: ['fern', 'moss'], levels: { moss: 10 } });
+    assert.deepEqual(old.requires, { characters: ['fern', 'moss'], levels: { moss: 10 }, quests: ['second-and-third'] }, 'a level 7 friendship quest follows the same villager\'s level 4 one');
     assert.equal(old.notes, undefined);
     assert.equal(first.verified, true);
     assert.equal(second.id, 'second-and-third');

@@ -340,6 +340,9 @@
         "remy",
         "aladdin",
         "minnie-mouse"
+      ],
+      "quests": [
+        "the-backwards-day"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Pooh's_Grown-Up_Job",
@@ -359,6 +362,9 @@
         "piglet",
         "daisy",
         "wall-e"
+      ],
+      "quests": [
+        "poohs-grown-up-job"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Honey_Disaster",
@@ -393,6 +399,9 @@
         "eeyore",
         "alice",
         "sadness"
+      ],
+      "quests": [
+        "tails-and-tribulations"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Shy_Villagers_Society",
@@ -408,6 +417,9 @@
     "requires": {
       "characters": [
         "eeyore"
+      ],
+      "quests": [
+        "the-shy-villagers-society"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Eeyore's_Lost_and_Found",
@@ -459,6 +471,9 @@
         "vanellope",
         "the-beast",
         "winnie-the-pooh"
+      ],
+      "quests": [
+        "after-the-rain"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Collecting_Little_Wins",
@@ -478,6 +493,9 @@
         "kristoff",
         "pocahontas",
         "scar"
+      ],
+      "quests": [
+        "collecting-little-wins"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Piglet_the_Caretaker",

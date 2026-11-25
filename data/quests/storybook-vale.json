@@ -486,6 +486,9 @@
       "characters": [
         "merida",
         "flynn"
+      ],
+      "quests": [
+        "clan-dunbrochs-rules-of-the-hunt"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Archery_and_Archrivals",
@@ -506,6 +509,9 @@
         "mulan",
         "moana",
         "mirabel"
+      ],
+      "quests": [
+        "archery-and-archrivals"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Change_Your_Fate",
@@ -569,6 +575,9 @@
         "remy",
         "olaf",
         "mushu"
+      ],
+      "quests": [
+        "memory-lane"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/An_Old-Fashioned_Heist",
@@ -586,6 +595,9 @@
       "characters": [
         "flynn",
         "belle"
+      ],
+      "quests": [
+        "an-old-fashioned-heist"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Adventures_of_Flynn_Rider",
@@ -603,6 +615,9 @@
       "characters": [
         "merida",
         "tiana"
+      ],
+      "quests": [
+        "change-your-fate"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/A_Very_Scottish_Celebration",
@@ -623,6 +638,9 @@
         "flynn",
         "minnie-mouse",
         "mickey-mouse"
+      ],
+      "quests": [
+        "yes-your-lugubriousness"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Your_Own_Personal_Hades",
@@ -642,6 +660,9 @@
         "tiana",
         "prince-eric",
         "mirabel"
+      ],
+      "quests": [
+        "your-own-personal-hades"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Fine,_I'll_Do_It_Myself",
@@ -657,7 +678,8 @@
     "requires": {
       "quests": [
         "home-is-where-the-art-is",
-        "the-adventures-of-flynn-rider"
+        "the-adventures-of-flynn-rider",
+        "an-old-fashioned-heist"
       ],
       "characters": [
         "flynn",
@@ -697,6 +719,9 @@
         "aurora",
         "belle",
         "stitch"
+      ],
+      "quests": [
+        "the-family-recipe"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Redeeming_Literature",
@@ -748,6 +773,9 @@
       "characters": [
         "maleficent",
         "remy"
+      ],
+      "quests": [
+        "rekindling-the-fire"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Collateral_Damage",
@@ -781,6 +809,9 @@
         "jasmine",
         "tiana",
         "mulan"
+      ],
+      "quests": [
+        "redeeming-literature"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Princess_Tour",

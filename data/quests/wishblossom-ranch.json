@@ -351,6 +351,9 @@
         "mulan",
         "daisy",
         "tiana"
+      ],
+      "quests": [
+        "the-copycat"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Wishblossom_Fair",
@@ -416,6 +419,9 @@
       "characters": [
         "cruella",
         "tigger"
+      ],
+      "quests": [
+        "youre-really-wearing-that"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Stripes_Are_In_This_Season",
@@ -450,6 +456,9 @@
     "requires": {
       "characters": [
         "tigger"
+      ],
+      "quests": [
+        "terribly-twitchy-tigger"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/A_Tiggerific_Day",
@@ -514,6 +523,9 @@
         "olaf",
         "goofy",
         "cruella"
+      ],
+      "quests": [
+        "making-peace"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Copycat",
@@ -532,6 +544,9 @@
         "cruella",
         "sally",
         "mirabel"
+      ],
+      "quests": [
+        "stripes-are-in-this-season"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Headdress_to_Impress",

@@ -107,6 +107,11 @@ be refreshed after a game update without retyping anything:
    `Time-Restricted Quests`) and save that file too.
 4. Run `node scripts/import-wiki.mjs <characters.xml> <quests.xml>`, then `npm run validate`.
 
+The importer also applies one rule the wiki does not spell out quest by quest: a villager's
+friendship quests come in level order, so each friendship quest with a `level` requires that
+villager's friendship quests at the next level down. Quests with no level, or sharing a level,
+are not ordered against each other.
+
 Keep the export files outside the repo: they contain wiki prose, and only facts belong in
 `data/`. The importer rewrites `characters.json` and every `quests/*.json`, so hand edits to
 those files are lost on the next import. Put corrections in `scripts/wiki-overrides.json`
