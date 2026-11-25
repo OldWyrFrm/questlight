@@ -22,6 +22,9 @@
     "requires": {
       "regions": [
         "eternity-isle"
+      ],
+      "characters": [
+        "mickey-mouse"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/A_Game_of_Coins",
@@ -36,6 +39,9 @@
     "requires": {
       "regions": [
         "eternity-isle"
+      ],
+      "characters": [
+        "scrooge-mcduck"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/New_Ventures_(and_Adventures)",
@@ -51,6 +57,9 @@
     "requires": {
       "regions": [
         "eternity-isle"
+      ],
+      "characters": [
+        "goofy"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Give_Me_a_Sign",
@@ -158,6 +167,9 @@
     "requires": {
       "regions": [
         "eternity-isle"
+      ],
+      "characters": [
+        "remy"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Ancient's_Landing_Fine_Dining",
@@ -250,6 +262,9 @@
         "a-new-directive",
         "center-of-attention",
         "the-housewarming"
+      ],
+      "characters": [
+        "merlin"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Sunken_Ruins",
@@ -264,6 +279,9 @@
     "requires": {
       "quests": [
         "the-sunken-ruins"
+      ],
+      "characters": [
+        "eve"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Does_Not_Compute",
@@ -278,6 +296,9 @@
     "requires": {
       "quests": [
         "the-sunken-ruins"
+      ],
+      "characters": [
+        "gaston"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Hero_Pose",
@@ -292,6 +313,9 @@
     "requires": {
       "quests": [
         "the-sunken-ruins"
+      ],
+      "characters": [
+        "merlin"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/A_Bit_of_Help_from_Your_Friends",
@@ -306,6 +330,9 @@
     "requires": {
       "quests": [
         "the-sunken-ruins"
+      ],
+      "characters": [
+        "rapunzel"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/All_the_Right_Notes",
@@ -339,6 +366,9 @@
     "requires": {
       "quests": [
         "mysterious-mickey"
+      ],
+      "characters": [
+        "rapunzel"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Use_Your_Imagination:_Rapunzel",
@@ -354,6 +384,9 @@
     "requires": {
       "quests": [
         "mysterious-mickey"
+      ],
+      "characters": [
+        "gaston"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Use_Your_Imagination:_Gaston",
@@ -369,6 +402,9 @@
     "requires": {
       "quests": [
         "mysterious-mickey"
+      ],
+      "characters": [
+        "eve"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Use_Your_Imagination:_EVE",
@@ -387,6 +423,9 @@
       ],
       "regions": [
         "eternity-isle"
+      ],
+      "characters": [
+        "eve"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Directive:_Danger!",
@@ -404,6 +443,9 @@
       ],
       "regions": [
         "eternity-isle"
+      ],
+      "characters": [
+        "merlin"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Village_Project:_Timeless_Tools",
@@ -442,6 +484,9 @@
       ],
       "regions": [
         "eternity-isle"
+      ],
+      "quests": [
+        "lasers-and-crafts"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Directive:_Plant",
@@ -462,6 +507,9 @@
       ],
       "regions": [
         "eternity-isle"
+      ],
+      "quests": [
+        "a-new-directive"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Lasers_%26_Crafts",
@@ -481,6 +529,9 @@
       ],
       "regions": [
         "eternity-isle"
+      ],
+      "quests": [
+        "directive-plant"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/When_Things_Go_Boom",
@@ -496,6 +547,9 @@
     "requires": {
       "regions": [
         "eternity-isle"
+      ],
+      "characters": [
+        "goofy"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Ones_That_Got_Away",
@@ -513,6 +567,9 @@
       ],
       "regions": [
         "eternity-isle"
+      ],
+      "characters": [
+        "merlin"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Village_Project:_Timeless_Treasures",
@@ -530,6 +587,9 @@
       ],
       "regions": [
         "eternity-isle"
+      ],
+      "characters": [
+        "scrooge-mcduck"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Village_Project:_Gear_Loose_and_Fancy_Free",
@@ -544,6 +604,9 @@
     "requires": {
       "regions": [
         "eternity-isle"
+      ],
+      "characters": [
+        "scrooge-mcduck"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/A_Garden_in_the_Desert",
@@ -561,6 +624,9 @@
       ],
       "regions": [
         "eternity-isle"
+      ],
+      "characters": [
+        "merlin"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Village_Project:_Timeless_Trash",
@@ -575,6 +641,9 @@
     "requires": {
       "regions": [
         "eternity-isle"
+      ],
+      "characters": [
+        "mickey-mouse"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Flower_Power",
@@ -592,6 +661,9 @@
       "characters": [
         "gaston",
         "scrooge-mcduck"
+      ],
+      "quests": [
+        "gaston-the-hero"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/No_One_Heroes_Like_Gaston",
@@ -633,6 +705,9 @@
       ],
       "regions": [
         "eternity-isle"
+      ],
+      "quests": [
+        "the-housewarming"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/I've_Got_a_Dreamlight",
@@ -648,6 +723,9 @@
     "requires": {
       "regions": [
         "eternity-isle"
+      ],
+      "characters": [
+        "mirabel"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/A_Letter_for_Antonio",
@@ -676,7 +754,10 @@
       ],
       "levels": {
         "olaf": 2
-      }
+      },
+      "quests": [
+        "no-one-heroes-like-gaston"
+      ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Dreamlight_Valley's_Next_Top_LeFou",
     "verified": true,
@@ -695,6 +776,9 @@
         "wall-e",
         "maui",
         "kristoff"
+      ],
+      "quests": [
+        "center-of-attention"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Gaston_the..._Hero%3F",
@@ -733,6 +817,9 @@
       ],
       "regions": [
         "eternity-isle"
+      ],
+      "quests": [
+        "ive-got-a-dreamlight"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Glowing_Up",
@@ -754,6 +841,9 @@
       ],
       "regions": [
         "eternity-isle"
+      ],
+      "quests": [
+        "glowing-up"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Home_is_Where_the_Art_Is",
@@ -768,6 +858,9 @@
     "requires": {
       "quests": [
         "a-cockamamie-contest"
+      ],
+      "characters": [
+        "eve"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/EVE's_Challenge",
@@ -782,6 +875,9 @@
     "requires": {
       "quests": [
         "a-cockamamie-contest"
+      ],
+      "characters": [
+        "gaston"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Gaston's_Challenge",
@@ -796,6 +892,9 @@
     "requires": {
       "quests": [
         "a-cockamamie-contest"
+      ],
+      "characters": [
+        "rapunzel"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Rapunzel's_Challenge",
@@ -809,6 +908,7 @@
     "giver": "oswald",
     "requires": {
       "characters": [
+        "oswald",
         "scrooge-mcduck"
       ]
     },
@@ -847,6 +947,9 @@
         "gaston",
         "rapunzel",
         "eve"
+      ],
+      "quests": [
+        "an-alarming-development"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/A_Cockamamie_Contest",
@@ -862,6 +965,9 @@
     "requires": {
       "characters": [
         "oswald"
+      ],
+      "quests": [
+        "a-cockamamie-contest"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Erratic_Transportation",
@@ -876,6 +982,9 @@
     "requires": {
       "quests": [
         "the-now-and-then"
+      ],
+      "characters": [
+        "oswald"
       ]
     },
     "unlocks": {
@@ -915,7 +1024,8 @@
     "level": 4,
     "requires": {
       "quests": [
-        "the-scientific-method"
+        "the-scientific-method",
+        "the-optics-of-a-second-chance"
       ],
       "characters": [
         "jafar",
@@ -936,6 +1046,9 @@
     "requires": {
       "characters": [
         "jafar"
+      ],
+      "quests": [
+        "the-alchemical-revolution"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Serpent's_Gift",
@@ -952,6 +1065,9 @@
       "characters": [
         "jafar",
         "remy"
+      ],
+      "quests": [
+        "the-serpents-gift"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Trial_of_Eternity",
@@ -966,6 +1082,9 @@
     "requires": {
       "quests": [
         "the-trial-of-eternity"
+      ],
+      "characters": [
+        "jafar"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Making_Amends",

@@ -82,6 +82,9 @@
     "requires": {
       "quests": [
         "the-four-guardians"
+      ],
+      "characters": [
+        "milo"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Sunken_Echo:_The_Rain_Boots",
@@ -96,6 +99,9 @@
     "requires": {
       "quests": [
         "captain-of-the-dead"
+      ],
+      "characters": [
+        "milo"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Sunken_Echo:_First_Aid_Kit",
@@ -110,6 +116,9 @@
     "requires": {
       "quests": [
         "the-enchanted-ship"
+      ],
+      "characters": [
+        "milo"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Sunken_Echo:_The_Helmet",
@@ -124,6 +133,9 @@
     "requires": {
       "quests": [
         "a-piece-of-cake"
+      ],
+      "characters": [
+        "milo"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Sunken_Echo:_The_Art_Supplies",
@@ -204,6 +216,9 @@
     "requires": {
       "quests": [
         "donut-of-destiny"
+      ],
+      "characters": [
+        "milo"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Sunken_Echo:_The_Fancy_Hat",
@@ -218,6 +233,9 @@
     "requires": {
       "quests": [
         "i-caaaaaannn-speeeaaaaaaakkkk-wwwhhaaaaaleeee"
+      ],
+      "characters": [
+        "milo"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Sunken_Echo:_The_Cookie_Cutters",
@@ -232,6 +250,9 @@
     "requires": {
       "quests": [
         "the-pinky-promise"
+      ],
+      "characters": [
+        "milo"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Sunken_Echo:_The_Pool_Floatie",
@@ -246,6 +267,9 @@
     "requires": {
       "quests": [
         "the-forgotten-throne-room"
+      ],
+      "characters": [
+        "milo"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Sunken_Echo:_The_Seashell",
@@ -260,6 +284,9 @@
     "requires": {
       "quests": [
         "you-have-to-believe"
+      ],
+      "characters": [
+        "milo"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Sunken_Echo:_The_Most_Valuable_Treasure",
@@ -368,6 +395,9 @@
     "requires": {
       "quests": [
         "forging-friendships"
+      ],
+      "characters": [
+        "wendy"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/You_Have_to_Believe",
@@ -382,6 +412,9 @@
     "requires": {
       "quests": [
         "the-four-guardians"
+      ],
+      "characters": [
+        "milo"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Field_Research",
@@ -396,6 +429,9 @@
     "requires": {
       "quests": [
         "the-enchanted-ship"
+      ],
+      "characters": [
+        "captain-jack-sparrow"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Bring_Me_That_Horizon",
@@ -428,6 +464,9 @@
       "characters": [
         "captain-jack-sparrow",
         "milo"
+      ],
+      "quests": [
+        "shellfish-behavior"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Not_All_Treasure_Is_Gold",
@@ -446,6 +485,9 @@
         "captain-jack-sparrow",
         "captain-hook",
         "wendy"
+      ],
+      "quests": [
+        "not-all-treasure-is-gold"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Them_Crooked_Pirates",
@@ -464,6 +506,9 @@
         "milo",
         "moana",
         "wendy"
+      ],
+      "quests": [
+        "mssng-lttrs"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Curious_Curator",
@@ -483,6 +528,9 @@
         "jack-skellington",
         "captain-jack-sparrow",
         "megara"
+      ],
+      "quests": [
+        "the-ungrateful-dead"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Mssng_Lttrs",
@@ -516,6 +564,9 @@
     "requires": {
       "characters": [
         "wendy"
+      ],
+      "quests": [
+        "a-villainous-twist"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Back_to_Page_One",
@@ -531,6 +582,9 @@
     "requires": {
       "characters": [
         "wendy"
+      ],
+      "quests": [
+        "picture-perfect"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/A_Villainous_Twist",
@@ -563,6 +617,9 @@
         "captain-hook",
         "peter-pan",
         "the-forgotten"
+      ],
+      "quests": [
+        "the-treasure-trap"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Hook's_Souvenirs",
@@ -579,6 +636,9 @@
     "requires": {
       "characters": [
         "captain-hook"
+      ],
+      "quests": [
+        "the-calamitous-crew"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Treasure_Trap",
@@ -610,6 +670,9 @@
       "characters": [
         "megara",
         "tiana"
+      ],
+      "quests": [
+        "the-unbreakable-parchment"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Worst!_Pirates!_Ever!",
@@ -625,6 +688,9 @@
     "requires": {
       "characters": [
         "megara"
+      ],
+      "quests": [
+        "oceans-of-truth"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Unbreakable_Parchment",
@@ -655,6 +721,9 @@
     "requires": {
       "quests": [
         "a-piece-of-cake"
+      ],
+      "characters": [
+        "megara"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Statue's_Secret",
@@ -670,6 +739,9 @@
     "requires": {
       "quests": [
         "no-pirates-allowed"
+      ],
+      "characters": [
+        "captain-hook"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Smeecoming_Smee",
@@ -684,6 +756,9 @@
     "requires": {
       "quests": [
         "forging-friendships"
+      ],
+      "characters": [
+        "wendy"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Journal_to_Adventure",

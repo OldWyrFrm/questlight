@@ -12,6 +12,8 @@ import { fileURLToPath } from 'node:url';
 
 const WIKI = 'https://dreamlightvalleywiki.com/';
 const TYPES = { story: 'story', friendship: 'friendship', realm: 'realm', hidden: 'hidden' };
+// The story quest that opens the Dream Castle, where the realm doors are.
+const REALM_GATE = 'The Dream Castle';
 // Other names the wiki uses for a region, on top of the names in regions.json.
 const REGION_ALIASES = {
   'eternity-isle': ['A Rift in Time', 'Eternity Isle', 'Version History/Expansion 1', 'EI'],
@@ -369,6 +371,44 @@ export function convert(pages, regions, overrides = {}) {
     const next = kind === 'quest' ? before(questById.get(id) ?? {}) : (unlockers.get(id) ?? []).map((u) => `quest:${u}`);
     return next.some((n) => reaches(n, target, visited));
   };
+  // A game rule the wiki does not spell out quest by quest: a villager's friendship quests come
+  // in level order, so each one needs their friendship quests at the next level down. Quests
+  // with no level, and quests sharing a level, are left unordered.
+  const ladders = new Map();
+  for (const { q } of quests) {
+    if (q.type !== 'friendship' || !q.giver || !q.level) continue;
+    ladders.set(q.giver, [...(ladders.get(q.giver) ?? []), q]);
+  }
+  for (const ladder of ladders.values()) {
+    for (const q of ladder) {
+      const below = Math.max(0, ...ladder.filter((o) => o.level < q.level).map((o) => o.level));
+      for (const earlier of ladder.filter((o) => o.level === below)) {
+        if (q.requires?.quests?.includes(earlier.id)) continue;
+        if (reaches(`quest:${earlier.id}`, `quest:${q.id}`)) { report.push(`${q.name}: not placed after ${earlier.name} by level, because the wiki has them the other way round`); continue; }
+        q.requires ??= {};
+        q.requires.quests = [...(q.requires.quests ?? []), earlier.id];
+      }
+    }
+  }
+
+  // Realm doors are inside the Dream Castle, so a realm's opening quests (those that need no
+  // earlier quest or villager) need the story quest that opens the castle.
+  const castle = questById.get(ids.quest.get(key(REALM_GATE)));
+  for (const { q } of quests) {
+    if (!castle || q.type !== 'realm' || q.region !== castle.region || q.requires?.quests?.length || q.requires?.characters?.length) continue;
+    q.requires ??= {};
+    q.requires.quests = [castle.id];
+  }
+
+  // Whoever gives a quest has to be in the Valley to give it, unless the quest is part of
+  // unlocking them. Realm quests are left alone: they are given inside the realm, often by
+  // villagers who have not moved in yet.
+  for (const { q } of quests) {
+    if (!q.giver || q.type === 'realm' || q.requires?.characters?.includes(q.giver) || reaches(`character:${q.giver}`, `quest:${q.id}`)) continue;
+    q.requires ??= {};
+    q.requires.characters = [q.giver, ...(q.requires.characters ?? [])];
+  }
+
   for (const item of quests) {
     const { q } = item;
     for (const field of ['quests', 'characters']) {

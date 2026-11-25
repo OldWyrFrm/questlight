@@ -50,6 +50,11 @@
     "region": "storybook-vale",
     "type": "story",
     "giver": "merida",
+    "requires": {
+      "characters": [
+        "merida"
+      ]
+    },
     "wiki": "https://dreamlightvalleywiki.com/A_Land_of_Myths_and_Legends",
     "verified": true,
     "notes": "Needs Mythopia unlocked."
@@ -60,6 +65,11 @@
     "region": "storybook-vale",
     "type": "story",
     "giver": "merida",
+    "requires": {
+      "characters": [
+        "merida"
+      ]
+    },
     "wiki": "https://dreamlightvalleywiki.com/The_Wolf_of_the_Wilds",
     "verified": true,
     "notes": "Needs Everafter unlocked."
@@ -118,6 +128,11 @@
     "region": "storybook-vale",
     "type": "story",
     "giver": "hades",
+    "requires": {
+      "characters": [
+        "hades"
+      ]
+    },
     "wiki": "https://dreamlightvalleywiki.com/A_Moth_to_a_Flame",
     "verified": true,
     "notes": "Needs The Fiery Plains unlocked."
@@ -128,6 +143,11 @@
     "region": "storybook-vale",
     "type": "story",
     "giver": "flynn",
+    "requires": {
+      "characters": [
+        "flynn"
+      ]
+    },
     "wiki": "https://dreamlightvalleywiki.com/Curiouser_and_Curiouser...",
     "verified": true,
     "notes": "Needs Teapot Falls unlocked."
@@ -138,6 +158,11 @@
     "region": "storybook-vale",
     "type": "story",
     "giver": "hades",
+    "requires": {
+      "characters": [
+        "hades"
+      ]
+    },
     "wiki": "https://dreamlightvalleywiki.com/Mount_Olympus",
     "verified": true,
     "notes": "Needs Mount Olympus unlocked."
@@ -167,6 +192,11 @@
     "region": "storybook-vale",
     "type": "story",
     "giver": "hades",
+    "requires": {
+      "characters": [
+        "hades"
+      ]
+    },
     "wiki": "https://dreamlightvalleywiki.com/The_Marble_Colossus",
     "verified": true,
     "notes": "Needs The Statue's Shadow unlocked."
@@ -180,6 +210,9 @@
     "requires": {
       "quests": [
         "a-moth-to-a-flame"
+      ],
+      "characters": [
+        "hades"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Losing_Your_Marbles",
@@ -207,6 +240,9 @@
     "requires": {
       "quests": [
         "a-moth-to-a-flame"
+      ],
+      "characters": [
+        "hades"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Promethean_Flame",
@@ -221,6 +257,9 @@
     "requires": {
       "quests": [
         "curiouser-and-curiouser"
+      ],
+      "characters": [
+        "flynn"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Teapot_Falls",
@@ -235,6 +274,9 @@
     "requires": {
       "quests": [
         "the-fallen-fortress"
+      ],
+      "characters": [
+        "flynn"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Knights_of_the_Round_Table",
@@ -250,6 +292,9 @@
       "quests": [
         "the-mistress-of-all-evil",
         "mount-olympus"
+      ],
+      "characters": [
+        "the-lorekeeper"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/A_Long-Awaited_Invitation",
@@ -264,6 +309,9 @@
     "requires": {
       "quests": [
         "a-long-awaited-invitation"
+      ],
+      "characters": [
+        "the-lorekeeper"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/A_Storm_of_Stories",
@@ -344,6 +392,9 @@
     "requires": {
       "quests": [
         "the-missing-princess"
+      ],
+      "characters": [
+        "the-lorekeeper"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/A_Hero_of_Ink_and_Paper",
@@ -400,6 +451,9 @@
     "requires": {
       "quests": [
         "a-hero-of-ink-and-paper"
+      ],
+      "characters": [
+        "the-lorekeeper"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Ink-Stained_World",
@@ -448,6 +502,7 @@
     "giver": "hades",
     "requires": {
       "characters": [
+        "hades",
         "remy",
         "merida",
         "mickey-mouse"
@@ -486,6 +541,9 @@
       "characters": [
         "merida",
         "flynn"
+      ],
+      "quests": [
+        "clan-dunbrochs-rules-of-the-hunt"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Archery_and_Archrivals",
@@ -506,6 +564,9 @@
         "mulan",
         "moana",
         "mirabel"
+      ],
+      "quests": [
+        "archery-and-archrivals"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Change_Your_Fate",
@@ -569,6 +630,9 @@
         "remy",
         "olaf",
         "mushu"
+      ],
+      "quests": [
+        "memory-lane"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/An_Old-Fashioned_Heist",
@@ -586,6 +650,9 @@
       "characters": [
         "flynn",
         "belle"
+      ],
+      "quests": [
+        "an-old-fashioned-heist"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Adventures_of_Flynn_Rider",
@@ -603,6 +670,9 @@
       "characters": [
         "merida",
         "tiana"
+      ],
+      "quests": [
+        "change-your-fate"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/A_Very_Scottish_Celebration",
@@ -623,6 +693,9 @@
         "flynn",
         "minnie-mouse",
         "mickey-mouse"
+      ],
+      "quests": [
+        "yes-your-lugubriousness"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Your_Own_Personal_Hades",
@@ -642,6 +715,9 @@
         "tiana",
         "prince-eric",
         "mirabel"
+      ],
+      "quests": [
+        "your-own-personal-hades"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Fine,_I'll_Do_It_Myself",
@@ -657,7 +733,8 @@
     "requires": {
       "quests": [
         "home-is-where-the-art-is",
-        "the-adventures-of-flynn-rider"
+        "the-adventures-of-flynn-rider",
+        "an-old-fashioned-heist"
       ],
       "characters": [
         "flynn",
@@ -697,6 +774,9 @@
         "aurora",
         "belle",
         "stitch"
+      ],
+      "quests": [
+        "the-family-recipe"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Redeeming_Literature",
@@ -710,6 +790,7 @@
     "giver": "maleficent",
     "requires": {
       "characters": [
+        "maleficent",
         "aurora",
         "hades"
       ]
@@ -748,6 +829,9 @@
       "characters": [
         "maleficent",
         "remy"
+      ],
+      "quests": [
+        "rekindling-the-fire"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Collateral_Damage",
@@ -763,6 +847,9 @@
       "quests": [
         "collateral-damage",
         "dreams-and-dark-designs"
+      ],
+      "characters": [
+        "maleficent"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Two_Flames_United",
@@ -781,6 +868,9 @@
         "jasmine",
         "tiana",
         "mulan"
+      ],
+      "quests": [
+        "redeeming-literature"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Princess_Tour",
@@ -798,6 +888,7 @@
         "collateral-damage"
       ],
       "characters": [
+        "aurora",
         "remy",
         "hades",
         "maleficent"
