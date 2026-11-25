@@ -51,7 +51,7 @@ Open `dist/index.html` in a browser after building. No server is needed.
 ## Contributing
 
 Quest data is the heart of this project, and corrections are very welcome. Spotted something
-wrong? [Open an issue](https://github.com/OldWyrFrm/questlight/issues/new) or start a
+wrong? [Open an issue](https://github.com/OldWyrFrm/questlight/issues/new/choose) or start a
 [discussion](https://github.com/OldWyrFrm/questlight/discussions). To fix it yourself, see
 [CONTRIBUTING.md](CONTRIBUTING.md) and the [data format guide](docs/DATA_FORMAT.md).
 

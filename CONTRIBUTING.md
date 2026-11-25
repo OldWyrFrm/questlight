@@ -4,9 +4,11 @@ Thank you for helping. Questlight is a fan-made, noncommercial quest and village
 Dreamlight Valley, and most contributions are small corrections to quest facts. You do not
 need to write code to help.
 
+Everyone taking part is asked to follow the [code of conduct](CODE_OF_CONDUCT.md).
+
 ## Ways to help
 
-- **Tell us something is wrong.** [Open an issue](https://github.com/OldWyrFrm/questlight/issues/new)
+- **Tell us something is wrong.** [Open an issue](https://github.com/OldWyrFrm/questlight/issues/new/choose)
   naming the quest or villager, what Questlight shows, and what the game actually does. A
   link to the wiki page helps.
 - **Ask or suggest.** Use [Discussions](https://github.com/OldWyrFrm/questlight/discussions)
