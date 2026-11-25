@@ -24,6 +24,7 @@ verified" where the wiki itself does not know a requirement.
 - **Spoiler mode** — hide the names of quests and characters you can't reach yet
 - **Backup** — save your progress to a file and load it on another device
 - **Mobile-first** — list/tree view on phones, full map on larger screens
+- **About & help** — how it works, where the facts come from, and how to report a problem, built into the app
 
 ## Running it
 
@@ -31,7 +32,7 @@ Questlight is a static site with no server, accounts, analytics, or third-party 
 
 - **Online:** <https://oldwyrfrm.github.io/questlight/>
 - **Offline:** open <https://oldwyrfrm.github.io/questlight/questlight.html> and save the page; that one file
-  works from disk in any browser. It will also be attached to each [Release](../../releases).
+  works from disk in any browser. It is also attached to each [release](https://github.com/OldWyrFrm/questlight/releases).
 - **Self-host:** serve the built `dist/` folder from any static web server.
 
 ## Development
@@ -49,8 +50,10 @@ Open `dist/index.html` in a browser after building. No server is needed.
 
 ## Contributing
 
-Quest data is the heart of this project, and corrections or new quests are very welcome.
-See [CONTRIBUTING.md](CONTRIBUTING.md) and the [data format guide](docs/DATA_FORMAT.md).
+Quest data is the heart of this project, and corrections are very welcome. Spotted something
+wrong? [Open an issue](https://github.com/OldWyrFrm/questlight/issues/new) or start a
+[discussion](https://github.com/OldWyrFrm/questlight/discussions). To fix it yourself, see
+[CONTRIBUTING.md](CONTRIBUTING.md) and the [data format guide](docs/DATA_FORMAT.md).
 
 ## Licenses
 

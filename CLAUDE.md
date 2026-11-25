@@ -5,7 +5,7 @@ for Disney Dreamlight Valley, covering the base game and every expansion
 (A Rift in Time / Eternity Isle, The Storybook Vale, Wishblossom Ranch,
 Honeyglow Woods adventure pack, The Keepsake Sea). Repo: OldWyrFrm/questlight.
 
-The full product plan is in docs/PLAN.md. Data format is in docs/DATA_FORMAT.md.
+Data format and the wiki import are in docs/DATA_FORMAT.md. Contributor rules are in CONTRIBUTING.md.
 
 ## Hard rules
 
@@ -50,5 +50,6 @@ The full product plan is in docs/PLAN.md. Data format is in docs/DATA_FORMAT.md.
   squash-merge into `main`. `main` is protected; never push to it directly.
 - `npm run validate` must pass before any PR. CI runs it on every PR.
 - Merges to `main` deploy to GitHub Pages via a custom Actions workflow (not the Jekyll or
-  Static HTML templates). Releases attach the single-file `questlight.html`.
+  Static HTML templates). Pushing a `v*` tag runs the release workflow, which attaches the
+  single-file `questlight.html` to a GitHub release.
 - Keep the owner informed in plain language; they are comfortable with Git and PRs.
