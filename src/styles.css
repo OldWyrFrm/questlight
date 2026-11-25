@@ -198,14 +198,14 @@ ol.items > li::before { content: counter(step); color: var(--gold); font-family:
 .lede { color: var(--muted); }
 
 /* First-visit welcome: three short steps. */
-.welcome { max-width: 34rem; }
+.welcome { max-width: none; }
 .welcome-steps { display: grid; gap: 0.75rem; margin: 0; padding: 0; list-style: none; }
 .welcome-steps li { display: flex; align-items: center; gap: 0.8rem; }
 .welcome-steps li > span:last-child { display: grid; }
 .welcome-steps .badge { background: var(--gold); border-radius: 50%; }
 
 /* About panel: headings you open, so the page stays short. */
-.about { max-width: 46rem; }
+.about { max-width: none; }
 .fold { border-radius: var(--soft); background: var(--card-2); }
 .fold > summary { padding: 0.8rem 1rem; font-family: var(--display); font-weight: 600; font-size: 1.05rem; cursor: pointer; border-radius: var(--soft); }
 .fold[open] > summary { color: var(--gold); }
@@ -261,10 +261,12 @@ ol.items > li::before { content: counter(step); color: var(--gold); font-family:
 .foot a { color: var(--ink); }
 
 @media (min-width: 60rem) {
-  .layout { grid-template-columns: minmax(19rem, 25rem) 1fr; }
-  #focus { order: 0; }
-  .has-focus #browse { display: block; }
-  #browse { position: sticky; top: 1rem; max-height: calc(100vh - 2rem); overflow: auto; padding: 0 0.25rem 0.5rem 0; }
+  /* Nothing picked yet: one centred column, so the page is not lopsided with an empty right side. */
+  body:not(.has-focus) :is(.top, .layout, .foot, .notice) { width: min(100% - 2rem, 44rem); }
+  /* Something picked: the list on the left, its details filling the rest. */
+  .has-focus .layout { grid-template-columns: minmax(19rem, 25rem) 1fr; }
+  .has-focus #focus { order: 0; }
+  .has-focus #browse { display: block; position: sticky; top: 1rem; max-height: calc(100vh - 2rem); overflow: auto; padding: 0 0.25rem 0.5rem 0; }
   .back { display: none; }
   .back.keep { display: inline-block; }
   .card { padding: 2rem; }
