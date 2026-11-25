@@ -27,10 +27,13 @@
 <main class="layout">
   <section id="browse" aria-label="Browse quests and villagers">
     <form id="tools" class="tools" role="search">
-      <label class="field grow" for="search">
-        <span>Search</span>
-        <input id="search" type="search" autocomplete="off" placeholder="Quest or villager name">
-      </label>
+      <div class="field grow">
+        <label for="search">Search</label>
+        <div class="search-box">
+          <input id="search" type="search" autocomplete="off" placeholder="Quest or villager name">
+          <button id="clear" class="clear" type="button" aria-label="Clear search" hidden>×</button>
+        </div>
+      </div>
       <label class="field" for="type">
         <span>Show</span>
         <select id="type">
@@ -81,6 +84,12 @@
   <p><strong>Fan-made project.</strong> Questlight is not affiliated with, endorsed by, or sponsored by Disney or Gameloft. Game names are trademarks of their owners. No official artwork is used.</p>
   <p>Quest facts are adapted from the community-run <a href="https://dreamlightvalleywiki.com" rel="noopener noreferrer">Dreamlight Valley Wiki</a> and shared under CC BY-NC-SA 4.0. This page makes no network requests and keeps nothing about you.</p>
 </footer>
+
+<div id="toast" class="toast" hidden>
+  <p id="toast-text" role="status"></p>
+  <button id="undo" class="link" type="button">Undo</button>
+  <button id="toast-close" class="clear" type="button" aria-label="Dismiss this message">×</button>
+</div>
 
 <!--DATA-->
 <!--SCRIPT-->
