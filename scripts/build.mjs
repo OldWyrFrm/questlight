@@ -8,6 +8,10 @@ const root = (path) => fileURLToPath(new URL(`../${path}`, import.meta.url));
 const read = (path) => readFileSync(root(path), 'utf8');
 const fail = (message) => { console.error(`✗ ${message}`); process.exit(1); };
 const sample = process.argv.includes('--sample');
+// "--theme calm" lays design/calm.css over the stylesheet and writes dist/preview-calm.html,
+// for comparing looks side by side. The normal build is unchanged.
+const theme = process.argv.includes('--theme') ? process.argv[process.argv.indexOf('--theme') + 1] : null;
+if (theme && !/^[a-z-]+$/.test(theme)) fail('Theme names are lowercase letters and dashes.');
 
 const data = loadData(root(sample ? 'fixtures/sample' : 'data'));
 const errors = validate(data);
@@ -17,7 +21,7 @@ if (errors.length) fail(`Data is not valid, so nothing was built:\n  ${errors.jo
 const js = `(() => {\n'use strict';\n${['src/graph.js', 'src/progress.js', 'src/app.js'].map(read).join('\n')
   .replace(/^import .*$/gm, '')
   .replace(/^export /gm, '')}\n})();`;
-const css = read('src/styles.css');
+const css = read('src/styles.css') + (theme ? `\n${read(`design/${theme}.css`)}` : '');
 const json = JSON.stringify(bundle(data, sample)).replace(/</g, '\\u003c');
 if (/<\/script/i.test(js)) fail('src JavaScript contains "</script", which would break the inlined page.');
 if (/<\/style/i.test(css)) fail('src/styles.css contains "</style", which would break the inlined page.');
@@ -38,5 +42,6 @@ for (const [name, value] of Object.entries(parts)) {
 }
 
 mkdirSync(root('dist'), { recursive: true });
-for (const file of ['index.html', 'questlight.html']) writeFileSync(root(`dist/${file}`), html);
-console.log(`✓ Built dist/index.html and dist/questlight.html (${(html.length / 1024).toFixed(1)} KB${sample ? ', sample data' : ''}).`);
+const files = theme ? [`preview-${theme}.html`] : ['index.html', 'questlight.html'];
+for (const file of files) writeFileSync(root(`dist/${file}`), html);
+console.log(`✓ Built ${files.map((f) => `dist/${f}`).join(' and ')} (${(html.length / 1024).toFixed(1)} KB${sample ? ', sample data' : ''}).`);

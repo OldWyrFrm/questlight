@@ -1,0 +1,50 @@
+/* Direction A, "Calm": flat and quiet. Sans headings, no outlines, colour only where it means something. */
+:root {
+  --night: #0f0b24; --night-2: #15103a; --card: #1b1542; --card-2: #241c55; --line: #342a70;
+  --ink: #f5f2ff; --muted: #a79fd0; --gold: #ffd479;
+  --display: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --radius: 18px;
+}
+body { background: radial-gradient(120% 80% at 80% -10%, #2a1c6b 0%, transparent 60%), var(--night) fixed; }
+.sky { opacity: 0.25; } .sky::after { opacity: 0.18; }
+h1, h2, h3 { font-weight: 700; letter-spacing: -0.02em; }
+.top h1 { font-size: 1.6rem; }
+.mark { width: 2rem; height: 2rem; filter: none; }
+.field, .group legend, .group-title { font-size: 0.8rem; letter-spacing: 0; text-transform: none; font-weight: 600; }
+.field input, .field select { background: var(--card); border-color: transparent; border-radius: 14px; }
+.field input:hover, .field select:hover { background: var(--card-2); }
+.lane { border: 0; background: var(--card); }
+.lane > summary { align-items: center; padding: 1rem 1.1rem; }
+.lane-name { display: flex; align-items: center; gap: 0.6rem; color: var(--ink); font-size: 1rem; font-weight: 650; letter-spacing: -0.01em; }
+.lane-name::before { content: ""; width: 0.6rem; height: 0.6rem; border-radius: 50%; background: var(--accent); }
+.panel .lane-name::before { background: var(--gold); }
+.item, .tick { background: transparent; border-radius: 12px; }
+.item:hover, .tick:hover { background: var(--card-2); border-color: transparent; }
+.item.ready { border-left: 1px solid transparent; }
+.item.ready .item-meta { color: var(--gold); }
+.item[aria-current] { background: var(--card-2); border-color: transparent; box-shadow: none; }
+.badge { border-radius: 10px; background: color-mix(in srgb, var(--accent) 22%, transparent); color: var(--accent); }
+.card { border: 0; border-radius: 24px; box-shadow: 0 20px 60px rgb(0 0 0 / 0.35); padding: 1.4rem; }
+.card h2 { font-size: 1.75rem; }
+.card h3 { color: var(--ink); font-size: 1rem; }
+.card .item, .card .tick { background: var(--card-2); }
+.card .item:hover { background: var(--line); }
+.chip { border: 0; background: var(--card-2); padding: 0.25rem 0.7rem; }
+.chip.region { background: color-mix(in srgb, var(--accent) 20%, transparent); }
+.chip.warn { background: rgb(255 212 121 / 0.14); }
+.chip.done { background: var(--card-2); }
+.back, .tab, .more, .link { border: 0; background: var(--card-2); font-weight: 600; }
+.link:hover, .more:hover, .back:hover, .tab:hover { background: var(--line); }
+.link.on, .tab[aria-pressed="true"] { background: var(--gold); }
+.tabs { padding: 0.25rem; background: var(--night); border-radius: 999px; justify-self: start; }
+.tab { background: transparent; }
+.group { border: 0; background: var(--card-2); border-radius: 14px; }
+.map-scroll { border: 0; background: var(--night); }
+.band { stroke: none; fill-opacity: 0.06; }
+.node rect { stroke: none; }
+.node.focus rect { stroke: var(--gold); filter: none; }
+.edge.lit { filter: none; }
+.toast { border: 0; background: var(--ink); color: var(--night); }
+.toast .link { background: var(--night); color: var(--gold); }
+.toast .clear { color: var(--night); }
+@media (min-width: 60rem) { .card { padding: 2rem; } }
