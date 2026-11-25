@@ -1,5 +1,5 @@
 import { focusColumns, layout, makeGraph, questPath, reach } from './graph.js';
-import { parseSave, serialize, statuses, unownedBy } from './progress.js';
+import { friendship, levelNeeds, parseSave, serialize, statuses, topLevel, unownedBy } from './progress.js';
 
 const data = JSON.parse(document.getElementById('data').textContent);
 const graph = makeGraph(data);
@@ -13,7 +13,9 @@ const NEAR = 2; // steps shown each way before "show the whole chain"
 const wide = window.matchMedia('(min-width: 60rem)');
 const state = { focus: null, query: '', type: '', region: '', status: '', tab: null, full: false, open: new Set() };
 // What the player has told us. `revealed` is spoilers they chose to see; it is not saved.
-const game = { done: new Set(), unowned: new Set(), spoilers: false, revealed: new Set(), status: new Map(), stored: true };
+// `levels` is friendship levels they entered; `friends` is those combined with what finished quests prove.
+const game = { done: new Set(), unowned: new Set(), spoilers: false, levels: new Map(), revealed: new Set(), status: new Map(), friends: null, stored: true };
+const TOP = topLevel(graph);
 const $ = (id) => document.getElementById(id);
 
 // Everything is built with DOM calls, never innerHTML, so data can't inject markup.
@@ -49,7 +51,12 @@ function questsOf(n) {
   return { keys, done, text: keys.length ? `${done} of ${plural(keys.length, 'quest')} done` : null };
 }
 // With spoiler mode on, anything the player cannot reach yet keeps its name to itself.
-const masked = (key) => game.spoilers && statusOf(key) === 'locked' && !game.revealed.has(key);
+// A quest held back only by a friendship level is within reach, so it keeps its name.
+const levelOnly = (key) => {
+  const n = graph.nodes.get(key);
+  return n.kind === 'quest' && !unownedBy(n, game.unowned) && levelNeeds(n).size > 0 && [...graph.before.get(key)].every((k) => statusOf(k) === 'done');
+};
+const masked = (key) => game.spoilers && statusOf(key) === 'locked' && !game.revealed.has(key) && !levelOnly(key);
 const nameOf = (n) => (masked(n.key) ? 'Not reached yet' : n.name);
 const monogram = (n) => {
   if (masked(n.key)) return '?';
@@ -57,6 +64,14 @@ const monogram = (n) => {
     ? n.name.split(/\s+/).slice(0, 2).map((w) => w[0]).join('').toUpperCase()
     : GLYPHS[n.type] ?? GLYPHS.other;
 };
+const inValley = (id) => statusOf(`character:${id}`) === 'done';
+/** Friendship levels an unfinished quest asks for: who, how high, where the player is, and whether that is enough. */
+function levelsFor(n) {
+  if (n.kind !== 'quest' || game.done.has(n.key)) return [];
+  return [...levelNeeds(n)].map(([id, need]) => ({ id, need, who: graph.nodes.get(`character:${id}`), have: game.friends.level(id) }))
+    .filter((l) => l.who)
+    .map((l) => ({ ...l, met: l.have >= l.need }));
+}
 function progressWord(n) {
   const status = statusOf(n.key);
   if (n.kind === 'quest') return { done: 'Done', ready: 'Available now' }[status];
@@ -65,8 +80,14 @@ function progressWord(n) {
 }
 const meta = (n) => {
   if (masked(n.key)) return label(n);
-  const facts = n.kind === 'character' ? [label(n), n.film, questsOf(n).text] : [label(n), giverOf(n)?.name, n.level && `Friendship level ${n.level}`];
-  return [...facts, progressWord(n)].filter(Boolean).join(' · ');
+  if (n.kind === 'character') {
+    const level = inValley(n.id) && game.friends.level(n.id);
+    return [label(n), n.film, level > 1 && `Level ${level}`, questsOf(n).text, progressWord(n)].filter(Boolean).join(' · ');
+  }
+  // Say which friendship level is still short, so a locked quest explains itself.
+  const short = levelsFor(n).filter((l) => !l.met && inValley(l.id)).map((l) => `Needs level ${l.need} with ${l.who.name}`);
+  const level = n.level && !short.length && `Friendship level ${n.level}`;
+  return [label(n), giverOf(n)?.name, level, ...short, progressWord(n)].filter(Boolean).join(' · ');
 };
 
 function wikiLink(value) {
@@ -102,10 +123,15 @@ function save() {
   }
 }
 
+function recount() {
+  game.friends = friendship(graph, game.done, game.levels);
+  game.status = statuses(graph, game.done, game.unowned, game.levels);
+}
+
 /** Apply a change to progress, save it, redraw, and put keyboard focus back where it was. */
 function update(change, refocus) {
   change();
-  game.status = statuses(graph, game.done, game.unowned);
+  recount();
   save();
   renderGame();
   renderBrowse();
@@ -118,11 +144,11 @@ const say = (message) => { $('saved').textContent = message; };
 const pathTo = (key) => questPath(graph, key).filter((k) => k !== key && graph.nodes.get(k).kind === 'quest');
 const attr = (value) => `"${value.replace(/["\\]/g, '\\$&')}"`;
 
-/** Show a short message at the bottom of the screen; `before` is the progress to go back to on Undo. */
-function toast(message, before) {
+/** Show a short message at the bottom of the screen; `undo` puts progress back as it was. */
+function toast(message, undo) {
   $('toast-text').textContent = message;
-  $('undo').hidden = !before;
-  $('undo').onclick = () => { update(() => { game.done = before; }); toast('Undone.'); };
+  $('undo').hidden = !undo;
+  $('undo').onclick = () => { update(undo); toast('Undone.'); };
   $('toast').hidden = false;
 }
 
@@ -135,8 +161,9 @@ function complete(n, refocus) {
   const earlier = pathTo(n.key).filter((k) => !game.done.has(k));
   update(() => { for (const k of [...earlier, ...(n.kind === 'quest' ? [n.key] : [])]) game.done.add(k); }, refocus);
   const name = masked(n.key) ? 'That quest' : n.name;
-  if (n.kind === 'character') toast(`Marked ${plural(earlier.length, 'quest')} done to unlock ${n.name}.`, before);
-  else if (earlier.length) toast(`${name} is done, and so are the ${plural(earlier.length, 'quest')} that come before it.`, before);
+  const undo = () => { game.done = before; };
+  if (n.kind === 'character') toast(`Marked ${plural(earlier.length, 'quest')} done to unlock ${n.name}.`, undo);
+  else if (earlier.length) toast(`${name} is done, and so are the ${plural(earlier.length, 'quest')} that come before it.`, undo);
   else $('toast').hidden = true;
 }
 
@@ -374,6 +401,44 @@ function map(n) {
     }));
 }
 
+/** Record the player's own friendship level; one no higher than their quests already prove needs no record. */
+function setLevel(id, level, refocus) {
+  const who = graph.nodes.get(`character:${id}`), before = new Map(game.levels);
+  update(() => { if (level > game.friends.shown(id)) game.levels.set(id, level); else game.levels.delete(id); }, refocus);
+  toast(`Friendship with ${who.name} is now level ${game.friends.level(id)}.`, () => { game.levels = before; });
+}
+
+/** On a villager's card: their friendship level, and a way to raise it past what finished quests prove. */
+function levelBlock(n) {
+  if (!inValley(n.id)) return null;
+  const shown = game.friends.shown(n.id), level = game.friends.level(n.id);
+  const why = level > shown ? `You set this yourself. Your finished quests show level ${shown} or higher.`
+    : shown > 1 ? 'Worked out from your finished quests, so it may really be higher.'
+      : 'No finished quest shows a higher level yet.';
+  const picker = el('select', { id: 'level', onchange: (e) => setLevel(n.id, Number(e.target.value), '#level') });
+  for (let i = shown; i <= TOP; i++) picker.append(el('option', { value: i, text: i === shown && TOP > shown ? `${i} (from your quests)` : String(i) }));
+  picker.value = String(level);
+  return el('div', { class: 'block' },
+    el('h3', { text: 'Friendship level' }),
+    el('p', { text: `Level ${level}. ${why}` }),
+    TOP > shown && el('label', { class: 'field level', for: 'level' }, el('span', { text: `My level with ${n.name}` }), picker),
+    TOP > shown && el('p', { class: 'empty', text: 'Quests that need a higher level stay locked until you raise this or tick them off. It cannot go below what your finished quests show.' }));
+}
+
+/** On a quest's card: each friendship level it asks for, and a one-step way to say you are there. */
+function needsBlock(n) {
+  const needs = levelsFor(n);
+  if (!needs.length) return null;
+  return el('div', { class: 'block' },
+    el('h3', { text: 'Friendship needed' }),
+    el('ul', { class: 'needs' }, ...needs.map((l) => el('li', { class: l.met ? 'met' : '' },
+      el('span', { text: `Level ${l.need} with ${l.who.name}. ${!inValley(l.id) ? `${l.who.name} is not in your Valley yet.` : l.met ? `✓ You are at level ${l.have}.` : `You are at level ${l.have}.`}` }),
+      !l.met && inValley(l.id) && el('button', {
+        class: 'link', type: 'button', 'data-act': `level-${l.id}`, text: `I have reached level ${l.need} with ${l.who.name}`,
+        onclick: () => setLevel(l.id, l.need, '#focus-title'),
+      })))));
+}
+
 /** Buttons for ticking off the selected quest, or everything needed for the selected villager. */
 function actions(n) {
   const todo = pathTo(n.key).filter((k) => !game.done.has(k));
@@ -435,6 +500,7 @@ function renderFocus() {
         n.verified === false && el('span', { class: 'chip warn', text: 'Not yet verified' }))),
     owned.length > 0 && el('p', { text: `Needs ${owned.join(' and ')}.` }),
     n.notes && el('p', { text: n.notes }),
+    n.kind === 'character' ? levelBlock(n) : needsBlock(n),
     actions(n),
     giver && el('div', { class: 'block' }, el('h3', { text: 'Given by' }), item(giver.key, 'giver')),
     el('div', { class: 'tabs' }, tabButton('steps', 'Steps'), tabButton('map', 'Map')),
@@ -483,14 +549,14 @@ $('export').addEventListener('click', exportFile);
 $('import').addEventListener('click', () => $('file').click());
 $('file').addEventListener('change', (e) => { importFile(e.target.files[0]); e.target.value = ''; });
 $('reset').addEventListener('click', () => {
-  if (!game.done.size) return say('There is no progress to clear.');
+  if (!game.done.size && !game.levels.size) return say('There is no progress to clear.');
   if (!window.confirm(`Clear all progress (${plural(game.done.size, 'quest')} done)? This cannot be undone unless you saved it to a file.`)) return;
-  update(() => { game.done.clear(); game.revealed.clear(); }, '#reset');
+  update(() => { game.done.clear(); game.levels.clear(); game.revealed.clear(); }, '#reset');
   say('Progress cleared.');
 });
 wide.addEventListener('change', () => { if (!state.tab) renderFocus(); });
 window.addEventListener('hashchange', () => route(true));
 load();
-game.status = statuses(graph, game.done, game.unowned);
+recount();
 renderGame();
 route(false);

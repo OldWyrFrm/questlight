@@ -3242,11 +3242,13 @@
       ],
       "characters": [
         "jack-skellington"
-      ]
+      ],
+      "levels": {
+        "jack-skellington": 7
+      }
     },
     "wiki": "https://dreamlightvalleywiki.com/A_Holiday_Treat_for_Olaf",
-    "verified": true,
-    "notes": "Needs friendship level 7 with Jack Skellington."
+    "verified": true
   },
   {
     "id": "dreamlight-day",
@@ -3275,11 +3277,13 @@
       ],
       "characters": [
         "jack-skellington"
-      ]
+      ],
+      "levels": {
+        "jack-skellington": 7
+      }
     },
     "wiki": "https://dreamlightvalleywiki.com/A_Holiday_Treat_for_Vanellope",
-    "verified": true,
-    "notes": "Needs friendship level 7 with Jack Skellington."
+    "verified": true
   },
   {
     "id": "a-holiday-treat-for-scar",
@@ -3293,11 +3297,13 @@
       ],
       "characters": [
         "jack-skellington"
-      ]
+      ],
+      "levels": {
+        "jack-skellington": 7
+      }
     },
     "wiki": "https://dreamlightvalleywiki.com/A_Holiday_Treat_for_Scar",
-    "verified": true,
-    "notes": "Needs friendship level 7 with Jack Skellington."
+    "verified": true
   },
   {
     "id": "have-your-people-talk-to-my-people",
@@ -4103,11 +4109,14 @@
       "characters": [
         "pumbaa",
         "timon"
-      ]
+      ],
+      "levels": {
+        "pumbaa": 10,
+        "timon": 9
+      }
     },
     "wiki": "https://dreamlightvalleywiki.com/A_Creepy_Crawly_Mystery",
-    "verified": true,
-    "notes": "Needs friendship level 10 with Pumbaa. Needs friendship level 9 with Timon."
+    "verified": true
   },
   {
     "id": "the-infestation-finale",
@@ -6650,11 +6659,14 @@
       "characters": [
         "simba",
         "nala"
-      ]
+      ],
+      "levels": {
+        "nala": 10
+      }
     },
     "wiki": "https://dreamlightvalleywiki.com/Finding_Old_Friends",
     "verified": true,
-    "notes": "Needs friendship level 10 with Nala. Also needs The Lion King."
+    "notes": "Also needs The Lion King."
   },
   {
     "id": "relax",

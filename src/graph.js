@@ -18,6 +18,8 @@ export function makeGraph(data) {
     const me = `quest:${q.id}`;
     for (const id of q.requires?.quests ?? []) link(`quest:${id}`, me);
     for (const id of q.requires?.characters ?? []) link(`character:${id}`, me);
+    // A friendship level with someone means they have to be in the Valley too.
+    for (const id of Object.keys(q.requires?.levels ?? {})) link(`character:${id}`, me);
     for (const id of q.unlocks?.quests ?? []) link(me, `quest:${id}`);
     for (const id of q.unlocks?.characters ?? []) link(me, `character:${id}`);
   }
