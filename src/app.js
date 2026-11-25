@@ -118,12 +118,39 @@ const say = (message) => { $('saved').textContent = message; };
 const pathTo = (key) => questPath(graph, key).filter((k) => k !== key && graph.nodes.get(k).kind === 'quest');
 const attr = (value) => `"${value.replace(/["\\]/g, '\\$&')}"`;
 
+/** Show a short message at the bottom of the screen; `before` is the progress to go back to on Undo. */
+function toast(message, before) {
+  $('toast-text').textContent = message;
+  $('undo').hidden = !before;
+  $('undo').onclick = () => { update(() => { game.done = before; }); toast('Undone.'); };
+  $('toast').hidden = false;
+}
+
+/**
+ * Mark an entry done together with every quest that has to come first, since the game would
+ * not have allowed it otherwise. For a villager this is the shortest way to unlock them.
+ */
+function complete(n, refocus) {
+  const before = new Set(game.done);
+  const earlier = pathTo(n.key).filter((k) => !game.done.has(k));
+  update(() => { for (const k of [...earlier, ...(n.kind === 'quest' ? [n.key] : [])]) game.done.add(k); }, refocus);
+  const name = masked(n.key) ? 'That quest' : n.name;
+  if (n.kind === 'character') toast(`Marked ${plural(earlier.length, 'quest')} done to unlock ${n.name}.`, before);
+  else if (earlier.length) toast(`${name} is done, and so are the ${plural(earlier.length, 'quest')} that come before it.`, before);
+  else $('toast').hidden = true;
+}
+
 function tick(n, where) {
   const box = el('input', {
     type: 'checkbox',
     'data-tick': `${where}:${n.key}`,
     'aria-label': masked(n.key) ? 'Mark this quest as done' : `Mark ${n.name} as done`,
-    onchange: (e) => update(() => game.done[e.target.checked ? 'add' : 'delete'](n.key), `[data-tick=${attr(`${where}:${n.key}`)}]`),
+    onchange: (e) => {
+      const refocus = `[data-tick=${attr(`${where}:${n.key}`)}]`;
+      if (e.target.checked) return complete(n, refocus);
+      $('toast').hidden = true;
+      update(() => game.done.delete(n.key), refocus);
+    },
   });
   box.checked = game.done.has(n.key);
   return el('label', { class: 'tick' }, box);
@@ -350,23 +377,24 @@ function map(n) {
 /** Buttons for ticking off the selected quest, or everything needed for the selected villager. */
 function actions(n) {
   const todo = pathTo(n.key).filter((k) => !game.done.has(k));
-  const earlier = todo.length > 0 && `${plural(todo.length, 'quest')} before it`;
-  const markAll = (text, also) => el('button', {
-    class: 'link', type: 'button', 'data-act': 'all', text,
-    onclick: () => update(() => { for (const k of [...todo, ...also]) game.done.add(k); }, '#focus-title'),
-  });
   if (n.kind === 'character') {
     if (statusOf(n.key) === 'done' || !todo.length) return null;
-    return el('div', { class: 'actions' }, markAll(`I already have ${n.name} (marks ${plural(todo.length, 'quest')} done)`, []));
+    return el('div', { class: 'actions' }, el('button', {
+      class: 'link', type: 'button', text: `I already have ${n.name} (marks ${plural(todo.length, 'quest')} done)`,
+      onclick: () => complete(n, '#focus-title'),
+    }));
   }
   const isDone = game.done.has(n.key);
   return el('div', { class: 'actions' },
     el('button', {
       class: isDone ? 'link on' : 'link', type: 'button', 'data-act': 'done', 'aria-pressed': String(isDone),
-      text: isDone ? '✓ Done (select to undo)' : 'Mark as done',
-      onclick: () => update(() => game.done[isDone ? 'delete' : 'add'](n.key), '[data-act="done"]'),
-    }),
-    !isDone && earlier && markAll(`Mark done, with the ${earlier}`, [n.key]));
+      text: isDone ? '✓ Done (select to undo)' : todo.length ? `Mark as done, with the ${plural(todo.length, 'quest')} before it` : 'Mark as done',
+      onclick: () => {
+        if (!isDone) return complete(n, '[data-act="done"]');
+        $('toast').hidden = true;
+        update(() => game.done.delete(n.key), '[data-act="done"]');
+      },
+    }));
 }
 
 function renderFocus() {
@@ -440,7 +468,13 @@ for (const r of data.regions) {
 }
 $('sample').hidden = !data.sample;
 $('tools').addEventListener('submit', (e) => e.preventDefault());
-$('search').addEventListener('input', (e) => { state.query = e.target.value.trim().toLowerCase(); renderBrowse(); });
+$('search').addEventListener('input', (e) => { state.query = e.target.value.trim().toLowerCase(); $('clear').hidden = !e.target.value; renderBrowse(); });
+$('clear').addEventListener('click', () => {
+  $('search').value = '';
+  $('search').dispatchEvent(new Event('input'));
+  $('search').focus();
+});
+$('toast-close').addEventListener('click', () => { $('toast').hidden = true; });
 $('type').addEventListener('change', (e) => { state.type = e.target.value; renderBrowse(); });
 $('region').addEventListener('change', (e) => { state.region = e.target.value; renderBrowse(); });
 $('status').addEventListener('change', (e) => { state.status = e.target.value; renderBrowse(); });

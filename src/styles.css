@@ -89,6 +89,19 @@ button, input, select { font: inherit; color: inherit; }
   letter-spacing: 0;
   text-transform: none;
 }
+.search-box { position: relative; }
+.search-box input { padding-right: 3rem; }
+/* The page draws its own clear button, so the browser's built-in one is switched off. */
+.search-box input::-webkit-search-cancel-button { appearance: none; }
+.clear { display: grid; place-items: center; width: 2.75rem; height: 2.75rem; padding: 0; background: transparent; border: 0; border-radius: 10px; font-size: 1.5rem; line-height: 1; color: var(--muted); cursor: pointer; }
+.clear:hover { color: var(--ink); }
+.search-box .clear { position: absolute; top: 0; right: 0; }
+
+/* A short message after ticking something off, with a way to take it back. */
+.toast { position: fixed; z-index: 4; left: 50%; bottom: max(1rem, env(safe-area-inset-bottom)); transform: translateX(-50%); display: flex; align-items: center; gap: 0.5rem; width: max-content; max-width: calc(100% - 2rem); padding: 0.5rem 0.5rem 0.5rem 1rem; background: var(--card-2); border: 1px solid var(--gold); border-radius: var(--radius); box-shadow: 0 10px 40px rgb(0 0 0 / 0.5); }
+.toast p { flex: 1 1 auto; min-width: 0; font-size: 0.95rem; }
+.toast .link { flex: none; border-color: var(--gold); color: var(--gold); }
+
 .count { min-height: 1.5rem; margin-top: 0.5rem; color: var(--muted); font-size: 0.9rem; }
 
 /* "Your game": progress totals, owned expansions, spoiler mode, save and load */
