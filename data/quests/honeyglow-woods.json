@@ -302,6 +302,11 @@
     "name": "Sketch: Woodland Trade",
     "region": "honeyglow-woods",
     "type": "story",
+    "requires": {
+      "quests": [
+        "welcome-to-dreamlight-valley"
+      ]
+    },
     "wiki": "https://dreamlightvalleywiki.com/Sketch:_Woodland_Trade",
     "verified": true,
     "notes": "Starts from Shopping List."

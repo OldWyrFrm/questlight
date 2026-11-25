@@ -9,25 +9,25 @@
     "id": "eternity-isle",
     "name": "A Rift in Time (Eternity Isle)",
     "kind": "expansion",
-    "color": "#ffb347"
+    "color": "#d9a760"
   },
   {
     "id": "storybook-vale",
     "name": "The Storybook Vale",
     "kind": "expansion",
-    "color": "#7fd6a4"
+    "color": "#ff7d66"
   },
   {
     "id": "wishblossom-ranch",
     "name": "Wishblossom Ranch",
     "kind": "expansion",
-    "color": "#ff8fb8"
+    "color": "#86d36b"
   },
   {
     "id": "honeyglow-woods",
     "name": "Honeyglow Woods",
     "kind": "adventure-pack",
-    "color": "#ffd166"
+    "color": "#ffd84d"
   },
   {
     "id": "keepsake-sea",

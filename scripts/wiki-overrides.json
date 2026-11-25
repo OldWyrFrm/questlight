@@ -1,5 +1,9 @@
 {
   "//": "Hand-checked corrections applied by scripts/import-wiki.mjs after reading the wiki export. Keys are quest ids. \"requires\" lists are added to what the importer found (\"requires.levels\" is villager id to friendship level), \"notes\" is appended and \"setNotes\" replaces the imported note (original wording only), and \"type\", \"region\", \"level\" (friendship level with the giver) and \"verified\" replace the imported value. \"why\" records where the fact came from and is not copied into data/.",
+  "the-mistress-of-all-evil": {
+    "requires": { "quests": ["welcome-to-the-storybook-vale"] },
+    "why": "Wiki only lists clearing the path to The Beanstalk Marshes, which is inside the Vale. Arriving in the Vale is added so the quest is not shown as a starting point of the game."
+  },
   "the-missing-princess": {
     "level": 10,
     "notes": "Starts on its own, but cannot be finished until every one of Flynn's friendship quests is done.",

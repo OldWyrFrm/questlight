@@ -105,7 +105,19 @@ be refreshed after a game update without retyping anything:
 3. Do the same for the quest categories (`Story Quests`, `Friendship Quests`, `Realm Quests`,
    `Hidden Quests`, `Character Quests`, `Dream Bundle Quests`, `Repeatable Quests`,
    `Time-Restricted Quests`) and save that file too.
-4. Run `node scripts/import-wiki.mjs <characters.xml> <quests.xml>`, then `npm run validate`.
+4. Export the pages that quests point to but that are not quests or villagers: biomes, realms,
+   buildings, tools and quest items (for example Scrooge's Store, Chez Remy, Dream Castle,
+   Moana Realm, Pickaxe). Paste their titles into **Add pages manually** and save that file.
+5. Run `node scripts/import-wiki.mjs <characters.xml> <quests.xml> <places.xml>`, then
+   `npm run validate`.
+
+When a quest needs a place, building or tool, the importer reads that thing's own page for the
+quest that opens it and makes that quest a requirement, so the rest of the chain follows by
+itself. It looks, in order, at the page's "unlock quest" field (choosing the entry for the
+quest's own region when a shop exists in several), the quest a tool or building comes "from",
+an "Unlocking" section that names a quest, and finally the place the thing is found in (a realm
+door is in the Dream Castle). A quest item's page can also say what makes the item appear.
+Where a page names no quest, as with biomes bought with Dreamlight, nothing is added.
 
 The importer also applies three rules about how the game works that the wiki does not spell out
 quest by quest. They are not wiki facts, so check them here first if a chain looks wrong:
@@ -113,8 +125,9 @@ quest by quest. They are not wiki facts, so check them here first if a chain loo
 - **Friendship quests come in level order.** Each friendship quest with a `level` requires that
   villager's friendship quests at the next level down. Quests with no level, or sharing a
   level, are not ordered against each other.
-- **Realm doors are in the Dream Castle.** A base-game realm quest that needs no earlier quest
-  or villager requires the story quest The Dream Castle.
+- **Everything follows the opening quest.** This is a last resort: only a quest for which the
+  wiki gives no earlier quest at all, directly or through a place or villager, is tied to
+  Welcome to Dreamlight Valley.
 - **The giver has to be in the Valley.** A quest requires its `giver`, unless the quest is part
   of unlocking that villager or is a realm quest (those are given inside the realm).
 

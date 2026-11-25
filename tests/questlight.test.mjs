@@ -58,8 +58,14 @@ test('focus map flows left to right, stays limited, and never overlaps', () => {
     page('First Steps', '{{infobox\n|character=Fern\n|category=Story Quest\n|prerequisites=\n|rewards=x\n}}'),
     page('Moss', '{{infobox\n|type=Characters\n|collection=Sample Glade\n|universe=Sample Film\n|house=x\n}}'),
     page('Old Friends', '{{infobox\n|character=Fern\n|category=Friendship Quest\n|prerequisites={{Friendship|Fern|7}}&lt;br&gt;{{Friendship|Moss|10}}\n}}'),
+    page('Welcome to Dreamlight Valley', '{{infobox\n|character=Moss\n|category=Story Quest\n|prerequisites=\n}}'),
+    page('Loose End', '{{infobox\n|character=Moss\n|category=Story Quest\n|prerequisites=\n}}'),
     page('The Dream Castle', '{{infobox\n|character=Moss\n|category=Story Quest\n|prerequisites=\n}}'),
-    page('Through the Door', '{{infobox\n|character=Fern\n|category=Realm Quest\n|prerequisites=\n}}'),
+    page('Through the Door', '{{infobox\n|character=Fern\n|category=Realm Quest\n|prerequisites=Unlock&lt;br&gt;\n:{{name|Glade Realm}}\n}}'),
+    page('Glade Realm', '{{infobox\n|type=Realm\n|found={{name|Dream Castle}}\n}}\nA door in the castle.'),
+    page('Dream Castle', '{{infobox\n|found={{name|Plaza}}\n}}\nA castle.\n==Unlocking The Dream Castle==\nDuring the quest [[The Dream Castle]] the thorns are cleared.\n==Other==\nSee [[Loose End]].'),
+    page('Old Mill', '{{infobox\n|type=Houses\n|universe=Sample Film\n|unlockquest={{quest|Loose End}} ([[Sample Glade]])\n}}'),
+    page('Mill Work', '{{infobox\n|character=Moss\n|category=Story Quest\n|prerequisites=Unlock Building&lt;br&gt;\n:{{name|Old Mill}}\n}}'),
     page('Second &amp; Third?', '{{infobox\n|character=Fern\n|category=Friendship Quest\n|prerequisites={{Friendship|Fern|4}}&lt;br&gt;\nComplete quest {{quest|First Steps|realm=Story}}&lt;br&gt;\nUnlock Biomes&lt;br&gt;\n:{{name|Misty Hollow}}&lt;br&gt;\nSomething nobody expected\n|rewards=x\n}}'),
   ].join('');
   const regions = [{ id: 'sample-glade', name: 'Sample Glade', kind: 'base', color: '#b48cff' }];
@@ -70,13 +76,17 @@ test('focus map flows left to right, stays limited, and never overlaps', () => {
     const [first, old, second] = ['first-steps', 'old-friends', 'second-and-third'].map((id) => quests.get('sample-glade').find((q) => q.id === id));
     assert.deepEqual(first.unlocks, { characters: ['fern'] });
     assert.equal(first.level, 2, 'a level from the corrections file');
-    assert.equal(first.requires, undefined, 'a quest cannot need the villager it unlocks');
+    assert.deepEqual(first.requires, { quests: ['welcome-to-dreamlight-valley'] }, 'a quest cannot need the villager it unlocks');
     assert.equal(old.level, 7);
     assert.deepEqual(old.requires, { characters: ['fern', 'moss'], levels: { moss: 10 }, quests: ['second-and-third'] }, 'a level 7 friendship quest follows the same villager\'s level 4 one');
     assert.equal(old.notes, undefined);
     const find = (id) => quests.get('sample-glade').find((q) => q.id === id);
-    assert.deepEqual(find('the-dream-castle').requires, { characters: ['moss'] }, 'whoever gives a quest has to be in the Valley');
-    assert.deepEqual(find('through-the-door').requires, { quests: ['the-dream-castle'] }, 'a realm opens from the Dream Castle, and its giver need not have moved in');
+    assert.deepEqual(find('welcome-to-dreamlight-valley').requires, { characters: ['moss'] });
+    assert.deepEqual(find('loose-end').requires, { characters: ['moss'], quests: ['welcome-to-dreamlight-valley'] }, 'everything follows the opening quest');
+    assert.deepEqual(find('the-dream-castle').requires, { characters: ['moss'], quests: ['welcome-to-dreamlight-valley'] }, 'whoever gives a quest has to be in the Valley');
+    assert.deepEqual(find('through-the-door').requires, { quests: ['the-dream-castle'] }, 'a realm is reached through the place it is found in, and its giver need not have moved in');
+    assert.deepEqual(find('mill-work').requires, { characters: ['moss'], quests: ['loose-end'] }, 'needing a building means needing the quest that opens it');
+    assert.equal(characters.length, 2, 'a house with an unlock quest is not a villager');
     assert.equal(first.verified, true);
     assert.equal(second.id, 'second-and-third');
     assert.equal(second.level, 4);

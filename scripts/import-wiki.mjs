@@ -12,8 +12,8 @@ import { fileURLToPath } from 'node:url';
 
 const WIKI = 'https://dreamlightvalleywiki.com/';
 const TYPES = { story: 'story', friendship: 'friendship', realm: 'realm', hidden: 'hidden' };
-// The story quest that opens the Dream Castle, where the realm doors are.
-const REALM_GATE = 'The Dream Castle';
+// The quest the game opens with; nothing else can be started before it.
+const GAME_START = 'Welcome to Dreamlight Valley';
 // Other names the wiki uses for a region, on top of the names in regions.json.
 const REGION_ALIASES = {
   'eternity-isle': ['A Rift in Time', 'Eternity Isle', 'Version History/Expansion 1', 'EI'],
@@ -92,7 +92,10 @@ function refs(line) {
       if (kind === 'price') return ' ';
       const parts = args.split('|').map(clean);
       const label = parts.find((p) => /^link\s*=.*\u00a6/.test(p))?.split('\u00a6')[1];
-      found.push({ kind, target: clean(parts[0].split('\u00a6')[0]), label: clean(label ?? parts[0].split('\u00a6').at(-1)), args: parts.slice(1) });
+      // "link=" names the page the template really points at, when that differs from its text.
+      const linked = parts.find((p) => /^link\s*=/.test(p))?.replace(/^link\s*=\s*/, '').split('\u00a6')[0];
+      const target = clean(parts[0].split('\u00a6')[0]);
+      found.push({ kind, target, page: clean(linked || target), label: clean(label ?? parts[0].split('\u00a6').at(-1)), args: parts.slice(1) });
       return ' ';
     })
     .replace(/\[\[:?([^\]|]+)(?:\|[^\]]*)?\]\]/g, (_, target) => {
@@ -125,7 +128,7 @@ const HEADINGS = [
  * { quest }, { character } or { region }. Returns what was understood and what was not.
  */
 export function parsePrerequisites(raw, lookup) {
-  const out = { quests: [], started: [], characters: [], progress: [], regions: [], places: [], items: [], other: [], friendship: [], wait: false, unknown: [] };
+  const out = { quests: [], started: [], characters: [], progress: [], regions: [], places: [], items: [], other: [], things: [], friendship: [], wait: false, unknown: [] };
   const add = (list, value) => { if (!list.includes(value)) list.push(value); };
   let mode = 'any';
   for (const line of strip(raw).split(/\n|<br\s*\/?>/i)) {
@@ -135,7 +138,7 @@ export function parsePrerequisites(raw, lookup) {
     if (rest) {
       const heading = HEADINGS.find(([pattern]) => pattern.test(rest));
       // A bare bullet under an "Unlock Biomes" heading is an area name the wiki has not linked.
-      if (!heading && mode === 'place' && !found.length && /^\s*[*:]/.test(line)) { add(out.places, rest); continue; }
+      if (!heading && mode === 'place' && !found.length && /^\s*[*:]/.test(line)) { add(out.places, rest); out.things.push({ label: rest, target: rest }); continue; }
       if (!heading) { add(out.unknown, rest); lineMode = 'any'; }
       else if (heading[1]) lineMode = heading[1];
       // A heading on its own line also applies to the lines under it.
@@ -164,10 +167,13 @@ export function parsePrerequisites(raw, lookup) {
         if (new Set(regions).size === 1) add(out.regions, hit.region); else add(out.unknown, `one of several expansions (${ref.target})`);
       } else if (lineMode === 'place') {
         add(out.places, ref.label);
+        out.things.push(ref);
       } else if (lineMode === 'item') {
         add(out.items, ref.label);
+        out.things.push(ref);
       } else if ((lineMode === 'any' || lineMode === 'character') && !/^(version history|characters$)/i.test(ref.target)) {
         add(out.other, ref.label);
+        out.things.push(ref);
       } else {
         add(out.unknown, ref.target);
       }
@@ -190,14 +196,18 @@ export function convert(pages, regions, overrides = {}) {
 
   const redirects = new Map(pages.filter((p) => p.redirect).map((p) => [key(p.title), key(p.redirect)]));
   const charPages = [], questPages = [];
+  // Places, buildings, tools and items: their pages say which quest opens or gives them.
+  const thingPages = new Map();
   const seen = new Set();
   for (const page of pages) {
     if (page.ns !== 0 || page.redirect || seen.has(key(page.title))) continue;
     const box = infobox(page.text);
     if (!box) continue;
     if (/quest/i.test(strip(box.category))) questPages.push({ page, box });
-    else if ('universe' in box && ('unlockquest' in box || 'house' in box)) charPages.push({ page, box });
-    else continue;
+    // A villager page says so, or at least names the villager's house. Houses, companions and
+    // gardens have an unlock quest too, but they are things, not villagers.
+    else if ('universe' in box && ('unlockquest' in box || 'house' in box) && (/\|\s*type\s*=\s*Characters/i.test(page.text) || (!box.type && 'house' in box))) charPages.push({ page, box });
+    else { thingPages.set(key(page.title), { page, box }); continue; }
     seen.add(key(page.title));
   }
 
@@ -285,7 +295,7 @@ export function convert(pages, regions, overrides = {}) {
     q.wiki = wikiUrl(page.title);
     q.verified = problems.length === 0;
     if (notes.length) q.notes = notes.join(' ');
-    return { q, problems };
+    return { q, problems, things: pre.things };
   });
   const questById = new Map(quests.map(({ q }) => [q.id, q]));
 
@@ -397,13 +407,68 @@ export function convert(pages, regions, overrides = {}) {
     }
   }
 
-  // Realm doors are inside the Dream Castle, so a realm's opening quests (those that need no
-  // earlier quest or villager) need the story quest that opens the castle.
-  const castle = questById.get(ids.quest.get(key(REALM_GATE)));
-  for (const { q } of quests) {
-    if (!castle || q.type !== 'realm' || q.region !== castle.region || q.requires?.quests?.length || q.requires?.characters?.length) continue;
+  // What a quest needs is often a place, building or tool, not a quest. Each of those has its
+  // own wiki page naming the quest that opens it, so the need becomes "that quest first" and
+  // everything that quest needs follows on its own.
+  const questIn = (text) => refs(strip(text ?? '')).found.map((r) => lookup(r.target)?.quest).find(Boolean);
+  const areas = new Map(); // a named part of a biome -> the quest its page lists as its unlock quest
+  for (const { page } of thingPages.values()) {
+    for (const m of strip(page.text).matchAll(/^=+\s*([^=\n]+?)\s*=+[ \t]*\n:\s*Unlock Quest:([^\n]*)/gim)) {
+      const quest = questIn(m[2]);
+      if (quest && !areas.has(key(m[1]))) areas.set(key(m[1]), quest);
+    }
+  }
+  const openedBy = (title, home, depth = 0) => {
+    const k = key(title.split('#')[0]);
+    const thing = thingPages.get(redirects.get(k) ?? k);
+    if (!thing || depth > 3) return null;
+    const { page, box } = thing;
+    // 1. An "unlock quest" field. Shops with a branch in several expansions list one per place.
+    const options = (box.unlockquest ?? '').split(/<br\s*\/?>|\n/i).map((line) => {
+      const found = refs(strip(line)).found;
+      return { quest: found.map((r) => lookup(r.target)?.quest).find(Boolean), where: found.map((r) => lookup(r.target)?.region).find(Boolean) };
+    }).filter((o) => o.quest);
+    const choice = options.find((o) => o.where === home) ?? options.find((o) => o.where === base) ?? options[0];
+    if (choice) return choice.quest;
+    // 2. A tool or building handed over by a quest. A quest item is different: it starts its quest.
+    if (!/quest item/i.test(strip(box.type))) { const from = questIn(box.from); if (from) return from; }
+    // 3. An "Unlocking" section that names the quest.
+    const section = /^=+\s*Unlocking[^=\n]*=+[ \t]*\n([\s\S]*?)(?=^=|(?![\s\S]))/im.exec(strip(page.text));
+    const named = section && questIn(section[1]);
+    if (named) return named;
+    // 4. Otherwise it is as reachable as the place it is found in (a realm door is in the castle).
+    for (const r of refs(strip(box.found ?? '')).found) { const via = openedBy(r.target, home, depth + 1); if (via) return via; }
+    return null;
+  };
+  const addQuest = (q, dep, why) => {
+    if (!dep || dep === q.id || q.requires?.quests?.includes(dep)) return false;
+    if (reaches(`quest:${dep}`, `quest:${q.id}`)) { report.push(`${q.name}: not placed after ${name.quest.get(dep)} (${why}), because the wiki has them the other way round`); return false; }
     q.requires ??= {};
-    q.requires.quests = [castle.id];
+    q.requires.quests = [...(q.requires.quests ?? []), dep];
+    return true;
+  };
+  for (const { q, things } of quests) {
+    for (const t of things ?? []) {
+      const page = t.page ?? t.target;
+      const section = page.includes('#') ? page.split('#')[1] : null;
+      const dep = areas.get(key(t.label)) ?? (section && areas.get(key(section))) ?? openedBy(page, q.region) ?? openedBy(t.label, q.region);
+      addQuest(q, dep, `needs ${t.label}`);
+    }
+  }
+  // An item that starts a quest when picked up: its page may say what makes it appear.
+  for (const { page, box } of thingPages.values()) {
+    if (!/quest item/i.test(strip(box.type))) continue;
+    const q = questById.get(questIn(box.from));
+    if (!q) continue;
+    const pre = parsePrerequisites(box.prerequisites ?? '', lookup);
+    for (const dep of [...pre.quests, ...pre.started]) addQuest(q, dep, `${page.title} appears after it`);
+    for (const c of [...pre.characters, ...pre.progress]) {
+      if (q.requires?.characters?.includes(c) || reaches(`character:${c}`, `quest:${q.id}`)) continue;
+      q.requires ??= {};
+      q.requires.characters = [...(q.requires.characters ?? []), c];
+    }
+    const intro = strip(page.text).split(/^==/m)[0];
+    for (const m of intro.matchAll(/after completing the quest\s*(\[\[[^\]]+\]\]|\{\{quest\|[^}]*\}\})/gi)) addQuest(q, questIn(m[1]), `${page.title} appears after it`);
   }
 
   // Whoever gives a quest has to be in the Valley to give it, unless the quest is part of
@@ -413,6 +478,15 @@ export function convert(pages, regions, overrides = {}) {
     if (!q.giver || q.type === 'realm' || q.requires?.characters?.includes(q.giver) || reaches(`character:${q.giver}`, `quest:${q.id}`)) continue;
     q.requires ??= {};
     q.requires.characters = [q.giver, ...(q.requires.characters ?? [])];
+  }
+
+  // Everything follows the game's opening quest. Quests with no earlier quest of their own, and
+  // no villager whose unlock leads back to it, are tied to it directly.
+  const opening = questById.get(ids.quest.get(key(GAME_START)));
+  for (const { q } of quests) {
+    if (!opening || q === opening || q.requires?.quests?.length || reaches(`quest:${q.id}`, `quest:${opening.id}`)) continue;
+    q.requires ??= {};
+    q.requires.quests = [opening.id];
   }
 
   for (const item of quests) {

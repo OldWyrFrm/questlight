@@ -9,6 +9,7 @@ const GLYPHS = { story: '✦', friendship: '♥︎', realm: '◈', event: '✺',
 const KINDS = { base: 'Base game', expansion: 'Expansion', 'adventure-pack': 'Adventure pack' };
 const SVG_NS = 'http://www.w3.org/2000/svg';
 const STORE = 'questlight:progress';
+const WELCOMED = 'questlight:welcomed';
 const NEAR = 2; // steps shown each way before "show the whole chain"
 const wide = window.matchMedia('(min-width: 60rem)');
 const state = { focus: null, query: '', type: '', region: '', status: '', tab: null, full: false, open: new Set() };
@@ -299,18 +300,43 @@ async function importFile(file) {
   }
 }
 
+// The welcome card is for first visits: once dismissed, or once anything is picked, it stays away.
+let welcomed = false;
+try { welcomed = localStorage.getItem(WELCOMED) === '1'; } catch { /* storage blocked: show it each visit */ }
+function dismissWelcome() {
+  welcomed = true;
+  try { localStorage.setItem(WELCOMED, '1'); } catch { /* fine: it only means the card returns next visit */ }
+}
+
+/** What the focus panel shows before anything is picked: a short welcome, the first time. */
 function intro() {
-  const quests = data.quests.length, villagers = data.characters.length;
-  if (!quests && !villagers) {
-    return el('div', { class: 'card' },
+  if (!data.quests.length && !data.characters.length) {
+    return [el('div', { class: 'card' },
       el('h2', { text: 'The map is waiting for its first quests' }),
-      el('p', { class: 'lede', text: `Quest data is still being gathered and checked against the wiki. ${plural(data.regions.length, 'region')} are set up and ready to fill.` }));
+      el('p', { class: 'lede', text: `Quest data is still being gathered and checked against the wiki. ${plural(data.regions.length, 'region')} are set up and ready to fill.` }))];
   }
-  return el('div', { class: 'card' },
-    el('h2', { text: 'Pick a quest or villager' }),
-    el('p', { class: 'lede', text: 'You will see only what leads to it and what it opens up. Everything else stays out of the way.' }),
-    el('p', { class: 'lede', text: `${plural(quests, 'quest')} and ${plural(villagers, 'villager')} across ${plural(data.regions.length, 'region')}.` }),
-    el('p', { class: 'lede', text: 'Tick quests off as you finish them and Questlight will show what is available now. Your progress stays in this browser.' }));
+  if (welcomed) return [];
+  const step = (n, title, text) => el('li', {},
+    el('span', { class: 'badge', 'aria-hidden': 'true', text: String(n) }),
+    el('span', {}, el('strong', { text: title }), el('span', { class: 'item-meta', text: text })));
+  return [el('div', { class: 'card welcome' },
+    el('h2', { text: 'Welcome to Questlight' }),
+    el('p', { class: 'lede', text: 'See what any quest needs first and what it opens up.' }),
+    el('ol', { class: 'welcome-steps' },
+      step(1, 'Pick a quest or villager', 'Search, or open a region in the list.'),
+      step(2, 'Tick what you have done', 'Earlier quests are ticked for you.'),
+      step(3, 'See what is available now', 'Use the Progress filter.')),
+    el('div', { class: 'actions' },
+      el('button', { class: 'link on', type: 'button', text: 'Got it', onclick: () => { dismissWelcome(); renderFocus(); $('search').focus(); } }),
+      el('a', { class: 'link', href: '#about', text: 'About & help' })))];
+}
+
+/** The About panel: its wording lives in index.html, so it can be edited without touching code. */
+function about() {
+  return el('article', { class: 'card about' },
+    el('button', { class: 'back keep', type: 'button', text: '← Back to quests', onclick: () => select(null) }),
+    el('h2', { id: 'focus-title', tabindex: -1, text: 'About & help' }),
+    $('about-text').content.cloneNode(true));
 }
 
 function steps(n) {
@@ -463,8 +489,9 @@ function actions(n) {
 }
 
 function renderFocus() {
+  if (state.focus === 'about') return $('focus').replaceChildren(about());
   const n = graph.nodes.get(state.focus);
-  if (!n) return $('focus').replaceChildren(intro());
+  if (!n) return $('focus').replaceChildren(...intro());
   const back = el('button', { class: 'back', type: 'button', text: '← All quests', onclick: () => select(null) });
   if (masked(n.key)) {
     return $('focus').replaceChildren(tint(el('article', { class: 'card' },
@@ -511,7 +538,8 @@ function renderFocus() {
 function route(moveFocus) {
   let key = null;
   try { key = decodeURIComponent(location.hash.slice(1)).replace('-', ':'); } catch { /* malformed link: show the start view */ }
-  if (!graph.nodes.has(key)) key = null;
+  if (!graph.nodes.has(key) && key !== 'about') key = null;
+  if (key && key !== 'about' && !welcomed) dismissWelcome();
   if (key !== state.focus) state.full = false;
   state.focus = key;
   document.body.classList.toggle('has-focus', Boolean(key));
