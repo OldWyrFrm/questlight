@@ -20,6 +20,7 @@
     <h1>Questlight</h1>
     <p class="tag">A fan-made quest and villager map for Dreamlight Valley</p>
   </div>
+  <a class="link about-link" href="#about">About &amp; help</a>
 </header>
 
 <p id="sample" class="notice" hidden>Sample data. These quests and villagers are made up to test the app; they are not from the game.</p>
@@ -81,9 +82,54 @@
 </main>
 
 <footer class="foot">
-  <p><strong>Fan-made project.</strong> Questlight is not affiliated with, endorsed by, or sponsored by Disney or Gameloft. Game names are trademarks of their owners. No official artwork is used.</p>
-  <p>Quest facts are adapted from the community-run <a href="https://dreamlightvalleywiki.com" rel="noopener noreferrer">Dreamlight Valley Wiki</a> and shared under CC BY-NC-SA 4.0. This page makes no network requests and keeps nothing about you.</p>
+  <p><strong>Fan-made.</strong> Not affiliated with Disney or Gameloft. <span aria-hidden="true">·</span> <a href="#about">About &amp; help</a> <span aria-hidden="true">·</span> <a href="https://github.com/OldWyrFrm/questlight/issues/new" rel="noopener noreferrer" target="_blank">Report a problem</a></p>
 </footer>
+
+<!-- The About panel. Kept here as plain HTML so the wording is easy to find and edit. -->
+<template id="about-text">
+  <p class="lede">Questlight shows what every quest in Dreamlight Valley needs first and what it opens up, so you can see how to reach a villager or what to do next.</p>
+  <details class="fold" open>
+    <summary>How it works</summary>
+    <div class="fold-body">
+      <p>Search for a quest or villager, or open a region, and select one. You will see only what leads to it and what it opens; switch between <strong>Steps</strong> and <strong>Map</strong> to read it as a list or a picture.</p>
+      <p>Tick a quest when you finish it. The quests that had to come before it are ticked too, and a message lets you undo that. Use the <strong>Progress</strong> filter to list what is available now.</p>
+      <p>A villager's friendship level is worked out from the quests you have ticked. If your level is really higher, raise it on the villager's page so quests that need it stop showing as locked.</p>
+      <p>In <strong>Your game</strong> you can hide expansions you do not own and turn on spoiler mode, which keeps the names of things you cannot reach yet to itself.</p>
+    </div>
+  </details>
+  <details class="fold">
+    <summary>Your progress and privacy</summary>
+    <div class="fold-body">
+      <p>Progress is kept in this browser only. Nothing is sent anywhere: the page makes no network requests, has no accounts and no tracking.</p>
+      <p>To back it up or move it to another device, open <strong>Your game</strong> and save your progress to a file, then load that file on the other device.</p>
+    </div>
+  </details>
+  <details class="fold">
+    <summary>Where the facts come from</summary>
+    <div class="fold-body">
+      <p>Quest facts are adapted from the community-run <a href="https://dreamlightvalleywiki.com" rel="noopener noreferrer" target="_blank">Dreamlight Valley Wiki</a> and shared under CC BY-NC-SA 4.0. Each quest links to its wiki page.</p>
+      <p>The wiki does not spell out every link between quests, so a few are worked out: a villager's friendship quests come in level order, a quest needs the villager who gives it, and needing a place or building means needing the quest that opens it. Quests marked <strong>Not yet verified</strong> have a requirement the wiki leaves unclear.</p>
+    </div>
+  </details>
+  <details class="fold">
+    <summary>Report a problem or suggest something</summary>
+    <div class="fold-body">
+      <p>Found a quest in the wrong order, a missing requirement or something that does not work? Please say so. Both links open GitHub, where you need a free account.</p>
+      <p class="actions">
+        <a class="link" href="https://github.com/OldWyrFrm/questlight/issues/new" rel="noopener noreferrer" target="_blank">Report a problem</a>
+        <a class="link" href="https://github.com/OldWyrFrm/questlight/discussions" rel="noopener noreferrer" target="_blank">Ask or suggest in Discussions</a>
+      </p>
+      <p>It helps to name the quest or villager and say what the game actually does.</p>
+    </div>
+  </details>
+  <details class="fold">
+    <summary>Fan-made project</summary>
+    <div class="fold-body">
+      <p>Questlight is not affiliated with, endorsed by, or sponsored by Disney or Gameloft. Game names are trademarks of their owners. No official artwork is used.</p>
+      <p>It is free, has no ads, and its code is open source under the MIT licence.</p>
+    </div>
+  </details>
+</template>
 
 <div id="toast" class="toast" hidden>
   <p id="toast-text" role="status"></p>

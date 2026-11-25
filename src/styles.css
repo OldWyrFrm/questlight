@@ -73,6 +73,11 @@ button, input, select { font: inherit; color: inherit; }
 .mark { width: 2.5rem; height: 2.5rem; flex: none; fill: var(--gold); filter: drop-shadow(0 0 8px rgb(255 201 120 / 0.6)); }
 .top h1 { font-size: 1.8rem; letter-spacing: 0.01em; }
 .tag { color: var(--muted); font-size: 0.9rem; }
+.top { flex-wrap: wrap; }
+.top > div { flex: 1 1 12rem; min-width: 0; }
+.about-link { margin-left: auto; display: inline-flex; align-items: center; color: var(--ink); text-decoration: none; }
+a.link { display: inline-flex; align-items: center; color: var(--ink); text-decoration: none; }
+a.link.on { color: var(--night); }
 
 .notice { border: 1px dashed var(--gold); border-radius: var(--radius); padding: 0.6rem 0.9rem; margin-bottom: 1rem; color: var(--gold); font-size: 0.9rem; }
 
@@ -191,6 +196,22 @@ ol.items > li::before { content: counter(step); color: var(--gold); font-family:
 .card h3 { font-size: 1.1rem; color: var(--gold); }
 .card p { max-width: 65ch; }
 .lede { color: var(--muted); }
+
+/* First-visit welcome: three short steps. */
+.welcome { max-width: 34rem; }
+.welcome-steps { display: grid; gap: 0.75rem; margin: 0; padding: 0; list-style: none; }
+.welcome-steps li { display: flex; align-items: center; gap: 0.8rem; }
+.welcome-steps li > span:last-child { display: grid; }
+.welcome-steps .badge { background: var(--gold); border-radius: 50%; }
+
+/* About panel: headings you open, so the page stays short. */
+.about { max-width: 46rem; }
+.fold { border-radius: var(--soft); background: var(--card-2); }
+.fold > summary { padding: 0.8rem 1rem; font-family: var(--display); font-weight: 600; font-size: 1.05rem; cursor: pointer; border-radius: var(--soft); }
+.fold[open] > summary { color: var(--gold); }
+.fold-body { display: grid; gap: 0.6rem; padding: 0 1rem 1rem; }
+.fold .link { background: var(--card); }
+.fold .link:hover { background: var(--line); }
 .chips { display: flex; flex-wrap: wrap; gap: 0.4rem; }
 .chip { padding: 0.25rem 0.8rem; border-radius: 999px; background: var(--card-2); font-size: 0.82rem; color: var(--muted); }
 .chip.region { background: color-mix(in srgb, var(--accent) 24%, transparent); color: var(--accent); }
@@ -236,8 +257,8 @@ ol.items > li::before { content: counter(step); color: var(--gold); font-family:
 .node-name { fill: var(--ink); font: 600 13px var(--body); }
 .node-meta { fill: var(--muted); font: 11px var(--body); }
 
-.foot { display: grid; gap: 0.5rem; padding-block: 2rem; color: var(--ink); font-size: 0.82rem; }
-.foot p { max-width: 80ch; }
+.foot { padding-block: 1.5rem 2rem; color: var(--ink); font-size: 0.85rem; text-align: center; }
+.foot a { color: var(--ink); }
 
 @media (min-width: 60rem) {
   .layout { grid-template-columns: minmax(19rem, 25rem) 1fr; }
@@ -245,6 +266,7 @@ ol.items > li::before { content: counter(step); color: var(--gold); font-family:
   .has-focus #browse { display: block; }
   #browse { position: sticky; top: 1rem; max-height: calc(100vh - 2rem); overflow: auto; padding: 0 0.25rem 0.5rem 0; }
   .back { display: none; }
+  .back.keep { display: inline-block; }
   .card { padding: 2rem; }
 }
 
