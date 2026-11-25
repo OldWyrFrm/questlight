@@ -82,6 +82,9 @@
     "requires": {
       "quests": [
         "the-four-guardians"
+      ],
+      "characters": [
+        "milo"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Sunken_Echo:_The_Rain_Boots",
@@ -96,6 +99,9 @@
     "requires": {
       "quests": [
         "captain-of-the-dead"
+      ],
+      "characters": [
+        "milo"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Sunken_Echo:_First_Aid_Kit",
@@ -110,6 +116,9 @@
     "requires": {
       "quests": [
         "the-enchanted-ship"
+      ],
+      "characters": [
+        "milo"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Sunken_Echo:_The_Helmet",
@@ -124,6 +133,9 @@
     "requires": {
       "quests": [
         "a-piece-of-cake"
+      ],
+      "characters": [
+        "milo"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Sunken_Echo:_The_Art_Supplies",
@@ -204,6 +216,9 @@
     "requires": {
       "quests": [
         "donut-of-destiny"
+      ],
+      "characters": [
+        "milo"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Sunken_Echo:_The_Fancy_Hat",
@@ -218,6 +233,9 @@
     "requires": {
       "quests": [
         "i-caaaaaannn-speeeaaaaaaakkkk-wwwhhaaaaaleeee"
+      ],
+      "characters": [
+        "milo"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Sunken_Echo:_The_Cookie_Cutters",
@@ -232,6 +250,9 @@
     "requires": {
       "quests": [
         "the-pinky-promise"
+      ],
+      "characters": [
+        "milo"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Sunken_Echo:_The_Pool_Floatie",
@@ -246,6 +267,9 @@
     "requires": {
       "quests": [
         "the-forgotten-throne-room"
+      ],
+      "characters": [
+        "milo"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Sunken_Echo:_The_Seashell",
@@ -260,6 +284,9 @@
     "requires": {
       "quests": [
         "you-have-to-believe"
+      ],
+      "characters": [
+        "milo"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Sunken_Echo:_The_Most_Valuable_Treasure",
@@ -368,6 +395,9 @@
     "requires": {
       "quests": [
         "forging-friendships"
+      ],
+      "characters": [
+        "wendy"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/You_Have_to_Believe",
@@ -382,6 +412,9 @@
     "requires": {
       "quests": [
         "the-four-guardians"
+      ],
+      "characters": [
+        "milo"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Field_Research",
@@ -396,6 +429,9 @@
     "requires": {
       "quests": [
         "the-enchanted-ship"
+      ],
+      "characters": [
+        "captain-jack-sparrow"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Bring_Me_That_Horizon",
@@ -685,6 +721,9 @@
     "requires": {
       "quests": [
         "a-piece-of-cake"
+      ],
+      "characters": [
+        "megara"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Statue's_Secret",
@@ -700,6 +739,9 @@
     "requires": {
       "quests": [
         "no-pirates-allowed"
+      ],
+      "characters": [
+        "captain-hook"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Smeecoming_Smee",
@@ -714,6 +756,9 @@
     "requires": {
       "quests": [
         "forging-friendships"
+      ],
+      "characters": [
+        "wendy"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Journal_to_Adventure",

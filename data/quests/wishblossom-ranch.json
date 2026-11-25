@@ -48,6 +48,9 @@
     "requires": {
       "quests": [
         "tales-of-a-broken-heart"
+      ],
+      "characters": [
+        "scrooge-mcduck"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Ghost_Town",
@@ -62,6 +65,9 @@
     "requires": {
       "quests": [
         "wheel-big-trouble"
+      ],
+      "characters": [
+        "scrooge-mcduck"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Water_Tower_of_Terror",
@@ -77,6 +83,9 @@
     "requires": {
       "quests": [
         "ghost-town"
+      ],
+      "characters": [
+        "goofy"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Wheel_Big_Trouble",
@@ -91,6 +100,9 @@
     "requires": {
       "quests": [
         "wheel-big-trouble"
+      ],
+      "characters": [
+        "remy"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Equine_Delicacies",
@@ -176,6 +188,9 @@
     "requires": {
       "quests": [
         "fun-fun-fun"
+      ],
+      "characters": [
+        "tigger"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Test_Your_Strength",
@@ -210,6 +225,9 @@
     "requires": {
       "quests": [
         "fun-fun-fun"
+      ],
+      "characters": [
+        "tigger"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Catch_the_Lucky_Lily_Pad",
@@ -225,6 +243,9 @@
     "requires": {
       "quests": [
         "fun-fun-fun"
+      ],
+      "characters": [
+        "tigger"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Solve_the_Puzzle",
@@ -287,6 +308,9 @@
     "requires": {
       "quests": [
         "crystal-cavern-wishing-alps"
+      ],
+      "characters": [
+        "kristoff"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Reindeer_Are_Better_Than_People",
@@ -316,6 +340,9 @@
     "requires": {
       "quests": [
         "tales-of-a-broken-heart"
+      ],
+      "characters": [
+        "snow-white"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Handle_with_Care",
@@ -368,6 +395,9 @@
     "requires": {
       "quests": [
         "the-skunk-rebellion"
+      ],
+      "characters": [
+        "cruella"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Automotive_Appeal",
@@ -403,6 +433,9 @@
     "requires": {
       "quests": [
         "fun-fun-fun"
+      ],
+      "characters": [
+        "tigger"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/A_Honey_of_a_Problem",
@@ -473,6 +506,9 @@
     "requires": {
       "quests": [
         "the-wishblossom-fair"
+      ],
+      "characters": [
+        "daisy"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Wishblossom_Fair:_Horse_Beauty_Contest",
@@ -488,6 +524,9 @@
     "requires": {
       "quests": [
         "the-wishblossom-fair"
+      ],
+      "characters": [
+        "mulan"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Wishblossom_Fair:_Riding_Demonstration",
@@ -503,6 +542,9 @@
     "requires": {
       "quests": [
         "the-wishblossom-fair"
+      ],
+      "characters": [
+        "tiana"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Wishblossom_Fair:_Cooking_Competition",
@@ -561,6 +603,9 @@
     "requires": {
       "quests": [
         "hold-your-horses-the-wishing-alps"
+      ],
+      "characters": [
+        "snow-white"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Hold_Your_Horses:_Glamour_Gulch",
@@ -576,6 +621,9 @@
     "requires": {
       "quests": [
         "a-wishful-invitation"
+      ],
+      "characters": [
+        "snow-white"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Hold_Your_Horses:_The_Wishing_Alps",
@@ -591,6 +639,9 @@
     "requires": {
       "quests": [
         "hold-your-horses-glamour-gulch"
+      ],
+      "characters": [
+        "snow-white"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Hold_Your_Horses:_Pixie_Acres",

@@ -76,6 +76,9 @@
     "requires": {
       "quests": [
         "chapter-3-a-very-satisfied-bear"
+      ],
+      "characters": [
+        "winnie-the-pooh"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Interlude:_The_Misplaced_Honey",
@@ -137,6 +140,9 @@
     "requires": {
       "quests": [
         "chapter-6-a-place-for-eeyore"
+      ],
+      "characters": [
+        "eeyore"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Interlude_2:_The_Gloomy_Hollow",
@@ -198,6 +204,9 @@
     "requires": {
       "quests": [
         "chapter-9-how-to-meet-a-best-friend-again"
+      ],
+      "characters": [
+        "piglet"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Interlude_3:_The_Shadowy_Surprise",
@@ -212,6 +221,9 @@
     "requires": {
       "quests": [
         "interlude-3-the-shadowy-surprise"
+      ],
+      "characters": [
+        "winnie-the-pooh"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Chapter_10:_Most_Grand_Adventure",
@@ -226,6 +238,9 @@
     "requires": {
       "quests": [
         "chapter-10-most-grand-adventure"
+      ],
+      "characters": [
+        "winnie-the-pooh"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Chapter_11:_The_Anti-monster_Camp",
@@ -240,6 +255,9 @@
     "requires": {
       "quests": [
         "chapter-11-the-anti-monster-camp"
+      ],
+      "characters": [
+        "winnie-the-pooh"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Chapter_12:_Old_Plans,_New_Wind",
@@ -254,6 +272,9 @@
     "requires": {
       "quests": [
         "chapter-12-old-plans-new-wind"
+      ],
+      "characters": [
+        "winnie-the-pooh"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Interlude_4:_Curiosity_Satisfied",
@@ -268,6 +289,9 @@
     "requires": {
       "quests": [
         "interlude-4-curiosity-satisfied"
+      ],
+      "characters": [
+        "winnie-the-pooh"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Epilogue:_See_You_Next_Summer",
@@ -512,6 +536,9 @@
         "a-tiggerific-day",
         "eeyores-lost-and-found",
         "piglet-the-caretaker"
+      ],
+      "characters": [
+        "winnie-the-pooh"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_New_Expedition",

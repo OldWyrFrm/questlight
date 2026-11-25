@@ -58,6 +58,8 @@ test('focus map flows left to right, stays limited, and never overlaps', () => {
     page('First Steps', '{{infobox\n|character=Fern\n|category=Story Quest\n|prerequisites=\n|rewards=x\n}}'),
     page('Moss', '{{infobox\n|type=Characters\n|collection=Sample Glade\n|universe=Sample Film\n|house=x\n}}'),
     page('Old Friends', '{{infobox\n|character=Fern\n|category=Friendship Quest\n|prerequisites={{Friendship|Fern|7}}&lt;br&gt;{{Friendship|Moss|10}}\n}}'),
+    page('The Dream Castle', '{{infobox\n|character=Moss\n|category=Story Quest\n|prerequisites=\n}}'),
+    page('Through the Door', '{{infobox\n|character=Fern\n|category=Realm Quest\n|prerequisites=\n}}'),
     page('Second &amp; Third?', '{{infobox\n|character=Fern\n|category=Friendship Quest\n|prerequisites={{Friendship|Fern|4}}&lt;br&gt;\nComplete quest {{quest|First Steps|realm=Story}}&lt;br&gt;\nUnlock Biomes&lt;br&gt;\n:{{name|Misty Hollow}}&lt;br&gt;\nSomething nobody expected\n|rewards=x\n}}'),
   ].join('');
   const regions = [{ id: 'sample-glade', name: 'Sample Glade', kind: 'base', color: '#b48cff' }];
@@ -72,6 +74,9 @@ test('focus map flows left to right, stays limited, and never overlaps', () => {
     assert.equal(old.level, 7);
     assert.deepEqual(old.requires, { characters: ['fern', 'moss'], levels: { moss: 10 }, quests: ['second-and-third'] }, 'a level 7 friendship quest follows the same villager\'s level 4 one');
     assert.equal(old.notes, undefined);
+    const find = (id) => quests.get('sample-glade').find((q) => q.id === id);
+    assert.deepEqual(find('the-dream-castle').requires, { characters: ['moss'] }, 'whoever gives a quest has to be in the Valley');
+    assert.deepEqual(find('through-the-door').requires, { quests: ['the-dream-castle'] }, 'a realm opens from the Dream Castle, and its giver need not have moved in');
     assert.equal(first.verified, true);
     assert.equal(second.id, 'second-and-third');
     assert.equal(second.level, 4);

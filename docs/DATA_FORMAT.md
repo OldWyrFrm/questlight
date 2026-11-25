@@ -107,10 +107,16 @@ be refreshed after a game update without retyping anything:
    `Time-Restricted Quests`) and save that file too.
 4. Run `node scripts/import-wiki.mjs <characters.xml> <quests.xml>`, then `npm run validate`.
 
-The importer also applies one rule the wiki does not spell out quest by quest: a villager's
-friendship quests come in level order, so each friendship quest with a `level` requires that
-villager's friendship quests at the next level down. Quests with no level, or sharing a level,
-are not ordered against each other.
+The importer also applies three rules about how the game works that the wiki does not spell out
+quest by quest. They are not wiki facts, so check them here first if a chain looks wrong:
+
+- **Friendship quests come in level order.** Each friendship quest with a `level` requires that
+  villager's friendship quests at the next level down. Quests with no level, or sharing a
+  level, are not ordered against each other.
+- **Realm doors are in the Dream Castle.** A base-game realm quest that needs no earlier quest
+  or villager requires the story quest The Dream Castle.
+- **The giver has to be in the Valley.** A quest requires its `giver`, unless the quest is part
+  of unlocking that villager or is a realm quest (those are given inside the realm).
 
 Keep the export files outside the repo: they contain wiki prose, and only facts belong in
 `data/`. The importer rewrites `characters.json` and every `quests/*.json`, so hand edits to
