@@ -1034,7 +1034,13 @@
     "requires": {
       "characters": [
         "ursula"
-      ]
+      ],
+      "quests": [
+        "a-deal-with-ursula"
+      ],
+      "levels": {
+        "ursula": 10
+      }
     },
     "unlocks": {
       "characters": [

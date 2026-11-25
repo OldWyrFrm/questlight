@@ -304,6 +304,12 @@ export function convert(pages, regions, overrides = {}) {
     }
     for (const [field, extra] of Object.entries(fix.requires ?? {})) {
       q.requires ??= {};
+      if (field === 'levels') {
+        // Friendship levels with villagers other than the giver, who then have to be around too.
+        q.requires.levels = { ...q.requires.levels, ...extra };
+        q.requires.characters = [...new Set([...(q.requires.characters ?? []), ...Object.keys(extra)])];
+        continue;
+      }
       q.requires[field] = [...new Set([...(q.requires[field] ?? []), ...extra])];
     }
     if (fix.setNotes) q.notes = fix.setNotes;
