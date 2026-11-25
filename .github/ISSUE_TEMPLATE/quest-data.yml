@@ -1,0 +1,53 @@
+name: Wrong or missing quest information
+description: A quest or villager shows the wrong requirements, order, level or unlocks.
+title: "Data: "
+labels: ["data"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping to keep the map accurate. One quest or villager per report is easiest to check.
+  - type: input
+    id: subject
+    attributes:
+      label: Quest or villager
+      description: The name exactly as it appears in the game.
+      placeholder: The Enchanted Ring
+    validations:
+      required: true
+  - type: textarea
+    id: shown
+    attributes:
+      label: What Questlight shows
+      description: For example, the steps it lists first, or the friendship level it gives.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What the game actually does
+      description: Please describe it in your own words; do not paste text from the wiki or a guide.
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Where this can be checked
+      description: A link to the wiki page or a guide, or "seen in my own game".
+      placeholder: https://dreamlightvalleywiki.com/The_Enchanted_Ring
+    validations:
+      required: true
+  - type: dropdown
+    id: expansion
+    attributes:
+      label: Which part of the game
+      options:
+        - Dreamlight Valley (base game)
+        - A Rift in Time (Eternity Isle)
+        - The Storybook Vale
+        - Wishblossom Ranch
+        - Honeyglow Woods
+        - The Keepsake Sea
+        - Not sure
+    validations:
+      required: true

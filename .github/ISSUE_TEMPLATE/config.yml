@@ -1,0 +1,9 @@
+# The page people see when they choose "New issue".
+blank_issues_enabled: false
+contact_links:
+  - name: Ask a question
+    url: https://github.com/OldWyrFrm/questlight/discussions/categories/q-a
+    about: Not sure how something works, or whether it is a problem? Ask here first.
+  - name: Suggest an idea
+    url: https://github.com/OldWyrFrm/questlight/discussions/categories/ideas
+    about: Ideas for new features are talked over in Discussions before they become issues.

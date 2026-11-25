@@ -5,3 +5,6 @@ dist/
 .env.*
 *.log
 .claude/settings.local.json
+
+# Local working notes for the AI coding assistant; not part of the project.
+CLAUDE.md

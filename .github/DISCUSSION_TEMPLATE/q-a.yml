@@ -1,0 +1,9 @@
+title: "Question: "
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: What is your question?
+      description: If it is about a particular quest or villager, please name it.
+    validations:
+      required: true

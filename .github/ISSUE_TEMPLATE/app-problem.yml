@@ -1,0 +1,43 @@
+name: Something in the app does not work
+description: A button, the map, saving progress or the layout is broken or behaves oddly.
+title: "Bug: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: happened
+    attributes:
+      label: What happened
+      description: What you did, and what you saw.
+      placeholder: I ticked Welcoming Elsa, then selected Undo, and the tick stayed.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected instead
+    validations:
+      required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where you were using it
+      options:
+        - The website (oldwyrfrm.github.io/questlight)
+        - The downloaded questlight.html file
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device and browser
+      description: Only as much as you are happy to share.
+      placeholder: iPhone, Safari
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else
+      description: A screenshot can help. Please do not include personal details.
+    validations:
+      required: false
