@@ -75,7 +75,7 @@ button, input, select { font: inherit; color: inherit; }
 .tag { color: var(--muted); font-size: 0.9rem; }
 .top { flex-wrap: wrap; }
 .top > div { flex: 1 1 12rem; min-width: 0; }
-.about-link { margin-left: auto; display: inline-flex; align-items: center; color: var(--ink); text-decoration: none; }
+.link.about-link { margin-left: auto; display: inline-flex; align-items: center; min-height: 2.25rem; padding: 0.25rem 0.85rem; font-size: 0.88rem; color: var(--ink); text-decoration: none; }
 a.link { display: inline-flex; align-items: center; color: var(--ink); text-decoration: none; }
 a.link.on { color: var(--night); }
 
