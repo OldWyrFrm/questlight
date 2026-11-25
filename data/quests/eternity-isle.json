@@ -46,11 +46,11 @@
       "regions": [
         "eternity-isle"
       ],
+      "quests": [
+        "the-secrets-of-eternity-isle"
+      ],
       "characters": [
         "scrooge-mcduck"
-      ],
-      "quests": [
-        "welcome-to-dreamlight-valley"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/New_Ventures_(and_Adventures)",
@@ -67,11 +67,11 @@
       "regions": [
         "eternity-isle"
       ],
+      "quests": [
+        "the-secrets-of-eternity-isle"
+      ],
       "characters": [
         "goofy"
-      ],
-      "quests": [
-        "welcome-to-dreamlight-valley"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Give_Me_a_Sign",
@@ -179,6 +179,9 @@
     "requires": {
       "regions": [
         "eternity-isle"
+      ],
+      "quests": [
+        "the-secrets-of-eternity-isle"
       ],
       "characters": [
         "remy"
@@ -498,7 +501,8 @@
         "eternity-isle"
       ],
       "quests": [
-        "lasers-and-crafts"
+        "lasers-and-crafts",
+        "the-sands-in-the-hourglass"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Directive:_Plant",
@@ -660,11 +664,11 @@
       "regions": [
         "eternity-isle"
       ],
+      "quests": [
+        "the-sands-in-the-hourglass"
+      ],
       "characters": [
         "mickey-mouse"
-      ],
-      "quests": [
-        "welcome-to-dreamlight-valley"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Flower_Power",
@@ -745,6 +749,9 @@
       "regions": [
         "eternity-isle"
       ],
+      "quests": [
+        "the-sands-in-the-hourglass"
+      ],
       "characters": [
         "mirabel"
       ]
@@ -818,6 +825,9 @@
         "gaston",
         "remy",
         "rapunzel"
+      ],
+      "quests": [
+        "the-sands-in-the-hourglass"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Center_of_Attention",
@@ -931,6 +941,9 @@
       "characters": [
         "oswald",
         "scrooge-mcduck"
+      ],
+      "quests": [
+        "new-ventures-and-adventures"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Oswald's_Many_Dimensions",
@@ -949,6 +962,9 @@
         "oswald",
         "stitch",
         "olaf"
+      ],
+      "quests": [
+        "the-sands-in-the-hourglass"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/An_Alarming_Development",

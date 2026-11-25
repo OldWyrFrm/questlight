@@ -447,6 +447,9 @@
     "requires": {
       "characters": [
         "captain-jack-sparrow"
+      ],
+      "quests": [
+        "the-four-guardians"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Shellfish_Behavior",
@@ -720,7 +723,8 @@
     "giver": "megara",
     "requires": {
       "quests": [
-        "a-piece-of-cake"
+        "a-piece-of-cake",
+        "the-four-guardians"
       ],
       "characters": [
         "megara"

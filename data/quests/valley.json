@@ -662,7 +662,8 @@
         "the-monochrome-mystery",
         "a-new-directive",
         "center-of-attention",
-        "oswalds-many-dimensions"
+        "oswalds-many-dimensions",
+        "the-sands-in-the-hourglass"
       ],
       "characters": [
         "merlin",
@@ -912,11 +913,11 @@
     "type": "story",
     "giver": "scrooge-mcduck",
     "requires": {
+      "quests": [
+        "making-cents-of-things"
+      ],
       "characters": [
         "scrooge-mcduck"
-      ],
-      "quests": [
-        "welcome-to-dreamlight-valley"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Developed_Decorating",
@@ -1009,7 +1010,7 @@
         "goofy"
       ],
       "quests": [
-        "welcome-to-dreamlight-valley"
+        "the-royal-tools"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Dreamlight_Valley_Economy_101",
@@ -2456,6 +2457,9 @@
       "characters": [
         "woody",
         "remy"
+      ],
+      "quests": [
+        "the-royal-tools"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Failing_Better",
@@ -2470,7 +2474,9 @@
     "giver": "donald-duck",
     "requires": {
       "quests": [
-        "the-mystery-of-the-stolen-socks"
+        "the-mystery-of-the-stolen-socks",
+        "the-royal-tools",
+        "a-house-fit-for-a-duck"
       ],
       "characters": [
         "donald-duck"
@@ -2631,6 +2637,9 @@
     "type": "friendship",
     "giver": "donald-duck",
     "requires": {
+      "quests": [
+        "a-house-fit-for-a-duck"
+      ],
       "characters": [
         "donald-duck"
       ]
@@ -2690,7 +2699,8 @@
     "giver": "donald-duck",
     "requires": {
       "quests": [
-        "the-sock-stealing-space-alien-strikes-again"
+        "the-sock-stealing-space-alien-strikes-again",
+        "a-house-fit-for-a-duck"
       ],
       "characters": [
         "donald-duck"
@@ -2716,6 +2726,9 @@
       "characters": [
         "stitch",
         "donald-duck"
+      ],
+      "quests": [
+        "the-royal-tools"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Goodness_Level_Check",
@@ -2736,7 +2749,8 @@
         "wall-e"
       ],
       "quests": [
-        "goodness-level-check"
+        "goodness-level-check",
+        "village-project-the-garden"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Very_Sleepy_Stitch",
@@ -2790,11 +2804,11 @@
     "type": "friendship",
     "giver": "merlin",
     "requires": {
+      "quests": [
+        "the-royal-tools"
+      ],
       "characters": [
         "merlin"
-      ],
-      "quests": [
-        "welcome-to-dreamlight-valley"
       ]
     },
     "unlocks": {
@@ -2839,7 +2853,8 @@
         "kristoff"
       ],
       "quests": [
-        "a-place-for-joy"
+        "a-place-for-joy",
+        "a-restaurant-makeover"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/A_Story_to_Tell",
@@ -2986,10 +3001,14 @@
     "giver": "minnie-mouse",
     "requires": {
       "quests": [
-        "on-the-trail-of-minnies-memory"
+        "on-the-trail-of-minnies-memory",
+        "remembering-old-times"
       ],
       "characters": [
-        "minnie-mouse"
+        "minnie-mouse",
+        "anna",
+        "elsa",
+        "moana"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Very_Magical_Minnie",
@@ -3443,6 +3462,9 @@
         "belle",
         "remy",
         "mirabel"
+      ],
+      "quests": [
+        "the-royal-tools"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Book_Hunt",
@@ -3521,7 +3543,8 @@
         "scrooge-mcduck"
       ],
       "quests": [
-        "breaking-the-code"
+        "breaking-the-code",
+        "making-cents-of-things"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Best_Mystery_Solver_in_Dreamlight_Valley",
@@ -3673,7 +3696,8 @@
     "giver": "merlin",
     "requires": {
       "quests": [
-        "miracles-take-time"
+        "miracles-take-time",
+        "fire-alarm"
       ],
       "characters": [
         "merlin"
@@ -3855,6 +3879,9 @@
       "characters": [
         "mike-wazowski",
         "scrooge-mcduck"
+      ],
+      "quests": [
+        "making-cents-of-things"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Germs_Abound",
@@ -4049,7 +4076,8 @@
     "giver": "mickey-mouse",
     "requires": {
       "quests": [
-        "faith-trust-and-pixel-dust"
+        "faith-trust-and-pixel-dust",
+        "valley-visits"
       ],
       "characters": [
         "mickey-mouse"
@@ -4253,7 +4281,8 @@
         "remy"
       ],
       "quests": [
-        "a-reminder-in-stone"
+        "a-reminder-in-stone",
+        "a-restaurant-makeover"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_M.U.S.H.U._Program",
@@ -4270,6 +4299,9 @@
     "requires": {
       "characters": [
         "mushu"
+      ],
+      "quests": [
+        "the-royal-tools"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/A_Reminder_in_Stone",
@@ -4504,6 +4536,10 @@
       "characters": [
         "remy",
         "moana"
+      ],
+      "quests": [
+        "the-curse",
+        "a-restaurant-makeover"
       ]
     },
     "unlocks": {
@@ -4650,6 +4686,9 @@
         "timon",
         "mickey-mouse",
         "the-fairy-godmother"
+      ],
+      "quests": [
+        "a-restaurant-makeover"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Something's_Off",
@@ -4888,6 +4927,9 @@
     "type": "friendship",
     "giver": "olaf",
     "requires": {
+      "quests": [
+        "welcome-to-the-storybook-vale"
+      ],
       "characters": [
         "olaf"
       ]
@@ -4903,6 +4945,9 @@
     "type": "friendship",
     "giver": "the-beast",
     "requires": {
+      "quests": [
+        "welcome-to-the-storybook-vale"
+      ],
       "characters": [
         "the-beast"
       ]
@@ -5558,6 +5603,10 @@
         "sally",
         "belle",
         "the-beast"
+      ],
+      "quests": [
+        "memory-magnification",
+        "a-prince-in-disguise"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Shadow_Tag",
@@ -5602,7 +5651,8 @@
         "scar"
       ],
       "quests": [
-        "a-real-hideout"
+        "a-real-hideout",
+        "a-house-fit-for-a-duck"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_New_Lost_Boys",
@@ -5647,6 +5697,9 @@
         "vanellope",
         "scrooge-mcduck",
         "sadness"
+      ],
+      "quests": [
+        "the-royal-tools"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Capture_the_Sun",
@@ -5685,6 +5738,10 @@
       "characters": [
         "sadness",
         "joy"
+      ],
+      "quests": [
+        "a-restaurant-makeover",
+        "making-cents-of-things"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Storm's_A-Brewin'!",
@@ -6111,6 +6168,9 @@
     "requires": {
       "characters": [
         "tinker-bell"
+      ],
+      "quests": [
+        "crystal-cavern-pixie-acres"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Uneasy_Neighbors",
@@ -6154,6 +6214,9 @@
         "minnie-mouse",
         "jasmine",
         "vanellope"
+      ],
+      "quests": [
+        "you-have-mail"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Cinderella's_Custom_Creation",
@@ -6657,6 +6720,9 @@
         "goofy",
         "remy",
         "mickey-mouse"
+      ],
+      "quests": [
+        "the-royal-tools"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Satyrical_Theater",
@@ -6742,6 +6808,9 @@
         "hercules",
         "phil",
         "mirabel"
+      ],
+      "quests": [
+        "a-restaurant-makeover"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Grecian_Urn",
@@ -7020,7 +7089,8 @@
         "sulley"
       ],
       "quests": [
-        "bad-anon-valley-chapter"
+        "bad-anon-valley-chapter",
+        "a-forgotten-name"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Mini-game_Mayhem",
@@ -7104,7 +7174,9 @@
     "giver": "oogie-boogie",
     "requires": {
       "quests": [
-        "welcome-to-dreamlight-valley"
+        "the-royal-tools",
+        "making-cents-of-things",
+        "a-restaurant-makeover"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/A_Halloween_Invasion",
@@ -7324,7 +7396,8 @@
     "giver": "anna",
     "requires": {
       "quests": [
-        "chasing-the-wind"
+        "chasing-the-wind",
+        "the-dream-castle"
       ]
     },
     "unlocks": {
@@ -7344,7 +7417,8 @@
     "giver": "elsa",
     "requires": {
       "quests": [
-        "the-spirits-of-nature"
+        "the-spirits-of-nature",
+        "the-dream-castle"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Chasing_The_Wind",
@@ -7379,7 +7453,8 @@
     "giver": "woody",
     "requires": {
       "quests": [
-        "a-secret-mission-in-uncharted-space"
+        "a-secret-mission-in-uncharted-space",
+        "the-dream-castle"
       ]
     },
     "unlocks": {
@@ -7652,7 +7727,10 @@
       ],
       "levels": {
         "nala": 10
-      }
+      },
+      "quests": [
+        "the-dream-castle"
+      ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Finding_Old_Friends",
     "verified": true,
@@ -7666,7 +7744,8 @@
     "giver": "pumbaa",
     "requires": {
       "quests": [
-        "finding-old-friends"
+        "finding-old-friends",
+        "the-dream-castle"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Relax!",
@@ -7681,7 +7760,8 @@
     "giver": "timon",
     "requires": {
       "quests": [
-        "relax"
+        "relax",
+        "the-dream-castle"
       ]
     },
     "unlocks": {
@@ -8117,7 +8197,8 @@
     "type": "hidden",
     "requires": {
       "quests": [
-        "an-important-night-at-the-restaurant"
+        "an-important-night-at-the-restaurant",
+        "the-dream-castle"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Red_Potato_Quest",
@@ -8176,7 +8257,7 @@
     "type": "hidden",
     "requires": {
       "quests": [
-        "welcome-to-dreamlight-valley"
+        "making-cents-of-things"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Golden_Potato_Quest",
@@ -8677,7 +8758,7 @@
         "goofy"
       ],
       "quests": [
-        "welcome-to-dreamlight-valley"
+        "the-royal-tools"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Summer_Sizzle:_Go_Fish!",

@@ -61,7 +61,11 @@ test('focus map flows left to right, stays limited, and never overlaps', () => {
     page('Welcome to Dreamlight Valley', '{{infobox\n|character=Moss\n|category=Story Quest\n|prerequisites=\n}}'),
     page('Loose End', '{{infobox\n|character=Moss\n|category=Story Quest\n|prerequisites=\n}}'),
     page('The Dream Castle', '{{infobox\n|character=Moss\n|category=Story Quest\n|prerequisites=\n}}'),
-    page('Through the Door', '{{infobox\n|character=Fern\n|category=Realm Quest\n|prerequisites=\n}}'),
+    page('Through the Door', '{{infobox\n|character=Fern\n|category=Realm Quest\n|prerequisites=Unlock&lt;br&gt;\n:{{name|Glade Realm}}\n}}'),
+    page('Glade Realm', '{{infobox\n|type=Realm\n|found={{name|Dream Castle}}\n}}\nA door in the castle.'),
+    page('Dream Castle', '{{infobox\n|found={{name|Plaza}}\n}}\nA castle.\n==Unlocking The Dream Castle==\nDuring the quest [[The Dream Castle]] the thorns are cleared.\n==Other==\nSee [[Loose End]].'),
+    page('Old Mill', '{{infobox\n|type=Houses\n|universe=Sample Film\n|unlockquest={{quest|Loose End}} ([[Sample Glade]])\n}}'),
+    page('Mill Work', '{{infobox\n|character=Moss\n|category=Story Quest\n|prerequisites=Unlock Building&lt;br&gt;\n:{{name|Old Mill}}\n}}'),
     page('Second &amp; Third?', '{{infobox\n|character=Fern\n|category=Friendship Quest\n|prerequisites={{Friendship|Fern|4}}&lt;br&gt;\nComplete quest {{quest|First Steps|realm=Story}}&lt;br&gt;\nUnlock Biomes&lt;br&gt;\n:{{name|Misty Hollow}}&lt;br&gt;\nSomething nobody expected\n|rewards=x\n}}'),
   ].join('');
   const regions = [{ id: 'sample-glade', name: 'Sample Glade', kind: 'base', color: '#b48cff' }];
@@ -80,7 +84,9 @@ test('focus map flows left to right, stays limited, and never overlaps', () => {
     assert.deepEqual(find('welcome-to-dreamlight-valley').requires, { characters: ['moss'] });
     assert.deepEqual(find('loose-end').requires, { characters: ['moss'], quests: ['welcome-to-dreamlight-valley'] }, 'everything follows the opening quest');
     assert.deepEqual(find('the-dream-castle').requires, { characters: ['moss'], quests: ['welcome-to-dreamlight-valley'] }, 'whoever gives a quest has to be in the Valley');
-    assert.deepEqual(find('through-the-door').requires, { quests: ['the-dream-castle'] }, 'a realm opens from the Dream Castle, and its giver need not have moved in');
+    assert.deepEqual(find('through-the-door').requires, { quests: ['the-dream-castle'] }, 'a realm is reached through the place it is found in, and its giver need not have moved in');
+    assert.deepEqual(find('mill-work').requires, { characters: ['moss'], quests: ['loose-end'] }, 'needing a building means needing the quest that opens it');
+    assert.equal(characters.length, 2, 'a house with an unlock quest is not a villager');
     assert.equal(first.verified, true);
     assert.equal(second.id, 'second-and-third');
     assert.equal(second.level, 4);

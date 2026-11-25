@@ -493,6 +493,9 @@
     "requires": {
       "characters": [
         "merida"
+      ],
+      "quests": [
+        "a-new-chapter"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Clan_DunBroch's_Rules_of_the_Hunt",
@@ -511,6 +514,9 @@
         "remy",
         "merida",
         "mickey-mouse"
+      ],
+      "quests": [
+        "a-land-of-myths-and-legends"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Mythic_Restoration",
@@ -529,6 +535,10 @@
         "kristoff",
         "mirabel",
         "wall-e"
+      ],
+      "quests": [
+        "a-new-chapter",
+        "welcome-to-the-storybook-vale"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Company_of_the_Wolf",
@@ -548,7 +558,8 @@
         "flynn"
       ],
       "quests": [
-        "clan-dunbrochs-rules-of-the-hunt"
+        "clan-dunbrochs-rules-of-the-hunt",
+        "the-wolf-of-the-wilds"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Archery_and_Archrivals",
@@ -589,6 +600,9 @@
         "flynn",
         "hades",
         "merlin"
+      ],
+      "quests": [
+        "a-land-of-myths-and-legends"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Memory_Lane",
@@ -611,6 +625,12 @@
         "flynn",
         "scrooge-mcduck",
         "remy"
+      ],
+      "quests": [
+        "a-restaurant-makeover",
+        "a-new-chapter",
+        "a-moth-to-a-flame",
+        "the-wolf-of-the-wilds"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Yes,_Your_Lugubriousness",
@@ -657,7 +677,8 @@
         "belle"
       ],
       "quests": [
-        "an-old-fashioned-heist"
+        "an-old-fashioned-heist",
+        "mount-olympus"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Adventures_of_Flynn_Rider",
@@ -700,7 +721,8 @@
         "mickey-mouse"
       ],
       "quests": [
-        "yes-your-lugubriousness"
+        "yes-your-lugubriousness",
+        "the-marble-colossus"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Your_Own_Personal_Hades",
