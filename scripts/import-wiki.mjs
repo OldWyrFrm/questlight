@@ -14,6 +14,8 @@ const WIKI = 'https://dreamlightvalleywiki.com/';
 const TYPES = { story: 'story', friendship: 'friendship', realm: 'realm', hidden: 'hidden' };
 // The story quest that opens the Dream Castle, where the realm doors are.
 const REALM_GATE = 'The Dream Castle';
+// The quest the game opens with; nothing else can be started before it.
+const GAME_START = 'Welcome to Dreamlight Valley';
 // Other names the wiki uses for a region, on top of the names in regions.json.
 const REGION_ALIASES = {
   'eternity-isle': ['A Rift in Time', 'Eternity Isle', 'Version History/Expansion 1', 'EI'],
@@ -413,6 +415,15 @@ export function convert(pages, regions, overrides = {}) {
     if (!q.giver || q.type === 'realm' || q.requires?.characters?.includes(q.giver) || reaches(`character:${q.giver}`, `quest:${q.id}`)) continue;
     q.requires ??= {};
     q.requires.characters = [q.giver, ...(q.requires.characters ?? [])];
+  }
+
+  // Everything follows the game's opening quest. Quests with no earlier quest of their own, and
+  // no villager whose unlock leads back to it, are tied to it directly.
+  const opening = questById.get(ids.quest.get(key(GAME_START)));
+  for (const { q } of quests) {
+    if (!opening || q === opening || q.requires?.quests?.length || reaches(`quest:${q.id}`, `quest:${opening.id}`)) continue;
+    q.requires ??= {};
+    q.requires.quests = [opening.id];
   }
 
   for (const item of quests) {

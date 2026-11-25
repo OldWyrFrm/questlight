@@ -329,6 +329,9 @@
     "requires": {
       "characters": [
         "merlin"
+      ],
+      "quests": [
+        "welcome-to-dreamlight-valley"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Working_Miracles",
@@ -377,6 +380,11 @@
     "region": "valley",
     "type": "story",
     "giver": "the-fairy-godmother",
+    "requires": {
+      "quests": [
+        "welcome-to-dreamlight-valley"
+      ]
+    },
     "wiki": "https://dreamlightvalleywiki.com/Miracles_Take_Time",
     "verified": true,
     "notes": "Needs Forgotten Lands unlocked. Six pillars must be restored first."
@@ -597,6 +605,9 @@
     "requires": {
       "characters": [
         "scrooge-mcduck"
+      ],
+      "quests": [
+        "welcome-to-dreamlight-valley"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Rebuild_the_Valley:_Forgotten_Lands",
@@ -903,6 +914,9 @@
     "requires": {
       "characters": [
         "scrooge-mcduck"
+      ],
+      "quests": [
+        "welcome-to-dreamlight-valley"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Developed_Decorating",
@@ -921,6 +935,9 @@
         "mickey-mouse",
         "goofy",
         "scrooge-mcduck"
+      ],
+      "quests": [
+        "welcome-to-dreamlight-valley"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/On_the_Path_of_Stars",
@@ -955,6 +972,9 @@
       "characters": [
         "merlin",
         "scrooge-mcduck"
+      ],
+      "quests": [
+        "welcome-to-dreamlight-valley"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/A_New_Enchantment",
@@ -987,6 +1007,9 @@
       "characters": [
         "scrooge-mcduck",
         "goofy"
+      ],
+      "quests": [
+        "welcome-to-dreamlight-valley"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Dreamlight_Valley_Economy_101",
@@ -1004,6 +1027,9 @@
       "characters": [
         "mickey-mouse",
         "scrooge-mcduck"
+      ],
+      "quests": [
+        "welcome-to-dreamlight-valley"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Hangin'_with_Mickey",
@@ -1019,6 +1045,9 @@
     "requires": {
       "characters": [
         "goofy"
+      ],
+      "quests": [
+        "welcome-to-dreamlight-valley"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Mysterious_Wreck",
@@ -1331,6 +1360,9 @@
       "characters": [
         "scrooge-mcduck",
         "merlin"
+      ],
+      "quests": [
+        "welcome-to-dreamlight-valley"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Customers_Know_Best",
@@ -1481,6 +1513,9 @@
         "goofy",
         "mickey-mouse",
         "merlin"
+      ],
+      "quests": [
+        "welcome-to-dreamlight-valley"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/A_Warm_Welcome",
@@ -1497,6 +1532,9 @@
     "requires": {
       "characters": [
         "goofy"
+      ],
+      "quests": [
+        "welcome-to-dreamlight-valley"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Photographic_Memory",
@@ -2754,6 +2792,9 @@
     "requires": {
       "characters": [
         "merlin"
+      ],
+      "quests": [
+        "welcome-to-dreamlight-valley"
       ]
     },
     "unlocks": {
@@ -2964,6 +3005,9 @@
     "requires": {
       "characters": [
         "merlin"
+      ],
+      "quests": [
+        "welcome-to-dreamlight-valley"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Secrets_%26_Schemes",
@@ -3278,6 +3322,9 @@
     "requires": {
       "characters": [
         "scrooge-mcduck"
+      ],
+      "quests": [
+        "welcome-to-dreamlight-valley"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Haunting_of_Dreamlight_Valley",
@@ -5985,6 +6032,9 @@
     "requires": {
       "characters": [
         "merlin"
+      ],
+      "quests": [
+        "welcome-to-dreamlight-valley"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Floating_Festival!",
@@ -6809,6 +6859,9 @@
     "requires": {
       "characters": [
         "merlin"
+      ],
+      "quests": [
+        "welcome-to-dreamlight-valley"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Picture_Pursuit:_Merlin",
@@ -6869,6 +6922,9 @@
     "requires": {
       "characters": [
         "mickey-mouse"
+      ],
+      "quests": [
+        "welcome-to-dreamlight-valley"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Picture_Pursuit:_Mickey",
@@ -7018,6 +7074,9 @@
     "requires": {
       "characters": [
         "merlin"
+      ],
+      "quests": [
+        "welcome-to-dreamlight-valley"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/The_Magic_of_Friendship!",
@@ -7043,6 +7102,11 @@
     "region": "valley",
     "type": "friendship",
     "giver": "oogie-boogie",
+    "requires": {
+      "quests": [
+        "welcome-to-dreamlight-valley"
+      ]
+    },
     "wiki": "https://dreamlightvalleywiki.com/A_Halloween_Invasion",
     "verified": true,
     "notes": "Needs Peaceful Meadow, Scrooge's Store and Chez Remy unlocked."
@@ -8110,6 +8174,11 @@
     "name": "Golden Potato Quest",
     "region": "valley",
     "type": "hidden",
+    "requires": {
+      "quests": [
+        "welcome-to-dreamlight-valley"
+      ]
+    },
     "wiki": "https://dreamlightvalleywiki.com/Golden_Potato_Quest",
     "verified": true,
     "notes": "Starts from the Mysterious Golden Potato."
@@ -8507,6 +8576,9 @@
     "requires": {
       "characters": [
         "scrooge-mcduck"
+      ],
+      "quests": [
+        "welcome-to-dreamlight-valley"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Dreamlight_Parks_Fest:_Decorate!",
@@ -8522,6 +8594,9 @@
     "requires": {
       "characters": [
         "scrooge-mcduck"
+      ],
+      "quests": [
+        "welcome-to-dreamlight-valley"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Dreamlight_Parks_Fest:_Scrooge_McDuck",
@@ -8552,6 +8627,9 @@
     "requires": {
       "characters": [
         "mickey-mouse"
+      ],
+      "quests": [
+        "welcome-to-dreamlight-valley"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Dreamlight_Parks_Fest:_Mickey",
@@ -8597,6 +8675,9 @@
     "requires": {
       "characters": [
         "goofy"
+      ],
+      "quests": [
+        "welcome-to-dreamlight-valley"
       ]
     },
     "wiki": "https://dreamlightvalleywiki.com/Summer_Sizzle:_Go_Fish!",

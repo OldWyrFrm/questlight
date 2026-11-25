@@ -107,7 +107,7 @@ be refreshed after a game update without retyping anything:
    `Time-Restricted Quests`) and save that file too.
 4. Run `node scripts/import-wiki.mjs <characters.xml> <quests.xml>`, then `npm run validate`.
 
-The importer also applies three rules about how the game works that the wiki does not spell out
+The importer also applies four rules about how the game works that the wiki does not spell out
 quest by quest. They are not wiki facts, so check them here first if a chain looks wrong:
 
 - **Friendship quests come in level order.** Each friendship quest with a `level` requires that
@@ -115,6 +115,8 @@ quest by quest. They are not wiki facts, so check them here first if a chain loo
   level, are not ordered against each other.
 - **Realm doors are in the Dream Castle.** A base-game realm quest that needs no earlier quest
   or villager requires the story quest The Dream Castle.
+- **Everything follows the opening quest.** A quest with no earlier quest, and no villager
+  whose unlock leads back to the start, requires Welcome to Dreamlight Valley.
 - **The giver has to be in the Valley.** A quest requires its `giver`, unless the quest is part
   of unlocking that villager or is a realm quest (those are given inside the realm).
 

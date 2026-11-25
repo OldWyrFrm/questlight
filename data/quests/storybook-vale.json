@@ -118,6 +118,11 @@
     "region": "storybook-vale",
     "type": "story",
     "giver": "maleficent",
+    "requires": {
+      "quests": [
+        "welcome-to-the-storybook-vale"
+      ]
+    },
     "wiki": "https://dreamlightvalleywiki.com/The_Mistress_of_All_Evil",
     "verified": true,
     "notes": "Needs The Beanstalk Marshes unlocked."
